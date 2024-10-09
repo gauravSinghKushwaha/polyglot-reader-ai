@@ -1,6 +1,6 @@
 import uuid
 
-from langchain_community.llms.ollama import Ollama
+from langchain_ollama.llms import OllamaLLM
 from langchain_core.exceptions import OutputParserException
 from langchain_core.output_parsers import PydanticOutputParser
 from langchain_core.prompts import PromptTemplate
@@ -26,7 +26,7 @@ def create_prompt_template(template: str, input_variables=None, partial_variable
 )
 
 def get_llm():
-    return Ollama(
+    return OllamaLLM(
         model="llama3.2",
         temperature=0,
         format="json",

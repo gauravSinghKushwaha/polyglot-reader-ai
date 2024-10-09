@@ -4,6 +4,7 @@ SUMMARIZE_PROMPT ="""
         Format answer as per the instructions given. {format_instructions}\n
         
         User instructions:
-        Read below given text thoroughly and summarize it..\n
-        Text :: {text}
+        Read below given text thoroughly and summarize it. 
+        
+        Text to summarize:: {text}
         """
