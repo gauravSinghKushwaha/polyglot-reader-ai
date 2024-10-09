@@ -1,9 +1,17 @@
-from app.llm.llm_client import LLMClient
+from langchain_core.output_parsers import PydanticOutputParser
+
+from app.models.ai.quiz_generator import QuizGeneratorModel
+from app.prompts.quiz_generator_prompt import QUIZ_GENERATOR_PROMPT
+from app.utils.ai_helper import invoke_prompt, create_prompt_template
+
 
 class QuizGeneratorService:
-    def __init__(self, llm_client: LLMClient):
-        self.llm_client = llm_client
 
-    def generate_quiz(self, text: str, level: str) -> str:
-        prompt = f"Generate a {level} quiz for the following text: {text}"
-        return self.llm_client.get_response(prompt)
+    def generate_quiz(self, text: str) -> str:
+        input_variables = ["text"]
+        pydantic_parser = PydanticOutputParser(pydantic_object=QuizGeneratorModel)
+        partial_variables = { "format_instructions": pydantic_parser.get_format_instructions()}
+        prompt_template = create_prompt_template(QUIZ_GENERATOR_PROMPT, input_variables, partial_variables)
+        input_data = { "text": text }
+        result = invoke_prompt(prompt_template, pydantic_parser, input_data)
+        return result
