@@ -26,29 +26,45 @@ query_service = QueryResponderService()
 async def translate_text(req: TranslateTextDto):
     if not req.text or not req.target_language:
         raise HTTPException(status_code=400, detail="Text and target language are required")
-    response = translation_service.translate(req.text, req.target_language)
-    return ResponseBuilder.build_response(response)
+    try:
+        response = translation_service.translate(req.text, req.target_language)
+        return ResponseBuilder.build_response(response)
+    except Exception as ex:
+        print("Exception: ", ex)
+        raise HTTPException(status_code=422, detail="AI could not respond to your request.")
 
 @app.post("/comprehend/build_summary")
 async def build_summary(req: SummarizeTextDto):
     if not req.text:
         raise HTTPException(status_code=400, detail="Text is required")
-    summary = summary_service.generate_summary(req.text)
-    return ResponseBuilder.build_response(summary)
+    try:
+        summary = summary_service.generate_summary(req.text)
+        return ResponseBuilder.build_response(summary)
+    except Exception as ex:
+        print("Exception: ", ex)
+        raise HTTPException(status_code=422, detail="AI could not respond to your request.")
 
 @app.post("/comprehend/generate_quiz")
 async def generate_quiz(req: GenerateQuizDto):
     if not req.text:
         raise HTTPException(status_code=400, detail="Text is required")
-    quiz = quiz_service.generate_quiz(req.text)
-    return ResponseBuilder.build_response(quiz)
+    try:
+        quiz = quiz_service.generate_quiz(req.text)
+        return ResponseBuilder.build_response(quiz)
+    except Exception as ex:
+        print("Exception: ", ex)
+        raise HTTPException(status_code=422, detail="AI could not respond to your request.")
 
 @app.post("/comprehend/ask_question")
 async def ask_question(req: AnswerQueryDto):
     if not req.text or not req.query:
         raise HTTPException(status_code=400, detail="Text and query are required")
-    answer = query_service.respond_to_query(req.text, req.query)
-    return ResponseBuilder.build_response(answer)
+    try:
+        answer = query_service.respond_to_query(req.text, req.query)
+        return ResponseBuilder.build_response(answer)
+    except Exception as ex:
+        print("Exception: ", ex)
+        raise HTTPException(status_code=422, detail="AI could not respond to your request.")
 
 
 if __name__ == "__main__":

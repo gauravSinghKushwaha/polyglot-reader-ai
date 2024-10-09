@@ -37,7 +37,7 @@ def invoke_prompt(prompt: PromptTemplate, pydantic_parser: PydanticOutputParser,
 
     model = get_llm()
     run_id = uuid.uuid4()
-    chain = prompt | model
+    chain = prompt | model | pydantic_parser
     result = chain.invoke(input_data, config={"run_id": run_id})
     return run_id, result
 
