@@ -28,7 +28,7 @@ async def translate_text(req: TranslateTextDto):
         raise HTTPException(status_code=400, detail="Text and target language are required")
     try:
         response = translation_service.translate(req.text, req.target_language)
-        return ResponseBuilder.build_response(response)
+        return ResponseBuilder.build_list_response(response)
     except Exception as ex:
         print("Exception: ", ex)
         raise HTTPException(status_code=422, detail="AI could not respond to your request.")

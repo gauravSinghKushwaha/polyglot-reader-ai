@@ -1,5 +1,5 @@
 from pydantic import BaseModel
 
 class TranslateTextDto(BaseModel):
-    text: str
+    text: list[str]
     target_language: str
