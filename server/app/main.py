@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-
+from fastapi.middleware.cors import CORSMiddleware
 from app.models.server.generate_quiz_request_dto import GenerateQuizDto
 from app.models.server.query_request_dto import AnswerQueryDto
 from app.models.server.summarize_request_dto import SummarizeTextDto
@@ -15,6 +15,13 @@ import uvicorn
 SUPPORTED_LANGUAGES = ["English", "German", "French", "Italian", "Portuguese", "Hindi", "Spanish", "Thai"]
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],  # allow specific origins
+    allow_methods=["*"],  # allow all HTTP methods
+    allow_headers=["*"],  # allow all headers
+)
 
 # Initialize services
 translation_service = LanguageTranslationService()
