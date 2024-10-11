@@ -57,7 +57,7 @@ async def generate_quiz(req: GenerateQuizDto):
         raise HTTPException(status_code=400, detail="Text is required")
     try:
         quiz = quiz_service.generate_quiz(req.text)
-        return ResponseBuilder.build_response(quiz)
+        return ResponseBuilder.build_str_response(quiz)
     except Exception as ex:
         print("Exception: ", ex)
         raise HTTPException(status_code=422, detail="AI could not respond to your request.")
@@ -68,7 +68,7 @@ async def ask_question(req: AnswerQueryDto):
         raise HTTPException(status_code=400, detail="Text and query are required")
     try:
         answer = query_service.respond_to_query(req.text, req.query)
-        return ResponseBuilder.build_response(answer)
+        return ResponseBuilder.build_str_response(answer)
     except Exception as ex:
         print("Exception: ", ex)
         raise HTTPException(status_code=422, detail="AI could not respond to your request.")

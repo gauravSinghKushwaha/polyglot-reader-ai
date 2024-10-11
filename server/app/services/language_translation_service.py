@@ -18,7 +18,7 @@ class LanguageTranslationService:
         prompt_template = create_prompt_template(TRANSLATE_PROMPT, input_variables, partial_variables)
         input_data = { "text": text, "target_language": target_language }
         run_id, result = invoke_prompt(prompt_template, pydantic_parser, input_data)
-
+        print(result)
         translated_text_list: list[str] = result.translated_text
         try:
             # in case llm returned a stringified array in the first element of array

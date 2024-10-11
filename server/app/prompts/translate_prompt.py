@@ -4,7 +4,9 @@ TRANSLATE_PROMPT ="""
         
         You are given a text excerpt from a English language book. 
         The text is in a form of array of sentences.
-        Read below given text thoroughly and translate it to {target_language} language. Try to make sure the translated text is at the same index in your response as the original text.\n
+        Read below given text thoroughly and translate it to {target_language} language. 
+        Try to make sure the translated text is at the same index in your response as the original text.
+        Note: Convert it into the target language, don't respond in English.\n
         Text :: {text} \n
         
         """
