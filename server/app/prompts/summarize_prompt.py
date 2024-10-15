@@ -5,9 +5,12 @@ SUMMARIZE_PROMPT ="""
         
         User instructions:
         Read below given text thoroughly and do the follow tasks
-        1. Summarize it in not more than 50 words.
-        2. Provide top 3 cultural, historical, or geographical references Please include information about the country, people, traditions, and any relevant context from history or culture that could help understand this part better.
-        
+        1. Summarize it in not more than 150 words.
+        2. Provide top 3 cultural, historical, or geographical references present in the text and why they are important in the context of the text.
+           Also explain those cultural references like you would to a fresh or non-native reader.
+           Please include any additional information about the country, people, traditions, and any relevant context from history or culture that could 
+           help understand the text better.
+                   
         Text to summarize:: {text}
         """
 
