@@ -9,6 +9,7 @@ from app.services.summary_generator_service import SummaryGeneratorService
 from app.services.quiz_generator_service import QuizGeneratorService
 from app.services.query_responder_service import QueryResponderService
 from app.utils.response_builder import ResponseBuilder
+from sse_starlette import EventSourceResponse
 import uvicorn
 
 # as supported by llama3.1
@@ -63,7 +64,7 @@ async def generate_quiz(req: GenerateQuizDto):
         raise HTTPException(status_code=422, detail="AI could not respond to your request.")
 
 @app.post("/comprehend/ask_question")
-async def ask_question(req: AnswerQueryDto):
+def ask_question(req: AnswerQueryDto):
     if not req.text or not req.query:
         raise HTTPException(status_code=400, detail="Text and query are required")
     try:
@@ -72,6 +73,38 @@ async def ask_question(req: AnswerQueryDto):
     except Exception as ex:
         print("Exception: ", ex)
         raise HTTPException(status_code=422, detail="AI could not respond to your request.")
+    
+@app.post("/comprehend/build_summary_stream")
+def build_summary_stream(req: SummarizeTextDto):
+    if not req.text:
+        raise HTTPException(status_code=400, detail="Text is required")
+    def event_generator():
+        try:
+            # Call the function that generates your answer, yielding results as they are produced
+            for answer_chunk in summary_service.generate_summary_stream(req.text):
+                yield answer_chunk # SSE format
+        except Exception as ex:
+            print("Exception: ", ex)
+            yield "data: AI could not respond to your request.\n\n"
+
+    return EventSourceResponse(event_generator())
+
+@app.post("/comprehend/ask_question_stream")
+def ask_question_stream(req: AnswerQueryDto):
+    if not req.text or not req.query:
+        raise HTTPException(status_code=400, detail="Text and query are required")
+
+    def event_generator():
+        try:
+            # Call the function that generates your answer, yielding results as they are produced
+            for answer_chunk in query_service.respond_to_query_stream(req.text, req.query):
+                yield answer_chunk # SSE format
+        except Exception as ex:
+            print("Exception: ", ex)
+            yield "data: AI could not respond to your request.\n\n"
+
+    return EventSourceResponse(event_generator())
+
 
 
 if __name__ == "__main__":

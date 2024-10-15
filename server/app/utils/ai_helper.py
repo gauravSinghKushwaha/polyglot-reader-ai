@@ -27,7 +27,7 @@ def create_prompt_template(template: str, input_variables=None, partial_variable
 
 def get_llm():
     return OllamaLLM(
-        model="llama3.2",
+        model="llama3.1",
         temperature=0,
         format="json",
     )
@@ -40,4 +40,14 @@ def invoke_prompt(prompt: PromptTemplate, pydantic_parser: PydanticOutputParser,
     chain = prompt | model | pydantic_parser
     result = chain.invoke(input_data, config={"run_id": run_id})
     return run_id, result
+
+def stream_answer(prompt: PromptTemplate, pydantic_parser: PydanticOutputParser, input_data: dict):
+    model = get_llm()
+    run_id = uuid.uuid4()
+    chain = prompt | model | pydantic_parser
+
+    # This is a placeholder for your actual streaming mechanism
+    for chunk in chain.stream(input_data, config={"run_id": run_id}):
+        print(run_id)
+        yield chunk  # Yield each chunk as it's produced
 
