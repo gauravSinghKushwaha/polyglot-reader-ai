@@ -15,3 +15,5 @@ VOCAB_PROMPT ="""
         
         Text to summarize:: {text}
         """
+
+# Use only < p >, < h1 >, < ul >, < li >, < a > tags while formatting using HTML tags appropriately.
