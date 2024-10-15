@@ -1,5 +1,6 @@
 from langchain_core.output_parsers import PydanticOutputParser
 
+from app.models.ai.summary_answer import SummaryAnswerModel
 from app.models.ai.summary import SummaryModel
 from app.prompts.summarize_prompt import SUMMARIZE_PROMPT
 from app.utils.ai_helper import invoke_prompt, create_prompt_template, stream_answer

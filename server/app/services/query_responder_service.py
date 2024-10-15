@@ -22,6 +22,5 @@ class QueryResponderService:
         partial_variables = { "format_instructions": pydantic_parser.get_format_instructions()}
         prompt_template = create_prompt_template(QUERY_RESPONDER_PROMPT, input_variables, partial_variables)
         input_data = { "text": text, "query": query }
-        print("hello")
         result = stream_answer(prompt_template, pydantic_parser, input_data)
         return result

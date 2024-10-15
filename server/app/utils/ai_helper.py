@@ -45,9 +45,8 @@ def stream_answer(prompt: PromptTemplate, pydantic_parser: PydanticOutputParser,
     model = get_llm()
     run_id = uuid.uuid4()
     chain = prompt | model | pydantic_parser
-
-    # This is a placeholder for your actual streaming mechanism
+    print("hello")
     for chunk in chain.stream(input_data, config={"run_id": run_id}):
-        print(run_id)
+        print(chunk)
         yield chunk  # Yield each chunk as it's produced
 

@@ -1,16 +1,16 @@
+import uvicorn
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from app.models.server.generate_quiz_request_dto import GenerateQuizDto
+from sse_starlette import EventSourceResponse
+
 from app.models.server.query_request_dto import AnswerQueryDto
 from app.models.server.summarize_request_dto import SummarizeTextDto
 from app.models.server.translate_request_dto import TranslateTextDto
+from app.models.server.vocab_request_dto import VocabTextDto
 from app.services.language_translation_service import LanguageTranslationService
-from app.services.summary_generator_service import SummaryGeneratorService
-from app.services.quiz_generator_service import QuizGeneratorService
 from app.services.query_responder_service import QueryResponderService
-from app.utils.response_builder import ResponseBuilder
-import uvicorn
-from fastapi.responses import StreamingResponse
+from app.services.summary_generator_service import SummaryGeneratorService
+from app.services.vocab_generator_service import VocabGeneratorService
 
 # as supported by llama3.1
 SUPPORTED_LANGUAGES = ["English", "German", "French", "Italian", "Portuguese", "Hindi", "Spanish", "Thai"]
@@ -27,7 +27,7 @@ app.add_middleware(
 # Initialize services
 translation_service = LanguageTranslationService()
 summary_service = SummaryGeneratorService()
-quiz_service = QuizGeneratorService()
+vocab_service = VocabGeneratorService()
 query_service = QueryResponderService()
 
 # @app.post("/translate")
@@ -74,8 +74,8 @@ query_service = QueryResponderService()
 #         print("Exception: ", ex)
 #         raise HTTPException(status_code=422, detail="AI could not respond to your request.")
 
-@app.post("/translate_stream")
-async def translate_text_stream(req: TranslateTextDto):
+@app.post("/translate")
+def translate_text_stream(req: TranslateTextDto):
     if not req.text or not req.target_language:
         raise HTTPException(status_code=400, detail="Text and target language are required")
 
@@ -88,10 +88,10 @@ async def translate_text_stream(req: TranslateTextDto):
             print("Exception: ", ex)
             yield "data: AI could not respond to your request.\n\n"
 
-    return StreamingResponse(event_generator())
+    return EventSourceResponse(event_generator(), media_type="text/event-stream")
 
 
-@app.post("/comprehend/build_summary_stream")
+@app.post("/summary")
 def build_summary_stream(req: SummarizeTextDto):
     if not req.text:
         raise HTTPException(status_code=400, detail="Text is required")
@@ -104,9 +104,24 @@ def build_summary_stream(req: SummarizeTextDto):
             print("Exception: ", ex)
             yield "data: AI could not respond to your request.\n\n"
 
-    return StreamingResponse(event_generator())
+    return EventSourceResponse(event_generator(), media_type="text/event-stream")
 
-@app.post("/comprehend/ask_question_stream")
+@app.post("/vocab")
+def build_vocab_stream(req: VocabTextDto):
+    if not req.text:
+        raise HTTPException(status_code=400, detail="Text is required")
+    def event_generator():
+        try:
+            # Call the function that generates your answer, yielding results as they are produced
+            for answer_chunk in vocab_service.generate_vocab_stream(req.text):
+                yield answer_chunk # SSE format
+        except Exception as ex:
+            print("Exception: ", ex)
+            yield "data: AI could not respond to your request.\n\n"
+
+    return EventSourceResponse(event_generator(), media_type="text/event-stream")
+
+@app.post("/ask")
 def ask_question_stream(req: AnswerQueryDto):
     if not req.text or not req.query:
         raise HTTPException(status_code=400, detail="Text and query are required")
@@ -120,7 +135,7 @@ def ask_question_stream(req: AnswerQueryDto):
             print("Exception: ", ex)
             yield "data: AI could not respond to your request.\n\n"
 
-    return StreamingResponse(event_generator())
+    return EventSourceResponse(event_generator(), media_type="text/event-stream")
 
 
 

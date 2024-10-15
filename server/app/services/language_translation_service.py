@@ -1,5 +1,6 @@
 from langchain_core.output_parsers import PydanticOutputParser
 import ast
+
 from app.utils.ai_helper import create_prompt_template, invoke_prompt, stream_answer
 from app.models.ai.translation import TranslationModel
 from app.prompts.translate_prompt import TRANSLATE_PROMPT
@@ -33,10 +34,9 @@ class LanguageTranslationService:
             return translated_text_list
 
 
-    def translate_stream(self, text: list[str], target_language: str) -> list[str]:
+    def translate_stream(self, text: str, target_language: str) -> str:
 
-        complete_text = '\n'.join(text)
-        if len(complete_text.strip()) == 0:
+        if len(text.strip()) == 0:
             return text
 
         input_variables = ["text", "target_language"]
@@ -45,18 +45,6 @@ class LanguageTranslationService:
         prompt_template = create_prompt_template(TRANSLATE_PROMPT, input_variables, partial_variables)
         input_data = { "text": text, "target_language": target_language }
         result = stream_answer(prompt_template, pydantic_parser, input_data)
-        print(result)
-        translated_text_list: list[str] = result.translated_text
-        try:
-            # in case llm returned a stringified array in the first element of array
-            first_element = translated_text_list[0]
-            str_array = ast.literal_eval(first_element)
-
-            if isinstance(str_array, list):
-                return str_array
-
-            return translated_text_list
-        except Exception as e:
-            return translated_text_list
+        return result
 
 
