@@ -5,7 +5,12 @@ QUERY_RESPONDER_PROMPT ="""
         
         User instructions:
         Read below text thoroughly.\n
-        text :: {text} \n
+        
+        Text :: {text} \n
+        
         Answer the query given below based on text given above. \n
-        question :: {query} \n
+        Please include information about the country, people, traditions, and any relevant context from history or culture that could help answer the question better.
+        
+        Question :: {query} \n
+        
         """

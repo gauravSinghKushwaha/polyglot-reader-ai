@@ -7,7 +7,7 @@ SUMMARIZE_PROMPT ="""
         Read below given text thoroughly and do the follow tasks
         1. Summarize it in not more than 50 words.
         2. Find top 3 relevant and important words and their meaning.
-        3. Any special cultural, historical or language specific inferences, that will help the reader give more context of the text as a first time reader. 
+        3. Provide top 3 cultural, historical, or geographical references Please include information about the country, people, traditions, and any relevant context from history or culture that could help understand this part better.
         
         Text to summarize:: {text}
         """
