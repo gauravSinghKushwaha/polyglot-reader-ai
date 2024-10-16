@@ -19,11 +19,11 @@ const disableScrollPlugin = () => {
     return { renderViewer };
 };
 
-export const PDFViewer: React.FC<{ book: IBook }> = ({ book }) => {
+export const PDFViewer: React.FC = () => {
     const [menuVisible, setMenuVisible] = useState(false);
     const [menuPosition, setMenuPosition] = useState({ top: 0, left: 0 });
     const [selectedText, setSelectedText] = useState("");
-    const { setCurrentPage, setPageContent } = usePolygotReader();
+    const { setCurrentPage, setPageContent, selectedBook, currentPage } = usePolygotReader();
 
     const handleTextSelect = (event: MouseEvent, text: string, rect: DOMRect) => {
         setSelectedText(text);
@@ -34,37 +34,75 @@ export const PDFViewer: React.FC<{ book: IBook }> = ({ book }) => {
     };
 
     const disableScrollPluginInstance = disableScrollPlugin();
-    const defaultLayoutPluginInstance = defaultLayoutPlugin();
-    defaultLayoutPluginInstance.toolbarPluginInstance.scrollModePluginInstance.switchScrollMode(ScrollMode.Page);
+    const defaultLayoutPluginInstance = defaultLayoutPlugin({
+        sidebarTabs: () => []
+    });
+
+    useEffect(() => {
+        function onArrowPress(event: any) {
+            if (event.key === 'ArrowLeft') {
+                defaultLayoutPluginInstance.toolbarPluginInstance.pageNavigationPluginInstance.jumpToPreviousPage()
+            } else if (event.key === 'ArrowRight') {
+                defaultLayoutPluginInstance.toolbarPluginInstance.pageNavigationPluginInstance.jumpToNextPage()
+            }
+        }
+        document.addEventListener('keydown', onArrowPress);
+
+        return () => {
+            document.removeEventListener('keydown', onArrowPress);
+        }
+    }, [])
+
+    if (!selectedBook?.link) {
+        return null;
+    }
 
     return (
-        <div className="pdf-viewer">
-            <Viewer
-                // initialPage={1}
-                defaultScale={SpecialZoomLevel.PageWidth}
-                viewMode={ViewMode.SinglePage}
-                fileUrl={book.link}
-                plugins={[disableScrollPluginInstance, defaultLayoutPluginInstance]}
-                renderPage={(renderPageProps) => (
-                    <CustomPageLayer renderPageProps={renderPageProps} onTextSelect={handleTextSelect} />
-                )}
-                onPageChange={(e: PageChangeEvent) => {
-                    setPageContent(null);
-                    setCurrentPage(e.currentPage + 1);
-                    e.doc.getPage(e.currentPage + 1).then((page) => {
-                        page.getTextContent().then(({items}) => {
-                            setPageContent(items);
+        <>
+            <div className="pdf-viewer">
+                <Viewer
+                    // initialPage={1}
+                    defaultScale={SpecialZoomLevel.PageWidth}
+                    viewMode={ViewMode.SinglePage}
+                    fileUrl={selectedBook?.link}
+                    scrollMode={ScrollMode.Page}
+                    plugins={[
+                        disableScrollPluginInstance,
+                        defaultLayoutPluginInstance
+                    ]}
+                    renderPage={(renderPageProps) => (
+                        <CustomPageLayer renderPageProps={renderPageProps} onTextSelect={handleTextSelect} />
+                    )}
+                    onPageChange={(e: PageChangeEvent) => {
+                        setPageContent(null);
+                        setCurrentPage(e.currentPage + 1);
+                        e.doc.getPage(e.currentPage + 1).then((page) => {
+                            page.getTextContent().then(({ items }) => {
+                                setPageContent(items);
+                            });
                         });
-                    });
-                }}
-            />
+                    }}
+                    onDocumentLoad={(e) => {
+                    }}
+                />
+            </div>
             {menuVisible && (
                 <ContextMenu
                     selectedText={selectedText}
                     menuPosition={menuPosition}
-                    onClose={() => setMenuVisible(false)}
+                    onClose={() => {
+                        window.getSelection()?.removeAllRanges();
+                        setMenuVisible(false);
+                    }}
                 />
             )}
-        </div>
+            <div className="page-button">
+                <a onClick={() => defaultLayoutPluginInstance.toolbarPluginInstance.pageNavigationPluginInstance.jumpToPreviousPage()}><i className="bi bi-arrow-left-circle"></i></a>
+                <div>{currentPage} of {selectedBook?.totalPages} pages</div>
+                <a onClick={() => {
+                    defaultLayoutPluginInstance.toolbarPluginInstance.pageNavigationPluginInstance.jumpToNextPage()
+                }}><i className="bi bi-arrow-right-circle"></i></a>
+            </div>
+        </>
     );
 };

@@ -4,7 +4,8 @@ import { Card, Button, ListGroup, Collapse, Alert, Dropdown, DropdownButton, Spi
 import { SUPPORTED_LANGUAGES } from "../constants";
 
 export const RightSection = ({ onBack, book }: { onBack: Function, book: IBook }) => {
-    const { pageSummary, selectedLang, setSelectedLang, toggleChat } = usePolygotReader();
+    const { selectedLang, setSelectedLang, toggleChat } = usePolygotReader();
+    const pageSummary: any = null;
     const [openSummary, setOpenSummary] = useState(true);
     const [openInferences, setOpenInferences] = useState(true);
     const [openTopWords, setOpenTopWords] = useState(true);

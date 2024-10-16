@@ -21,7 +21,7 @@ const BookLauncher: React.FC<BookLauncherProps> = ({ bookId, onBack }) => {
     return (
         <>
             <div className='book-launcher-component'>
-                <PDFViewer book={book} />
+                <PDFViewer />
                 <RightSection book={book} onBack={onBack} />
             </div>
             <ChatBot />

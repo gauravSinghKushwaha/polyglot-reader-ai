@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { IBook, usePolygotReader } from '../state';
 import BookLauncher from '../BookLauncher';
 import './styles.scss';
+import { BookReader } from '../BookReader';
 
 const BookList: React.FC = () => {
   const { books, selectedBook, setSelectedBook } = usePolygotReader();
@@ -34,7 +35,8 @@ const BookList: React.FC = () => {
           </div>
         </div>
       }
-      {selectedBook?.id && <BookLauncher key={selectedBook.id} bookId={selectedBook.id} onBack={onBack} />}
+      {selectedBook?.id && <BookReader />}
+      {/* {selectedBook?.id && <BookLauncher key={selectedBook.id} bookId={selectedBook.id} onBack={onBack} />} */}
     </>
   );
 };

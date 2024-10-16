@@ -21,13 +21,16 @@ export const useEventStream = () => {
                 while (true) {
                     const { done, value } = await reader.read();
                     if (done) {
-                        break; // No more data
+                        return {
+                            response,
+                            callApi,
+                            isLoading: false
+                        }
                     }
                     const chunk = decoder.decode(value, { stream: true });
-                    if(chunk.indexOf("Answer") > -1) {
-                        setResponse(chunk.replace("data: Answer: ", ""));
+                    if (chunk.indexOf("data: ") > -1) {
+                        setResponse(chunk.replace("data:", ""));
                     }
-                    console.log(chunk.replace("data: Answer: ", ""));
                 }
             }
         } catch (e) {
@@ -37,6 +40,7 @@ export const useEventStream = () => {
 
     return {
         response,
-        callApi
+        callApi,
+        isLoading: true
     }
 }

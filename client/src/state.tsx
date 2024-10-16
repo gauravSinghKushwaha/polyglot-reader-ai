@@ -2,7 +2,10 @@
 import React, { createContext, useContext, useState, ReactNode, useEffect, useMemo } from 'react';
 import { books, SUPPORTED_LANGUAGES } from './constants'; // Adjust the path as necessary
 import * as pdfjs from 'pdfjs-dist';
-import { useEventStream } from './useEventStream';
+import { useEventStream } from './hooks/useEventStream';
+import { useSummary } from './hooks/useSummary';
+import { useVocab } from './hooks/useVocab';
+import { useTranslation } from './hooks/useTranslation';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `pdfjs-dist/build/pdf.worker.js`;
 const cacheTranslations: any = {};
@@ -38,7 +41,9 @@ interface PolygotReaderContextType {
   pageContent: any;
   setPageContent: React.Dispatch<React.SetStateAction<any>>;
   translationsToDispatch: any;
-  pageSummary: any;
+  pagesSummary: any;
+  pagesVocab: any;
+  pagesTranslation: any;
   selectedBook: IBook | null;
   setSelectedBook: React.Dispatch<React.SetStateAction<IBook | null>>;
   toggleChat: Function;
@@ -55,69 +60,14 @@ export const PolygotReaderProvider: React.FC<{ children: ReactNode }> = ({ child
   const [selectedBook, setSelectedBook] = useState<IBook | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [pageContent, setPageContent] = useState<any>("");
-  const [pagesSummary, setPagesSummary] = useState<any>({});
   const [isChatbotOpen, setIsChatbotOpen] = useState(false);
-  const {response: summaryResponse, callApi: callSummaryApi} = useEventStream();
+  const { pagesSummary } = useSummary({ selectedBook, currentPage, pageContent });
+  const { pagesVocab } = useVocab({ selectedBook, currentPage, pageContent });
+  const { pagesTranslation } = useTranslation({ selectedBook, currentPage, pageContent, selectedLang });
 
   const toggleChat = () => {
     setIsChatbotOpen(!isChatbotOpen);
   };
-
-  const pageSummary = useMemo(() => {
-    if (selectedBook) {
-      if (!pagesSummary[selectedBook.id]) {
-        pagesSummary[selectedBook.id] = {};
-      }
-      if (!pagesSummary[selectedBook.id][currentPage]) {
-        pagesSummary[selectedBook.id][currentPage] = { isLoading: true };
-      }
-      return pagesSummary[selectedBook.id][currentPage];
-    }
-  }, [pageContent, pagesSummary])
-
-  const setSummary = (data: any) => {
-    if (selectedBook) {
-      if (!pagesSummary[selectedBook.id]) {
-        pagesSummary[selectedBook.id] = {};
-      }
-      pagesSummary[selectedBook.id][currentPage] = data;
-      setPagesSummary({ ...pagesSummary });
-    }
-  }
-
-  useEffect(() => {
-    setSummary(summaryResponse);
-  }, [summaryResponse])
-
-  useEffect(() => {
-    const controller = new AbortController();
-    const { signal } = controller;
-    if (pageContent) {
-      getPageSummary(signal);
-    }
-    return () => controller.abort();
-  }, [pageContent]);
-
-  const getPageSummary = (signal: AbortSignal) => {
-    if (!pageSummary?.summary) {
-      setSummary({ isLoading: true });
-      const text = pageContent?.map((item: any) => item.str).join(" ");
-      if (text.length) {
-        const payload = {
-          text: text, query: `
-          Provide summary of text,
-          Provide translation of given text in ${selectedLang} language,
-          if this text has any cultural inference provide me list of that
-          Provide info important word like meaning, synonyms, antonyms, figure of speech if available and translation in ${selectedLang} language, 
-          Provide response in html format to show in a popup use tag h1, p, ul, li only and links in a[target = _blank] tag.
-          `
-      }
-        callSummaryApi("comprehend/ask_question_stream", payload);
-      } else {
-        setSummary({ isLoading: false });
-      }
-    }
-  }
 
   const askQuestion = async (string: string, query: string) => {
     try {
@@ -206,7 +156,7 @@ export const PolygotReaderProvider: React.FC<{ children: ReactNode }> = ({ child
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          text: [string],
+          text: string,
           target_language: selectedLang
         })
       });
@@ -278,7 +228,7 @@ export const PolygotReaderProvider: React.FC<{ children: ReactNode }> = ({ child
   }, []);
 
   return (
-    <PolygotReaderContext.Provider value={{ books: bookList, setBooks: setBookList, getBookById, setSelectedLang, selectedLang, getTranslations, getSummary, askQuestion, showPagePreview, togglePagePreview, translationsToDispatch, currentPage, setCurrentPage, pageContent, setPageContent, pageSummary, selectedBook, setSelectedBook, toggleChat, isChatbotOpen }}>
+    <PolygotReaderContext.Provider value={{ books: bookList, setBooks: setBookList, getBookById, setSelectedLang, selectedLang, getTranslations, getSummary, askQuestion, showPagePreview, togglePagePreview, translationsToDispatch, currentPage, setCurrentPage, pageContent, setPageContent, pagesSummary, selectedBook, setSelectedBook, toggleChat, isChatbotOpen, pagesVocab, pagesTranslation }}>
       {children}
     </PolygotReaderContext.Provider>
   );

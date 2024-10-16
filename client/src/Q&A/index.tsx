@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import './styles.scss';
 import { usePolygotReader } from "../state";
 import { SUPPORTED_LANGUAGES } from "../constants";
-import { useEventStream } from "../useEventStream";
+import { useEventStream } from "../hooks/useEventStream";
 
 
 export const QuesAndAns: React.FC = () => {
@@ -67,13 +67,13 @@ export const QuesAndAns: React.FC = () => {
 
         switch(action) {
             case 'translate':
-                await callApi("comprehend/ask_question_stream", {text: query == "page" ? text : query, query: `translate text to ${selectedLang}`});
+                await callApi("ask", {text: query == "page" ? text : query, query: `translate text to ${selectedLang}`});
                 return;
             case 'build_summary':
-                await callApi("comprehend/ask_question_stream", {text: query == "page" ? text : query, query: `summarize text`});
+                await callApi("ask", {text: query == "page" ? text : query, query: `summarize text`});
                 return;
             case 'ask_question':
-                await callApi("comprehend/ask_question_stream", {query, text});
+                await callApi("ask", {query, text});
                 return;
         }
     }

@@ -1,11 +1,25 @@
 .pdf-viewer {
     position: relative;
-    width: 60%;
-    height: 100vh;
-    user-select: none;
+    // width: 100%;
+    // height: 100vh;
+    height: calc(100vh - 128px - 8px);
 
-    .rpv-core__text-layer {
-        user-select: text;
+    .rpv-core__page-layer {
+        &::after {
+            box-shadow: none;
+        }
+    }
+
+    .rpv-default-layout__body {
+        padding-top: 0;
+    }
+
+    .rpv-default-layout__toolbar {
+        display: none;
+    }
+
+    .rpv-core__text-layer, .rpv-core__text-layer-text {
+        user-select: text !important;
     }
 
     .rpv-default-layout__container {
@@ -36,7 +50,7 @@
 }
 
 .context-menu-overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -54,8 +68,14 @@
     padding: 10px;
     user-select: none;
     border-radius: 10px;
-    transform: translateX(-50%);
+    // transform: translateX(-50%);
     transition: all 0.5s;
+
+
+    .bi-info-circle-fill {
+        user-select: none;
+        cursor: pointer;
+    }
 
     .ans {
         h1, h2, h3 {
@@ -82,15 +102,15 @@
 
     // Arrow pointer on top
     &::before {
-        content: '';
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        top: -10px;
-        left: 50%;
-        border-width: 10px;
-        background-color: #9fffd6;
-        transform: rotateZ(45deg);
+        // content: '';
+        // position: absolute;
+        // width: 20px;
+        // height: 20px;
+        // top: -10px;
+        // left: 50%;
+        // border-width: 10px;
+        // background-color: #9fffd6;
+        // transform: rotateZ(45deg);
     }
 
     // Styling the content inside the menu
@@ -124,6 +144,30 @@
             //         background-color: #5a6268;
             //     }
             // }
+        }
+    }
+}
+
+.page-button {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 16px;
+    box-sizing: border-box;
+    // box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 64px;
+
+    i {
+        font-size: 28px;
+        color: #7a10c5;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
         }
     }
 }
