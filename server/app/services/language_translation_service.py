@@ -7,7 +7,7 @@ from app.prompts.translate_prompt import TRANSLATE_PROMPT
 
 class LanguageTranslationService:
 
-    def translate(self, text: list[str], target_language: str) -> list[str]:
+    def translate(self, text: list[str], target_language: str) -> str:
 
         complete_text = '\n'.join(text)
         if len(complete_text.strip()) == 0:
@@ -44,7 +44,7 @@ class LanguageTranslationService:
         partial_variables = { "format_instructions": pydantic_parser.get_format_instructions()}
         prompt_template = create_prompt_template(TRANSLATE_PROMPT, input_variables, partial_variables)
         input_data = { "text": text, "target_language": target_language }
-        result = stream_answer(prompt_template, pydantic_parser, input_data)
+        result: TranslationModel = stream_answer(prompt_template, pydantic_parser, input_data)
         return result
 
 

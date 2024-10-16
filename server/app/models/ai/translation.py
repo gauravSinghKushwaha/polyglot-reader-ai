@@ -3,7 +3,7 @@ from pydantic import BaseModel, Field
 class TranslationModel(BaseModel):
     """A model to represent a text's translation to another language."""
 
-    translated_text: list[str] = Field(
+    translated_text: str = Field(
         title="translated_text",
         description="The translated text of the given input text",
     )

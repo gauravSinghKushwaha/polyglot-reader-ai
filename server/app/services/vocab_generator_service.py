@@ -8,7 +8,7 @@ from app.utils.ai_helper import invoke_prompt, create_prompt_template, stream_an
 
 class VocabGeneratorService:
 
-    def generate_vocab(self, text: str) -> SummaryModel:
+    def generate_vocab(self, text: str) -> VocabModel:
         input_variables = ["text"]
         pydantic_parser = PydanticOutputParser(pydantic_object=VocabModel)
         partial_variables = { "format_instructions": pydantic_parser.get_format_instructions()}
@@ -17,7 +17,7 @@ class VocabGeneratorService:
         run_id, result = invoke_prompt(prompt_template, pydantic_parser, input_data)
         return result
     
-    def generate_vocab_stream(self, text: str) -> SummaryModel:
+    def generate_vocab_stream(self, text: str) -> VocabModel:
         input_variables = ["text", "num_words"]
         words = text.split()
         num_words = 5
