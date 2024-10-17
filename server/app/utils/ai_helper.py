@@ -27,7 +27,8 @@ def create_prompt_template(template: str, input_variables=None, partial_variable
 
 def get_llm():
     return OllamaLLM(
-        model="llama3.1",
+        base_url= "https://pfai.splashmath.com",
+        model="llama3.2",
         temperature=0,
         format="json",
     )
@@ -45,6 +46,8 @@ def stream_answer(prompt: PromptTemplate, pydantic_parser: PydanticOutputParser,
     model = get_llm()
     run_id = uuid.uuid4()
     chain = prompt | model | pydantic_parser
+    print(prompt.format(**input_data))
+
     for chunk in chain.stream(input_data, config={"run_id": run_id}):
         yield chunk  # Yield each chunk as it's produced
 
