@@ -1,7 +1,7 @@
 ## Running the Application
 
 ```aiignore
-cd in to the python project root (server)
+cd in to the python project root (Example: /Users/sarthakbaweja/projects/polyglot-reader-ai/server)
 ```
 
 Install Dependencies
