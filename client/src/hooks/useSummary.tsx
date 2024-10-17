@@ -3,22 +3,69 @@ import { usePolygotReader } from "../state";
 import { useEventStream } from "./useEventStream";
 
 
-const cachePagesSummary: any = {}
+const cachePagesSummary: any = JSON.parse(sessionStorage.getItem("cachePagesSummary") || "{}");
 
 export const useSummary = ({ selectedBook, currentPage, pageContent }: any) => {
     const bookId = selectedBook?.id;
     const [pagesSummary, setPagesSummary] = useState(cachePagesSummary);
-    
+
+    const extractSummaryAndCulturalInfo = (data: string) => {
+        let summary: any = {}; // Object to store the latest version of each word
+        const lines = data.split('\r\n\r\n'); // Split the data into chunks based on double newlines
+
+        lines.forEach(line => {
+            if (line.startsWith('data: ')) {
+                try {
+                    summary = JSON.parse(line.replace('data: ', ''))
+                } catch (e) {
+                    console.error("Failed to parse line:", line, e);
+                }
+            }
+        });
+
+        // Convert the topWords object back into an array of words
+        return summary;
+    }
+
+    const setSummary = (bookId: number, currentPage: number, data: any) => {
+        if (bookId) {
+            if (!cachePagesSummary[bookId]) {
+                cachePagesSummary[bookId] = {};
+            }
+            cachePagesSummary[bookId][currentPage] = { ...(cachePagesSummary[bookId][currentPage] || {}), ...data };
+            setPagesSummary({ ...cachePagesSummary });
+            // sessionStorage.setItem("cachePagesSummary", JSON.stringify(cachePagesSummary));
+        }
+    }
+
+    const getSummary = (bookId: number, pageNumber: number) => {
+        if (bookId) {
+            if (!pagesSummary[bookId]) {
+                pagesSummary[bookId] = {};
+            }
+
+            if (!pagesSummary[bookId][pageNumber]) {
+                pagesSummary[bookId][pageNumber] = {};
+            }
+            return pagesSummary[bookId][pageNumber];
+        }
+        return {};
+    }
+
     const callApi = async (bookId: number, currentPage: number, pageContent: any) => {
         try {
             const text = pageContent?.map((item: any) => item.str).join(" ");
+            if (!text?.length) {
+                setSummary(bookId, currentPage, { error: "Text Content not found!" });
+                return;
+            }
             const res = await fetch(`http://localhost:8000/summary`, {
                 method: 'post',
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({text})
+                body: JSON.stringify({ text })
             });
 
             if (res.body) {
@@ -28,14 +75,15 @@ export const useSummary = ({ selectedBook, currentPage, pageContent }: any) => {
                 while (true) {
                     const { done, value } = await reader.read();
                     if (done) {
-                       break;
+                        break;
                     }
                     const chunk = decoder.decode(value, { stream: true });
                     if (chunk.indexOf("data: ") > -1) {
                         if (!cachePagesSummary[bookId]) {
                             cachePagesSummary[bookId] = {};
                         }
-                        const data = extractSummaryAndCulturalInfo(chunk.replace("data:", ""))
+                        const data = extractSummaryAndCulturalInfo(chunk)
+                        console.log(chunk, data);
                         setSummary(bookId, currentPage, data);
                     }
                 }
@@ -45,77 +93,21 @@ export const useSummary = ({ selectedBook, currentPage, pageContent }: any) => {
         }
     }
 
-    const extractSummaryAndCulturalInfo = (text: string) => {
-        // Use regular expressions to extract the summary and cultural information sections
-        const summaryMatch = text.match(/Summary:\s*(.*?)\s*,\s*Cultural information:/);
-        const culturalInfoMatch = text.match(/\[CulturalInferences\((.*)\)\]/);
-
-        // Extract summary
-        const summary = summaryMatch ? summaryMatch[1].trim() : '';
-
-        // Extract cultural information and split into individual CulturalInferences
-        const culturalInfoArray = culturalInfoMatch ? culturalInfoMatch[1].split('CulturalInferences').map(info => {
-            const culturalInferenceMatch = info.match(/cultural_inference='(.*?)'/);
-            const relevanceMatch = info.match(/relevance_to_text=['"](.*?)['"]/);
-            const additionalInfoMatch = info.match(/additional_info=['"](.*?)['"]/);
-
-            return {
-                cultural_inference: culturalInferenceMatch ? culturalInferenceMatch[1] : '',
-                relevance_to_text: relevanceMatch ? relevanceMatch[1] : '',
-                additional_info: additionalInfoMatch ? additionalInfoMatch[1] : ''
-            };
-        }).filter(info => info.cultural_inference) : [];
-
-        // Return the object with summary and cultural information
-        return {
-            summary: summary,
-            culturalInformation: culturalInfoArray
-        };
-    }
-
-    useEffect(() => {
-        const controller = new AbortController();
-        const { signal } = controller;
-        if (bookId && pageContent) {
-            getPageSummary(bookId, currentPage, pageContent);
-        }
-        return () => controller?.abort();
-    }, [bookId, currentPage, pageContent]);
-
-    const setSummary = (bookId: number, currentPage: number, data: any) => {
-        if (bookId) {
-            if (!cachePagesSummary[bookId]) {
-                cachePagesSummary[bookId] = {};
-            }
-            cachePagesSummary[bookId][currentPage] = {...(cachePagesSummary[bookId][currentPage] || {}), ...data};
-            setPagesSummary({...cachePagesSummary});
-            console.log(cachePagesSummary);
-        }
-    }
-
     const getPageSummary = async (bookId: number, currentPage: number, pageContent: any) => {
         const pageSummary = getSummary(bookId, currentPage);
         if (!(pageSummary?.summary || pageSummary?.isLoading)) {
             setSummary(bookId, currentPage, { isLoading: true });
-            
+
             await callApi(bookId, currentPage, pageContent);
             setSummary(bookId, currentPage, { isLoading: false });
         }
     }
 
-    const getSummary = (bookId: number, pageNumber: number) => {
-        if(bookId) {
-            if(!pagesSummary[bookId]) {
-                pagesSummary[bookId] = {};
-            }
-
-            if(!pagesSummary[bookId][pageNumber]) {
-                pagesSummary[bookId][pageNumber] = {};
-            }
-            return pagesSummary[bookId][pageNumber];
+    useEffect(() => {
+        if (bookId && pageContent) {
+            getPageSummary(bookId, currentPage, pageContent);
         }
-        return {};
-    }
+    }, [bookId, currentPage, pageContent]);
 
     return { pagesSummary }
 }

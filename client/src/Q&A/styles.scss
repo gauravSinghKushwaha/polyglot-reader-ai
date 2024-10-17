@@ -4,7 +4,7 @@
     flex-direction: column;
     position: relative;
     min-height: 500px;
-    height: inherit;
+    height: calc(100vh - 56px);
     padding: 16px;
 
     .chat-area {

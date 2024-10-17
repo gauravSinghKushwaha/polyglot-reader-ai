@@ -11,7 +11,7 @@ const ChatBot = () => {
                 <div className="chatbot-window slide-up">
                     <div className="chatbot-header">
                         <h2>Chat Bot</h2>
-                        <button className="close-button" onClick={() => toggleChat()}>
+                        <button className="close-button" onClick={() => toggleChat(false)}>
                             &times;
                         </button>
                     </div>

@@ -4,7 +4,7 @@ import { usePolygotReader } from "../state";
 
 export const Translate = () => {
     const { selectedLang, setSelectedLang, currentPage, selectedBook, pagesTranslation } = usePolygotReader();
-    const [translatedValue, setTranslation] = useState("");
+    const [translatedValue, setTranslation] = useState<any>({});
 
     useEffect(() => {
         if(selectedBook?.id) {
@@ -15,7 +15,8 @@ export const Translate = () => {
     return (
         <div className="page-translate">
             <div className="languages">{SUPPORTED_LANGUAGES.sort().map((item) => <div onClick={() => setSelectedLang(item)} className={selectedLang === item ? "active" : ""}>{item}</div>)}</div>
-            <div>{JSON.stringify(translatedValue)}</div>
+            {translatedValue?.isLoading ? <div className="loader">Loading...</div> : null}
+            <div dangerouslySetInnerHTML={{__html: translatedValue?.translation}}></div>
         </div>
     )
 }

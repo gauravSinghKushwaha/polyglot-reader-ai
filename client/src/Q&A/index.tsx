@@ -7,36 +7,35 @@ import { useEventStream } from "../hooks/useEventStream";
 
 export const QuesAndAns: React.FC = () => {
     const [ques, setQues] = useState<string>('');
-    const [selectionText, setSelectionText] = useState<string>('');
     const [chatList, setChatList] = useState<any>({});
     const [activeQues, setActiveQues] = useState<any>({});
-    const { getTranslations, selectedLang, getSummary, askQuestion, togglePagePreview, showPagePreview, translationsToDispatch, pageContent } = usePolygotReader();
-    const {response, callApi} = useEventStream();
+    const { getTranslations, selectedLang, getSummary, askQuestion, togglePagePreview, showPagePreview, translationsToDispatch, pageContent, selectionText, setSelectionText } = usePolygotReader();
+    const { response, callApi } = useEventStream();
 
-    const handleSelectionChange = () => {
-        const selection = window.getSelection();
-        if (selection) {
-            const selectedText = selection.toString();
-            if (selectedText) {
-                setSelectionText(selectedText);
-            } else {
-                setSelectionText('');
-            }
-        }
-    };
+    // const handleSelectionChange = () => {
+    //     const selection = window.getSelection();
+    //     if (selection) {
+    //         const selectedText = selection.toString();
+    //         if (selectedText) {
+    //             setSelectionText(selectedText);
+    //         } else {
+    //             setSelectionText('');
+    //         }
+    //     }
+    // };
+
+    // useEffect(() => {
+    //     // Listen for the selectionchange event
+    //     document.addEventListener('selectionchange', handleSelectionChange);
+
+    //     // Cleanup the event listener on component unmount
+    //     return () => {
+    //         document.removeEventListener('selectionchange', handleSelectionChange);
+    //     };
+    // }, []);
 
     useEffect(() => {
-        // Listen for the selectionchange event
-        document.addEventListener('selectionchange', handleSelectionChange);
-
-        // Cleanup the event listener on component unmount
-        return () => {
-            document.removeEventListener('selectionchange', handleSelectionChange);
-        };
-    }, []);
-
-    useEffect(() => {
-        if(activeQues.id) {
+        if (activeQues.id) {
             const text = pageContent?.map((item: any) => item.str).join(" ");
             const query = activeQues.query == "page" ? text : activeQues.query
             const strings = (query || "").split(".");
@@ -44,39 +43,45 @@ export const QuesAndAns: React.FC = () => {
             strings.map((item: string, index: number) => {
                 response[index] = translationsToDispatch[activeQues.lang][item]
             })
-            chatList[activeQues.id] = {...chatList[activeQues.id], ans: response.join(".")};
-            setChatList({...chatList});
+            chatList[activeQues.id] = { ...chatList[activeQues.id], ans: response.join(".") };
+            setChatList({ ...chatList });
         }
     }, [translationsToDispatch])
 
     useEffect(() => {
-        if(activeQues.id) {
-            chatList[activeQues.id] = {...chatList[activeQues.id], ans: response};
-            setChatList({...chatList});
+        if (activeQues.id) {
+            chatList[activeQues.id] = { ...chatList[activeQues.id], ans: response };
+            setChatList({ ...chatList });
         }
     }, [response])
 
     const setMessage = async (action: string, query: string) => {
         const id = btoa(Date.now().toString());
-        chatList[id] = {id, action, query, lang: selectedLang};
+        chatList[id] = { id, action, query, lang: selectedLang };
         setActiveQues(chatList[id]);
-        setChatList({...chatList});
+        setChatList({ ...chatList });
         setSelectionText('');
         setQues('');
         const text = pageContent?.map((item: any) => item.str).join(" ");
 
-        switch(action) {
+        switch (action) {
             case 'translate':
-                await callApi("ask", {text: query == "page" ? text : query, query: `translate text to ${selectedLang}`});
+                await callApi("translate", { text: query == "page" ? text : query, target_language: selectedLang });
                 return;
             case 'build_summary':
-                await callApi("ask", {text: query == "page" ? text : query, query: `summarize text`});
+                await callApi("summary", { text: query == "page" ? text : query });
+                return;
+            case 'vocab':
+                await callApi("vocab", { text: query == "page" ? text : query });
                 return;
             case 'ask_question':
-                await callApi("ask", {query, text});
+                await callApi("ask", { query, text });
                 return;
+
         }
     }
+
+    const isWord = selectionText?.split(" ")?.length == 1;
 
     return (
         <div className="ques-and-ans">
@@ -91,7 +96,7 @@ export const QuesAndAns: React.FC = () => {
                                 </div> */}
                             </div>
                             <div className="selected-text left">
-                                <div className="text" dangerouslySetInnerHTML={{__html: item.ans || "Loading..."}} />
+                                <div className="text" dangerouslySetInnerHTML={{ __html: item.ans || "Loading..." }} />
                                 {/* <div className="controls">
                                     <button>{item.action}</button>
                                 </div> */}
@@ -105,22 +110,22 @@ export const QuesAndAns: React.FC = () => {
                             <div className="text">{selectionText}</div>
                             <div className="controls">
                                 <button onClick={() => setMessage('translate', selectionText)}>Translate</button>
-                                <button onClick={() => setMessage('build_summary', selectionText)}>Comprehension</button>
+                                <button onClick={() => setMessage(isWord ? 'vocab' : 'build_summary', selectionText)}>{isWord ? 'Vocab' : 'Comprehension'}</button>
                             </div>
                         </div>
                     )
                 }
             </div>
             <div className="page-ques">
-                <div className="pre-ques">
+                {/* <div className="pre-ques">
                     <button onClick={() => setMessage('translate', "page")}>Translate Page</button>
                     <button onClick={() => setMessage('build_summary', "page")}>Summary of Page</button>
-                </div>
+                </div> */}
                 <form onSubmit={(event) => {
                     event.preventDefault();
                     setMessage('ask_question', ques)
                 }}>
-                    <input value={ques} onChange={(event) => setQues(event.target.value)} type="text" placeholder="You can ask question here ..."/>
+                    <input value={ques} onChange={(event) => setQues(event.target.value)} type="text" placeholder="You can ask question here ..." />
                 </form>
             </div>
         </div>

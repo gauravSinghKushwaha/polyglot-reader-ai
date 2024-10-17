@@ -55,7 +55,7 @@ const ContextMenu: React.FC<ContextMenuProps> = ({ selectedText, menuPosition, o
             <div className="context-menu" ref={menuRef} style={{ top: `${menuPosition.top + 10}px`, left: `${menuPosition.left}px` }}>
                 <div className="context-menu-content">
                     <div className="ans" dangerouslySetInnerHTML={{ __html: response || `Loading details for <b><i>${selectedText}</i></b> ...` }} />
-                    {(ans?.length > 0) && <button onClick={() => toggleChat()}>
+                    {(ans?.length > 0) && <button onClick={() => toggleChat(true)}>
                         Ask more to Assistance
                     </button>}
                 </div>

@@ -22,15 +22,16 @@ const disableScrollPlugin = () => {
 export const PDFViewer: React.FC = () => {
     const [menuVisible, setMenuVisible] = useState(false);
     const [menuPosition, setMenuPosition] = useState({ top: 0, left: 0 });
-    const [selectedText, setSelectedText] = useState("");
-    const { setCurrentPage, setPageContent, selectedBook, currentPage } = usePolygotReader();
+    const { setCurrentPage, setPageContent, selectedBook, currentPage, selectionText, setSelectionText, isChatbotOpen, showPagePreview } = usePolygotReader();
 
     const handleTextSelect = (event: MouseEvent, text: string, rect: DOMRect) => {
-        setSelectedText(text);
-        setMenuPosition({ top: rect.bottom + window.scrollY, left: rect.left + window.scrollX });
-        setTimeout(() => {
-            setMenuVisible(true);
-        }, 0)
+        setSelectionText(text);
+        if(!(showPagePreview && isChatbotOpen)) {
+            setMenuPosition({ top: rect.bottom + window.scrollY, left: rect.left + window.scrollX });
+            setTimeout(() => {
+                setMenuVisible(true);
+            }, 0)
+        }
     };
 
     const disableScrollPluginInstance = disableScrollPlugin();
@@ -88,7 +89,7 @@ export const PDFViewer: React.FC = () => {
             </div>
             {menuVisible && (
                 <ContextMenu
-                    selectedText={selectedText}
+                    selectedText={selectionText}
                     menuPosition={menuPosition}
                     onClose={() => {
                         window.getSelection()?.removeAllRanges();

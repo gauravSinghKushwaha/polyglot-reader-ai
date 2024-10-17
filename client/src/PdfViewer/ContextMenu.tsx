@@ -11,7 +11,7 @@ interface ContextMenuProps {
 const ContextMenu: React.FC<ContextMenuProps> = ({ selectedText, menuPosition, onClose }) => {
     const menuRef = useRef<HTMLDivElement>(null);
     const [ans, setAns] = useState("");
-    const { askQuestion, selectedLang, toggleChat } = usePolygotReader();
+    const { askQuestion, selectedLang, toggleChat, togglePagePreview } = usePolygotReader();
 
     // Close menu when clicked outside
     useEffect(() => {
@@ -41,7 +41,8 @@ const ContextMenu: React.FC<ContextMenuProps> = ({ selectedText, menuPosition, o
                 <div className="context-menu-content">
                     <div onClick={() => {
                         onClose();
-                        toggleChat();
+                        toggleChat(true);
+                        togglePagePreview(true);
                     }}><i className="bi bi-info-circle-fill"></i></div>
                 </div>
             </div>

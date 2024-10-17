@@ -14,14 +14,16 @@ export const PageSummary = () => {
 
     return (
         <div className="page-summary">
-            <div className="summary-container">
+            {pageSummary?.isLoading ? <div className="loader">Loading...</div> : null}
+
+            {(pageSummary?.summary?.length > 0) && <div className="summary-container">
                 <h2>Summary</h2>
                 <p className="summary">{pageSummary?.summary}</p>
-            </div>
+            </div>}
 
-            <div className="cultural-info-container">
+            {(pageSummary?.cultural_inferences?.length > 0) && <div className="cultural-info-container">
                 <h2>Cultural Information</h2>
-                {pageSummary?.culturalInformation?.map((info: any, index: number) => (
+                {pageSummary?.cultural_inferences?.map((info: any, index: number) => (
                     <div key={index} className="cultural-info">
                         <div className="cultural-inference">
                             <strong>Cultural Inference:</strong> {info.cultural_inference}
@@ -34,7 +36,7 @@ export const PageSummary = () => {
                         </div>
                     </div>
                 ))}
-            </div>
+            </div>}
         </div>
     )
 }

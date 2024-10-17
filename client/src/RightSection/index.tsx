@@ -54,7 +54,7 @@ export const RightSection = ({ onBack, book }: { onBack: Function, book: IBook }
                     <div dangerouslySetInnerHTML={{__html: pageSummary || "Loading ..."}}/>
                 )}
             </div>
-            <Button variant="success" onClick={() => toggleChat()}>Ask more question to polygot assistance</Button>
+            <Button variant="success" onClick={() => toggleChat(true)}>Ask more question to polygot assistance</Button>
         </div>
     );
 };

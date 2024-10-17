@@ -27,7 +27,7 @@ const CustomPageLayer: React.FC<CustomPageLayerProps> = ({ renderPageProps, onTe
         return () => {
             document.removeEventListener('mouseup', handleMouseUp);
         };
-    }, []);
+    }, [onTextSelect]);
 
     useEffect(() => {
         if (renderPageProps.textLayerRendered) {

@@ -47,7 +47,9 @@ interface PolygotReaderContextType {
   selectedBook: IBook | null;
   setSelectedBook: React.Dispatch<React.SetStateAction<IBook | null>>;
   toggleChat: Function;
-  isChatbotOpen: boolean
+  isChatbotOpen: boolean;
+  selectionText: string;
+  setSelectionText: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const PolygotReaderContext = createContext<PolygotReaderContextType | undefined>(undefined);
@@ -64,9 +66,10 @@ export const PolygotReaderProvider: React.FC<{ children: ReactNode }> = ({ child
   const { pagesSummary } = useSummary({ selectedBook, currentPage, pageContent });
   const { pagesVocab } = useVocab({ selectedBook, currentPage, pageContent });
   const { pagesTranslation } = useTranslation({ selectedBook, currentPage, pageContent, selectedLang });
+  const [selectionText, setSelectionText] = useState<string>('');
 
-  const toggleChat = () => {
-    setIsChatbotOpen(!isChatbotOpen);
+  const toggleChat = (val: boolean) => {
+    setIsChatbotOpen(val);
   };
 
   const askQuestion = async (string: string, query: string) => {
@@ -228,7 +231,7 @@ export const PolygotReaderProvider: React.FC<{ children: ReactNode }> = ({ child
   }, []);
 
   return (
-    <PolygotReaderContext.Provider value={{ books: bookList, setBooks: setBookList, getBookById, setSelectedLang, selectedLang, getTranslations, getSummary, askQuestion, showPagePreview, togglePagePreview, translationsToDispatch, currentPage, setCurrentPage, pageContent, setPageContent, pagesSummary, selectedBook, setSelectedBook, toggleChat, isChatbotOpen, pagesVocab, pagesTranslation }}>
+    <PolygotReaderContext.Provider value={{ books: bookList, setBooks: setBookList, getBookById, setSelectedLang, selectedLang, getTranslations, getSummary, askQuestion, showPagePreview, togglePagePreview, translationsToDispatch, currentPage, setCurrentPage, pageContent, setPageContent, pagesSummary, selectedBook, setSelectedBook, toggleChat, isChatbotOpen, pagesVocab, pagesTranslation, selectionText, setSelectionText }}>
       {children}
     </PolygotReaderContext.Provider>
   );

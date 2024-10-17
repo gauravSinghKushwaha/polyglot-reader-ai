@@ -133,6 +133,12 @@
             }
         }
 
+        .loader {
+            margin: 10px;
+            font-weight: bold;
+            color: #ae1a1a;
+        }
+
 
         .page-summary,
         .page-socab,
@@ -143,41 +149,50 @@
 
         .word-container {
             margin: 20px 0;
+            border: 1px solid;
+            padding: 16px;
+            border-radius: 16px;
 
             .word {
                 font-weight: bold;
-                font-size: 1.2em;
+                font-size: 16px;
+                text-transform: capitalize;
+                text-decoration: underline;
             }
     
             .meaning,
             .synonym,
             .example {
                 margin-left: 10px;
+                font-size: 14px;
             }
         }
 
 
         .summary-container {
             margin: 20px 0;
+        }
 
-            .cultural-info-container {
-                margin-top: 30px;
-            }
-    
+        .cultural-info-container {
+            margin-top: 30px;
+
             .cultural-info {
                 margin-bottom: 20px;
+                border: 1px solid;
+                padding: 16px;
+                border-radius: 16px;
             }
-    
-            .cultural-inference,
-            .relevance,
-            .additional-info {
-                margin-left: 10px;
-            }
-    
-            .loading {
-                color: blue;
-                font-weight: bold;
-            }
+        }
+
+        .cultural-inference,
+        .relevance,
+        .additional-info {
+            margin-left: 10px;
+        }
+
+        .loading {
+            color: blue;
+            font-weight: bold;
         }
 
         .page-translate {
@@ -187,6 +202,7 @@
                 border: 1px solid;
                 border-radius: 8px;
                 overflow: hidden;
+                margin-bottom: 16px;
 
                 &>div {
                     padding: 8px;
