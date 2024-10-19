@@ -30,14 +30,14 @@ def get_absolute_path(relative_path):
     return os.path.abspath(relative_path)
 
 @app.get("/book/")
-async def book(book_id: str, language: Optional[str] = "None"):
+async def book(book_id: str, language: Optional[str] = None):
     if not book_id:
         raise HTTPException(status_code=400, detail="Book ID required")
     try:
         if language is not None:
             book_file_json = "/" + book_id + "-" + language + ".json"
         else:
-            book_file_json = "/" + book_id + "-.json"
+            book_file_json = "/" + book_id + ".json"
 
         result = read_json_file(get_absolute_path("hackathon/output") + book_file_json)
         return ResponseBuilder.build_response(result)
