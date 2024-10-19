@@ -289,7 +289,7 @@ def fetch_culture_ref_by_page(page_no, book):
     input_data = {"content": page_content}
     try:
         prompt = PromptTemplate(
-            input_variables=["current_page"],
+            input_variables=["content"],
             template=CULTURAL_CONTEXT_PROMPT,
             partial_variables={"format_instructions": CULTURAL_REF_FORMAT},
         )
