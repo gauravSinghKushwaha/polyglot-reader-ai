@@ -147,7 +147,6 @@ def main():
             print(f"Processed {filename} and saved to {output_file}")
 
 
-
 def extract_chapters_and_paragraphs(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
@@ -216,29 +215,46 @@ def get_content_by_chapter_json(book_json):
 
 def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
     pages = {}
-    current_page = {"content": "", "paragraphs": {}, "num_words": 0}
+    current_page = {"content": "", "paragraphs": {}, "num_words": 0, "chapter": None}
     current_word_count = 0
     page_count = 0  # To keep track of page number
 
     # Iterate over the paragraphs in the book_json
     for paragraph in book_json["paragraphs"]:
         for key, details in paragraph.items():
-            paragraph_content = details["content"]
+            paragraph_content = details["content"].strip()
             num_words = details["num_words"]
+            chapter = details["chapter"].strip()
 
-            # Check if adding the next paragraph exceeds the limit
-            if current_word_count + num_words + next_paragraph_padding > word_limit:
-                # Save the current page to pages dictionary
-                pages[str(page_count)] = current_page
+            # Check if we need to start a new page
+            if (
+                current_word_count + num_words + next_paragraph_padding > word_limit
+                or current_page["chapter"] is None
+                or current_page["chapter"] != chapter
+            ):
+                # Save the current page to pages dictionary if it has content
+                if current_word_count > 0:
+                    current_page["num_words"] = (
+                        current_word_count  # Update num_words here
+                    )
+                    pages[str(page_count)] = current_page
 
                 # Start a new page
-                page_count += 1
-                current_page = {"content": "", "paragraphs": {}, "num_words": 0}
+                current_page = {
+                    "content": "",
+                    "paragraphs": {},
+                    "num_words": 0,
+                    "chapter": chapter,
+                }
                 current_word_count = 0
+                page_count += 1
 
             # Append the paragraph content and update counts
             current_page["content"] += paragraph_content + "\n"
-            current_page["paragraphs"][key] = {"content": paragraph_content, "num_words": num_words}
+            current_page["paragraphs"][key] = {
+                "content": paragraph_content,
+                "num_words": num_words,
+            }
             current_word_count += num_words
 
     # Add the last page if it has content
@@ -250,8 +266,9 @@ def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
 
 
 def pre_process():
-    input_folder = "/Users/sarthakbaweja/projects/polyglot-reader-ai/server/hackathon/books"
-    output_folder = "/Users/sarthakbaweja/projects/polyglot-reader-ai/server/hackathon/output"
+    base_folder = '/Users/gauravsinghkushwaha/Documents/code/splashlearn/polyglot-reader-ai/server/hackathon'
+    input_folder = base_folder+ "/books"
+    output_folder = base_folder+ "/output"
 
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
@@ -268,15 +285,6 @@ def pre_process():
         # summarize_page_wise(pages)
 
 pre_process()
-
-
-
-
-
-
-
-
-
 
 
 def translate_page_wise(pages):
@@ -324,4 +332,4 @@ def translate_text_with_llama(source_language, target_language, text):
     return result
 
 # if __name__ == "__main__":
-    #main()
+# main()
