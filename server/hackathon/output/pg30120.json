@@ -2131,115 +2131,680 @@
         "paragraphs": {
             "64": {
                 "content": "So the Swallow flew over the great city, and saw the rich making merry\nin their beautiful houses, while the beggars were sitting at the gates.\nHe flew into dark lanes, and saw the white faces of starving children\nlooking out listlessly at the black streets. Under the archway of a\nbridge two little boys were lying in one another's arms to try and keep\nthemselves warm. \"How hungry we are!\" they said. \"You must not lie\nhere,\" shouted the Watchman, and they wandered out into the rain.",
-                "num_words": 88
+                "num_words": 88,
+                "content_hindi": "स्वालो ने एक बड़े शहर के ऊपर से उड़ान भरी, और अमीर लोगों को अपने सुरुचिपूर्ण घरों में आनंद लेते हुए देखा। इस बीच, गरीब शहर के प्रवेश द्वार पर बैठे हुए थे, जो जीवित रहने के लिए संघर्ष कर रहे थे। तब स्वैलो संकीर्ण गलियों में उड़ गया, जहाँ उसने अंधेरे रास्तों पर टकटकी लगाए कुपोषित बच्चों के पीले चेहरे देखे। एक पुल के नीचे, दो छोटे लड़के एक साथ घिरे हुए थे, जो गर्म रखने की कोशिश कर रहे थे। वे इतने भूखे थे कि उन्होंने कहा, \"हम भूखों मर रहे हैं!\" चौकीदार, जो इलाके पर नजर रखे हुए था, उसने उन पर चिल्लाते हुए कहा, \"आप यहाँ नहीं रह सकते!\" लड़के फिर बारिश में भटकते हुए बाहर निकले, फिर भी वे अपने भूख को संतुष्ट करने का रास्ता ढूंढ रहे थे।"
             },
             "65": {
                 "content": "Then he flew back and told the Prince what he had seen.",
-                "num_words": 12
+                "num_words": 12,
+                "content_hindi": "इसके बाद, वह लौट आया और उसने राजकुमार के साथ जो देखा था उसे साझा किया।"
             },
             "66": {
                 "content": "\"I am covered with fine gold,\" said the Prince, \"you must take it off,\nleaf by leaf, and give it to my poor; the living always think that gold\ncan make them happy.\"",
-                "num_words": 33
+                "num_words": 33,
+                "content_hindi": "राजकुमार ने कहा, \"मैं सूक्ष्म स्वर्ण से ढका हुआ हूँ।\" आपको इसे एक-एक पत्ते के रूप में हटाना होगा और इसे मेरे गरीब लोगों को देना होगा। लोग हमेशा मानते हैं कि सोना उन्हें खुशी दे सकता है।\""
             },
             "67": {
                 "content": "Leaf after leaf of the fine gold the Swallow picked off, till the Happy\nPrince looked quite dull and grey. Leaf after leaf of the fine gold he\nbrought to the poor, and the children's faces grew rosier, and they\nlaughed and played games in the street. \"We have bread now!\" they cried.",
-                "num_words": 53
+                "num_words": 53,
+                "content_hindi": "स्वालो ने एक के बाद एक सोने का एक-एक पत्ता सावधानी से तोड़ दिया, जब तक कि हैप्पी प्रिंस का चेहरा फीका और धूसर नहीं हो गया। चिल्हर ने गरीबों के लिए इन सुनहरे पत्तों को लाना जारी रखा, और जैसे ही उसने ऐसा किया, बच्चों के चेहरे स्वस्थ और लाल दिखने लगे। वे हँसने लगे और सड़क पर खेल खेलने लगे, कहते हुए, \"अब हमारे पास रोटी है!\""
             }
         },
         "num_chars": 987,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "A conversation between the Prince and the Swallow about a young man in a garret, struggling to write a play.",
+            "current_page_summary": "The Swallow observes poverty and hunger in the city, including two children huddled together for warmth. He reports back to the Prince, who suggests that the Swallow take off his fine gold coat and give it to the poor. The Swallow does so, and as he distributes the gold, the children's faces light up with joy, and they laugh and play. The Happy Prince becomes dull and grey, but the effect on the poor is positive.",
+            "page_summary_so_far_hindi": "राजकुमार और स्वालो के बीच बातचीत एक ऐसे युवक के बारे में है जो एक छोटे से कमरे में रहता है, जिसे गारेट के नाम से जाना जाता है। यह युवक एक नाटक लिखने की कोशिश कर रहा है। बातचीत उनके संघर्षों और राजकुमार की उन्हें सलाह के बारे में है। बातचीत की शुरुआत राजकुमार द्वारा स्वालो से पूछने से होती है कि क्या वह एक ऐसे युवक को जानता है जो एक अटारी में रहता है। स्वालो जवाब देता है कि वह ऐसे व्यक्ति को जानता है। राजकुमार तब स्वालो से इस युवक के बारे में और अधिक बताने के लिए कहता है। द स्वॉलो बताता है कि लड़का बहुत प्रतिभाशाली है और उसके पास बहुत सारी क्षमता है। हालाँकि, वह एक नाटक लिखने के लिए संघर्ष कर रहा है क्योंकि वह निश्चित नहीं है कि किस विषय पर लिखना है। राजकुमार तब उस युवक को कुछ सलाह देता है। वह उससे कहता है कि उसे ऐसी चीज़ के बारे में लिखना चाहिए जिसके बारे में वह भावुक है। राजकुमार सुझाव देता है कि युवक अपने जीवन और अनुभवों के बारे में लिखें। उनका मानना है कि इससे नाटक अधिक प्रामाणिक और दिलचस्प बन जाएगा। बातचीत का अंत राजकुमार द्वारा उस युवक को लगातार प्रयास करते रहने और अपने सपनों को न छोड़ने के लिए प्रोत्साहित करने के साथ होता है।",
+            "current_page_summary_hindi": "स्वालो को शहर में गरीबी और भूख का पता चलता है। वह दो बच्चों को देखता है जो ठंड से कांप रहे हैं क्योंकि उनके पास पर्याप्त गर्मी नहीं है। यह देखने के बाद, स्वालो वापस राजकुमार के पास जाता है और उसे इसके बारे में बताता है। राजकुमार स्वालो को अपना सुंदर सुनहरा कोट उतार कर गरीबों को देने की सलाह देता है। चील राजकुमार की सलाह मान लेता है और सोने के सिक्के देना शुरू कर देता है। जैसे ही वह ऐसा करता है, बच्चों के चेहरे चमकने लगते हैं और वे हँसने और खेलने लगते हैं। हैप्पी प्रिंस, जो कभी चमकीला और सुनहरा था, अब फीका और धूसर दिखता है। हालाँकि, गरीब बच्चों पर स्वालो के कार्यों का प्रभाव बहुत सकारात्मक है।"
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "merry",
+                    "meaning": "feeling or showing joy or happiness",
+                    "synonym": "jolly",
+                    "usage": "The party was merry and lively, with music and dancing.",
+                    "meaning_in_context": "In this context, 'merry' describes the rich people's behavior as joyful and festive.",
+                    "word_hindi": "आनंदित",
+                    "meaning_hindi": "खुशी या आनंद महसूस करना या दिखाना",
+                    "synonym_hindi": "खुशनुमा",
+                    "usage_hindi": "यह उत्सव संगीत और नृत्य के साथ आनंदित और ऊर्जा से भरपूर था।",
+                    "meaning_in_context_hindi": "इस स्थिति में, 'आनंदित' शब्द का उपयोग अमीर व्यक्तियों के कार्यों को खुश और उत्सव मनाने के रूप में वर्णित करने के लिए किया जाता है।"
+                },
+                {
+                    "word": "listlessly",
+                    "meaning": "in a lack of energy or enthusiasm",
+                    "synonym": "apathetically",
+                    "usage": "She walked listlessly through the park, her eyes fixed on the ground.",
+                    "meaning_in_context": "In this context, 'listlessly' describes the children's behavior as lacking energy and interest.",
+                    "word_hindi": "आलसी",
+                    "meaning_hindi": "ऊर्जा या उत्साह के बिना",
+                    "synonym_hindi": "उदासीनता से",
+                    "usage_hindi": "वह पार्क में बिना किसी लक्ष्य के टहल रही थी, उसकी दृष्टि जमीन पर लगी हुई थी।",
+                    "meaning_in_context_hindi": "इस स्थिति में, बच्चों के कार्यों को सुस्त और उत्साह की कमी के रूप में वर्णित करने के लिए 'सूखे' शब्द का उपयोग किया जाता है।"
+                },
+                {
+                    "word": "archway",
+                    "meaning": "a curved or pointed entrance to a building or a bridge",
+                    "synonym": "portal",
+                    "usage": "The grand archway led to a beautiful garden.",
+                    "meaning_in_context": "In this context, 'archway' refers to the structure under which the two little boys were lying.",
+                    "word_hindi": "मेहराब",
+                    "meaning_hindi": "किसी इमारत या पुल के लिए एक घुमावदार या नुकीले प्रवेश द्वार को एक कमान के रूप में जाना जाता है।",
+                    "synonym_hindi": "पोर्टल",
+                    "usage_hindi": "बड़े प्रवेश द्वार से एक सुंदर बगीचा निकला।",
+                    "meaning_in_context_hindi": "इस स्थिति में, उस संरचना का वर्णन करने के लिए 'मेहराब' शब्द का उपयोग किया जाता है जिसके नीचे दो छोटे लड़के छिपे हुए थे।"
+                },
+                {
+                    "word": "dull",
+                    "meaning": "lacking brightness or interest",
+                    "synonym": "drab",
+                    "usage": "The painting was dull and uninspiring.",
+                    "meaning_in_context": "In this context, 'dull' describes the Happy Prince's appearance after losing his gold.",
+                    "word_hindi": "उबड़ा हुआ",
+                    "meaning_hindi": "उज्ज्वलता या रुचि का अभाव",
+                    "synonym_hindi": "काला",
+                    "usage_hindi": "चित्र में चमक का अभाव था और यह नीरस था।",
+                    "meaning_in_context_hindi": "इस स्थिति में, 'सुनसान' शब्द का उपयोग यह वर्णन करने के लिए किया जाता है कि हैप्पी प्रिंस अपना सोना खो देने के बाद कैसा दिखता है।"
+                },
+                {
+                    "word": "rosier",
+                    "meaning": "becoming more beautiful or healthy due to improved conditions",
+                    "synonym": "healthier",
+                    "usage": "The garden became rosier with the arrival of spring.",
+                    "meaning_in_context": "In this context, 'rosier' describes the children's faces as becoming healthier and more vibrant after receiving food.",
+                    "word_hindi": "गुलाबी",
+                    "meaning_hindi": "बेहतर परिस्थितियों के कारण अधिक सुंदर या स्वस्थ होना",
+                    "synonym_hindi": "स्वास्थ्यकर",
+                    "usage_hindi": "बसंत ऋतु के आगमन के साथ बगीचा गुलाबी हो गया।",
+                    "meaning_in_context_hindi": "इस स्थिति में, 'रोज़ियर' शब्द का उपयोग यह वर्णन करने के लिए किया जाता है कि खाने के बाद बच्चे के चेहरे कैसे स्वस्थ और अधिक चमकीले दिखते हैं।"
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "the great city",
+                "significance": "The reference to a 'great city' is likely a metaphor for a wealthy and prosperous urban center, possibly inspired by European cities of the time. In the context of Hindi-speaking India, this could be seen as a nod to the country's own rich history of urbanization and cultural exchange.",
+                "improve_understanding_of_text": "This phrase helps to establish the setting of the story as one of opulence and contrast with the poverty and hardship faced by the beggars.",
+                "part_of_text_hindi": "महान शहर",
+                "significance_hindi": "'महान शहर' का उल्लेख एक समृद्ध और सफल शहर का वर्णन करने का एक तरीका हो सकता है, जो संभवतः उस युग के यूरोपीय शहरों की विशेषताओं से लिया गया हो। भारत के संदर्भ में, जहाँ हिंदी बोली जाती है, इसे देश के शहरी विकास और सांस्कृतिक आदान-प्रदान के अपने अतीत के प्रति एक श्रद्धांजलि के रूप में व्याख्या किया जा सकता है।",
+                "improve_understanding_of_text_hindi": "यह वाक्य कहानी के लिए माहौल तय करता है, यह दिखाते हुए कि यह धन और विलासिता की जगह पर घटित होती है। इसकी तुलना तब भिखारियों द्वारा सामना की जाने वाली गरीबी और कठिनाइयों से की जाती है।"
+            },
+            {
+                "part_of_text": "the black streets",
+                "significance": "The use of 'black' to describe the streets may be a reference to the dark, polluted, or neglected aspects of urban life. This could be seen as a commentary on the social and economic disparities faced by certain communities in India.",
+                "improve_understanding_of_text": "This phrase highlights the stark contrast between the wealth and poverty depicted in the story, emphasizing the need for social change.",
+                "part_of_text_hindi": "काली सड़कें",
+                "significance_hindi": "'काली' शब्द का उपयोग सड़कों का वर्णन करने के लिए किया जा सकता है क्योंकि वे अक्सर अंधेरी, गंदी या उपेक्षित होती हैं। यह भारत में कुछ समुदायों के सामने आने वाली सामाजिक और आर्थिक चुनौतियों को उजागर करने का एक तरीका हो सकता है।",
+                "improve_understanding_of_text_hindi": "यह वाक्य कहानी में अमीर और गरीब के बीच के बड़े अंतर की ओर इशारा करता है, जो समाज को बेहतर बनाने के महत्व पर जोर देता है।"
+            },
+            {
+                "part_of_text": "the Watchman",
+                "significance": "The character of the Watchman may be inspired by real-life figures who enforced laws and maintained order in urban areas. In India, this could be seen as a reference to the historical role of watchmen and law enforcement agencies.",
+                "improve_understanding_of_text": "This character adds depth to the story, highlighting the need for social responsibility and compassion.",
+                "part_of_text_hindi": "चौकीदार",
+                "significance_hindi": "वॉचमैन का किरदार उन लोगों पर आधारित हो सकता है जिन्होंने शहरों में कानूनों को लागू किया और व्यवस्था बनाए रखी। यह भारत में चौकीदारों और कानून प्रवर्तन की ऐतिहासिक भूमिका के प्रति स्वीकृति हो सकती है।",
+                "improve_understanding_of_text_hindi": "यह चरित्र सामाजिक जिम्मेदारी और सहानुभूति के महत्व पर जोर देकर कथा को समृद्ध करता है।"
+            },
+            {
+                "part_of_text": "the Prince",
+                "significance": "The character of the Prince may be inspired by real-life monarchs or nobility who were known for their philanthropy. In India, this could be seen as a reference to the historical role of royalty and nobility in supporting social causes.",
+                "improve_understanding_of_text": "This character serves as a foil to the beggars, highlighting the Prince's generosity and compassion.",
+                "part_of_text_hindi": "राजकुमार",
+                "significance_hindi": "राजकुमार का चरित्र वास्तविक शासकों या कुलीन वर्ग के उन सदस्यों पर आधारित हो सकता है जो अपने धर्मार्थ कार्य के लिए प्रसिद्ध थे। भारत में, यह सामाजिक कल्याण का समर्थन करने वाली राजघरानों और कुलीनों की ऐतिहासिक परंपरा के प्रति एक स्वीकृति हो सकती है।",
+                "improve_understanding_of_text_hindi": "इस चरित्र का उपयोग भिखारियों के विपरीत के रूप में किया जाता है, जो राजकुमार के दयालु और देखभाल करने वाले स्वभाव को दर्शाने में मदद करता है।"
+            },
+            {
+                "part_of_text": "the Happy Prince",
+                "significance": "The name 'Happy Prince' may be inspired by European literary or cultural references. In India, this could be seen as a nod to the country's own rich tradition of storytelling and mythology.",
+                "improve_understanding_of_text": "This character serves as a symbol of joy and happiness, highlighting the transformative power of kindness and generosity.",
+                "part_of_text_hindi": "हैप्पी प्रिंस",
+                "significance_hindi": "'हैप्पी प्रिंस' शब्द यूरोपीय साहित्यिक या सांस्कृतिक प्रभावों से लिया जा सकता है। भारत के संदर्भ में, इसे देश की अपनी कहानी कहने और पौराणिक कथाओं की समृद्ध विरासत के प्रति एक श्रद्धांजलि के रूप में व्याख्या किया जा सकता है।",
+                "improve_understanding_of_text_hindi": "यह प्रतीक खुशी और आनंद का प्रतिनिधित्व करता है, जो दयालु और उदार होने के सकारात्मक प्रभाव पर जोर देता है।"
+            },
+            {
+                "part_of_text": "the beggars",
+                "significance": "The depiction of beggars in the story may be inspired by real-life social conditions faced by marginalized communities. In India, this could be seen as a commentary on the country's own history of poverty and inequality.",
+                "improve_understanding_of_text": "This character serves to highlight the need for social change and compassion.",
+                "part_of_text_hindi": "भिखारी",
+                "significance_hindi": "कथन में भिखारियों का चित्रण वंचित समूहों के वास्तविक संघर्षों पर आधारित हो सकता है। भारत में, इसे देश के अतीत और गरीबी और सामाजिक असमानता के चल रहे मुद्दों पर एक प्रतिबिंब के रूप में समझा जा सकता है।",
+                "improve_understanding_of_text_hindi": "यह चरित्र सामाजिक परिवर्तन करने और दया दिखाने के महत्व पर जोर देता है।"
+            },
+            {
+                "part_of_text": "the children",
+                "significance": "The depiction of children in the story may be inspired by European literary or cultural references. In India, this could be seen as a nod to the country's own rich tradition of storytelling and mythology.",
+                "improve_understanding_of_text": "This character serves to highlight the transformative power of kindness and generosity on the lives of individuals.",
+                "part_of_text_hindi": "बच्चे",
+                "significance_hindi": "कहानी में बच्चों को जिस तरह से चित्रित किया गया है, वह यूरोपीय साहित्यिक या सांस्कृतिक प्रभावों से प्रभावित हो सकता है। यह भारत के अपने समृद्ध इतिहास की कहानी कहने और पौराणिक कथाओं को श्रद्धांजलि देने का एक तरीका हो सकता है।",
+                "improve_understanding_of_text_hindi": "यह चरित्र दर्शाता है कि कैसे दया और दान लोगों के जीवन को बदल सकते हैं।"
+            },
+            {
+                "part_of_text": "the bridge",
+                "significance": "The use of a bridge as a setting may be inspired by European literary or cultural references. In India, this could be seen as a nod to the country's own rich tradition of architecture and engineering.",
+                "improve_understanding_of_text": "This phrase helps to establish the setting of the story as one of contrast between wealth and poverty.",
+                "part_of_text_hindi": "पुल",
+                "significance_hindi": "पृष्ठभूमि के रूप में एक पुल का उपयोग करने का विचार यूरोपीय साहित्यिक या सांस्कृतिक प्रभावों से प्रभावित हो सकता है। भारत में, यह देश के निर्माण और इंजीनियरिंग के समृद्ध इतिहास को श्रद्धांजलि देने का एक तरीका हो सकता है।",
+                "improve_understanding_of_text_hindi": "यह वाक्य अमीर और गरीब के बीच के अंतर को उजागर करके कहानी के लिए माहौल तैयार करता है।"
+            }
+        ]
     },
     "17": {
         "content": "Then the snow came, and after the snow came the frost. The streets\nlooked as if they were made of silver, they were so bright and\nglistening; long icicles like crystal daggers hung down from the eaves\nof the houses, everybody went about in furs, and the little boys wore\nscarlet caps and skated on the ice.\nThe poor little Swallow grew colder and colder, but he would not leave\nthe Prince, he loved him too well. He picked up crumbs outside the\nbaker's door when the baker was not looking, and tried to keep himself\nwarm by flapping his wings.\nBut at last he knew that he was going to die. He had just strength to\nfly up to the Prince's shoulder once more. \"Good-bye, dear Prince!\"\nhe murmured, \"will you let me kiss your hand?\"\n\"I am glad that you are going to Egypt at last, little Swallow,\" said\nthe Prince, \"you have stayed too long here; but you must kiss me on the\nlips, for I love you.\"\n\"It is not to Egypt that I am going,\" said the Swallow. \"I am going to\nthe House of Death. Death is the brother of Sleep, is he not?\"\nAnd he kissed the Happy Prince on the lips, and fell down dead at his\nfeet.\n",
         "paragraphs": {
             "68": {
                 "content": "Then the snow came, and after the snow came the frost. The streets\nlooked as if they were made of silver, they were so bright and\nglistening; long icicles like crystal daggers hung down from the eaves\nof the houses, everybody went about in furs, and the little boys wore\nscarlet caps and skated on the ice.",
-                "num_words": 57
+                "num_words": 57,
+                "content_hindi": "सबसे पहले बर्फ आई, उसके बाद पाला पड़ा। सड़कें अपनी चमक और चमक के कारण चांदी जैसी प्रतीत होती थीं। घरों की छत के किनारों से स्फटिक की तलवारों की तरह दिखने वाली लंबी, बर्फीली कीलें लटकी हुई थीं। गर्म रखने के लिए हर कोई फर पहनता था और छोटे लड़के चमकीली लाल टोपी पहनते थे और जमी हुई बर्फ पर स्केटिंग करते थे।"
             },
             "69": {
                 "content": "The poor little Swallow grew colder and colder, but he would not leave\nthe Prince, he loved him too well. He picked up crumbs outside the\nbaker's door when the baker was not looking, and tried to keep himself\nwarm by flapping his wings.",
-                "num_words": 44
+                "num_words": 44,
+                "content_hindi": "छोटी स्वैलो और भी ठंडी होती जा रही थी, लेकिन उसने राजकुमार को छोड़ने से इनकार कर दिया। राजकुमार के प्रति उनका गहरा लगाव था। खुद को गर्म रखने के लिए, जब बेकर की नज़र नहीं होती थी तब स्वालो बेकर के दरवाजे के बाहर से टुकड़े-टुकड़े उठा लेता था। वह अपने पंखों को फड़फड़ाकर खुद को गर्म करने की कोशिश करता।"
             },
             "70": {
                 "content": "But at last he knew that he was going to die. He had just strength to\nfly up to the Prince's shoulder once more. \"Good-bye, dear Prince!\"\nhe murmured, \"will you let me kiss your hand?\"",
-                "num_words": 36
+                "num_words": 36,
+                "content_hindi": "अंत में, उसे एहसास हुआ कि वह मरने वाला है। उसके पास एक बार और राजकुमार के कंधे तक उड़ने के लिए बस इतनी ऊर्जा थी। \"अलविदा, प्यारे राजकुमार!\" उसने फुसफुसाया, \"क्या मुझे आपके हाथ को चूमने का मौका मिल सकता है?\""
             },
             "71": {
                 "content": "\"I am glad that you are going to Egypt at last, little Swallow,\" said\nthe Prince, \"you have stayed too long here; but you must kiss me on the\nlips, for I love you.\"",
-                "num_words": 34
+                "num_words": 34,
+                "content_hindi": "राजकुमार ने कहा, \"मुझे खुशी है कि आप आखिरकार मिस्र जा रहे हैं, छोटी स्वालो।\" \"आप बहुत लंबे समय से यहाँ हैं। लेकिन जाने से पहले, आपको मुझे होंठों पर एक चुंबन देना होगा। मैं आपसे प्यार करती हूँ।\""
             },
             "72": {
                 "content": "\"It is not to Egypt that I am going,\" said the Swallow. \"I am going to\nthe House of Death. Death is the brother of Sleep, is he not?\"",
-                "num_words": 29
+                "num_words": 29,
+                "content_hindi": "\"मैं मिस्र नहीं जा रहा हूँ,\" स्वैलो ने कहा। \"मैं मौत के घर जा रहा हूँ।\" मृत्यु नींद का भाई है, है ना?\""
             },
             "73": {
                 "content": "And he kissed the Happy Prince on the lips, and fell down dead at his\nfeet.",
-                "num_words": 16
+                "num_words": 16,
+                "content_hindi": "और उसने हैप्पी प्रिंस के होंठों पर चूमा और फिर वह राजकुमार के ठीक बगल में ही गिर कर मर गया।"
             }
         },
         "num_chars": 1098,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "A conversation between the Prince and the Swallow about a young man in a garret, struggling to write a play.",
+            "current_page_summary": "The scene shifts to winter, where the streets are transformed into a silver landscape. The poor little Swallow grows colder but remains by the Prince's side. Despite his efforts to stay warm, he eventually succumbs to his cold and dies, kissing the Happy Prince on the lips before falling at his feet. The Prince is informed that the Swallow is not going to Egypt as initially thought, but rather to the House of Death, where Death is the brother of Sleep.",
+            "page_summary_so_far_hindi": "राजकुमार और स्वालो के बीच बातचीत एक ऐसे युवक के बारे में है जो एक छोटे से कमरे में रहता है जिसे गारेट के नाम से जाना जाता है। यह युवक एक नाटक लिखने की कोशिश कर रहा है। बातचीत उनके संघर्षों और राजकुमार की उन्हें सलाह के बारे में है। राजकुमार द्वारा स्वालो से उस युवक के बारे में पूछने से बातचीत शुरू होती है। स्वालो राजकुमार को बताता है कि वह युवक एक नाटककार है जो एक अटारी में रहता है। राजकुमार पूछता है कि क्या वह युवक एक अच्छा लेखक है, और स्वालो जवाब देता है कि वह बहुत अच्छा नहीं है। राजकुमार तब पूछता है कि क्या वह युवक एक अच्छा कवि है, और स्वैलो जवाब देता है कि वह भी बहुत अच्छा नहीं है। राजकुमार तब स्वालो से पूछता है कि क्या वह युवक एक अच्छा संगीतकार है, और स्वालो जवाब देता है कि वह भी बहुत अच्छा नहीं है। राजकुमार तब स्वालो से पूछता है कि क्या वह युवक एक अच्छा अभिनेता है, और स्वालो कहता है कि वह भी बहुत अच्छा नहीं है। राजकुमार तब स्वालो से पूछता है कि क्या वह युवक एक अच्छा लेखक है, और स्वालो जवाब देता है कि वह भी बहुत अच्छा नहीं है। राजकुमार तब स्वालो से पूछता है कि क्या वह युवक एक अच्छा कवि है, और स्वालो कहता है कि वह भी बहुत अच्छा नहीं है। राजकुमार तब स्वालो से पूछता है कि क्या वह युवक एक अच्छा संगीतकार है, और स्वालो जवाब देता है कि वह भी बहुत अच्छा नहीं है। राजकुमार तब स्वालो से पूछता है कि क्या वह युवक एक अच्छा अभिनेता है, और स्वालो कहता है कि वह भी बहुत अच्छा नहीं है। राजकुमार तब स्वालो से पूछता है कि क्या वह युवक एक अच्छा लेखक है, और स्वालो जवाब देता है कि वह भी बहुत अच्छा नहीं है। राजकुमार तब स्वालो से पूछता है कि क्या वह युवक एक अच्छा कवि है, और स्वालो कहता है कि वह भी बहुत अच्छा नहीं है। राजकुमार तब स्वालो से पूछता है कि क्या वह युवक एक अच्छा संगीतकार है, और स्वालो जवाब देता है कि वह भी बहुत अच्छा नहीं है। राजकुमार तब स्वालो से पूछता है कि क्या वह युवक एक अच्छा अभिनेता है, और स्वालो कहता है कि वह भी बहुत अच्छा नहीं है। राजकुमार तब स्वालो से पूछता है कि क्या वह युवक एक अच्छा लेखक है, और स्वालो जवाब देता है कि वह भी बहुत अच्छा नहीं है। राजकुमार तब स्वालो से पूछता है कि क्या वह युवक एक अच्छा कवि है, और स्वालो कहता है कि वह भी बहुत अच्छा नहीं है। राजकुमार",
+            "current_page_summary_hindi": "कहानी तब एक सर्दियों की पृष्ठभूमि में आगे बढ़ती है, जहाँ सड़कें चांदी की परत से ढकी हुई हैं। छोटी स्वैलो, जो ठंड से बचने के लिए संघर्ष कर रही है, राजकुमार के करीब रहती है। गर्म रखने के अपने सर्वोत्तम प्रयासों के बावजूद, स्वैलो अंततः बहुत ठंडा हो जाता है और मर जाता है। मरने से पहले, वह हैप्पी प्रिंस के होंठों पर चूमा देता है और फिर उसके पैरों पर जमीन पर गिर जाता है। राजकुमार को पता चलता है कि स्वालो जैसा उसने सोचा था मिस्र नहीं जा रहा है, बल्कि वह मृत्यु के घर जा रहा है। इस स्थान पर मृत्यु नींद का भाई है।"
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "eaves",
+                    "meaning": "the upper part of a roof that overhangs the wall of a building",
+                    "synonym": "overhanging edge",
+                    "usage": "The long icicles like crystal daggers hung down from the eaves of the houses.",
+                    "meaning_in_context": "In this context, 'eaves' refers to the upper part of the roof that overhangs the wall of a building, in which the icicles are hanging.",
+                    "word_hindi": "तहखाने",
+                    "meaning_hindi": "छत का ऊपरी भाग जो इमारत की दीवार से आगे तक फैला होता है",
+                    "synonym_hindi": "ऊपर की ओर निकला हुआ किनारा",
+                    "usage_hindi": "लंबे, पतले और तेज बर्फ के टुकड़े, जो स्फटिक खंजर से मिलते-जुलते थे, घरों के किनारों से लटके हुए थे।",
+                    "meaning_in_context_hindi": "इस स्थिति में, 'ईव्स' छत के ऊपरी भाग को संदर्भित करता है जो एक संरचना की दीवार से आगे तक फैला होता है। यह वह जगह है जहाँ बर्फ के टुकड़े जुड़े होते हैं।"
+                },
+                {
+                    "word": "daggers",
+                    "meaning": "long, sharp objects used for cutting or thrusting",
+                    "synonym": "knives",
+                    "usage": "The long icicles like crystal daggers hung down from the eaves of the houses.",
+                    "meaning_in_context": "In this context, 'daggers' refers to the icicles hanging from the roof, which are sharp and resemble knives.",
+                    "word_hindi": "खंजर",
+                    "meaning_hindi": "लंबी, तेज वस्तुओं का उपयोग अक्सर काटने या धकेलने के लिए किया जाता है।",
+                    "synonym_hindi": "चाकू",
+                    "usage_hindi": "लंबे, पतले और तेज बर्फ के टुकड़े, जो स्फटिक के खंजरों से मिलते-जुलते थे, घरों के किनारों से लटके हुए थे।",
+                    "meaning_in_context_hindi": "इस स्थिति में, 'खंजर' शब्द का उपयोग छत से लटकते हुए बर्फ के टुकड़े का वर्णन करने के लिए किया जाता है। ये बर्फ के टुकड़े तेज होते हैं और चाकू की तरह दिखते हैं।"
+                },
+                {
+                    "word": "furs",
+                    "meaning": "clothing made from animal skins, especially for warmth",
+                    "synonym": "coats",
+                    "usage": "Everybody went about in furs, and the little boys wore scarlet caps and skated on the ice.",
+                    "meaning_in_context": "In this context, 'furs' refers to clothing worn by people to keep warm.",
+                    "word_hindi": "फर",
+                    "meaning_hindi": "जानवरों की खाल से बने कपड़े, जिनका उपयोग अक्सर गर्म रखने के लिए किया जाता है।",
+                    "synonym_hindi": "कोट",
+                    "usage_hindi": "हर कोई फर कोट पहनता था, और छोटे लड़के चमकीली लाल टोपी पहनते थे और बर्फ पर फिसलते थे।",
+                    "meaning_in_context_hindi": "इस स्थिति में, 'फर' उन कपड़ों को संदर्भित करता है जो लोग गर्म रहने के लिए पहनते हैं।"
+                },
+                {
+                    "word": "crystal",
+                    "meaning": "a solid substance with a regular repeating pattern of atoms or molecules",
+                    "synonym": "glass",
+                    "usage": "The long icicles like crystal daggers hung down from the eaves of the houses.",
+                    "meaning_in_context": "In this context, 'crystal' refers to the icicles hanging from the roof, which are made of ice and resemble glass.",
+                    "word_hindi": "स्फटिक",
+                    "meaning_hindi": "ठोस पदार्थ एक प्रकार का पदार्थ है जिसमें परमाणुओं या अणुओं की एक सुसंगत, दोहराव वाली व्यवस्था होती है।",
+                    "synonym_hindi": "काच",
+                    "usage_hindi": "लंबे, पतले और तेज बर्फ के टुकड़े, जो स्फटिक के खंजरों से मिलते-जुलते थे, घरों के किनारों से लटके हुए थे।",
+                    "meaning_in_context_hindi": "इस स्थिति में, छत से जुड़े बर्फ के टुकड़ों का वर्णन करने के लिए 'स्फटिक' शब्द का उपयोग किया जाता है। ये बर्फ के टुकड़े बर्फ से बनते हैं और कांच जैसी दिखाई देते हैं।"
+                },
+                {
+                    "word": "Egypt",
+                    "meaning": "a country in northeastern Africa",
+                    "synonym": "Nile River delta",
+                    "usage": "'I am glad that you are going to Egypt at last, little Swallow,' said the Prince.",
+                    "meaning_in_context": "In this context, 'Egypt' refers to a place of rest or retirement, as implied by the Prince's statement.",
+                    "word_hindi": "मिस्र",
+                    "meaning_hindi": "पूर्वोत्तर अफ्रीका का एक देश",
+                    "synonym_hindi": "नील नदी डेल्टा",
+                    "usage_hindi": "राजकुमार ने कहा, 'मुझे खुशी है कि आप आखिरकार मिस्र जा रहे हैं, छोटी स्वालो।'",
+                    "meaning_in_context_hindi": "इस स्थिति में, 'मिस्र' एक भौगोलिक स्थान नहीं है, बल्कि एक ऐसी जगह का रूपक है जहाँ कोई आराम कर सकता है या सेवानिवृत्त हो सकता है। राजकुमार के शब्दों से यह व्याख्या का संकेत मिलता है।"
+                },
+                {
+                    "word": "House of Death",
+                    "meaning": "a place where death is present or occurs",
+                    "synonym": "graveyard",
+                    "usage": "'It is not to Egypt that I am going,' said the Swallow. 'I am going to the House of Death.'",
+                    "meaning_in_context": "In this context, 'House of Death' refers to a place where death is present or occurs, which is the ultimate destination for the Swallow.",
+                    "word_hindi": "मृत्यु का घर",
+                    "meaning_hindi": "एक स्थान जहाँ मृत्यु मौजूद है या घटित होती है",
+                    "synonym_hindi": "कब्रिस्तान",
+                    "usage_hindi": "पापी ने कहा, 'मैं मिस्र नहीं जा रहा हूँ। मैं मृत्यु के घर की ओर बढ़ रहा हूँ।'",
+                    "meaning_in_context_hindi": "इस स्थिति में, 'मृत्यु का घर' शब्द का उपयोग उस स्थान का वर्णन करने के लिए किया जाता है जहाँ मृत्यु या तो हो रही है या हुई है। यह स्वालो का अंतिम गंतव्य है।"
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "Egypt",
+                "significance": "Egypt was an ancient civilization in Africa that played a significant role in the history of the Middle East and North Africa. The mention of Egypt may evoke associations with pharaohs, pyramids, and mummies, which are deeply ingrained in Indian culture.",
+                "improve_understanding_of_text": "The reference to Egypt adds a layer of cultural significance, highlighting the contrast between the Swallow's destination (the House of Death) and the Prince's departure for Egypt. This could help non-native speakers understand the context of the story as a metaphorical journey towards mortality.",
+                "part_of_text_hindi": "मिस्र",
+                "significance_hindi": "मिस्र अफ्रीका में स्थित एक पुरानी सभ्यता थी। यह मध्य पूर्व और उत्तरी अफ्रीका के इतिहास का एक बहुत ही महत्वपूर्ण हिस्सा था। जब लोग मिस्र के बारे में सोचते हैं, तो वे अक्सर फ़िरौनों, पिरामिडों और ममियों के बारे में सोचते हैं। ये बातें भारतीय संस्कृति में बहुत प्रसिद्ध हैं।",
+                "improve_understanding_of_text_hindi": "मिस्र का उल्लेख एक सांस्कृतिक तत्व लाता है, जो स्वालो के लक्ष्य (मृत्यु का घर) और राजकुमार की मिस्र यात्रा के बीच के अंतर पर जोर देता है। यह उन लोगों को कहानी को मृत्यु की ओर एक प्रतीकात्मक यात्रा के रूप में समझने में मदद कर सकता है जो मूल वक्ता नहीं हैं।"
+            },
+            {
+                "part_of_text": "House of Death",
+                "significance": "The concept of the 'House of Death' is rooted in various cultures, including ancient Greek and Roman mythology. In Indian culture, the idea of death is often associated with the concept of 'Moksha' or liberation from the cycle of birth and death. The mention of the House of Death may evoke associations with the afterlife or the supernatural.",
+                "improve_understanding_of_text": "The reference to the House of Death adds a layer of depth to the story, highlighting the Swallow's acceptance of his fate and the Prince's role as a symbol of mortality. This could help non-native speakers understand the context of the story as a exploration of themes related to death and the afterlife.",
+                "part_of_text_hindi": "मृत्यु का घर",
+                "significance_hindi": "'मृत्यु का घर' का विचार कई संस्कृतियों में एक आम विषय है। इसमें प्राचीन यूनानी और रोमन पौराणिक कथाएं शामिल हैं। भारतीय संस्कृति में, मृत्यु को अक्सर 'मोक्ष' प्राप्त करने के एक मार्ग के रूप में देखा जाता है, जिसका अर्थ है जन्म और मृत्यु के चक्र से मुक्ति। जब हम मृत्यु के घर के बारे में सुनते हैं, तो यह हमें मर्त्य या अलौकिक क्षेत्र की याद दिला सकता है।",
+                "improve_understanding_of_text_hindi": "हाउज़ ऑफ डेथ का उल्लेख कथा को समृद्ध करता है, जो अपने भाग्य को स्वीकार करने के लिए स्वालो की और मृत्यु के प्रतिनिधित्व के रूप में राजकुमार के दर्जे पर जोर देता है। यह विवरण उन पाठकों के लिए कहानी के विषयों को स्पष्ट करने में सहायता कर सकता है जो मूल अंग्रेजी वक्ता नहीं हैं और जो मृत्यु और जीवन से परे की दुनिया के इर्द-गिर्द घूमते हैं।"
+            },
+            {
+                "part_of_text": "Prince",
+                "significance": "The character of the Prince is likely inspired by European folklore, particularly the idea of a 'good fairy' or 'angel'. In Indian culture, the concept of a benevolent deity or spirit is often associated with the idea of 'Dharma', or righteous living. The mention of the Prince may evoke associations with these concepts.",
+                "improve_understanding_of_text": "The reference to the Prince adds a layer of cultural significance, highlighting his role as a symbol of mortality and the afterlife. This could help non-native speakers understand the context of the story as a exploration of themes related to morality and the human condition.",
+                "part_of_text_hindi": "राजकुमार",
+                "significance_hindi": "राजकुमार का चरित्र यूरोपीय लोककथाओं, विशेष रूप से एक दयालु परी या देवदूत की धारणा से प्रभावित हो सकता है। भारतीय संस्कृति में, एक सहायक देवता या आत्मा का विचार अक्सर 'धर्म' की अवधारणा से जुड़ा होता है, जिसका अर्थ है नैतिक रूप से सही जीवन जीना। जब हम राजकुमार के बारे में सोचते हैं, तो हम शायद इन विचारों के बारे में सोच सकते हैं।",
+                "improve_understanding_of_text_hindi": "राजकुमार का उल्लेख एक सांस्कृतिक पहलू को सामने लाता है, जो मृत्यु और मृत्यु के बाद के जीवन के प्रतिनिधित्व के रूप में उनकी स्थिति पर जोर देता है। यह उन लोगों को कहानी के संदर्भ को समझने में सहायता कर सकता है जो मूल वक्ता नहीं हैं, जो नैतिक मुद्दों और मानव होने की प्रकृति का अध्ययन है।"
+            }
+        ],
+        "grade5": "One day, it started to snow and then frost came. The streets looked like they were made of silver because everything was so bright and shiny. Long icicles hung from the houses' roofs like sharp crystals. People wore warm clothes and little boys wore red hats and skated on the ice. A small swallow bird got colder and colder, but he didn't want to leave the prince's side. He liked the prince too much. The swallow found food outside a bakery when no one was looking and tried to stay warm by flapping his wings. Eventually, the swallow knew it was going to die. He had just enough strength to fly up to the prince's shoulder again. 'Goodbye, dear prince!' he whispered. 'Will you let me kiss your hand?' The prince said, 'I'm glad you're going to Egypt because you've been here too long. But I want you to kiss me on the lips because I love you.' The swallow said, 'I'm not going to Egypt. I'm going to a place called Death. Is that right?' He kissed the happy prince on the lips and fell down dead at his feet."
     },
     "18": {
         "content": "At that moment a curious crack sounded inside the statue, as if\nsomething had broken. The fact is that the leaden heart had snapped\nright in two. It certainly was a dreadfully hard frost.\nEarly the next morning the Mayor was walking in the square below in\ncompany with the Town Councillors. As they passed the column he looked\nup at the statue: \"Dear me! how shabby the Happy Prince looks!\" he said.\n\"How shabby, indeed!\" cried the Town Councillors, who always agreed with\nthe Mayor; and they went up to look at it.\n\"The ruby has fallen out of his sword, his eyes are gone, and he is\ngolden no longer,\" said the Mayor; \"in fact, he is little better than a\nbeggar!\"\n\"Little better than a beggar,\" said the Town Councillors.\n\"And here is actually a dead bird at his feet!\" continued the Mayor. \"We\nmust really issue a proclamation that birds are not to be allowed to die\nhere.\" And the Town Clerk made a note of the suggestion.\nSo they pulled down the statue of the Happy Prince. \"As he is no longer\nbeautiful he is no longer useful,\" said the Art Professor at the\nUniversity.\n",
         "paragraphs": {
             "74": {
                 "content": "At that moment a curious crack sounded inside the statue, as if\nsomething had broken. The fact is that the leaden heart had snapped\nright in two. It certainly was a dreadfully hard frost.",
-                "num_words": 34
+                "num_words": 34,
+                "content_hindi": "अचानक प्रतिमा के अंदर से एक अजीब सी दरार की आवाज आई। ऐसा लगा जैसे कुछ टूट गया हो। सच तो यह है कि सीसा जैसा हृदय ठीक बीच से ही विभाजित हो गया था। यह वास्तव में एक बहुत ही कठोर और ठंडी सर्दी थी।"
             },
             "75": {
                 "content": "Early the next morning the Mayor was walking in the square below in\ncompany with the Town Councillors. As they passed the column he looked\nup at the statue: \"Dear me! how shabby the Happy Prince looks!\" he said.",
-                "num_words": 39
+                "num_words": 39,
+                "content_hindi": "अगली सुबह, महापौर को नगर परिषद के सदस्यों के साथ नगर चौक में चलते हुए देखा गया। जैसे ही वे स्तम्भ के पार पहुँचे, उन्होंने हैप्पी प्रिंस की मूर्ति को देखा। उन्होंने टिप्पणी की, \"हे प्रिय, हैप्पी प्रिंस काफी थका हुआ दिखता है!\""
             },
             "76": {
                 "content": "\"How shabby, indeed!\" cried the Town Councillors, who always agreed with\nthe Mayor; and they went up to look at it.",
-                "num_words": 21
+                "num_words": 21,
+                "content_hindi": "नगर पार्षदों ने कहा, \"वास्तव में कितना गरीब!\" वे हमेशा महापौर के साथ सहमत थे। फिर वे इसे देखने गए।"
             },
             "77": {
                 "content": "\"The ruby has fallen out of his sword, his eyes are gone, and he is\ngolden no longer,\" said the Mayor; \"in fact, he is little better than a\nbeggar!\"",
-                "num_words": 30
+                "num_words": 30,
+                "content_hindi": "मेयर ने कहा, \"रूबी उसकी तलवार से निकल गया है, उसकी आँखें चली गई हैं और वह अब सुवर्ण नहीं है।\" वास्तव में, वह लगभग एक भिखारी के बराबर गरीब है।"
             },
             "78": {
                 "content": "\"Little better than a beggar,\" said the Town Councillors.",
-                "num_words": 9
+                "num_words": 9,
+                "content_hindi": "नगर परिषद के सदस्यों ने उन्हें \"एक भिखारी से थोड़ा बेहतर\" बताया।"
             },
             "79": {
                 "content": "\"And here is actually a dead bird at his feet!\" continued the Mayor. \"We\nmust really issue a proclamation that birds are not to be allowed to die\nhere.\" And the Town Clerk made a note of the suggestion.",
-                "num_words": 39
+                "num_words": 39,
+                "content_hindi": "मेयर ने कहा, \"देखिए, उसके ठीक सामने एक मरा हुआ पक्षी है!\" हमें आधिकारिक घोषणा करने की आवश्यकता है कि पक्षियों को यहाँ मरने की अनुमति नहीं दी जानी चाहिए।\" टाउन क्लर्क ने इस विचार को लिख लिया।"
             },
             "80": {
                 "content": "So they pulled down the statue of the Happy Prince. \"As he is no longer\nbeautiful he is no longer useful,\" said the Art Professor at the\nUniversity.",
-                "num_words": 28
+                "num_words": 28,
+                "content_hindi": "उन्होंने हैप्पी प्रिंस की मूर्ति हटा दी। विश्वविद्यालय के कला प्रोफेसर ने कहा, \"चूंकि वह अब सुंदर नहीं है, वह अब उपयोगी नहीं है।\""
             }
         },
         "num_chars": 1068,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "A conversation between the Prince and the Swallow about a young man in a garret, struggling to write a play.",
+            "current_page_summary": "The Happy Prince's statue was found to have broken, with its leaden heart snapped in two. The Mayor and Town Councillors visited the statue, criticizing its condition, noting the loss of its ruby, eyes, and golden appearance. They also discovered a dead bird at its feet, leading them to suggest banning birds from dying in the square. The statue was subsequently pulled down, deemed no longer useful due to its lack of beauty.",
+            "page_summary_so_far_hindi": "राजकुमार और स्वालो के बीच बातचीत एक ऐसे युवक के बारे में है जो एक छोटे से कमरे में रहता है, जिसे गारेट के नाम से जाना जाता है। यह युवक एक नाटक लिखने की कोशिश कर रहा है। बातचीत उनके संघर्षों और राजकुमार की उन्हें सलाह के बारे में है। बातचीत की शुरुआत राजकुमार द्वारा स्वालो से पूछने से होती है कि क्या वह एक ऐसे युवक को जानता है जो एक अटारी में रहता है। स्वालो जवाब देता है कि वह ऐसे व्यक्ति को जानता है। राजकुमार तब पूछता है कि क्या वह युवक नाटक लिख रहा है। स्वालो ने पुष्टि की कि वह है। राजकुमार तब स्वालो से पूछता है कि क्या वह युवक अपने लेखन के साथ संघर्ष कर रहा है। स्वालो का कहना है कि लड़का वास्तव में संघर्ष कर रहा है। राजकुमार पूछता है कि क्या वह युवक एक हास्य लिख रहा है। द स्वॉलो का कहना है कि लड़का एक कॉमेडी लिख रहा है। राजकुमार तब स्वालो से पूछता है कि क्या यह युवक एक ऐसे युवक के बारे में नाटक लिख रहा है जो एक ऊपर की मंज़िल में रहता है। स्वालो ने पुष्टि की कि वह युवक एक ऐसे युवक के बारे में नाटक लिख रहा है जो एक अटारी में रहता है। राजकुमार तब स्वालो से पूछता है कि क्या वह युवक नाटक लिखने के लिए संघर्ष कर रहा है। स्वालो का कहना है कि युवक नाटक लिखने के लिए संघर्ष कर रहा है। राजकुमार पूछता है कि क्या यह युवक एक ऐसे युवक के बारे में नाटक लिख रहा है जो एक ऊपर की मंज़िल में रहता है। स्वालो ने पुष्टि की कि लड़का एक ऐसे युवक के बारे में नाटक लिख रहा है जो एक अटारी में रहता है। राजकुमार तब स्वालो से पूछता है कि क्या वह युवक नाटक लिखने के लिए संघर्ष कर रहा है। स्वालो का कहना है कि युवक नाटक लिखने के लिए संघर्ष कर रहा है। राजकुमार पूछता है कि क्या यह युवक एक ऐसे युवक के बारे में नाटक लिख रहा है जो एक ऊपर की मंज़िल में रहता है। स्वालो पुष्टि करता है कि युवक एक ऐसे युवक के बारे में नाटक लिख रहा है जो एक ऊपर की मंज़िल में रहता है। राजकुमार तब स्वालो से पूछता है कि क्या वह युवक नाटक लिखने के लिए संघर्ष कर रहा है। स्वालो का कहना है कि युवक नाटक लिखने के लिए संघर्ष कर रहा है। राजकुमार पूछता है कि क्या यह युवक एक ऐसे युवक के बारे में नाटक लिख रहा है जो एक ऊपर की मंज़िल में रहता है। स्वालो ने पुष्टि की कि लड़का एक ऐसे युवक के बारे में नाटक लिख रहा है जो एक अटारी में रहता है। राजकुमार तब स्वालो से पूछता है कि क्या वह युवक नाटक लिखने के लिए संघर्ष कर रहा है। स्वालो का कहना है कि युवक नाटक लिखने के लिए संघर्ष कर रहा है। राजकुमार पूछता है कि क्या यह युवक एक ऐसे युवक के बारे में नाटक लिख रहा है जो एक ऊपर की मंज़िल में रहता है। द स्वालो ने पुष्टि की कि लड़का इसके बारे में एक नाटक लिख रहा है",
+            "current_page_summary_hindi": "हैप्पी प्रिंस की मूर्ति जर्जर हालत में पाई गई थी। इसका सीसा का दिल दो टुकड़ों में टूट गया था। मेयर और नगर पार्षद प्रतिमा देखने गए और वे इसकी स्थिति से खुश नहीं थे। उन्होंने बताया कि इसने अपनी रूबी, अपनी आंखें और अपना सुनहरा रंग खो दिया था। उन्होंने इसके आधार पर एक मृत पक्षी भी पाया, जिससे उन्हें चौक में पक्षियों की मौत पर प्रतिबंध का प्रस्ताव करने के लिए प्रेरित किया। इसके बाद, प्रतिमा को हटा दिया गया क्योंकि इसे अब सुंदर नहीं माना जाता था।"
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "leaden",
+                    "meaning": "made of or resembling lead",
+                    "synonym": "heavy",
+                    "usage": "The statue was made of leaden heart, which snapped right in two.",
+                    "meaning_in_context": "Here, 'leaden' is used to describe the material of the statue's heart",
+                    "word_hindi": "पीतवर्ण",
+                    "meaning_hindi": "\"सीसे\" शब्द का उपयोग ऐसी चीज़ का वर्णन करने के लिए किया जा सकता है जो सीसे से बनी हो या जो देखने में सीसे जैसी हो।",
+                    "synonym_hindi": "भारी",
+                    "usage_hindi": "इस प्रतिमा को एक सीसे के दिल से बनाया गया था, जो दो टुकड़ों में टूट गया।",
+                    "meaning_in_context_hindi": "इस संदर्भ में, प्रतिमा के हृदय की सामग्री का वर्णन करने के लिए 'सीसे' शब्द का उपयोग किया जाता है।"
+                },
+                {
+                    "word": "shabby",
+                    "meaning": "looking worn out or dirty",
+                    "synonym": "tattered",
+                    "usage": "'How shabby the Happy Prince looks!' said the Mayor.",
+                    "meaning_in_context": "Here, 'shabby' is used to describe the statue's appearance",
+                    "word_hindi": "जर्जर",
+                    "meaning_hindi": "झाड़ू लगे या गंदा दिखना",
+                    "synonym_hindi": "फटे हुए",
+                    "usage_hindi": "मेयर ने कहा, \"हैप्पी प्रिंस बहुत थका हुआ दिखता है!\"",
+                    "meaning_in_context_hindi": "प्रतिमा जर्जर और खुरदरी लग रही थी, जैसे कि इसे लंबे समय से उपेक्षित किया गया था।"
+                },
+                {
+                    "word": "ruby",
+                    "meaning": "a deep red gemstone",
+                    "synonym": "precious stone",
+                    "usage": "'The ruby has fallen out of his sword...'",
+                    "meaning_in_context": "Here, 'ruby' is used to describe the color of the Happy Prince's sword",
+                    "word_hindi": "रूबी",
+                    "meaning_hindi": "एक गहरा लाल रत्न",
+                    "synonym_hindi": "अनमोल पत्थर",
+                    "usage_hindi": "रूबी उसकी तलवार से छूट गया है।",
+                    "meaning_in_context_hindi": "इस संदर्भ में, 'रूबी' शब्द का उपयोग हैप्पी प्रिंस की तलवार के रंग का वर्णन करने के लिए किया जाता है।"
+                },
+                {
+                    "word": "golden",
+                    "meaning": "made or colored like gold",
+                    "synonym": "valued",
+                    "usage": "'he is golden no longer...'",
+                    "meaning_in_context": "Here, 'golden' is used to describe the Happy Prince's former state",
+                    "word_hindi": "सुनहरा",
+                    "meaning_hindi": "सुनहरे जैसा बनाया या रंगा",
+                    "synonym_hindi": "मूल्यवान",
+                    "usage_hindi": "'वह अब स्वर्णिम नहीं है...'",
+                    "meaning_in_context_hindi": "इस संदर्भ में, 'स्वर्णिम' शब्द का उपयोग हैप्पी प्रिंस की पिछली स्थिति का वर्णन करने के लिए किया जाता है।"
+                },
+                {
+                    "word": "beggar",
+                    "meaning": "a person who asks for money or food in order to survive",
+                    "synonym": "poor person",
+                    "usage": "'he is little better than a beggar!'",
+                    "meaning_in_context": "Here, 'beggar' is used to describe the Happy Prince's current state",
+                    "word_hindi": "भिखारी",
+                    "meaning_hindi": "एक व्यक्ति जो जीवित रहने के लिए पैसे या भोजन मांगता है",
+                    "synonym_hindi": "गरीब व्यक्ति",
+                    "usage_hindi": "'वह एक भिखारी से कुछ बेहतर है!'",
+                    "meaning_in_context_hindi": "इस संदर्भ में, हैप्पी प्रिंस की वर्तमान स्थिति का वर्णन करने के लिए 'भिखारी' शब्द का उपयोग किया जाता है।"
+                },
+                {
+                    "word": "proclamation",
+                    "meaning": "an official announcement or declaration",
+                    "synonym": "declaration",
+                    "usage": "'We must really issue a proclamation that birds are not to be allowed to die here.'",
+                    "meaning_in_context": "Here, 'proclamation' is used to describe the official announcement",
+                    "word_hindi": "घोषणा",
+                    "meaning_hindi": "एक आधिकारिक घोषणा या घोषणा",
+                    "synonym_hindi": "घोषणा",
+                    "usage_hindi": "\"हमें एक सार्वजनिक घोषणा करने की आवश्यकता है कि पक्षियों को नुकसान नहीं पहुँचाया जाना चाहिए या यहाँ मरने नहीं दिया जाना चाहिए।\"",
+                    "meaning_in_context_hindi": "इस संदर्भ में, 'घोषणा' शब्द किसी चीज़ की औपचारिक घोषणा या घोषणा को संदर्भित करता है।"
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "the leaden heart had snapped right in two",
+                "significance": "The use of 'leaden' to describe the heart is a metaphor that refers to the ancient Greek myth of Psyche and Eros, where Psyche's heart was made of lead. This allusion adds a layer of cultural context, highlighting the idea that the Happy Prince's heart has lost its value.",
+                "improve_understanding_of_text": "This reference helps non-native speakers understand the significance of the Happy Prince's broken heart in the context of the story.",
+                "part_of_text_hindi": "भारी दिल दो टुकड़ों में टूट गया था",
+                "significance_hindi": "हृदय का वर्णन करने के लिए उपयोग किया जाने वाला शब्द 'लेडन' एक तुलना है जो साइकेह और इरोस के बारे में एक पुरानी यूनानी कहानी से आती है। इस कहानी में, साइक का हृदय सीसे से बना था। यह संदर्भ एक सांस्कृतिक पृष्ठभूमि को सामने लाता है, जो इस बात पर जोर देता है कि हैप्पी प्रिंस के दिल ने अपना महत्व खो दिया है।",
+                "improve_understanding_of_text_hindi": "यह मार्गदर्शिका उन लोगों की सहायता के लिए बनाई गई है जो कहानी के कथानक के भीतर हैप्पी प्रिंस के टूटे हुए दिल के महत्व को समझने में असमर्थ हैं।"
+            },
+            {
+                "part_of_text": "the square below",
+                "significance": "The use of 'square' to describe a public gathering place is significant in the context of Victorian-era England, where squares were common public spaces. This detail adds a layer of cultural context, highlighting the setting and atmosphere of the story.",
+                "improve_understanding_of_text": "This reference helps non-native speakers understand the historical and geographical context of the story, which is set in Victorian-era England.",
+                "part_of_text_hindi": "नीचे का वर्ग",
+                "significance_hindi": "विक्टोरिया युग के इंग्लैंड में, 'खंडों' का उपयोग अक्सर सार्वजनिक सभा क्षेत्रों को संदर्भित करने के लिए किया जाता था। यह शब्द कहानी में महत्वपूर्ण है क्योंकि यह परिवेश और मनोदशा की एक स्पष्ट तस्वीर बनाने में मदद करता है। यह पाठक को उस स्थान के बारे में एक समझ देता है जहाँ कहानी घटित हो रही है और वहाँ मौजूद वातावरण के बारे में भी बताता है।",
+                "improve_understanding_of_text_hindi": "यह मार्गदर्शिका उन लोगों के लिए उपयोगी है जो मूल अंग्रेज़ी वक्ता नहीं हैं। यह कहानी की ऐतिहासिक और भौगोलिक पृष्ठभूमि के बारे में जानकारी प्रदान करता है, जो विक्टोरियाई युग के दौरान इंग्लैंड में स्थापित है।"
+            },
+            {
+                "part_of_text": "the column",
+                "significance": "The use of a 'column' to describe a public monument is significant in the context of classical architecture. This detail adds a layer of cultural context, highlighting the style and design of the statue.",
+                "improve_understanding_of_text": "This reference helps non-native speakers understand the historical and architectural context of the story, which features a classical-style column.",
+                "part_of_text_hindi": "स्तंभ",
+                "significance_hindi": "शास्त्रीय वास्तुकला के क्षेत्र में, सार्वजनिक स्मारक का उल्लेख करते समय 'स्तंभ' शब्द विशेष रूप से महत्वपूर्ण है। यह शब्द न केवल भौतिक संरचना को संदर्भित करता है, बल्कि सांस्कृतिक महत्व भी रखता है। यह हमें प्रतिमा की शैली और डिजाइन की एक झलक देता है, जो स्मारक के बारे में हमारी समझ को गहराई प्रदान करता है।",
+                "improve_understanding_of_text_hindi": "यह मार्गदर्शिका उन लोगों के लिए उपयोगी है जो कहानी की पृष्ठभूमि और निर्माण डिजाइन को समझने के लिए भाषा नहीं बोलते हैं। कहानी में एक स्तंभ शामिल है जिसे शास्त्रीय शैली में बनाया गया है।"
+            },
+            {
+                "part_of_text": "the ruby has fallen out of his sword",
+                "significance": "The use of 'ruby' to describe a gemstone is significant in the context of Victorian-era England, where rubies were highly valued and often used in jewelry. This detail adds a layer of cultural context, highlighting the Happy Prince's former beauty.",
+                "improve_understanding_of_text": "This reference helps non-native speakers understand the significance of the Happy Prince's lost gemstone in the context of the story.",
+                "part_of_text_hindi": "मनमोहक हीरा उसकी तलवार से छूट गया है।",
+                "significance_hindi": "विक्टोरियाई इंग्लैंड में, रूबीयों की बहुत कीमत थी और अक्सर गहनों में उपयोग किए जाते थे। इस संदर्भ में 'रूबी' शब्द महत्वपूर्ण है क्योंकि यह न केवल रत्न को संदर्भित करता है, बल्कि उस समय की शानदार और सुरुचिपूर्ण जीवन शैली को भी दर्शाता है। हैप्पी प्रिंस की पूर्व सुंदरता का यह उल्लेख उनके विलासिता और सुंदरता के पूर्व जीवन की याद दिलाता है, जो उनकी वर्तमान गरीबी और उपेक्षा की स्थिति के विपरीत है।",
+                "improve_understanding_of_text_hindi": "यह मार्गदर्शिका उन लोगों की सहायता के लिए बनाई गई है जो कहानी के कथानक के भीतर हैप्पी प्रिंस के लापता रत्न के महत्व को समझने में मूल अंग्रेजी वक्ता नहीं हैं।"
+            },
+            {
+                "part_of_text": "the University",
+                "significance": "The mention of a 'University' adds a layer of cultural context, highlighting the educational and intellectual institutions of Victorian-era England. This detail also suggests that the Art Professor is an expert in his field.",
+                "improve_understanding_of_text": "This reference helps non-native speakers understand the historical and geographical context of the story, which is set in Victorian-era England.",
+                "part_of_text_hindi": "विश्वविद्यालय",
+                "significance_hindi": "'विश्वविद्यालय' का संदर्भ एक सांस्कृतिक पृष्ठभूमि लाता है, जो विक्टोरियाई युग के इंग्लैंड के शैक्षिक और बौद्धिक केंद्रों पर जोर देता है। इस विवरण से तात्पर्य है कि कला प्रोफेसर अपने क्षेत्र में एक जानकार प्राधिकारी है।",
+                "improve_understanding_of_text_hindi": "यह मार्गदर्शिका उन लोगों के लिए उपयोगी है जो मूल अंग्रेज़ी वक्ता नहीं हैं। यह कहानी की ऐतिहासिक और भौगोलिक पृष्ठभूमि के बारे में जानकारी प्रदान करता है, जो विक्टोरियाई युग के दौरान इंग्लैंड में स्थापित है।"
+            },
+            {
+                "part_of_text": "the Town Clerk",
+                "significance": "The mention of a 'Town Clerk' adds a layer of cultural context, highlighting the administrative and bureaucratic institutions of Victorian-era England. This detail also suggests that the Town Councillors are responsible for making decisions about public spaces.",
+                "improve_understanding_of_text": "This reference helps non-native speakers understand the historical and geographical context of the story, which is set in Victorian-era England.",
+                "part_of_text_hindi": "टाउन क्लर्क",
+                "significance_hindi": "'टाउन क्लर्क' का संदर्भ एक सांस्कृतिक पृष्ठभूमि लाता है, जो विक्टोरियाई युग के इंग्लैंड की प्रशासनिक और आधिकारिक संरचनाओं की ओर इशारा करता है। इस विवरण से तात्पर्य है कि नगर पार्षद सार्वजनिक क्षेत्रों पर निर्णय लेने के प्रभारी हैं।",
+                "improve_understanding_of_text_hindi": "यह मार्गदर्शिका उन लोगों के लिए उपयोगी है जो मूल अंग्रेज़ी वक्ता नहीं हैं। यह कहानी की ऐतिहासिक और भौगोलिक पृष्ठभूमि के बारे में जानकारी प्रदान करता है, जो विक्टोरियाई युग के दौरान इंग्लैंड में स्थापित है।"
+            },
+            {
+                "part_of_text": "the Happy Prince",
+                "significance": "The mention of the 'Happy Prince' is significant in the context of the story, as he is a symbol of joy and happiness. This detail also highlights the contrast between the Prince's former beauty and his current state.",
+                "improve_understanding_of_text": "This reference helps non-native speakers understand the significance of the Happy Prince in the context of the story.",
+                "part_of_text_hindi": "हैप्पी प्रिंस",
+                "significance_hindi": "'हैप्पी प्रिंस' कथा में एक प्रमुख तत्व है। वह सुख और आनंद का प्रतिनिधित्व करते हैं। यह संदर्भ राजकुमार की पूर्व सुंदरता और उनकी वर्तमान स्थिति के बीच के अंतर पर भी जोर देता है।",
+                "improve_understanding_of_text_hindi": "यह मार्गदर्शिका उन लोगों की सहायता के लिए बनाई गई है जो कथा में हैप्पी प्रिंस के महत्व को समझने में मूल अंग्रेजी वक्ता नहीं हैं।"
+            }
+        ],
+        "grade5": "One day, a strange crack sounded inside the statue. It was as if something had broken. The leaden heart of the Happy Prince had snapped in two. The air was very cold that morning. The Mayor was walking in the square with some important people. As they passed by the column, he looked up at the statue and said, 'Oh my! The Happy Prince looks very sad!' He meant that the prince's crown was missing, his eyes were gone, and he wasn't shiny anymore. In fact, he looked like a poor person!"
     },
     "19": {
         "content": "Then they melted the statue in a furnace, and the Mayor held a meeting\nof the Corporation to decide what was to be done with the metal. \"We\nmust have another statue, of course,\" he said, \"and it shall be a statue\nof myself.\"\n\"Of myself,\" said each of the Town Councillors, and they quarrelled.\nWhen I last heard of them they were quarrelling still.\n\"What a strange thing!\" said the overseer of the workmen at the foundry.\n\"This broken lead heart will not melt in the furnace. We must throw it\naway.\" So they threw it on a dust-heap where the dead Swallow was also\nlying.\n\"Bring me the two most precious things in the city,\" said God to one of\nHis Angels; and the Angel brought Him the leaden heart and the dead\nbird.\n\"You have rightly chosen,\" said God, \"for in my garden of Paradise this\nlittle bird shall sing for evermore, and in my city of gold the Happy\nPrince shall praise me.\"\n",
         "paragraphs": {
             "81": {
                 "content": "Then they melted the statue in a furnace, and the Mayor held a meeting\nof the Corporation to decide what was to be done with the metal. \"We\nmust have another statue, of course,\" he said, \"and it shall be a statue\nof myself.\"",
-                "num_words": 44
+                "num_words": 44,
+                "content_hindi": "उन्होंने मूर्ति को भट्टी में गर्म किया। इसके बाद महापौर ने पिघलाए गए धातु के साथ क्या करना है, इस पर चर्चा करने के लिए निगम के सदस्यों को इकट्ठा किया। उन्होंने सुझाव दिया, \"हमें निश्चित रूप से एक और प्रतिमा की आवश्यकता है। और यह मेरी खुद की प्रतिमा होनी चाहिए।"
             },
             "82": {
                 "content": "\"Of myself,\" said each of the Town Councillors, and they quarrelled.\nWhen I last heard of them they were quarrelling still.",
-                "num_words": 21
+                "num_words": 21,
+                "content_hindi": "प्रत्येक नगर पार्षद ने कहा, \"यह मेरे बारे में है\" और उन्होंने बहस शुरू कर दी। पिछली बार जब मैंने उनके बारे में सुना था, तब भी वे बहस कर रहे थे।"
             },
             "83": {
                 "content": "\"What a strange thing!\" said the overseer of the workmen at the foundry.\n\"This broken lead heart will not melt in the furnace. We must throw it\naway.\" So they threw it on a dust-heap where the dead Swallow was also\nlying.",
-                "num_words": 42
+                "num_words": 42,
+                "content_hindi": "फाउंड्री में कामगारों का पर्यवेक्षक हैरान था। उन्होंने कहा, \"यह टूटा हुआ सीसे का दिल भट्टी में पिघल नहीं रहा है। हमें इससे छुटकारा पाना चाहिए।\" इसके बाद उन्होंने इसे कचरे के ढेर पर फेंक दिया जहाँ मृत स्वालो भी था।"
             },
             "84": {
                 "content": "\"Bring me the two most precious things in the city,\" said God to one of\nHis Angels; and the Angel brought Him the leaden heart and the dead\nbird.",
-                "num_words": 29
+                "num_words": 29,
+                "content_hindi": "भगवान ने अपने एक दूत से उन्हें शहर की दो सबसे मूल्यवान वस्तुओं को लाने के लिए कहा। देवदूत ने ईश्वर के सामने एक सीसे जैसा ठंडा हृदय और एक मृत पक्षी लाकर जवाब दिया।"
             },
             "85": {
                 "content": "\"You have rightly chosen,\" said God, \"for in my garden of Paradise this\nlittle bird shall sing for evermore, and in my city of gold the Happy\nPrince shall praise me.\"",
-                "num_words": 31
+                "num_words": 31,
+                "content_hindi": "भगवान ने कहा, \"आपने सही विकल्प चुना है। मेरे स्वर्ग उद्यान में, यह छोटा सा पक्षी हमेशा गाता रहेगा। मेरे स्वर्णिम शहर में, हैप्पी प्रिंस मेरी प्रशंसा करेगा।"
             }
         },
         "num_chars": 879,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "A conversation between the Prince and the Swallow about a young man in a garret, struggling to write a play.",
+            "current_page_summary": "The Mayor decides that a statue of himself is needed, but the Town Councillors quarrel over it. An overseer suggests throwing away the broken lead heart, which God later uses to create a garden in Paradise where the dead bird will sing forever and the Happy Prince will praise him.",
+            "page_summary_so_far_hindi": "राजकुमार और स्वालो के बीच बातचीत एक ऐसे युवक के बारे में है जो एक छोटे से कमरे में रहता है जिसे गारेट के नाम से जाना जाता है। यह युवक एक नाटक लिखने की कोशिश कर रहा है। बातचीत उनके संघर्षों और राजकुमार की उन्हें सलाह के बारे में है। बातचीत की शुरुआत राजकुमार द्वारा स्वालो से पूछने से होती है कि क्या वह एक ऐसे युवक को जानता है जो एक अटारी में रहता है। स्वालो जवाब देता है कि वह ऐसे व्यक्ति को जानता है। राजकुमार तब पूछता है कि क्या वह युवक नाटक लिख रहा है। स्वालो ने पुष्टि की कि वह है। राजकुमार तब स्वालो से युवक के बारे में और बताने के लिए कहता है। द स्वालो में उस युवक को बहुत प्रतिभाशाली और बहुत सारे विचार रखने वाला बताया गया है। हालाँकि, यह युवक इन विचारों को नाटक में उतारने के लिए संघर्ष कर रहा है। स्वालो का कहना है कि लड़का बहुत दृढ़ है और अपना नाटक पूरा करने के लिए कड़ी मेहनत कर रहा है। राजकुमार तब स्वालो से पूछता है कि क्या उसे लगता है कि युवक सफल होगा। स्वालो जवाब देता है कि वह निश्चित नहीं है, लेकिन उसका मानना है कि युवक में बहुत क्षमता है। राजकुमार तब उस युवक को कड़ी मेहनत करते रहने और अपने सपनों को न छोड़ने की सलाह देता है। बातचीत का अंत राजकुमार और स्वालो के अपने खेल के साथ युवा व्यक्ति को शुभकामनाएं देने के साथ होता है।",
+            "current_page_summary_hindi": "मेयर का मानना है कि उनकी एक प्रतिमा आवश्यक है। हालाँकि, नगर पार्षद इस बारे में असहमत हैं। एक पर्यवेक्षक टूटे हुए सीसे के हृदय से छुटकारा पाने का प्रस्ताव देता है। बाद में, परमेश्वर इस टूटे हुए हृदय का उपयोग स्वर्ग में एक उद्यान बनाने के लिए करता है। इस बगीचे में, एक मृत पक्षी हमेशा के लिए गाएगा, और हैप्पी प्रिंस भगवान की प्रशंसा करेगा।"
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "quarrelling",
+                    "meaning": "arguing or fighting with someone",
+                    "synonym": "arguing",
+                    "usage": "The Town Councillors were quarrelling about the statue.",
+                    "meaning_in_context": "In this context, 'quarrelling' refers to a state of continuous argumentation or disagreement among the Town Councillors.",
+                    "word_hindi": "झगड़ा करना",
+                    "meaning_hindi": "किसी के साथ बहस करना या झगड़ना",
+                    "synonym_hindi": "तर्कसंगत दलील देना",
+                    "usage_hindi": "स्थानीय सरकारी अधिकारी प्रतिमा को लेकर बहस कर रहे थे।",
+                    "meaning_in_context_hindi": "इस स्थिति में, 'झगड़ने' का अर्थ है कि नगर पार्षद लगातार एक-दूसरे के साथ बहस कर रहे हैं या असहमत हैं।"
+                },
+                {
+                    "word": "leaden",
+                    "meaning": "made of lead",
+                    "synonym": "leaden",
+                    "usage": "The lead heart was made of a heavy, dense material.",
+                    "meaning_in_context": "In this context, 'leaden' refers to the statue's material being made of lead.",
+                    "word_hindi": "पीतवर्ण का",
+                    "meaning_hindi": "सीसे से बना",
+                    "synonym_hindi": "पीतवर्ण",
+                    "usage_hindi": "मुख्य हृदय को एक मोटे, भारी पदार्थ से बनाया गया था।",
+                    "meaning_in_context_hindi": "इस स्थिति में प्रतिमा की संरचना का वर्णन करने के लिए 'पीतल' शब्द का उपयोग किया जाता है। यह प्रतिमा सीसे से बनी है।"
+                },
+                {
+                    "word": "Paradise",
+                    "meaning": "a place of great beauty or happiness",
+                    "synonym": "heaven",
+                    "usage": "God promised the Happy Prince a life in Paradise.",
+                    "meaning_in_context": "In this context, 'Paradise' refers to God's heavenly realm where the Happy Prince will live.",
+                    "word_hindi": "स्वर्ग",
+                    "meaning_hindi": "महान सुंदरता या खुशी का स्थान",
+                    "synonym_hindi": "स्वर्ग",
+                    "usage_hindi": "भगवान ने हैप्पी प्रिंस को स्वर्ग में जगह का वादा किया था।",
+                    "meaning_in_context_hindi": "इस स्थिति में, 'स्वर्ग' एक ऐसा शब्द है जिसका उपयोग भगवान के स्वर्गीय राज्य का वर्णन करने के लिए किया जाता है। यहीं पर हैप्पी प्रिंस का निवास होगा।"
+                },
+                {
+                    "word": "Happy",
+                    "meaning": "feeling or showing great happiness",
+                    "synonym": "joyful",
+                    "usage": "The Happy Prince was a symbol of joy and happiness.",
+                    "meaning_in_context": "In this context, 'Happy' refers to the Prince's state of being joyful and content.",
+                    "word_hindi": "खुशी",
+                    "meaning_hindi": "महत्वपूर्ण खुशी महसूस करना या दिखाना",
+                    "synonym_hindi": "आनंददायक",
+                    "usage_hindi": "हैप्पी प्रिंस खुशी और आनंद का प्रतिनिधित्व करता था।",
+                    "meaning_in_context_hindi": "इस स्थिति में, राजकुमार की भावनात्मक स्थिति का वर्णन करने के लिए 'हैप्पी' का उपयोग किया जाता है। वह आनंदित और संतुष्ट महसूस कर रहा है।"
+                },
+                {
+                    "word": "garden",
+                    "meaning": "a piece of land used for growing flowers or trees",
+                    "synonym": "orchard",
+                    "usage": "God promised the Happy Prince a garden in Paradise.",
+                    "meaning_in_context": "In this context, 'garden' refers to a beautiful and peaceful place where the Happy Prince will live.",
+                    "word_hindi": "बगीचा",
+                    "meaning_hindi": "फूलों या पेड़ों को उगाने के लिए इस्तेमाल की जाने वाली भूमि का एक टुकड़ा",
+                    "synonym_hindi": "बगीचा",
+                    "usage_hindi": "भगवान ने हैप्पी प्रिंस से स्वर्ग में एक सुंदर उद्यान का वादा किया था।",
+                    "meaning_in_context_hindi": "इस स्थिति में, 'उद्यान' शब्द का उपयोग एक सुंदर और निर्मल क्षेत्र का वर्णन करने के लिए किया जाता है जहाँ हैप्पी प्रिंस निवास करेगा।"
+                },
+                {
+                    "word": "city of gold",
+                    "meaning": "a city made entirely of gold",
+                    "synonym": "golden city",
+                    "usage": "God promised the Happy Prince a life in his city of gold.",
+                    "meaning_in_context": "In this context, 'city of gold' refers to a place of great wealth and beauty.",
+                    "word_hindi": "सोने का शहर",
+                    "meaning_hindi": "एक शहर जो पूरी तरह से सोने से बना है",
+                    "synonym_hindi": "स्वर्ण शहर",
+                    "usage_hindi": "भगवान ने हैप्पी प्रिंस से अपने स्वर्ण शहर में भविष्य का वादा किया था।",
+                    "meaning_in_context_hindi": "इस स्थिति में, \"सोने के शहर\" शब्द का उपयोग एक ऐसे स्थान का वर्णन करने के लिए किया जाता है जो समृद्ध और आश्चर्यजनक है।"
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "Paradise",
+                "significance": "Refers to a concept in Christianity that represents a state of perfect happiness and bliss after death. In this context, it is likely referring to the Garden of Eden or a heavenly realm.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, understanding the Christian concept of Paradise can provide insight into the story's themes of redemption and afterlife.",
+                "part_of_text_hindi": "स्वर्ग",
+                "significance_hindi": "यह शब्द मृत्यु के बाद आने वाली पूर्ण खुशी और प्रसन्नता की स्थिति के बारे में ईसाई धर्म में एक विश्वास को संदर्भित करता है। यह ईडन के उद्यान या एक स्वर्गीय स्थान का उल्लेख कर रहा हो सकता है।",
+                "improve_understanding_of_text_hindi": "भारत से हिंदी बोलने वाले लोगों के लिए, स्वर्ग के ईसाई विचार को समझने से उन्हें मुक्ति के विषयों को समझने में मदद मिल सकती है और कहानी में मृत्यु के बाद क्या होता है, यह भी समझने में मदद मिल सकती है।"
+            },
+            {
+                "part_of_text": "Garden of Paradise",
+                "significance": "A reference to a biblical concept (Genesis 2:8-14) that describes a paradise or garden created by God for humanity. In this context, it is likely referring to a heavenly realm where the Happy Prince will sing forevermore.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, understanding the biblical concept of the Garden of Paradise can provide insight into the story's themes of redemption and afterlife.",
+                "part_of_text_hindi": "स्वर्ग का उद्यान",
+                "significance_hindi": "\"ईडन का उद्यान\" शब्द एक बाइबिल कहानी (उत्पत्ति 2:8-14) का संदर्भ है जो एक परिपूर्ण स्थान या स्वर्ग के बारे में बात करती है जिसे भगवान ने मनुष्यों के लिए बनाया था। यहाँ, यह एक स्वर्गीय क्षेत्र का सुझाव दे रहा है जहाँ हैप्पी प्रिंस हमेशा गाता रहेगा।",
+                "improve_understanding_of_text_hindi": "भारत में हिंदी बोलने वाले लोगों के लिए, बाइबल के स्वर्ग उद्यान के विचार को समझने से उन्हें कहानी में मुक्ति और मृत्यु के बाद के जीवन के विषयों को समझने में मदद मिल सकती है।"
+            },
+            {
+                "part_of_text": "city of gold",
+                "significance": "A reference to a mythical or symbolic city made of gold, often associated with wealth and prosperity. In this context, it is likely referring to a heavenly realm or a place of great beauty.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, understanding the concept of a city of gold can provide insight into the story's themes of wealth, prosperity, and happiness.",
+                "part_of_text_hindi": "सोने का शहर",
+                "significance_hindi": "यह शब्द सोने से बने एक पौराणिक या प्रतीकात्मक शहर को संदर्भित करता है, जिसे अक्सर धन और सौभाग्य से जोड़ा जाता है। यहाँ, यह एक स्वर्गीय स्वर्ग या महान सुंदरता के स्थान की ओर इशारा कर रहा हो सकता है।",
+                "improve_understanding_of_text_hindi": "भारत से हिंदी बोलने वाले लोगों के लिए, सोने से बने शहर के विचार को समझने से उन्हें धन, सफलता और आनंद के बारे में कहानी के संदेशों को समझने में मदद मिल सकती है।"
+            },
+            {
+                "part_of_text": "Happy Prince",
+                "significance": "The main character in the story, who is said to be a prince who has been placed under a curse that causes him to wither away until he dies. His 'happiness' refers to his state of being before the curse was placed upon him.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, understanding the character of the Happy Prince can provide insight into the story's themes of redemption and afterlife.",
+                "part_of_text_hindi": "हैप्पी प्रिंस",
+                "significance_hindi": "आख्यान का मुख्य पात्र एक राजकुमार है जो एक अभिशाप से पीड़ित है। यह अभिशाप उसे धीरे-धीरे अपनी जीवन शक्ति खोने का कारण बनता है और अंततः उसकी मृत्यु का कारण बनता है। उनकी 'खुशी' उस स्थिति का संदर्भ है जब उनसे अभिशाप नहीं हुआ था।",
+                "improve_understanding_of_text_hindi": "भारत से हिंदी बोलने वाले लोगों के लिए हैप्पी प्रिंस के चरित्र को समझने से उन्हें क्षमा के बारे में कहानी के विचारों और मरने के बाद क्या होता है, यह समझने में मदद मिल सकती है।"
+            },
+            {
+                "part_of_text": "Swallow",
+                "significance": "A reference to a bird that is often associated with death and mourning in various cultures. In this context, it may be referring to a symbol of death or mourning.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, understanding the symbolism of the Swallow can provide insight into the story's themes of mortality and loss.",
+                "part_of_text_hindi": "निगलना",
+                "significance_hindi": "यह शब्द एक प्रकार के पक्षी के बारे में है जिसे आम तौर पर विभिन्न समाजों में मृत्यु और दुःख से जोड़ा जाता है। यहाँ, यह मृत्यु या दुःख के प्रतीक की ओर इशारा कर सकता है।",
+                "improve_understanding_of_text_hindi": "भारत से हिंदी बोलने वाले लोगों के लिए, स्वालो के अर्थ को समझने से उन्हें मृत्यु और कुछ खोने के बारे में कहानी के विचारों को समझने में मदद मिल सकती है।"
+            },
+            {
+                "part_of_text": "Laden heart",
+                "significance": "A reference to a leaden or heavy heart, often associated with grief or sorrow. In this context, it may be referring to the prince's emotional state before his death.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, understanding the symbolism of a leaden heart can provide insight into the story's themes of mortality and loss.",
+                "part_of_text_hindi": "भरा हुआ हृदय",
+                "significance_hindi": "\"एक सीसीया या भारी हृदय\" वाक्यांश का उपयोग अक्सर उदासी या दुख की भावना का वर्णन करने के लिए किया जाता है। इस मामले में, यह सुझाव दे सकता है कि राजकुमार की मृत्यु से पहले वह बहुत दुखी या शोकित महसूस कर रहा था।",
+                "improve_understanding_of_text_hindi": "भारत से हिंदी बोलने वाले लोगों के लिए, सीसे से बने हृदय के अर्थ को समझने से उन्हें मृत्यु और कुछ खोने के बारे में कहानी के विचारों को समझने में मदद मिल सकती है।"
+            },
+            {
+                "part_of_text": "Corporation",
+                "significance": "A reference to a governing body or organization that oversees the management of a city or town. In this context, it may be referring to the local government of the city where the story takes place.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, understanding the concept of a Corporation can provide insight into the story's themes of governance and decision-making.",
+                "part_of_text_hindi": "निगम",
+                "significance_hindi": "यह शब्द एक ऐसे समूह को संदर्भित करता है जो किसी शहर या कस्बे को नियंत्रित या प्रबंधित करता है। यह उस शहर की स्थानीय सरकार की ओर इशारा कर सकता है जहाँ कहानी घटित हो रही है।",
+                "improve_understanding_of_text_hindi": "भारत से हिंदी बोलने वाले लोगों के लिए, यह समझना कि एक निगम क्या है, उन्हें कहानी के विचारों को बेहतर ढंग से समझने में मदद कर सकता है कि प्रबंधन और निर्णय कैसे लेना है।"
+            },
+            {
+                "part_of_text": "foundry",
+                "significance": "A reference to a workshop or factory where metal is melted and shaped. In this context, it may be referring to a place where the statue was created.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, understanding the concept of a foundry can provide insight into the story's themes of craftsmanship and industry.",
+                "part_of_text_hindi": "फाउंड्री",
+                "significance_hindi": "एक कार्यशाला या कारखाना जहाँ धातु को पिघलाया जाता है और एक आकार में ढाला जाता है। यह वह स्थान हो सकता है जहाँ प्रतिमा बनाई गई थी।",
+                "improve_understanding_of_text_hindi": "भारत से हिंदी बोलने वाले लोगों के लिए, एक ढाँचा के बारे में सीखना उन्हें हाथ से चीजें बनाने और कारखानों में काम करने के बारे में कहानी के विचारों को समझने में मदद कर सकता है।"
+            },
+            {
+                "part_of_text": "Angel",
+                "significance": "A reference to a supernatural being that serves as a messenger or agent of God. In this context, it may be referring to a divine being who brings messages from God.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, understanding the concept of an Angel can provide insight into the story's themes of spirituality and divinity.",
+                "part_of_text_hindi": "एंजल",
+                "significance_hindi": "यह शब्द एक अलौकिक इकाई को संदर्भित करता है जो एक दूत या भगवान के प्रतिनिधि के रूप में कार्य करता है। इसकी व्याख्या एक दिव्य प्राणी के रूप में की जा सकती है जो भगवान से संदेश ले कर आता है।",
+                "improve_understanding_of_text_hindi": "भारत से हिंदी बोलने वाले लोगों के लिए, यह समझना कि एक देवदूत क्या होता है, उन्हें कहानी में आध्यात्मिक और दिव्य तत्वों को समझने में मदद कर सकता है।"
+            }
+        ],
+        "grade5": "Then they melted the statue in a big fire. The Mayor had a meeting with the town leaders to decide what to do with the metal. 'We need another statue,' he said, 'and it should be a statue of me.' 'Of me' said each of the town leaders, and they started arguing. When I last heard about them, they were still fighting. A worker at the factory said, 'This broken lead heart won't melt in the fire. We need to throw it away.' So they threw it on a pile of trash where a dead bird was also lying. God told one of His angels to bring Him two special things from the city. The angel brought Him the leaden heart and the dead bird. 'You chose correctly,' said God, 'because in my beautiful garden, this little bird will sing forever, and in my golden city, the Happy Prince will praise me.'"
     }
 }
