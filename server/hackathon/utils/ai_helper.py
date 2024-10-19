@@ -42,6 +42,14 @@ def invoke_prompt(prompt: PromptTemplate, pydantic_parser: PydanticOutputParser,
     result = chain.invoke(input_data, config={"run_id": run_id})
     return run_id, result
 
+def invoke_simple_chain(prompt: PromptTemplate, input_data: dict):
+
+    model = get_llm()
+    run_id = uuid.uuid4()
+    chain = prompt | model
+    result = chain.invoke(input_data, config={"run_id": run_id})
+    return result
+
 def stream_answer(prompt: PromptTemplate, pydantic_parser: PydanticOutputParser, input_data: dict):
     model = get_llm()
     run_id = uuid.uuid4()

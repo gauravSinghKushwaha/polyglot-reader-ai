@@ -2,17 +2,8 @@ import os
 import json
 from typing import List, Dict
 from langchain.prompts import PromptTemplate
-from langchain.chains import LLMChain
-from langchain_ollama import OllamaLLM
 
-def get_llm():
-    return OllamaLLM(
-        base_url= "https://pfai.splashmath.com",
-        model="llama3.2",
-        temperature=0,
-        format="json",
-    )
-
+from hackathon.utils.ai_helper import invoke_simple_chain
 
 def read_book(file_path: str) -> str:
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -46,8 +37,7 @@ def extract_main_content(content: str) -> Dict:
         """
     )
 
-    chain = LLMChain(llm=llm, prompt=prompt)
-    result = chain.run(content=content)
+    result = invoke_simple_chain(prompt=prompt, input_data={ "content": content})
 
     # Parse the JSON result
     try:
@@ -94,11 +84,9 @@ def identify_chapters(paragraphs: List[Dict]) -> List[Dict]:
         """
     )
 
-    chain = LLMChain(llm=llm, prompt=chapter_prompt)
-
     current_chapter = None
     for para in paragraphs:
-        result = chain.run(paragraph=para['content'])
+        result = invoke_simple_chain(prompt=chapter_prompt, input_data={"paragraph": para['content']})
         chapter_info = result.split(':')[1].strip()
 
         if chapter_info != "Not a chapter start":
@@ -132,8 +120,8 @@ def process_book(file_path: str) -> Dict:
 
 
 def main():
-    input_folder = "path/to/input/folder"
-    output_folder = "path/to/output/folder"
+    input_folder = "/Users/sarthakbaweja/projects/polyglot-reader-ai/server/hackathon/books"
+    output_folder = "/Users/sarthakbaweja/projects/polyglot-reader-ai/server/hackathon/output"
 
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
