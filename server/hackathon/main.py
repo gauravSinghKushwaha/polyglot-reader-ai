@@ -323,6 +323,8 @@ def pre_process():
 
     files = tqdm(os.listdir(output_folder))
     for filename in files:
+        if filename in ["pg766.json", "pg30120.json"]:
+            continue
         output = output_folder + "/" + filename
         book = read_json_file(output)
 
