@@ -229,7 +229,7 @@ def summarize_by_page():
                     result.strip().replace("\n", "").replace("{", "").replace("}", "")
                 )
                 json_object = json.loads(result)
-                book[page_no]["vocab"] = json_object
+                book[page_no]["summary"] = json_object
                 if int(page_no) % 10 == 0:
                     write_json_file(file_path, book)
             except Exception as ex:
