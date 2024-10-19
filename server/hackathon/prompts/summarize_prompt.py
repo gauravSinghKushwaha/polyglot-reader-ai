@@ -25,13 +25,8 @@ SUMMARIZE_FIRST_PAGE_PROMPT = """
 
         INSTRUCTIONS: Summarize the first page of the book in less than 100 words. Do not miss the key details, events and characters.
 
-        FORMAT INSTRUCTIONS: 
-        { "page_summary_so_far" :"..."
-          "current_page_summary": "..."
-        }
-
         FIRST PAGE 1:\"""
-        {first_page}
+        {content}
         \""" 
 
         """
@@ -44,16 +39,11 @@ SUMMARIZE_OTHER_PAGE_PROMPT = """
         INSTRUCTIONS: Summarize the current page in less than 300 words. Take consideration of the summary of previous pages while generating one consolidated summary.
 
         SUMMARY OF PREVIOUS PAGES: \"""
-        {previous_page_summary}
+        {previous_summary}
         \""" 
         
-        FORMAT INSTRUCTIONS: 
-        { "page_summary_so_far" :"..."
-          "current_page_summary": "..."
-        }
-
         CURRENT PAGE: \"""
-        {current_page}
+        {content}
         \""" 
 
         """
