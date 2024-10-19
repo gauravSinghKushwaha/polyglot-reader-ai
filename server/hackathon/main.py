@@ -13,6 +13,7 @@ from tqdm import tqdm
 from prompts.summarize_prompt import (
     SUMMARIZE_FIRST_PAGE_PROMPT,
     SUMMARIZE_OTHER_PAGE_PROMPT,
+    SUMMARY_FORMAT,
 )
 from prompts.vocab_prompt import VOCAB_PROMPT_V2, VOCAB_FORMAT
 
@@ -208,6 +209,7 @@ def summarize_by_page():
                 prompt = PromptTemplate(
                     input_variables=["content"],
                     template=template,
+                    partial_variables={"format_instructions": SUMMARY_FORMAT},
                 )
 
             else:
@@ -217,6 +219,7 @@ def summarize_by_page():
                 prompt = PromptTemplate(
                     input_variables=["content", previous_summary],
                     template=template,
+                    partial_variables={"format_instructions": SUMMARY_FORMAT},
                 )
                 input_data["previous_summary"] = previous_summary
 
@@ -225,7 +228,8 @@ def summarize_by_page():
                 previous_summary = (
                     result.strip().replace("\n", "").replace("{", "").replace("}", "")
                 )
-                book[page_no]["summary"] = previous_summary
+                json_object = json.loads(result)
+                book[page_no]["vocab"] = json_object
                 if int(page_no) % 10 == 0:
                     write_json_file(file_path, book)
             except Exception as ex:
@@ -309,7 +313,7 @@ def cleanse_text_of_unwanted_characters(page):
             )
 
 
-# summarize_by_page()
-fetch_vocab_by_page()
+summarize_by_page()
+# fetch_vocab_by_page()
 
 # pre_process()
