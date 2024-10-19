@@ -123,8 +123,6 @@ def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
 
 
 def translate_page_wise(page_no, book):
-    print("Translating page wise.....")
-
     page = book[page_no]
     paragraphs = page["paragraphs"]
     for paragraph_number in tqdm(paragraphs):
@@ -189,8 +187,8 @@ def translate_text_with_llama(source_language, target_language, text):
 
 
 def pre_process():
-    input_folder = get_absolute_path("hackathon/books")
-    output_folder = get_absolute_path("hackathon/output")
+    input_folder = get_absolute_path("server/hackathon/books")
+    output_folder = get_absolute_path("server/hackathon/output")
 
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
@@ -198,7 +196,7 @@ def pre_process():
     files = os.listdir(input_folder)
     for filename in files:
 
-        # extract_pages_paragraphs_from_txt_file(input_folder, output_folder, filename)
+        extract_pages_paragraphs_from_txt_file(input_folder, output_folder, filename)
 
         files = tqdm(os.listdir(output_folder))
         for filename in files:
@@ -235,13 +233,15 @@ def pre_process():
             write_json_file(output, book)
 
 
-def extract_pages_paragraphs_from_txt_file(input_folder, output_folder, filename):
-    book_structure = extract_chapters_and_paragraphs(input_folder + "/" + filename)
-    pages = paginate_book(book_structure)
+import os.path
 
+
+def extract_pages_paragraphs_from_txt_file(input_folder, output_folder, filename):
     output = output_folder + "/" + filename.replace("txt", "json")
-    write_json_file(output_folder + "/" + filename.replace("txt", "json"), pages)
-    return output
+    if not os.path.isfile(output):
+        book_structure = extract_chapters_and_paragraphs(input_folder + "/" + filename)
+        pages = paginate_book(book_structure)
+        write_json_file(output, pages)
 
 
 def summarize_by_page(page_no, previous_summary, page):
