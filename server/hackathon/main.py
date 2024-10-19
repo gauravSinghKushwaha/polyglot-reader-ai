@@ -22,6 +22,8 @@ from prompts.summarize_prompt import (
 from prompts.vocab_prompt import VOCAB_PROMPT_V2, VOCAB_FORMAT
 from prompts.grade_appropriate import GRADE_LEVEL_5_PROMPT, GRADE_LEVEL_FORMAT
 
+FIRST_N_PAGES = 50
+
 
 def get_absolute_path(relative_path):
     return os.path.abspath(relative_path)
@@ -330,6 +332,9 @@ def pre_process():
         previous_summary = ""
         tqdm_book = tqdm(book)
         for page_no in tqdm_book:
+            """TODO for POC only processing max 50 pages of book"""
+            if int(page_no) > FIRST_N_PAGES:
+                continue
             tqdm_book.set_description("pageNo :" + page_no)
             page = book[page_no]
             cleanse_text_of_unwanted_characters(page=page)
