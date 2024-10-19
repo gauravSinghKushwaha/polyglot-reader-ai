@@ -204,42 +204,41 @@ def pre_process():
 
     files = os.listdir(input_folder)
     for filename in files:
-
         extract_pages_paragraphs_from_txt_file(input_folder, output_folder, filename)
 
-        files = tqdm(os.listdir(output_folder))
-        for filename in files:
-            output = output_folder + "/" + filename
-            book = read_json_file(output)
+    files = tqdm(os.listdir(output_folder))
+    for filename in files:
+        output = output_folder + "/" + filename
+        book = read_json_file(output)
 
-            previous_summary = ""
-            tqdm_book = tqdm(book)
-            for page_no in tqdm_book:
-                tqdm_book.set_description("pageNo :" + page_no)
-                page = book[page_no]
+        previous_summary = ""
+        tqdm_book = tqdm(book)
+        for page_no in tqdm_book:
+            tqdm_book.set_description("pageNo :" + page_no)
+            page = book[page_no]
 
-                if "summary" not in page:
-                    summaries = summarize_by_page(
-                        page_no=page_no, previous_summary=previous_summary, page=page
-                    )
-                    if "previous_summary" in summaries:
-                        previous_summary = summaries["previous_summary"]
+            if "summary" not in page:
+                summaries = summarize_by_page(
+                    page_no=page_no, previous_summary=previous_summary, page=page
+                )
+                if "previous_summary" in summaries:
+                    previous_summary = summaries["previous_summary"]
 
-                if "vocab" not in page:
-                    fetch_vocab_by_page(page=page)
+            if "vocab" not in page:
+                fetch_vocab_by_page(page=page)
 
-                if "cultural_ref" not in page:
-                    fetch_culture_ref_by_page(page_no=page_no, book=book)
+            if "cultural_ref" not in page:
+                fetch_culture_ref_by_page(page_no=page_no, book=book)
 
-                if "grade5" not in page:
-                    convert_to_chosen_grade(page=page, grade=None)
+            if "grade5" not in page:
+                convert_to_chosen_grade(page=page, grade=None)
 
-                translate_page_wise(page_no=page_no, book=book)
+            translate_page_wise(page_no=page_no, book=book)
 
-                if int(page_no) % 10 == 0:
-                    write_json_file(output, book)
+            if int(page_no) % 10 == 0:
+                write_json_file(output, book)
 
-            write_json_file(output, book)
+        write_json_file(output, book)
 
 
 import os.path
