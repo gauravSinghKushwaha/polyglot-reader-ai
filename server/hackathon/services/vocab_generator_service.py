@@ -1,9 +1,8 @@
 from langchain_core.output_parsers import PydanticOutputParser
 
-from app.models.ai.summary import SummaryModel
-from app.models.ai.vocab import VocabModel
-from app.prompts.vocab_prompt import VOCAB_PROMPT
-from app.utils.ai_helper import invoke_prompt, create_prompt_template, stream_answer
+from hackathon.models.ai.vocab import VocabModel
+from hackathon.prompts.vocab_prompt import VOCAB_PROMPT
+from hackathon.utils.ai_helper import invoke_prompt, create_prompt_template, stream_answer
 
 
 class VocabGeneratorService:

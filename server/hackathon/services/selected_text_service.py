@@ -1,6 +1,6 @@
 import json
 
-from app.utils.ai_helper import create_prompt_template
+from hackathon.utils.ai_helper import create_prompt_template
 from hackathon.prompts.selected_text_prompt import SELECTED_TEXT_PROMPT, SELECTED_TEXT_FORMAT
 from hackathon.utils.ai_helper import invoke_simple_chain
 
