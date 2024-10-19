@@ -6,7 +6,8 @@ from langchain.prompts import PromptTemplate
 import requests
 import json
 
-from hackathon.prompts.cultural_ref_prompt import CULTURAL_CONTEXT_PROMPT, CULTURAL_REF_FORMAT
+from prompts.cultural_ref_prompt import CULTURAL_CONTEXT_PROMPT, CULTURAL_REF_FORMAT
+
 from utils.file_reader import read_json_file
 
 from utils.ai_helper import invoke_simple_chain
@@ -214,18 +215,21 @@ def pre_process():
         for filename in files:
 
             book = read_json_file(output)
-            previous_summary = ""
 
+            previous_summary = ""
             tqdm_book = tqdm(book)
             for page_no in tqdm_book:
                 tqdm_book.set_description("pageNo :" + page_no)
-                summarize_by_page(
-                    page_no=page_no, previous_summary=previous_summary, book=book
+
+                page = book[page_no]
+
+                summaries = summarize_by_page(
+                    page_no=page_no, previous_summary=previous_summary, page=page
                 )
                 fetch_vocab_by_page(page_no=page_no, book=book)
                 fetch_culture_ref_by_page(page_no=page_no, book=book)
-            if int(page_no) % 10 == 0:
-                write_json_file(output, book)
+                if int(page_no) % 10 == 0:
+                    write_json_file(output, book)
 
         write_json_file(output, book)
 
@@ -255,11 +259,16 @@ def summarize_by_page(page_no, previous_summary, book):
 
     try:
         result = invoke_simple_chain(prompt, input_data=input_data)
-        previous_summary = (
-            result.strip().replace("\n", "").replace("{", "").replace("}", "")
-        )
         json_object = json.loads(result)
-        book[page_no]["summary"] = json_object
+
+        if page_no == "1":
+            previous_summary = json_object["current_page_summary"]
+        else:
+            previous_summary = json_object["page_summary_so_far"]
+
+        page["summary"] = json_object
+
+        return {"summary": page["summary"], "previous_summary": previous_summary}
     except Exception as ex:
         print("error " + str(ex))
 
@@ -280,9 +289,8 @@ def fetch_culture_ref_by_page(page_no, book):
     except Exception as ex:
         print("error " + str(ex))
 
-def fetch_vocab_by_page(page_no, book):
+def fetch_vocab_by_page(page_no, page):
 
-    page = book[page_no]
     page_content = page["content"]
     input_data = {"content": page_content}
     try:
@@ -295,7 +303,7 @@ def fetch_vocab_by_page(page_no, book):
 
         result = invoke_simple_chain(prompt, input_data=input_data)
         json_object = json.loads(result)
-        book[page_no]["vocab"] = json_object
+        page["vocab"] = json_object
     except Exception as ex:
         print("error " + str(ex))
 
@@ -309,17 +317,6 @@ def cleanse_text_of_unwanted_characters(page):
         .replace("\u201c", "“")
         .replace("\u201d", "”")
     )
-
-    if "summary" in page:
-        page["summary"] = (
-            page["summary"]
-            .replace("\u2019", "'")
-            .replace("\u2018", "'")
-            .replace("\u2013", "-")
-            .replace("\u00a9", "©")
-            .replace("\u201c", "“")
-            .replace("\u201d", "”")
-        )
 
     for para in page["paragraphs"]:
         if para in page["paragraphs"]:
