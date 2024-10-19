@@ -291,7 +291,8 @@ def pre_process():
         # Extract chapters and paragraphs
         book_structure = extract_chapters_and_paragraphs(input_folder + "/" + filename)
         pages = paginate_book(book_structure)
-        write_json_file(output_folder + "/" + filename.replace("txt", "json"), pages)
+        output_json_file = output_folder + "/" + filename.replace("txt", "json")
+        write_json_file(output_json_file, pages)
 
         # translate_page_wise(pages)
         # summarize_page_wise(pages)
