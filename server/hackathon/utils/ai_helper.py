@@ -4,7 +4,6 @@ from langchain_ollama.llms import OllamaLLM
 from langchain_core.exceptions import OutputParserException
 from langchain_core.output_parsers import PydanticOutputParser
 from langchain_core.prompts import PromptTemplate
-from langchain_openai import ChatOpenAI,OpenAI
 from retry import retry
 
 USE_OPENAI = False

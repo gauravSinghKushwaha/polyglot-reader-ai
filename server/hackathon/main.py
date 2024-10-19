@@ -1,9 +1,13 @@
 import os
 import json
+import re
 from typing import List, Dict
 from langchain.prompts import PromptTemplate
+import requests
+import json
 
 from utils.ai_helper import invoke_simple_chain
+from utils.file_writer import write_json_file
 from tqdm import tqdm
 
 
@@ -143,8 +147,6 @@ def main():
             print(f"Processed {filename} and saved to {output_file}")
 
 
-import json
-import re
 
 def extract_chapters_and_paragraphs(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -176,6 +178,7 @@ def extract_chapters_and_paragraphs(file_path):
                     result["paragraphs"].append({paragraph_index: paragraph_data})
                     paragraph_index += 1
 
+        json.dumps(result, indent=4)
     return result
 
 def group_paragraphs_by_chapter(book_json):
@@ -193,31 +196,132 @@ def group_paragraphs_by_chapter(book_json):
 
     return grouped_paragraphs
 
-input_folder = "/Users/gauravsinghkushwaha/Documents/code/splashlearn/polyglot-reader-ai/server/hackathon/books"
-output_folder = "/Users/gauravsinghkushwaha/Documents/code/splashlearn/polyglot-reader-ai/server/hackathon/output"
+def get_content_by_chapter_json(book_json):
+    content_by_chapter = {}
 
-if not os.path.exists(output_folder):
-    os.makedirs(output_folder)
+    for paragraph_entry in book_json['paragraphs']:
+        for _, paragraph_details in paragraph_entry.items():
+            chapter = paragraph_details['chapter']
+            paragraph_content = paragraph_details['content']
 
-files = tqdm(os.listdir(input_folder))
-for filename in files:
+            # Ensure a new list is created for each chapter
+            if chapter not in content_by_chapter:
+                content_by_chapter[chapter] = []
 
-    # Extract chapters and paragraphs
-    book_structure = extract_chapters_and_paragraphs(input_folder+'/'+filename)
-    dd = group_paragraphs_by_chapter(book_structure)
+            # Append each paragraph separately to preserve distinction
+            content_by_chapter[chapter].append(paragraph_content)
 
-    # Convert to JSON format and print
-    output_json = json.dumps(book_structure, indent=4)
-    print(output_json)
-
-    # Optionally, write the JSON output to a file
-    with open('book_structure.json', 'w', encoding='utf-8') as json_file:
-        json_file.write(output_json)
+    return content_by_chapter
 
 
+def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
+    pages = {}
+    current_page = {"content": "", "paragraphs": {}, "num_words": 0}
+    current_word_count = 0
+    page_count = 0  # To keep track of page number
+
+    # Iterate over the paragraphs in the book_json
+    for paragraph in book_json["paragraphs"]:
+        for key, details in paragraph.items():
+            paragraph_content = details["content"]
+            num_words = details["num_words"]
+
+            # Check if adding the next paragraph exceeds the limit
+            if current_word_count + num_words + next_paragraph_padding > word_limit:
+                # Save the current page to pages dictionary
+                pages[str(page_count)] = current_page
+
+                # Start a new page
+                page_count += 1
+                current_page = {"content": "", "paragraphs": {}, "num_words": 0}
+                current_word_count = 0
+
+            # Append the paragraph content and update counts
+            current_page["content"] += paragraph_content + "\n"
+            current_page["paragraphs"][key] = {"content": paragraph_content, "num_words": num_words}
+            current_word_count += num_words
+
+    # Add the last page if it has content
+    if current_word_count > 0:
+        current_page["num_words"] = current_word_count
+        pages[str(page_count)] = current_page
+
+    return pages
+
+
+def pre_process():
+    input_folder = "/Users/sarthakbaweja/projects/polyglot-reader-ai/server/hackathon/books"
+    output_folder = "/Users/sarthakbaweja/projects/polyglot-reader-ai/server/hackathon/output"
+
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+
+    files = tqdm(os.listdir(input_folder))
+    for filename in files:
+
+        # Extract chapters and paragraphs
+        book_structure = extract_chapters_and_paragraphs(input_folder + '/' + filename)
+        pages = paginate_book(book_structure)
+        write_json_file(output_folder + '/' + filename.replace("txt", "json"), pages)
+
+        # translate_page_wise(pages)
+        # summarize_page_wise(pages)
+
+pre_process()
 
 
 
+
+
+
+
+
+
+
+
+def translate_page_wise(pages):
+    print("Translating chapter wise")
+    translated_pages = []
+    for page in pages:
+        output = translate_text_with_sarvam("English", "Hindi", page)
+        # output = translate_text_with_llama("English", "Spanish", page)
+        translated_pages.append(output)
+    return translated_pages
+
+def translate_text_with_sarvam(source_language, target_language, text, speaker_gender="Male", mode="formal"):
+    url = "https://api.sarvam.ai/translate"
+    headers = {
+        "Content-Type": "application/json",
+        "api-subscription-key": "30908b39-df16-4c6a-a64c-7819055ab33c"
+    }
+
+    payload = {
+        "source_language_code": source_language,
+        "target_language_code": target_language,
+        "mode": mode,
+        "model": "mayura:v1",
+        "enable_preprocessing": True,
+        "input": text,
+        "speaker_gender": speaker_gender
+    }
+
+    response = requests.post(url, headers=headers, data=json.dumps(payload))
+
+    if response.status_code == 200:
+        translated_data = response.json()
+        return translated_data.get("output", "Translation failed, no output.")
+    else:
+        return f"Error: {response.status_code}, {response.text}"
+
+def translate_text_with_llama(source_language, target_language, text):
+    prompt = PromptTemplate(
+        input_variables=["content"],
+        template="""
+            
+        """,
+    )
+    result = invoke_simple_chain(prompt, input_data={ "content": text})
+    return result
 
 # if __name__ == "__main__":
     #main()

@@ -15,7 +15,7 @@ pip install -r requirements.txt
 Start the FastAPI Server
 
 ```
-uvicorn app.main:app --reload
+uvicorn hackathon.app:app --reload
 ```
 Access the API Documentation
 
