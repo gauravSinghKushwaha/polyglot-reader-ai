@@ -228,8 +228,8 @@ def pre_process():
                 )
                 fetch_vocab_by_page(page_no=page_no, book=book)
                 fetch_culture_ref_by_page(page_no=page_no, book=book)
-            if int(page_no) % 10 == 0:
-                write_json_file(output, book)
+                if int(page_no) % 10 == 0:
+                    write_json_file(output, book)
 
         write_json_file(output, book)
 
