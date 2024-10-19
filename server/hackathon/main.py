@@ -19,6 +19,7 @@ from prompts.summarize_prompt import (
     SUMMARY_FORMAT,
 )
 from prompts.vocab_prompt import VOCAB_PROMPT_V2, VOCAB_FORMAT
+from prompts.grade_appropriate import GRADE_LEVEL_5_PROMPT, GRADE_LEVEL_FORMAT
 
 
 def get_absolute_path(relative_path):
@@ -237,6 +238,9 @@ def pre_process():
                 fetch_vocab_by_page(page=page)
 
                 fetch_culture_ref_by_page(page_no=page_no, book=book)
+
+                convert_to_chosen_grade(page=page, grade=None)
+
                 if int(page_no) % 10 == 0:
                     write_json_file(output, book)
 
@@ -317,6 +321,29 @@ def fetch_vocab_by_page(page):
         result = invoke_simple_chain(prompt, input_data=input_data)
         json_object = json.loads(result)
         page["vocab"] = json_object
+    except Exception as ex:
+        print("error " + str(ex))
+
+
+def convert_to_chosen_grade(page, grade):
+
+    page_content = page["content"]
+    input_data = {"content": page_content}
+    try:
+
+        prompt = PromptTemplate(
+            input_variables=["content"],
+            template=GRADE_LEVEL_5_PROMPT,
+            partial_variables={"format_instructions": GRADE_LEVEL_FORMAT},
+        )
+
+        result = invoke_simple_chain(prompt, input_data=input_data)
+        json_object = json.loads(result)
+        page["grade5"] = (
+            json_object["grade_level_5_content"]
+            if "grade_level_5_content" in json_object
+            else ""
+        )
     except Exception as ex:
         print("error " + str(ex))
 
