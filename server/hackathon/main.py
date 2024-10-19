@@ -130,11 +130,16 @@ def translate_page_wise(page_no, book):
         tqdm_para.set_description(
             "page>>" + page_no + " paragraph_number >>" + paragraph_number
         )
-        if "content_hindi" not in page["paragraphs"][paragraph_number]:
-            paragraph = paragraphs[paragraph_number]
-            output = translate_text_with_sarvam("en-IN", "hi-IN", paragraph["content"])
-            # output = translate_text_with_llama("English", "Spanish", paragraph['content'])
-            page["paragraphs"][paragraph_number]["content_hindi"] = output
+        try:
+            if "content_hindi" not in page["paragraphs"][paragraph_number]:
+                paragraph = paragraphs[paragraph_number]
+                output = translate_text_with_sarvam(
+                    "en-IN", "hi-IN", paragraph["content"]
+                )
+                # output = translate_text_with_llama("English", "Spanish", paragraph['content'])
+                page["paragraphs"][paragraph_number]["content_hindi"] = output
+        except Exception as ex:
+            print(ex)
 
     return book
 
@@ -284,7 +289,7 @@ def summarize_by_page(page_no, previous_summary, page):
 
         return {"summary": page["summary"], "previous_summary": previous_summary}
     except Exception as ex:
-        print("error " + str(ex))
+        print(ex)
 
 
 def fetch_culture_ref_by_page(page_no, book):
@@ -304,7 +309,7 @@ def fetch_culture_ref_by_page(page_no, book):
             "cultural_historical_geographical_context"
         ]
     except Exception as ex:
-        print("error " + str(ex))
+        print(ex)
 
 
 def fetch_vocab_by_page(page):
@@ -323,7 +328,7 @@ def fetch_vocab_by_page(page):
         json_object = json.loads(result)
         page["vocab"] = json_object
     except Exception as ex:
-        print("error " + str(ex))
+        print(ex)
 
 
 def convert_to_chosen_grade(page, grade):
@@ -346,7 +351,7 @@ def convert_to_chosen_grade(page, grade):
             else ""
         )
     except Exception as ex:
-        print("error " + str(ex))
+        print(ex)
 
 
 def cleanse_text_of_unwanted_characters(page):
