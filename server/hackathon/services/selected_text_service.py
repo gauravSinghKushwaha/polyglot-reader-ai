@@ -16,4 +16,4 @@ class SelectedTextService:
 
         result = invoke_simple_chain(prompt_template, input_data)
 
-        return json.loads(result)
+        return result
