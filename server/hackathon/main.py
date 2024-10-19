@@ -226,18 +226,18 @@ def pre_process():
             tqdm_book = tqdm(book)
             for page_no in tqdm_book:
                 tqdm_book.set_description("pageNo :" + page_no)
+                page = book[page_no]
                 summarize_by_page(
-                    page_no=page_no, previous_summary=previous_summary, book=book
+                    page_no=page_no, previous_summary=previous_summary, page=page
                 )
-                fetch_vocab_by_page(page_no=page_no, book=book)
-            if int(page_no) % 10 == 0:
-                write_json_file(output, book)
+                fetch_vocab_by_page(page_no=page_no, page=page)
+                if int(page_no) % 10 == 0:
+                    write_json_file(output, book)
 
         write_json_file(output, book)
 
 
-def summarize_by_page(page_no, previous_summary, book):
-    page = book[page_no]
+def summarize_by_page(page_no, previous_summary, page):
     cleanse_text_of_unwanted_characters(page=page)
     page_content = page["content"]
     input_data = {"content": page_content}
@@ -266,15 +266,14 @@ def summarize_by_page(page_no, previous_summary, book):
             result.strip().replace("\n", "").replace("{", "").replace("}", "")
         )
         json_object = json.loads(result)
-        book[page_no]["summary"] = json_object
+        page["summary"] = json_object
 
     except Exception as ex:
         print("error " + str(ex))
 
 
-def fetch_vocab_by_page(page_no, book):
+def fetch_vocab_by_page(page_no, page):
 
-    page = book[page_no]
     page_content = page["content"]
     input_data = {"content": page_content}
     try:
@@ -287,7 +286,7 @@ def fetch_vocab_by_page(page_no, book):
 
         result = invoke_simple_chain(prompt, input_data=input_data)
         json_object = json.loads(result)
-        book[page_no]["vocab"] = json_object
+        page["vocab"] = json_object
     except Exception as ex:
         print("error " + str(ex))
 
