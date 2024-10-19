@@ -205,144 +205,87 @@ def pre_process():
     files = os.listdir(input_folder)
     for filename in files:
 
-        # Extract chapters and paragraphs
-        # book_structure = extract_chapters_and_paragraphs(input_folder + "/" + filename)
-        # pages = paginate_book(book_structure)
-        # write_json_file(output_folder + '/' + filename.replace("txt", "json"), pages)
-
-        pages = read_json_file(output_folder + '/' + filename.replace(".txt", "-hindi.json"))
-        file_path = output_folder + '/' + filename.replace(".txt", "-hindi.json")
-        translated_pages = translate_page_wise(pages, file_path)
-        write_json_file(file_path, translated_pages)
-        cultural_refs = cultural_ref_page_wise(pages, file_path)
-        write_json_file(file_path, cultural_refs)
-
-        # summarize_page_wise(pages)
+        book_structure = extract_chapters_and_paragraphs(input_folder + "/" + filename)
+        pages = paginate_book(book_structure)
 
 
-def summarize_by_page():
-    # def summarize_by_page(source_language, target_language, text):
+        output = output_folder + "/" + filename.replace("txt", "json")
+        write_json_file(output_folder + "/" + filename.replace("txt", "json"), pages)
 
-    output_folder = get_absolute_path("server/hackathon/output")
+        output_folder = get_absolute_path("server/hackathon/output")
+        files = tqdm(os.listdir(output_folder))
+        for filename in files:
 
-    files = tqdm(os.listdir(output_folder))
-    for filename in files:
+            book = read_json_file(output)
+            previous_summary = ""
 
-        file_path = file_path = output_folder + "/" + filename
-        book = read_json_file(file_path)
-        previous_summary = ""
-
-        tqdm_book = tqdm(book)
-        for page_no in tqdm_book:
-            tqdm_book.set_description("pageNo :" + page_no)
-            page = book[page_no]
-            page_content = page["content"]
-            input_data = {"content": page_content}
-            if page_no == "1":
-                template = SUMMARIZE_FIRST_PAGE_PROMPT
-                prompt = PromptTemplate(
-                    input_variables=["content"],
-                    template=template,
-                    partial_variables={"format_instructions": SUMMARY_FORMAT},
+            tqdm_book = tqdm(book)
+            for page_no in tqdm_book:
+                tqdm_book.set_description("pageNo :" + page_no)
+                summarize_by_page(
+                    page_no=page_no, previous_summary=previous_summary, book=book
                 )
+                fetch_vocab_by_page(page_no=page_no, book=book)
+            if int(page_no) % 10 == 0:
+                write_json_file(output, book)
 
-            else:
-                template = SUMMARIZE_OTHER_PAGE_PROMPT.replace(
-                    "{previous_summary}", previous_summary
-                )
-                prompt = PromptTemplate(
-                    input_variables=["content", previous_summary],
-                    template=template,
-                    partial_variables={"format_instructions": SUMMARY_FORMAT},
-                )
-                input_data["previous_summary"] = previous_summary
+        write_json_file(output, book)
 
-            try:
-                result = invoke_simple_chain(prompt, input_data=input_data)
-                previous_summary = (
-                    result.strip().replace("\n", "").replace("{", "").replace("}", "")
-                )
-                json_object = json.loads(result)
-                book[page_no]["vocab"] = json_object
-                if int(page_no) % 10 == 0:
-                    write_json_file(file_path, book)
-            except Exception as ex:
-                print("error " + str(ex))
 
-        write_json_file(file_path, book)
+def summarize_by_page(page_no, previous_summary, book):
+    page = book[page_no]
+    cleanse_text_of_unwanted_characters(page=page)
+    page_content = page["content"]
+    input_data = {"content": page_content}
+    if page_no == "1":
+        template = SUMMARIZE_FIRST_PAGE_PROMPT
+        prompt = PromptTemplate(
+            input_variables=["content"],
+            template=template,
+            partial_variables={"format_instructions": SUMMARY_FORMAT},
+        )
 
-def cultural_ref_page_wise():
+    else:
+        template = SUMMARIZE_OTHER_PAGE_PROMPT.replace(
+            "{previous_summary}", previous_summary
+        )
+        prompt = PromptTemplate(
+            input_variables=["content", previous_summary],
+            template=template,
+            partial_variables={"format_instructions": SUMMARY_FORMAT},
+        )
+        input_data["previous_summary"] = previous_summary
 
-    output_folder = get_absolute_path("hackathon/output")
+    try:
+        result = invoke_simple_chain(prompt, input_data=input_data)
+        previous_summary = (
+            result.strip().replace("\n", "").replace("{", "").replace("}", "")
+        )
+        json_object = json.loads(result)
+        book[page_no]["summary"] = json_object
 
-    files = tqdm(os.listdir(output_folder))
-    for filename in files:
+    except Exception as ex:
+        print("error " + str(ex))
 
-        file_path = file_path = output_folder + "/" + filename
-        book = read_json_file(file_path)
-        tqdm_book = tqdm(book)
-        for page_no in tqdm_book:
-            tqdm_book.set_description("pageNo :" + page_no)
-            page = book[page_no]
-            page_content = page["current_page"]
-            input_data = {"current_page": page_content}
-            template = CULTURAL_CONTEXT_PROMPT
-            prompt = PromptTemplate(
-                input_variables=["current_page"],
-                template=template,
-            )
 
-            try:
-                result = invoke_simple_chain(prompt, input_data=input_data)
-                previous_summary = (
-                    result.strip().replace("\n", "").replace("{", "").replace("}", "")
-                )
-                book[page_no]["cultural_ref"] = previous_summary
-                if int(page_no) % 10 == 0:
-                    write_json_file(file_path, book)
-            except Exception as ex:
-                print("error " + str(ex))
+def fetch_vocab_by_page(page_no, book):
 
-        write_json_file(file_path, book)
+    page = book[page_no]
+    page_content = page["content"]
+    input_data = {"content": page_content}
+    try:
 
-def fetch_vocab_by_page():
-    # def summarize_by_page(source_language, target_language, text):
+        prompt = PromptTemplate(
+            input_variables=["content"],
+            template=VOCAB_PROMPT_V2,
+            partial_variables={"format_instructions": VOCAB_FORMAT},
+        )
 
-    output_folder = get_absolute_path("server/hackathon/output")
-
-    files = tqdm(os.listdir(output_folder))
-    for filename in files:
-
-        file_path = file_path = output_folder + "/" + filename
-        book = read_json_file(file_path)
-
-        tqdm_book = tqdm(book)
-        for page_no in tqdm_book:
-            tqdm_book.set_description("pageNo :" + page_no)
-            page = book[page_no]
-
-            ## cleansing text... 1 teer 2 shikar :)
-            cleanse_text_of_unwanted_characters(page)
-
-            page_content = page["content"]
-            input_data = {"content": page_content}
-            try:
-
-                prompt = PromptTemplate(
-                    input_variables=["content"],
-                    template=VOCAB_PROMPT_V2,
-                    partial_variables={"format_instructions": VOCAB_FORMAT},
-                )
-
-                result = invoke_simple_chain(prompt, input_data=input_data)
-                json_object = json.loads(result)
-                book[page_no]["vocab"] = json_object
-                if int(page_no) % 10 == 0:
-                    write_json_file(file_path, book)
-            except Exception as ex:
-                print("error " + str(ex))
-
-        write_json_file(file_path, book)
+        result = invoke_simple_chain(prompt, input_data=input_data)
+        json_object = json.loads(result)
+        book[page_no]["vocab"] = json_object
+    except Exception as ex:
+        print("error " + str(ex))
 
 
 def cleanse_text_of_unwanted_characters(page):
@@ -381,8 +324,4 @@ def cleanse_text_of_unwanted_characters(page):
 
 
 
-# pre_process()
-# summarize_by_page()
-# pre_process()
-fetch_vocab_by_page()
-
+pre_process()
