@@ -325,8 +325,8 @@ def pre_process():
 
     files = tqdm(os.listdir(output_folder))
     for filename in files:
-        if filename in ["pg766.json", "pg30120.json"]:
-            continue
+        # if filename in ["pg766.json", "pg30120.json"]:
+        #     continue
         output = output_folder + "/" + filename
         book = read_json_file(output)
 
@@ -350,7 +350,7 @@ def pre_process():
             if "vocab" not in page:
                 fetch_vocab_by_page(page=page)
 
-            if "cultural_ref" not in page:
+            if "cultural_ref" not in page or 1==1:
                 fetch_culture_ref_by_page(page_no=page_no, book=book)
 
             if "grade5" not in page:
