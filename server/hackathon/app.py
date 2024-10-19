@@ -6,6 +6,8 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from sse_starlette import EventSourceResponse
 
+from hackathon.services.query_responder_service import QueryResponderService
+from hackathon.models.server.query_request_dto import AnswerQueryDto
 from hackathon.models.server.translate_request_dto import TranslateTextDto
 from hackathon.services.language_translation_service import LanguageTranslationService
 from hackathon.utils.response_builder import ResponseBuilder
@@ -17,6 +19,7 @@ SUPPORTED_LANGUAGES = ["English", "German", "French", "Italian", "Portuguese", "
 
 app = FastAPI()
 translation_service = LanguageTranslationService()
+query_service = QueryResponderService()
 
 app.add_middleware(
     CORSMiddleware,
@@ -90,22 +93,22 @@ def translate_text_stream(req: TranslateTextDto):
 #             yield "data: AI could not respond to your request.\n\n"
 #
 #     return EventSourceResponse(event_generator(), media_type="text/event-stream")
-#
-# @app.post("/ask")
-# def ask_question_stream(req: AnswerQueryDto):
-#     if not req.text or not req.query:
-#         raise HTTPException(status_code=400, detail="Text and query are required")
-#
-#     def event_generator():
-#         try:
-#             # Call the function that generates your answer, yielding results as they are produced
-#             for answer_chunk in query_service.respond_to_query_stream(req.text, req.query):
-#                 yield answer_chunk.answer # SSE format
-#         except Exception as ex:
-#             print("Exception: ", ex)
-#             yield "data: AI could not respond to your request.\n\n"
-#
-#     return EventSourceResponse(event_generator(), media_type="text/event-stream")
+
+@app.post("/ask")
+def ask_question_stream(req: AnswerQueryDto):
+    if not req.text or not req.query:
+        raise HTTPException(status_code=400, detail="Text and query are required")
+
+    def event_generator():
+        try:
+            # Call the function that generates your answer, yielding results as they are produced
+            for answer_chunk in query_service.respond_to_query_stream(req.text, req.query):
+                yield answer_chunk.answer # SSE format
+        except Exception as ex:
+            print("Exception: ", ex)
+            yield "data: AI could not respond to your request.\n\n"
+
+    return EventSourceResponse(event_generator(), media_type="text/event-stream")
 
 # def prepare_sse_output(result) -> str:
 #     json_output = result.model_dump(mode='json')
