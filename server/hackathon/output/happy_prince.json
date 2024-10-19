@@ -952,234 +952,1007 @@
         "paragraphs": {
             "43": {
                 "content": "\"I am waited for in Egypt,\" answered the Swallow. \"To-morrow my friends\nwill fly up to the Second Cataract. The river-horse couches there among\nthe bulrushes, and on a great granite throne sits the God Memnon. All\nnight long he watches the stars, and when the morning star shines he\nutters one cry of joy, and then he is silent. At noon the yellow lions\ncome down to the water's edge to drink. They have eyes like green\nberyls, and their roar is louder than the roar of the cataract.\"",
-                "num_words": 90
+                "num_words": 90,
+                "content_hindi": "पापी ने जवाब दिया, \"मुझे मिस्र में आने की उम्मीद है।\" कल, मेरे दोस्त दूसरी झिल्ली तक उड़ान भरेंगे। नदी-घोड़ा वहाँ बलुषों के बीच एक बड़े ग्रेनाइट सिंहासन पर बैठा हुआ है, मेमन भगवान। रात भर वह तारों को देखता रहता है। जब सुबह का तारा दिखाई देता है, तो वह एक आनंदित ध्वनि निकालता है, और फिर वह शांत हो जाता है। दोपहर में, पीले शेर पानी पीने के लिए पानी के किनारे नीचे आते हैं। उनकी आँखें हरे बेरिल की तरह हैं और उनकी गर्जना मोतियाबिंद की गर्जना से भी तेज है।\""
             },
             "44": {
                 "content": "\"Swallow, Swallow, little Swallow,\" said the Prince, \"far away across\nthe city I see a young man in a garret. He is leaning over a desk\ncovered with papers, and in a tumbler by his side there is a bunch of\nwithered violets. His hair is brown and crisp, and his lips are red as a\npomegranate, and he has large and dreamy eyes. He is trying to finish a\nplay for the Director of the Theatre, but he is too cold to write any\nmore. There is no fire in the grate, and hunger has made him faint.\"",
-                "num_words": 99
+                "num_words": 99,
+                "content_hindi": "राजकुमार ने कहा, \"निगल लो, निगल लो, छोटी निगल,\" और शहर के पार की ओर इशारा किया। उसे ऊपर की मंज़िल पर एक छोटे से कमरे में एक युवक को देख सकता था। वह आदमी कागजों से भरी एक मेज पर बैठा था। उसके बगल में, एक गिलास पर, मुरझाए हुए वायलेट का एक गुच्छ़ा था। उस आदमी के बाल भूरे और घुंघराले थे, उसके होंठ अनार के समान लाल थे, और उसकी आँखें बड़ी और सपनों जैसी थीं। वे थिएटर निर्देशक के लिए एक नाटक को पूरा करने की कोशिश कर रहे थे, लेकिन उन्हें और लिखने में बहुत मुश्किल हो रही थी। चूल्हे में आग नहीं थी और वह इतना भूखा था कि वह कमजोर महसूस कर रहा था।"
             },
             "45": {
                 "content": "\"I will wait with you one night longer,\" said the Swallow, who really\nhad a good heart. \"Shall I take him another ruby?\"",
-                "num_words": 23
+                "num_words": 23,
+                "content_hindi": "\"मैं एक और रात तुम्हारे साथ रहूँगा,\" स्वैलो ने कहा, जो वास्तव में दयालु था। \"क्या मुझे उसे एक और पन्ना देना चाहिए?\""
             }
         },
         "num_chars": 1093,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "A conversation between the Prince and the Swallow about a young man in a garret, struggling to write a play.",
+            "current_page_summary": "The Prince asks the Swallow if he can bring the young man another ruby to warm him up, as he is too cold to continue writing. The Swallow agrees to wait with the Prince for one more night and offers to take the young man another ruby."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "garret",
+                    "meaning": "a small room or loft in a building, especially one that is used for storage or as a dwelling place for the poor.",
+                    "synonym": "attic",
+                    "usage": "The young man was sitting in his garret, surrounded by stacks of old books and papers.",
+                    "meaning_in_context": "In this context, 'garret' refers to a small, humble room where the young playwright is struggling to work."
+                },
+                {
+                    "word": "tumbler",
+                    "meaning": "a container made of glass or other material used for holding liquids.",
+                    "synonym": "cup",
+                    "usage": "The playwright's tumbler was filled with cold water, which he had fetched from the well.",
+                    "meaning_in_context": "In this context, 'tumbler' refers to a small container where the playwright keeps his violets."
+                },
+                {
+                    "word": "pomegranate",
+                    "meaning": "a fruit with a leathery rind and many seeds, often eaten dried or used in cooking.",
+                    "synonym": "grapefruit",
+                    "usage": "The young man's lips were red as a pomegranate, indicating his flushed cheeks.",
+                    "meaning_in_context": "In this context, 'pomegranate' is used to describe the color of the young playwright's lips."
+                },
+                {
+                    "word": "ruby",
+                    "meaning": "a deep red gemstone.",
+                    "synonym": "emerald",
+                    "usage": "The playwright asked for a ruby to warm his hands.",
+                    "meaning_in_context": "In this context, 'ruby' is offered as a gift by the Swallow to help the young playwright overcome his cold."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "the Second Cataract",
+                "significance": "The Second Cataract refers to the Nile River in Egypt, which was a significant geographical feature in ancient times. The mention of this cataract may be relevant for Hindi-speaking people from India as it highlights the importance of water bodies and rivers in ancient Egyptian culture.",
+                "improve_understanding_of_text": "This reference can help non-native speakers understand the context of the story, which is set in Egypt during a specific time period. It also provides insight into the geographical features that were significant to the ancient Egyptians."
+            },
+            {
+                "part_of_text": "the river-horse couches there among the bulrushes",
+                "significance": "The mention of 'river-horse' and 'bulrushes' is a reference to ancient Egyptian mythology and symbolism. The 'river-horse' was a symbol associated with the god Hapi, who was revered as the god of the Nile River. Bulrushes were also significant in ancient Egyptian culture as they represented fertility and rebirth.",
+                "improve_understanding_of_text": "This reference can help non-native speakers understand the cultural context of the story, which is set in a mythological and symbolic world. It provides insight into the significance of certain symbols and creatures in ancient Egyptian mythology."
+            },
+            {
+                "part_of_text": "the God Memnon",
+                "significance": "Memnon was an important figure in ancient Greek mythology, not Egyptian. However, his association with the Second Cataract (Nile River) may be a reference to the Greek historian Herodotus' account of the river's significance in ancient Egypt. The mention of Memnon highlights the cultural exchange and influence between ancient Greece and Egypt.",
+                "improve_understanding_of_text": "This reference can help non-native speakers understand the cultural context of the story, which involves a character from Greek mythology interacting with an Egyptian setting. It provides insight into the historical and cultural exchange between ancient civilizations."
+            },
+            {
+                "part_of_text": "the yellow lions",
+                "significance": "The mention of 'yellow lions' is likely a reference to the lions that were revered in ancient Egypt as symbols of royalty and power. The color yellow was also significant in ancient Egyptian culture, representing the sun god Ra.",
+                "improve_understanding_of_text": "This reference can help non-native speakers understand the cultural context of the story, which involves the depiction of animals as symbolic figures in ancient Egyptian society. It provides insight into the significance of certain colors and creatures in ancient Egyptian mythology."
+            },
+            {
+                "part_of_text": "the city",
+                "significance": "The mention of a 'city' without specifying its name may be a reference to a generic urban setting, but it could also imply a specific city that was significant to the story's author or historical period. For Hindi-speaking people from India, this reference may evoke associations with ancient Indian cities like Indus Valley Civilization cities.",
+                "improve_understanding_of_text": "This reference can help non-native speakers understand the context of the story, which is set in a generic urban setting. It provides insight into the author's possible intentions and historical references that may be relevant to Hindi-speaking people from India."
+            },
+            {
+                "part_of_text": "the garret",
+                "significance": "The mention of a 'garret' (a small, dimly lit room) is likely a reference to the living conditions of artists and writers in ancient times. For Hindi-speaking people from India, this reference may evoke associations with traditional Indian homes or rural dwellings.",
+                "improve_understanding_of_text": "This reference can help non-native speakers understand the context of the story, which involves the depiction of an artist's living conditions. It provides insight into the historical and cultural significance of artistic spaces in ancient times."
+            },
+            {
+                "part_of_text": "the Director of the Theatre",
+                "significance": "The mention of a 'Director of the Theatre' may be a reference to the role of theatre directors in ancient Greek or Roman societies. For Hindi-speaking people from India, this reference may evoke associations with traditional Indian theatre forms like Kathakali or Bharatanatyam.",
+                "improve_understanding_of_text": "This reference can help non-native speakers understand the context of the story, which involves a character interacting with a theatrical setting. It provides insight into the historical and cultural significance of theatre in ancient societies."
+            },
+            {
+                "part_of_text": "the ruby",
+                "significance": "The mention of 'ruby' is likely a reference to the gemstone's value and rarity in ancient times. For Hindi-speaking people from India, this reference may evoke associations with traditional Indian gemstones like diamonds or rubies.",
+                "improve_understanding_of_text": "This reference can help non-native speakers understand the context of the story, which involves the depiction of a valuable gemstone. It provides insight into the historical and cultural significance of gemstones in ancient societies."
+            },
+            {
+                "part_of_text": "the pomegranate",
+                "significance": "The mention of 'pomegranate' is likely a reference to the fruit's symbolic significance in ancient cultures, particularly in Greek mythology. For Hindi-speaking people from India, this reference may evoke associations with traditional Indian fruits like mangoes or bananas.",
+                "improve_understanding_of_text": "This reference can help non-native speakers understand the context of the story, which involves the depiction of a fruit as a symbol. It provides insight into the cultural significance of certain fruits in ancient societies."
+            },
+            {
+                "part_of_text": "the violets",
+                "significance": "The mention of 'violets' is likely a reference to the flower's symbolic significance in ancient cultures, particularly in Greek mythology. For Hindi-speaking people from India, this reference may evoke associations with traditional Indian flowers like marigolds or lotus.",
+                "improve_understanding_of_text": "This reference can help non-native speakers understand the context of the story, which involves the depiction of a flower as a symbol. It provides insight into the cultural significance of certain flowers in ancient societies."
+            }
+        ],
+        "grade5": "The swallow said, 'I'll wait with you one more night.' The swallow really cared about people. 'Should I bring him another red gemstone?' he asked."
     },
     "12": {
         "content": "\"Alas! I have no ruby now,\" said the Prince; \"my eyes are all that I\nhave left. They are made of rare sapphires, which were brought out of\nIndia a thousand years ago. Pluck out one of them and take it to him. He\nwill sell it to the jeweller, and buy food and firewood, and finish his\nplay.\"\n\"Dear Prince,\" said the Swallow, \"I cannot do that\"; and he began to\nweep.\n\"Swallow, Swallow, little Swallow,\" said the Prince, \"do as I command\nyou.\"\nSo the Swallow plucked out the Prince's eye, and flew away to the\nstudent's garret. It was easy enough to get in, as there was a hole in\nthe roof. Through this he darted, and came into the room. The young man\nhad his head buried in his hands, so he did not hear the flutter of the\nbird's wings, and when he looked up he found the beautiful sapphire\nlying on the withered violets.\n\"I am beginning to be appreciated,\" he cried; \"this is from some great\nadmirer. Now I can finish my play,\" and he looked quite happy.\n",
         "paragraphs": {
             "46": {
                 "content": "\"Alas! I have no ruby now,\" said the Prince; \"my eyes are all that I\nhave left. They are made of rare sapphires, which were brought out of\nIndia a thousand years ago. Pluck out one of them and take it to him. He\nwill sell it to the jeweller, and buy food and firewood, and finish his\nplay.\"",
-                "num_words": 59
+                "num_words": 59,
+                "content_hindi": "राजकुमार ने दुख से कहा, \"अब मेरे पास रूबी नहीं है।\" बस मेरे पास अपनी आँखें ही बची हैं। वे कीमती नीलमणि से बने हैं, जिन्हें एक हजार साल पहले भारत से लाया गया था। यदि आप उनमें से एक को निकालते हैं, तो वह इसे जौहरी को बेच सकता है। उसे जो पैसा मिलता है, उससे उसे खाना और जलावन की लकड़ी खरीदने में मदद मिलेगी और वह अपना नाटक पूरा कर सकता है।"
             },
             "47": {
                 "content": "\"Dear Prince,\" said the Swallow, \"I cannot do that\"; and he began to\nweep.",
-                "num_words": 14
+                "num_words": 14,
+                "content_hindi": "\"प्रिय राजकुमार,\" चिड़पंखी ने कहा, \"मैं ऐसा नहीं कर सकती।\" इसके बाद वह रोने लगी।"
             },
             "48": {
                 "content": "\"Swallow, Swallow, little Swallow,\" said the Prince, \"do as I command\nyou.\"",
-                "num_words": 12
+                "num_words": 12,
+                "content_hindi": "\"निगलो, निगलो, छोटा निगलो,\" राजकुमार ने कहा, \"जो मैं तुम्हें करने के लिए कहता हूँ, वह करो।\""
             },
             "49": {
                 "content": "So the Swallow plucked out the Prince's eye, and flew away to the\nstudent's garret. It was easy enough to get in, as there was a hole in\nthe roof. Through this he darted, and came into the room. The young man\nhad his head buried in his hands, so he did not hear the flutter of the\nbird's wings, and when he looked up he found the beautiful sapphire\nlying on the withered violets.",
-                "num_words": 75
+                "num_words": 75,
+                "content_hindi": "पापी ने राजकुमार की आंख निकाल दी और छात्र के अटारी में उड़ गया। भीतरी भाग में प्रवेश करना आसान था क्योंकि छत में एक छेद था। पक्षी ने तेजी से इस छेद से उड़ कर कमरे में प्रवेश किया। युवक ने अपने सिर को अपने हाथों से ढक रखा था, इसलिए उसने पक्षी के पंखों के फड़फड़ाने की आवाज नहीं सुनी। जब उसने ऊपर देखा, तो उसने पीली पड़ी बैंगनी फूलों पर पड़ी सुंदर नीलम को देखा।"
             },
             "50": {
                 "content": "\"I am beginning to be appreciated,\" he cried; \"this is from some great\nadmirer. Now I can finish my play,\" and he looked quite happy.",
-                "num_words": 25
+                "num_words": 25,
+                "content_hindi": "\"मुझे पहचाना जाने लगा है,\" उन्होंने कहा; \"यह एक बड़े प्रशंसक की तरफ से प्रशंसा है।\" अब मैं अपना नाटक पूरा कर सकता हूँ,\" और वे बहुत खुश लग रहे थे।"
             }
         },
         "num_chars": 951,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "A conversation between the Prince and the Swallow about a young man in a garret, struggling to write a play.",
+            "current_page_summary": "The Prince asks the Swallow to pluck out one of his rare sapphire eyes to help the young man in the garret buy food and finish his play. The Swallow reluctantly agrees and flies to the garret through a hole in the roof. Upon arrival, he finds the young man overjoyed upon seeing the sapphire eye, believing it is from a great admirer."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "ruby",
+                    "meaning": "a precious stone of a deep red color",
+                    "synonym": "gemstone",
+                    "usage": "The ring was made of a beautiful ruby, which sparkled in the light.",
+                    "meaning_in_context": "In this context, 'ruby' refers to the Prince's eye, emphasizing its rarity and value."
+                },
+                {
+                    "word": "sapphires",
+                    "meaning": "a type of precious stone, often blue or colorless",
+                    "synonym": "gemstones",
+                    "usage": "The sapphire necklace was passed down through generations of royal families.",
+                    "meaning_in_context": "In this context, 'sapphires' refers to the material that makes up the Prince's eyes."
+                },
+                {
+                    "word": "jeweller",
+                    "meaning": "a person who sells or repairs jewelry",
+                    "synonym": "jeweler",
+                    "usage": "The jeweller carefully cleaned and polished the diamond ring.",
+                    "meaning_in_context": "In this context, 'jeweller' refers to the person who will buy the sapphire from the Prince."
+                },
+                {
+                    "word": "garret",
+                    "meaning": "a small room or loft, often used for storage or as a bedroom",
+                    "synonym": "attic",
+                    "usage": "The old house had a cozy garret with a sloping ceiling.",
+                    "meaning_in_context": "In this context, 'garret' refers to the student's living space."
+                },
+                {
+                    "word": "darted",
+                    "meaning": "moved quickly and suddenly",
+                    "synonym": "sprinted",
+                    "usage": "The bird darted across the field, chasing after its prey.",
+                    "meaning_in_context": "In this context, 'darted' describes the Swallow's quick movement through the roof."
+                },
+                {
+                    "word": "flutter",
+                    "meaning": "a light and gentle movement of the wings or a piece of fabric",
+                    "synonym": "fluttering",
+                    "usage": "The butterfly's wings fluttered rapidly as it flew.",
+                    "meaning_in_context": "In this context, 'flutter' describes the sound of the Swallow's wings as it entered the room."
+                },
+                {
+                    "word": "withered",
+                    "meaning": "became dry and shriveled due to lack of water or moisture",
+                    "synonym": "dried out",
+                    "usage": "The flowers withered in the hot sun.",
+                    "meaning_in_context": "In this context, 'withered' describes the state of the violets on the floor."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "my eyes are all that I have left. They are made of rare sapphires, which were brought out of India a thousand years ago.",
+                "significance": "The reference to sapphires being brought out of India a thousand years ago highlights the historical trade routes between India and other parts of the world during the medieval period. This context is important for understanding the cultural exchange and wealth that existed in ancient India.",
+                "improve_understanding_of_text": "This detail provides insight into the Prince's wealth and the historical significance of Indian sapphires, which may not be immediately apparent to non-native speakers."
+            },
+            {
+                "part_of_text": "the student's garret",
+                "significance": "The term 'garret' is an old English word for a small room or attic. In this context, it refers to the humble abode of the young man. This detail provides insight into the social class and living conditions of the characters.",
+                "improve_understanding_of_text": "This reference helps readers understand the character's background and social status, which may not be immediately apparent without this contextual information."
+            },
+            {
+                "part_of_text": "the beautiful sapphire lying on the withered violets",
+                "significance": "The use of 'withered violets' as a symbol of mourning or decay is a poetic device that adds depth to the story. Violets were also associated with love and passion in ancient Greek and Roman cultures, which may be relevant to the character's emotional state.",
+                "improve_understanding_of_text": "This detail enriches the reader's understanding of the character's emotions and the symbolic language used in the story."
+            }
+        ],
+        "grade5": "A prince said, 'I have no ruby left, but I do have beautiful sapphires in my eyes.' He told a swallow to take one of the sapphires to a jeweller so he could buy food and a place to live. The swallow refused and started crying. The prince asked the swallow again, but it still didn't want to help. So, the swallow took out the prince's eye and flew away to find a young man who was feeling sad. The young man had his head in his hands, so he didn't hear the swallow flying around him. When he looked up, he saw the beautiful sapphire on the ground. He was happy because someone must have liked him very much. Now he could finish writing his play."
     },
     "13": {
         "content": "The next day the Swallow flew down to the harbour. He sat on the mast of\na large vessel and watched the sailors hauling big chests out of the\nhold with ropes. \"Heave a-hoy!\" they shouted as each chest came up.\n\"I am going to Egypt!\" cried the Swallow, but nobody minded, and when\nthe moon rose he flew back to the Happy Prince.\n\"I am come to bid you good-bye,\" he cried.\n\"Swallow, Swallow, little Swallow,\" said the Prince, \"will you not stay\nwith me one night longer?\"\n\"It is winter,\" answered the Swallow, \"and the chill snow will soon be\nhere. In Egypt the sun is warm on the green palm-trees, and the\ncrocodiles lie in the mud and look lazily about them. My companions are\nbuilding a nest in the Temple of Baalbec, and the pink and white doves\nare watching them, and cooing to each other. Dear Prince, I must leave\nyou, but I will never forget you, and next spring I will bring you back\ntwo beautiful jewels in place of those you have given away. The ruby\nshall be redder than a red rose, and the sapphire shall be as blue as\nthe great sea.\"\n",
         "paragraphs": {
             "51": {
                 "content": "The next day the Swallow flew down to the harbour. He sat on the mast of\na large vessel and watched the sailors hauling big chests out of the\nhold with ropes. \"Heave a-hoy!\" they shouted as each chest came up.\n\"I am going to Egypt!\" cried the Swallow, but nobody minded, and when\nthe moon rose he flew back to the Happy Prince.",
-                "num_words": 64
+                "num_words": 64,
+                "content_hindi": "अगले दिन, स्वालो पक्षी बंदरगाह पर उतरा। यह एक बड़े जहाज के मस्तूल पर बैठा और नाविकों को रस्सी का उपयोग करके जहाज के पोत से बड़ी-बड़ी अलमारी बाहर निकालते हुए देखा। नाविक \"हैव ए-हॉय!\" चिल्लाते थे। हर बार जब एक छाती बाहर निकाली जाती थी। तब स्वालो ने घोषणा की, \"मैं मिस्र जा रहा हूँ!\" लेकिन किसी ने ध्यान नहीं दिया। जब चंद्रमा निकला, तो स्वैलो हैप्पी प्रिंस के पास लौट आया।"
             },
             "52": {
                 "content": "\"I am come to bid you good-bye,\" he cried.",
-                "num_words": 9
+                "num_words": 9,
+                "content_hindi": "उन्होंने कहा, \"मैं आपसे अलविदा कहने आया हूँ।\""
             },
             "53": {
                 "content": "\"Swallow, Swallow, little Swallow,\" said the Prince, \"will you not stay\nwith me one night longer?\"",
-                "num_words": 16
+                "num_words": 16,
+                "content_hindi": "\"निगल लो, निगल लो, छोटी निगल,\" राजकुमार ने पूछा, \"क्या तुम एक और रात मेरे साथ नहीं रुकोगी?\""
             },
             "54": {
                 "content": "\"It is winter,\" answered the Swallow, \"and the chill snow will soon be\nhere. In Egypt the sun is warm on the green palm-trees, and the\ncrocodiles lie in the mud and look lazily about them. My companions are\nbuilding a nest in the Temple of Baalbec, and the pink and white doves\nare watching them, and cooing to each other. Dear Prince, I must leave\nyou, but I will never forget you, and next spring I will bring you back\ntwo beautiful jewels in place of those you have given away. The ruby\nshall be redder than a red rose, and the sapphire shall be as blue as\nthe great sea.\"",
-                "num_words": 112
+                "num_words": 112,
+                "content_hindi": "\"सर्दियों आ गई है,\" चिड़पहिया पक्षी ने जवाब दिया, \"और जल्द ही ठंडी बर्फ यहाँ आ जाएगी।\" मिस्र में, सूरज हरे ताड़ के पेड़ों पर गर्मजोशी से चमकता है, और मगरमच्छ आस-पास देखते हुए गीली मिट्टी में सुस्त होकर लेट जाते हैं। मेरे दोस्त बाल्बेक के मंदिर में एक घोंसला बना रहे हैं, और गुलाबी और सफेद कबूतर उन्हें देख रहे हैं, एक दूसरे से धीरे से कूक कर रहे हैं। प्रिय राजकुमार, मुझे अब जाना है, लेकिन मैं आपको नहीं भूलूंगा। अगले वसंत में, आप जो दे चुके हैं, उनके स्थान पर मैं आपको दो सुंदर गहने वापस लाऊँगा। मनमोहक पत्थर लाल गुलाब के समान लाल होगा, और नीलम का रंग विशाल समुद्र के समान नीला होगा।\""
             }
         },
         "num_chars": 1042,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "A conversation between the Prince and the Swallow about a young man in a garret, struggling to write a play.",
+            "current_page_summary": "The next day, the Swallow flew down to the harbour, where he watched sailors hauling chests out of a vessel. He then returned to the Happy Prince, who asked him to stay longer. The Swallow explained that it was winter and he wanted to escape the cold in Egypt, where he would join his companions building a nest in the Temple of Baalbec. He promised to return next spring with two beautiful jewels as gifts for the Prince."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "harbour",
+                    "meaning": "a place where ships can dock and unload cargo",
+                    "synonym": "port",
+                    "usage": "The ship sailed into the harbour, where it was greeted by a crowd of cheering people.",
+                    "meaning_in_context": "In this context, 'harbour' refers to a specific location where the Swallow landed its vessel."
+                },
+                {
+                    "word": "Baalbec",
+                    "meaning": "a temple in Lebanon that is famous for its ancient ruins and historical significance",
+                    "synonym": "Temple of Baal",
+                    "usage": "The tourists visited the Temple of Baalbec, marveling at its intricate carvings and stunning architecture.",
+                    "meaning_in_context": "In this context, 'Baalbec' refers to a specific location where the Swallow's companions are building a nest."
+                },
+                {
+                    "word": "crocodiles",
+                    "meaning": "large reptiles that live in warm water and feed on fish and other aquatic animals",
+                    "synonym": "alligators",
+                    "usage": "The wildlife documentary featured crocodiles basking in the sun, their scaly skin glistening with dew.",
+                    "meaning_in_context": "In this context, 'crocodiles' refers to a specific animal that is present in Egypt."
+                },
+                {
+                    "word": "Baal",
+                    "meaning": "a god in ancient mythology, often associated with fertility and prosperity",
+                    "synonym": "deity",
+                    "usage": "The ancient temple was dedicated to Baal, the patron god of the city.",
+                    "meaning_in_context": "In this context, 'Baal' refers to a specific deity that is worshipped in Egypt."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "He sat on the mast of a large vessel",
+                "significance": "The reference to a 'large vessel' is likely referring to a ship, which was an important mode of transportation in ancient times. In the context of the story, it's also significant because it allows the Swallow to travel to Egypt.",
+                "improve_understanding_of_text": "This detail helps non-native speakers understand that the story is set in a time period where sailing ships were common and played a crucial role in trade and exploration."
+            },
+            {
+                "part_of_text": "In Egypt the sun is warm on the green palm-trees",
+                "significance": "The mention of 'green palm-trees' is a reference to the palm trees that are native to Egypt. Palm trees have cultural significance in many Middle Eastern and North African countries, including Egypt.",
+                "improve_understanding_of_text": "This detail provides context about the setting of the story and helps non-native speakers understand the geographical location of Egypt."
+            },
+            {
+                "part_of_text": "My companions are building a nest in the Temple of Baalbec",
+                "significance": "The reference to 'Baalbec' is significant because it's an actual ancient temple located in Lebanon. The Temple of Baalbec was built during the Roman period and has historical importance in the region.",
+                "improve_understanding_of_text": "This detail provides context about the specific location where the Swallow's companions are building a nest, which helps non-native speakers understand the geographical and cultural significance of the story."
+            },
+            {
+                "part_of_text": "The ruby shall be redder than a red rose",
+                "significance": "The reference to 'red rose' is a metaphorical expression that evokes the idea of something being beautiful or valuable. In this context, it's also significant because rubies are precious stones with cultural and historical importance.",
+                "improve_understanding_of_text": "This detail helps non-native speakers understand the symbolic meaning behind the Swallow's promise to bring back jewels and appreciate the value placed on beauty and rarity in the story."
+            },
+            {
+                "part_of_text": "The sapphire shall be as blue as the great sea",
+                "significance": "The reference to 'the great sea' is a metaphorical expression that evokes the idea of something being vast or powerful. In this context, it's also significant because sapphires are precious stones with cultural and historical importance.",
+                "improve_understanding_of_text": "This detail helps non-native speakers understand the symbolic meaning behind the Swallow's promise to bring back jewels and appreciate the value placed on rarity and beauty in the story."
+            }
+        ],
+        "grade5": "The next day, the Swallow flew to the harbour. He sat on the mast of a big boat and watched the sailors pulling out big chests with ropes. 'Heave a-hoy!' they shouted as each chest came up. 'I'm going to Egypt!' said the Swallow, but nobody paid attention. When the moon rose, he flew back to the Happy Prince. 'I've come to say goodbye,' he said. The Prince looked at him and said, 'Swallow, won't you stay with me one more night?' 'It's winter,' replied the Swallow, 'and soon it will be cold outside. In Egypt, the sun is warm on the palm trees, and the crocodiles are sleeping in the mud. My friends are building a nest in the Temple of Baalbec, and the pink and white doves are watching them, cooing to each other. Dear Prince, I have to leave you, but I'll never forget you. Next spring, I'll bring you back two beautiful jewels as a gift. The ruby will be redder than a red rose, and the sapphire will be as blue as the sea."
     },
     "14": {
         "content": "\"In the square below,\" said the Happy Prince, \"there stands a little\nmatch-girl. She has let her matches fall in the gutter, and they are all\nspoiled. Her father will beat her if she does not bring home some money,\nand she is crying. She has no shoes or stockings, and her little head is\nbare. Pluck out my other eye and give it to her, and her father will not\nbeat her.\"\n\"I will stay with you one night longer,\" said the Swallow, \"but I cannot\npluck out your eye. You would be quite blind then.\"\n\"Swallow, Swallow, little Swallow,\" said the Prince, \"do as I command\nyou.\"\nSo he plucked out the Prince's other eye, and darted down with it. He\nswooped past the match-girl, and slipped the jewel into the palm of her\nhand. \"What a lovely bit of glass!\" cried the little girl; and she ran\nhome, laughing.\nThen the Swallow came back to the Prince. \"You are blind now,\" he said,\n\"so I will stay with you always.\"\n\"No, little Swallow,\" said the poor Prince, \"you must go away to Egypt.\"\n\"I will stay with you always,\" said the Swallow, and he slept at the\nPrince's feet.\n",
         "paragraphs": {
             "55": {
                 "content": "\"In the square below,\" said the Happy Prince, \"there stands a little\nmatch-girl. She has let her matches fall in the gutter, and they are all\nspoiled. Her father will beat her if she does not bring home some money,\nand she is crying. She has no shoes or stockings, and her little head is\nbare. Pluck out my other eye and give it to her, and her father will not\nbeat her.\"",
-                "num_words": 73
+                "num_words": 73,
+                "content_hindi": "हैप्पी प्रिंस ने कहा, \"नीचे दिए गए वर्ग को देखिए। वहाँ एक छोटी-सी मैच-गर्ल खड़ी है। वह गलती से अपने मैच गटर में गिराती है और अब वे सभी बर्बाद हो गए हैं। अगर वह कुछ पैसे घर नहीं लाती है, तो उसके पिता उसे सजा देंगे। वह इसलिए रो रही है क्योंकि उसके पास जूते या मोजे नहीं हैं, और वह टोपी नहीं पहने हुए है। मैं चाहती हूँ कि आप मेरी दूसरी आँख निकालें और उसे दे दें। अगर वह मेरी नज़र में पकड़ी जाती है, तो उसके पिता उसे नहीं पीटेंगे।\""
             },
             "56": {
                 "content": "\"I will stay with you one night longer,\" said the Swallow, \"but I cannot\npluck out your eye. You would be quite blind then.\"",
-                "num_words": 24
+                "num_words": 24,
+                "content_hindi": "\"मैं एक और रात आपके साथ बिताऊंगा,\" स्वैलो ने कहा, \"लेकिन मैं आपकी आँख नहीं निकाल सकता।\" अगर मैं ऐसा करता हूँ, तो आप बिल्कुल भी नहीं देख पाएंगे।"
             },
             "57": {
                 "content": "\"Swallow, Swallow, little Swallow,\" said the Prince, \"do as I command\nyou.\"",
-                "num_words": 12
+                "num_words": 12,
+                "content_hindi": "\"निगलो, निगलो, छोटा निगलो,\" राजकुमार ने कहा, \"जो मैं तुम्हें करने के लिए कहता हूँ, वह करो।\""
             },
             "58": {
                 "content": "So he plucked out the Prince's other eye, and darted down with it. He\nswooped past the match-girl, and slipped the jewel into the palm of her\nhand. \"What a lovely bit of glass!\" cried the little girl; and she ran\nhome, laughing.",
-                "num_words": 43
+                "num_words": 43,
+                "content_hindi": "पक्षी ने राजकुमार की दूसरी आँख निकाल ली और उसके साथ उड़ गया। यह जल्दी से मैच-लड़की के पास से गुज़र गया और उसके हाथ में गहना रख दिया। लड़की ने कहा, \"कैसा सुंदर कांच का टुकड़ा!\" और फिर हँसते हुए घर भागा।"
             },
             "59": {
                 "content": "Then the Swallow came back to the Prince. \"You are blind now,\" he said,\n\"so I will stay with you always.\"",
-                "num_words": 21
+                "num_words": 21,
+                "content_hindi": "स्वालो राजकुमार के पास वापस आ गया। उसने कहा, \"अब आप अंधे हो गए हैं, इसलिए मैं हमेशा आपके साथ रहूंगा।\""
             },
             "60": {
                 "content": "\"No, little Swallow,\" said the poor Prince, \"you must go away to Egypt.\"",
-                "num_words": 13
+                "num_words": 13,
+                "content_hindi": "\"नहीं, छोटी स्वैलो,\" गरीब राजकुमार ने कहा, \"आपको मिस्र की यात्रा करने की आवश्यकता है।\""
             },
             "61": {
                 "content": "\"I will stay with you always,\" said the Swallow, and he slept at the\nPrince's feet.",
-                "num_words": 16
+                "num_words": 16,
+                "content_hindi": "\"मैं हमेशा आपके साथ रहूंगा,\" स्वैलो ने कहा, और फिर वह राजकुमार के पैरों पर सो गया।"
             }
         },
         "num_chars": 1058,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "A conversation between the Prince and the Swallow about a young man in a garret, struggling to write a play.",
+            "current_page_summary": "The Happy Prince offers his other eye to a match-girl in exchange for her father's mercy. The Swallow agrees to stay with the Prince but refuses to pluck out his eye, fearing blindness. Despite this, the Prince gives away his eye, and the Swallow stays by his side, eventually agreeing to accompany him to Egypt."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "gutter",
+                    "meaning": "a channel or trough for carrying water or other liquid",
+                    "synonym": "drain",
+                    "usage": "The rainwater flowed into the gutter and emptied into the storm drain.",
+                    "meaning_in_context": "In this context, the gutter refers to a narrow channel where the matches have fallen."
+                },
+                {
+                    "word": "stockings",
+                    "meaning": "tight-fitting leg coverings made of fabric or synthetic material",
+                    "synonym": "tights",
+                    "usage": "She wore her favorite pair of stockings with her evening dress.",
+                    "meaning_in_context": "In this context, the match-girl does not have any stockings."
+                },
+                {
+                    "word": "plucked",
+                    "meaning": "past tense of 'pluck', meaning to pull or tear something out by force",
+                    "synonym": "pulled",
+                    "usage": "The bird was plucked from its nest and taken to the laboratory.",
+                    "meaning_in_context": "In this context, the Swallow is instructed to pluck out the Prince's eye."
+                },
+                {
+                    "word": "darted",
+                    "meaning": "past tense of 'dart', meaning to move quickly and suddenly in a particular direction",
+                    "synonym": "sprinted",
+                    "usage": "The rabbit darted across the field, escaping the hunter's grasp.",
+                    "meaning_in_context": "In this context, the Swallow darts down with the Prince's eye."
+                },
+                {
+                    "word": "jewel",
+                    "meaning": "a precious stone or gemstone, often set into a piece of jewelry",
+                    "synonym": "gem",
+                    "usage": "The queen wore a beautiful jewel-encrusted crown to the coronation.",
+                    "meaning_in_context": "In this context, the Swallow gives the match-girl a jewel (the Prince's eye)."
+                },
+                {
+                    "word": "swooped",
+                    "meaning": "past tense of 'swoop', meaning to move quickly and smoothly through the air",
+                    "synonym": "dived",
+                    "usage": "The bird swooped down towards its prey, talons extended.",
+                    "meaning_in_context": "In this context, the Swallow swoops past the match-girl."
+                },
+                {
+                    "word": "Egypt",
+                    "meaning": "a country in northeastern Africa",
+                    "synonym": "Nile River delta",
+                    "usage": "The tourists visited the ancient pyramids of Egypt.",
+                    "meaning_in_context": "In this context, the Prince instructs the Swallow to go to Egypt."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "Egypt",
+                "significance": "In ancient Egyptian culture, Egypt was considered a sacred land with significant spiritual and symbolic meaning. The mention of Egypt in this context may be relevant to Hindi-speaking people from India as it is a country with which India has historical and cultural ties.",
+                "improve_understanding_of_text": "This reference adds depth to the story by highlighting the Prince's desire for a life beyond his current circumstances, which may have been influenced by Egyptian culture and mythology."
+            },
+            {
+                "part_of_text": "Swallow",
+                "significance": "In European folklore, the swallow is often depicted as a symbol of good luck, hope, and renewal. The mention of the swallow in this context may be relevant to Hindi-speaking people from India as it is a bird that appears in various Indian mythologies and folklores.",
+                "improve_understanding_of_text": "This reference adds depth to the story by highlighting the Prince's companionship with the swallow, which may symbolize his desire for connection and companionship."
+            },
+            {
+                "part_of_text": "Square",
+                "significance": "In European architecture, squares are often designed as public spaces that serve as hubs for community activity. The mention of a square in this context may be relevant to Hindi-speaking people from India as it is a common feature of urban planning in Indian cities.",
+                "improve_understanding_of_text": "This reference adds depth to the story by highlighting the Prince's desire for a public space where he can interact with others, which may reflect his longing for human connection."
+            }
+        ],
+        "grade5": "A prince was sitting in a square. A little girl was standing next to him. She had dropped her matches on the ground and they were all ruined. The little girl didn't have any shoes or socks, and she was crying because her father would be mad at her if she didn't bring home some money. The prince said, 'Please take out my other eye and give it to her. If you do, she won't get in trouble.' A swallow flew by and heard the prince's request. He said, 'I can't do that, or you'll be blind!' The prince asked the swallow to take out his eye, but the swallow refused. The prince told the swallow to go away, so he could see again. The swallow stayed with him anyway. Later, the swallow came back and said, 'You're right, I should have taken out your eye.' But the prince said, 'No, please leave me now and fly to Egypt.' The swallow agreed and fell asleep at the prince's feet."
     },
     "15": {
         "content": "All the next day he sat on the Prince's shoulder, and told him stories\nof what he had seen in strange lands. He told him of the red ibises,\nwho stand in long rows on the banks of the Nile, and catch gold-fish in\ntheir beaks; of the Sphinx, who is as old as the world itself, and lives\nin the desert, and knows everything; of the merchants, who walk slowly\nby the side of their camels and carry amber beads in their hands; of the\nKing of the Mountains of the Moon, who is as black as ebony, and\nworships a large crystal; of the great green snake that sleeps in a palm\ntree, and has twenty priests to feed it with honey-cakes; and of the\npygmies who sail over a big lake on large flat leaves, and are always at\nwar with the butterflies.\n\"Dear little Swallow,\" said the Prince, \"you tell me of marvellous\nthings, but more marvellous than anything is the suffering of men and of\nwomen. There is no Mystery so great as Misery. Fly over my city, little\nSwallow, and tell me what you see there.\"\n",
         "paragraphs": {
             "62": {
                 "content": "All the next day he sat on the Prince's shoulder, and told him stories\nof what he had seen in strange lands. He told him of the red ibises,\nwho stand in long rows on the banks of the Nile, and catch gold-fish in\ntheir beaks; of the Sphinx, who is as old as the world itself, and lives\nin the desert, and knows everything; of the merchants, who walk slowly\nby the side of their camels and carry amber beads in their hands; of the\nKing of the Mountains of the Moon, who is as black as ebony, and\nworships a large crystal; of the great green snake that sleeps in a palm\ntree, and has twenty priests to feed it with honey-cakes; and of the\npygmies who sail over a big lake on large flat leaves, and are always at\nwar with the butterflies.",
-                "num_words": 146
+                "num_words": 146,
+                "content_hindi": "अगले दिन, कहानीकार राजकुमार के कंधे पर बैठकर दूर-दूर की जगहों पर अपने रोमांच की कहानियाँ सुनाता है। उन्होंने लाल इबिस के बारे में बात की, जो नील नदी के किनारे लंबी पंक्तियों में पाए जाते हैं और वे अपने चोंच से कैसे सुनहरी मछली पकड़ते हैं। उन्होंने स्फिंक्स के बारे में भी बात की, जो एक प्राचीन प्राणी है जो रेगिस्तान में रहता है और जिसके पास सारा ज्ञान है। उन्होंने उन व्यापारियों का उल्लेख किया, जो अपने हाथों में अंबर मोतियों को ले कर अपने ऊंटों के साथ धीरे-धीरे आगे बढ़ते हैं। उन्होंने चंद्रमा के पहाड़ों के राजा के बारे में भी बात की, जो आबनूस के समान काला है और एक बड़े क्रिस्टल की पूजा करता है। उन्होंने एक बड़े हरे सांप के बारे में भी बताया जो एक ताड़ के पेड़ पर सोया करता है, और बीस पुजारी हैं जो उसे शहद के केक खिलाते हैं। अंत में, उन्होंने उन पिग्मी लोगों के बारे में बात की जो बड़ी सपाट पत्तियों पर एक बड़ी झील के पार यात्रा करते हैं, और हमेशा तितलियों के साथ लड़ाई में लगे रहते हैं।"
             },
             "63": {
                 "content": "\"Dear little Swallow,\" said the Prince, \"you tell me of marvellous\nthings, but more marvellous than anything is the suffering of men and of\nwomen. There is no Mystery so great as Misery. Fly over my city, little\nSwallow, and tell me what you see there.\"",
-                "num_words": 46
+                "num_words": 46,
+                "content_hindi": "\"प्रिय छोटी चिड़िया,\" राजकुमार ने कहा, \"तुम अद्भुत चीजों के बारे में बात करती हो, लेकिन लोगों को जो दर्द होता है, उससे ज़्यादा अद्भुत कुछ भी नहीं है।\" मनुष्यों के कष्टों जितना गहरा कोई रहस्य नहीं है। मेरे शहर के ऊपर से उड़, छोटी स्वैलो, और मुझे बताएँ कि आप वहाँ क्या देखती हैं।"
             }
         },
         "num_chars": 987,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "A conversation between the Prince and the Swallow about a young man in a garret, struggling to write a play.",
+            "current_page_summary": "The Swallow continues to regale the Prince with tales of exotic lands and fantastical creatures. The Prince responds by asking the Swallow to fly over his city and observe the suffering of its inhabitants, deeming it more mysterious than any other phenomenon."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "ibises",
+                    "meaning": "a type of wading bird with a distinctive curved beak",
+                    "synonym": "storks",
+                    "usage": "The ibises stood in long rows on the banks of the Nile, their beaks dipping into the water to catch fish.",
+                    "meaning_in_context": "In this context, 'ibises' refers to a type of bird that is often found near bodies of water and is known for its distinctive appearance."
+                },
+                {
+                    "word": "Sphinx",
+                    "meaning": "a mythical creature with the body of a lion and the head of a human",
+                    "synonym": "giant statue",
+                    "usage": "The Sphinx was as old as the world itself, and lived in the desert, its secrets hidden behind its enigmatic smile.",
+                    "meaning_in_context": "In this context, 'Sphinx' refers to a mythical creature that is often depicted as having the body of a lion and the head of a human."
+                },
+                {
+                    "word": "camels",
+                    "meaning": "large, long-necked mammals with humps on their backs",
+                    "synonym": "dromedaries",
+                    "usage": "The merchants walked slowly by the side of their camels, carrying amber beads in their hands.",
+                    "meaning_in_context": "In this context, 'camels' refers to the animals used for transportation and trade."
+                },
+                {
+                    "word": "amber",
+                    "meaning": "a type of fossilized tree resin, often yellow or golden in color",
+                    "synonym": "gum",
+                    "usage": "The merchants carried amber beads in their hands, their fingers stained with the sticky substance.",
+                    "meaning_in_context": "In this context, 'amber' refers to a valuable and highly prized material."
+                },
+                {
+                    "word": "ebony",
+                    "meaning": "a very hard, black wood used for making musical instruments and other objects",
+                    "synonym": "blackwood",
+                    "usage": "The King of the Mountains of the Moon was as black as ebony, his dark skin seeming to absorb all light.",
+                    "meaning_in_context": "In this context, 'ebony' refers to a type of wood that is highly valued for its beauty and durability."
+                },
+                {
+                    "word": "pygmies",
+                    "meaning": "people who are very short in stature, often living in small villages or tribes",
+                    "synonym": "small people",
+                    "usage": "The pygmies sailed over a big lake on large flat leaves, their tiny hands grasping the edges of the boats.",
+                    "meaning_in_context": "In this context, 'pygmies' refers to a group of people who are known for their small stature and often live in isolated communities."
+                },
+                {
+                    "word": "marvellous",
+                    "meaning": "wonderful or impressive",
+                    "synonym": "amazing",
+                    "usage": "The Prince said, 'You tell me of marvellous things, but more marvellous than anything is the suffering of men and of women.'",
+                    "meaning_in_context": "In this context, 'marvellous' refers to something that is considered wonderful or impressive."
+                },
+                {
+                    "word": "Misery",
+                    "meaning": "a state of great sorrow or distress",
+                    "synonym": "suffering",
+                    "usage": "'There is no Mystery so great as Misery,' said the Prince.",
+                    "meaning_in_context": "In this context, 'Misery' refers to a state of great suffering or distress."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "the red ibises, who stand in long rows on the banks of the Nile",
+                "significance": "The Nile is a major river in Africa and has significant cultural and historical importance for Egypt and other African countries. The reference to the Nile may not be immediately intuitive for Hindi-speaking people from India, as it is more commonly associated with ancient Egyptian culture.",
+                "improve_understanding_of_text": "Adding context about the Nile's significance in ancient Egyptian culture and its current relevance in modern Egypt would enhance the reader's understanding of this passage."
+            },
+            {
+                "part_of_text": "of the Sphinx, who is as old as the world itself, and lives in the desert",
+                "significance": "The Great Sphinx of Giza is a famous ancient monument located in Egypt. The reference to the Sphinx may evoke images of ancient Egyptian mythology and culture, which could be unfamiliar to Hindi-speaking people from India.",
+                "improve_understanding_of_text": "Providing more information about the historical context of the Sphinx's construction and its cultural significance would deepen the reader's understanding of this passage."
+            },
+            {
+                "part_of_text": "of the merchants, who walk slowly by the side of their camels and carry amber beads in their hands",
+                "significance": "Camels are a symbol of trade and commerce in many Middle Eastern cultures. The reference to camels may evoke images of ancient trade routes and cultural exchange between India and other parts of Asia.",
+                "improve_understanding_of_text": "Adding context about the historical significance of camel trade and its impact on Indian culture would enhance the reader's understanding of this passage."
+            },
+            {
+                "part_of_text": "of the King of the Mountains of the Moon, who is as black as ebony",
+                "significance": "The reference to the 'King of the Mountains of the Moon' may be a metaphorical or symbolic figure, but it could also be related to ancient mythological figures from Indian culture. The use of ebony as a color may evoke images of Indian cultural associations with this material.",
+                "improve_understanding_of_text": "Providing more context about the possible origins and significance of this figure in Indian mythology would deepen the reader's understanding of this passage."
+            },
+            {
+                "part_of_text": "of the great green snake that sleeps in a palm tree, and has twenty priests to feed it with honey-cakes",
+                "significance": "The reference to a serpent sleeping in a palm tree may evoke images of Hindu mythology and the symbolism of snakes. The mention of priests feeding the snake with honey-cakes may also be related to ancient Indian rituals.",
+                "improve_understanding_of_text": "Adding context about the cultural significance of serpents in Hindu mythology and the relevance of this passage to Indian cultural practices would enhance the reader's understanding of this passage."
+            },
+            {
+                "part_of_text": "of the pygmies who sail over a big lake on large flat leaves",
+                "significance": "The reference to pygmies may evoke images of indigenous cultures from Africa or Asia. The mention of sailing on 'large flat leaves' may be a metaphorical or symbolic representation, but it could also be related to ancient Indian mythology and the symbolism of boats.",
+                "improve_understanding_of_text": "Providing more context about the cultural significance of pygmies in Indian mythology and the relevance of this passage to Indian cultural practices would deepen the reader's understanding of this passage."
+            }
+        ],
+        "grade5": "The next day, he sat on the Prince's shoulder and told him stories about the amazing things he had seen in faraway lands. He talked about the red ibises that stand in long lines along the Nile River and catch goldfish with their beaks. He also told him about the Sphinx, which is as old as the world and lives in the desert. The Sphinx knows everything! He shared stories of merchants who walk slowly by their camels, carrying pretty beads in their hands. He told the Prince about the King of the Mountains of the Moon, who is very dark like ebony and worships a big crystal. There was also a huge green snake that sleeps in a palm tree, and it has twenty priests who feed it yummy cakes made of honey. Finally, he talked about the pygmies who sail across a big lake on flat leaves and are always fighting with butterflies."
     },
     "16": {
         "content": "So the Swallow flew over the great city, and saw the rich making merry\nin their beautiful houses, while the beggars were sitting at the gates.\nHe flew into dark lanes, and saw the white faces of starving children\nlooking out listlessly at the black streets. Under the archway of a\nbridge two little boys were lying in one another's arms to try and keep\nthemselves warm. \"How hungry we are!\" they said. \"You must not lie\nhere,\" shouted the Watchman, and they wandered out into the rain.\nThen he flew back and told the Prince what he had seen.\n\"I am covered with fine gold,\" said the Prince, \"you must take it off,\nleaf by leaf, and give it to my poor; the living always think that gold\ncan make them happy.\"\nLeaf after leaf of the fine gold the Swallow picked off, till the Happy\nPrince looked quite dull and grey. Leaf after leaf of the fine gold he\nbrought to the poor, and the children's faces grew rosier, and they\nlaughed and played games in the street. \"We have bread now!\" they cried.\n",
         "paragraphs": {
             "64": {
                 "content": "So the Swallow flew over the great city, and saw the rich making merry\nin their beautiful houses, while the beggars were sitting at the gates.\nHe flew into dark lanes, and saw the white faces of starving children\nlooking out listlessly at the black streets. Under the archway of a\nbridge two little boys were lying in one another's arms to try and keep\nthemselves warm. \"How hungry we are!\" they said. \"You must not lie\nhere,\" shouted the Watchman, and they wandered out into the rain.",
-                "num_words": 88
+                "num_words": 88,
+                "content_hindi": "स्वालो ने एक बड़े शहर के ऊपर से उड़ान भरी, और अमीर लोगों को अपने सुरुचिपूर्ण घरों में आनंद लेते हुए देखा। इस बीच, गरीब शहर के प्रवेश द्वार पर बैठे हुए थे, जो जीवित रहने के लिए संघर्ष कर रहे थे। तब स्वैलो संकीर्ण गलियों में उड़ गया, जहाँ उसने कुपोषित बच्चों के पीले चेहरे अंधेरे सड़कों पर टकटकी लगाते हुए देखे। एक पुल के नीचे, दो छोटे लड़के एक साथ घिरे हुए थे, जो गर्म रखने की कोशिश कर रहे थे। वे इतने भूखे थे कि उन्होंने कहा, \"हम भूखों मर रहे हैं!\" चौकीदार ने उन्हें देखकर उन्हें जाने का आदेश दिया। लड़के फिर भूख से कांपते हुए बारिश में बाहर घूमते हैं।"
             },
             "65": {
                 "content": "Then he flew back and told the Prince what he had seen.",
-                "num_words": 12
+                "num_words": 12,
+                "content_hindi": "उसके बाद, वह लौट आया और राजकुमार के साथ जो उसने देखा था उसे साझा किया।"
             },
             "66": {
                 "content": "\"I am covered with fine gold,\" said the Prince, \"you must take it off,\nleaf by leaf, and give it to my poor; the living always think that gold\ncan make them happy.\"",
-                "num_words": 33
+                "num_words": 33,
+                "content_hindi": "राजकुमार ने कहा, \"मैं सूक्ष्म स्वर्ण से ढका हुआ हूँ।\" आपको इसे एक-एक पत्ते के रूप में हटाना होगा और इसे मेरे गरीब लोगों को देना होगा। लोग हमेशा मानते हैं कि सोना उन्हें खुशी दे सकता है।\""
             },
             "67": {
                 "content": "Leaf after leaf of the fine gold the Swallow picked off, till the Happy\nPrince looked quite dull and grey. Leaf after leaf of the fine gold he\nbrought to the poor, and the children's faces grew rosier, and they\nlaughed and played games in the street. \"We have bread now!\" they cried.",
-                "num_words": 53
+                "num_words": 53,
+                "content_hindi": "स्वालो ने एक के बाद एक सोने का एक-एक पत्ता सावधानी से तोड़ दिया, जब तक कि हैप्पी प्रिंस का चेहरा फीका और धूसर नहीं हो गया। चिल्हवा इन सुनहरे पत्तों को गरीबों तक पहुँचाता रहा और जैसे ही वह ऐसा करता, बच्चों के चेहरे स्वस्थ और लाल दिखने लगे। वे हँसने लगे और सड़क पर खेल खेलने लगे, कहते हुए, \"अब हमारे पास रोटी है!\""
             }
         },
         "num_chars": 987,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "A conversation between the Prince and the Swallow about a young man in a garret, struggling to write a play.",
+            "current_page_summary": "The Swallow observes poverty and hunger in the city, including two children huddled together for warmth. He reports back to the Prince, who suggests that the Swallow take off his fine gold coat and give it to the poor. The Swallow does so, and as he distributes the gold, the children's faces light up with joy, and they are able to enjoy simple pleasures like playing games and eating bread."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "merry",
+                    "meaning": "feeling or showing joy or happiness",
+                    "synonym": "jolly",
+                    "usage": "The party was merry and lively, with music and dancing.",
+                    "meaning_in_context": "In this context, 'merry' describes the rich people's behavior as joyful and festive."
+                },
+                {
+                    "word": "listlessly",
+                    "meaning": "in a lack of energy or enthusiasm",
+                    "synonym": "boredom",
+                    "usage": "The student sat listlessly in class, staring at the wall.",
+                    "meaning_in_context": "In this context, 'listlessly' describes how the children were looking out at the black streets."
+                },
+                {
+                    "word": "archway",
+                    "meaning": "a curved or pointed entrance to a building or a bridge",
+                    "synonym": "portal",
+                    "usage": "The grand archway led to the main hall of the castle.",
+                    "meaning_in_context": "In this context, 'archway' refers to the structure under which the two little boys were lying."
+                },
+                {
+                    "word": "dull",
+                    "meaning": "lacking brightness or interest",
+                    "synonym": "bland",
+                    "usage": "The painting was dull and uninspiring.",
+                    "meaning_in_context": "In this context, 'dull' describes the Happy Prince's appearance after losing his gold."
+                },
+                {
+                    "word": "rosier",
+                    "meaning": "becoming more beautiful or healthy-looking",
+                    "synonym": "healthier",
+                    "usage": "The garden was rosier after the spring rains.",
+                    "meaning_in_context": "In this context, 'rosier' describes how the children's faces changed after receiving bread."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "the great city",
+                "significance": "The term 'great city' is often associated with ancient Rome, which was a major urban center in the Roman Empire. In this context, it may refer to a large and prosperous city, possibly inspired by Rome.",
+                "improve_understanding_of_text": "This phrase could help non-native speakers understand that the story might be set in a European or Mediterranean setting, rather than India."
+            },
+            {
+                "part_of_text": "the beggars were sitting at the gates",
+                "significance": "In many ancient and medieval societies, beggars would sit at city gates to solicit alms. This scene may evoke images of poverty and social inequality.",
+                "improve_understanding_of_text": "This detail could help non-native speakers understand the social context of the story and the struggles faced by the poor in ancient or medieval times."
+            },
+            {
+                "part_of_text": "the black streets",
+                "significance": "The use of 'black' to describe the streets may refer to the lack of lighting, sanitation, or cleanliness in urban areas during this time period. This could be a commentary on the social and economic conditions of the city.",
+                "improve_understanding_of_text": "This phrase could help non-native speakers understand that the story might be set in a dark, impoverished urban environment, which was common in many cities during this time period."
+            },
+            {
+                "part_of_text": "the Watchman",
+                "significance": "The role of a watchman or night guard is an important one in many societies, particularly in ancient and medieval times. This character may represent authority and social control.",
+                "improve_understanding_of_text": "This detail could help non-native speakers understand the social hierarchy and power structures at play in the story."
+            },
+            {
+                "part_of_text": "the Prince",
+                "significance": "The title of 'Prince' is often associated with royalty or nobility. In this context, it may refer to a member of the royal family or a wealthy patron.",
+                "improve_understanding_of_text": "This character could help non-native speakers understand that the story might be set in a European or aristocratic setting."
+            },
+            {
+                "part_of_text": "the Happy Prince",
+                "significance": "The term 'Happy Prince' is likely inspired by the legend of the 'Happy Prince of Venice', who was said to have been transformed into a statue and granted eternal happiness. This character may represent the idea of inner happiness and fulfillment.",
+                "improve_understanding_of_text": "This detail could help non-native speakers understand that the story might be drawing on European folklore or mythology."
+            },
+            {
+                "part_of_text": "the fine gold",
+                "significance": "Gold has long been a symbol of wealth, status, and happiness in many cultures. In this context, it may represent the idea that material possessions can bring joy.",
+                "improve_understanding_of_text": "This phrase could help non-native speakers understand that the story might be exploring themes related to wealth, poverty, and social inequality."
+            },
+            {
+                "part_of_text": "the children's faces grew rosier",
+                "significance": "The use of 'rosy' to describe the children's faces may evoke images of health, happiness, and well-being. This could be a commentary on the impact of material possessions on social welfare.",
+                "improve_understanding_of_text": "This detail could help non-native speakers understand that the story might be exploring themes related to poverty, inequality, and social justice."
+            },
+            {
+                "part_of_text": "the children laughed and played games in the street",
+                "significance": "The image of children laughing and playing together may evoke images of joy, community, and social connection. This could be a commentary on the importance of play and leisure activities for children's well-being.",
+                "improve_understanding_of_text": "This detail could help non-native speakers understand that the story might be exploring themes related to childhood, education, and social welfare."
+            }
+        ],
+        "grade5": "One day, a swallow flew over a big city. It saw people who were rich and happy in their nice houses. But it also saw people who didn't have much food and were sitting outside. The swallow went into dark alleys and saw kids with white faces who looked very sad. They were standing on the cold streets. Under a bridge, two little boys were huddled together to stay warm. 'We're really hungry!' they said. A watchman told them to move away. So they left and played in the rain. The swallow then went back and told the prince what it saw. The prince said, 'I have gold that's very shiny. You can take off some of it and give it to those who are poor. I think they'll be happy.' The swallow took off leaf after leaf of the gold. At first, the prince looked a little sad. But then he gave all the gold to the poor kids. They started to smile and play in the street. 'We have food now!' they said."
     },
     "17": {
         "content": "Then the snow came, and after the snow came the frost. The streets\nlooked as if they were made of silver, they were so bright and\nglistening; long icicles like crystal daggers hung down from the eaves\nof the houses, everybody went about in furs, and the little boys wore\nscarlet caps and skated on the ice.\nThe poor little Swallow grew colder and colder, but he would not leave\nthe Prince, he loved him too well. He picked up crumbs outside the\nbaker's door when the baker was not looking, and tried to keep himself\nwarm by flapping his wings.\nBut at last he knew that he was going to die. He had just strength to\nfly up to the Prince's shoulder once more. \"Good-bye, dear Prince!\"\nhe murmured, \"will you let me kiss your hand?\"\n\"I am glad that you are going to Egypt at last, little Swallow,\" said\nthe Prince, \"you have stayed too long here; but you must kiss me on the\nlips, for I love you.\"\n\"It is not to Egypt that I am going,\" said the Swallow. \"I am going to\nthe House of Death. Death is the brother of Sleep, is he not?\"\nAnd he kissed the Happy Prince on the lips, and fell down dead at his\nfeet.\n",
         "paragraphs": {
             "68": {
                 "content": "Then the snow came, and after the snow came the frost. The streets\nlooked as if they were made of silver, they were so bright and\nglistening; long icicles like crystal daggers hung down from the eaves\nof the houses, everybody went about in furs, and the little boys wore\nscarlet caps and skated on the ice.",
-                "num_words": 57
+                "num_words": 57,
+                "content_hindi": "सबसे पहले बर्फ आई, उसके बाद पाला पड़ा। सड़कें अपनी चमक और चमक के कारण चांदी जैसी प्रतीत होती थीं। घरों की छत के किनारों से स्फटिक की तलवारों की तरह दिखने वाली लंबी, बर्फीली कीलें लटकी हुई थीं। गर्म रहने के लिए हर कोई फर पहनता था, और छोटे लड़के चमकीली लाल टोपी पहनते थे और जमी हुई बर्फ पर स्केटिंग करते थे।"
             },
             "69": {
                 "content": "The poor little Swallow grew colder and colder, but he would not leave\nthe Prince, he loved him too well. He picked up crumbs outside the\nbaker's door when the baker was not looking, and tried to keep himself\nwarm by flapping his wings.",
-                "num_words": 44
+                "num_words": 44,
+                "content_hindi": "छोटी स्वैलो और भी ठंडी होती जा रही थी, लेकिन उसने राजकुमार को छोड़ने से इनकार कर दिया। राजकुमार के प्रति उनका गहरा लगाव था। खुद को गर्म रखने के लिए, जब बेकर की नज़र नहीं होती थी तब स्वालो बेकर के दरवाजे के बाहर से टुकड़े-टुकड़े उठा लेता था। वह अपने पंखों को फड़फड़ाकर खुद को गर्म करने की कोशिश करता।"
             },
             "70": {
                 "content": "But at last he knew that he was going to die. He had just strength to\nfly up to the Prince's shoulder once more. \"Good-bye, dear Prince!\"\nhe murmured, \"will you let me kiss your hand?\"",
-                "num_words": 36
+                "num_words": 36,
+                "content_hindi": "अंत में, उसे एहसास हुआ कि वह मरने वाला है। उसके पास एक बार और राजकुमार के कंधे तक उड़ने के लिए बस इतनी ऊर्जा थी। \"अलविदा, प्यारे राजकुमार!\" उसने फुसफुसाया, \"क्या मैं आपके हाथ को चूम सकता हूँ?\""
             },
             "71": {
                 "content": "\"I am glad that you are going to Egypt at last, little Swallow,\" said\nthe Prince, \"you have stayed too long here; but you must kiss me on the\nlips, for I love you.\"",
-                "num_words": 34
+                "num_words": 34,
+                "content_hindi": "राजकुमार ने कहा, \"मुझे खुशी है कि आप आखिरकार मिस्र जा रहे हैं, छोटी स्वालो।\" \"आप यहाँ बहुत लंबे समय से हैं। लेकिन जाने से पहले, आपको मुझे होंठों पर एक चुंबन देना होगा। मैं आपसे प्यार करती हूँ।\""
             },
             "72": {
                 "content": "\"It is not to Egypt that I am going,\" said the Swallow. \"I am going to\nthe House of Death. Death is the brother of Sleep, is he not?\"",
-                "num_words": 29
+                "num_words": 29,
+                "content_hindi": "\"मैं मिस्र नहीं जा रहा हूँ,\" स्वैलो ने कहा। \"मैं मौत के घर जा रहा हूँ।\" मृत्यु नींद का भाई है, है ना?\""
             },
             "73": {
                 "content": "And he kissed the Happy Prince on the lips, and fell down dead at his\nfeet.",
-                "num_words": 16
+                "num_words": 16,
+                "content_hindi": "और उसने हैप्पी प्रिंस के होंठों पर चूमा और फिर वह राजकुमार के ठीक बगल में ही गिर कर मर गया।"
             }
         },
         "num_chars": 1098,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "A conversation between the Prince and the Swallow about a young man in a garret, struggling to write a play.",
+            "current_page_summary": "The scene shifts to winter, where the streets are transformed into a silver landscape. The poor little Swallow grows colder but remains by the Prince's side. Despite his efforts to stay warm, he eventually succumbs to cold and dies, kissing the Prince on the lips before passing away."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "eaves",
+                    "meaning": "the upper part of a roof that overhangs the wall of a building",
+                    "synonym": "overhanging edge",
+                    "usage": "The long icicles like crystal daggers hung down from the eaves of the houses.",
+                    "meaning_in_context": "In this context, 'eaves' refers to the upper part of the roof that overhangs the wall of a building, in which the icicles are hanging."
+                },
+                {
+                    "word": "daggers",
+                    "meaning": "long, sharp objects used for cutting or thrusting",
+                    "synonym": "knives",
+                    "usage": "The long icicles like crystal daggers hung down from the eaves of the houses.",
+                    "meaning_in_context": "In this context, 'daggers' refers to the icicles hanging from the roof, which are sharp and resemble knives."
+                },
+                {
+                    "word": "furs",
+                    "meaning": "clothing made from animal fur",
+                    "synonym": "coats",
+                    "usage": "everybody went about in furs, and the little boys wore scarlet caps and skated on the ice.",
+                    "meaning_in_context": "In this context, 'furs' refers to clothing worn by people to keep warm."
+                },
+                {
+                    "word": "crystal",
+                    "meaning": "having a high degree of purity or clarity",
+                    "synonym": "clear",
+                    "usage": "The streets looked as if they were made of silver, they were so bright and glistening; long icicles like crystal daggers hung down from the eaves of the houses.",
+                    "meaning_in_context": "In this context, 'crystal' refers to the purity or clarity of the snow-covered streets."
+                },
+                {
+                    "word": "Egypt",
+                    "meaning": "a country in northeastern Africa",
+                    "synonym": "Nile River delta",
+                    "usage": "'I am glad that you are going to Egypt at last, little Swallow,' said the Prince.",
+                    "meaning_in_context": "In this context, 'Egypt' refers to a destination or a place where the swallow is going."
+                },
+                {
+                    "word": "House of Death",
+                    "meaning": "a place where death occurs",
+                    "synonym": "graveyard",
+                    "usage": "'It is not to Egypt that I am going,' said the Swallow. 'I am going to the House of Death.'",
+                    "meaning_in_context": "In this context, 'House of Death' refers to a place where death or mortality is present."
+                },
+                {
+                    "word": "brother",
+                    "meaning": "a man related to you by birth or marriage",
+                    "synonym": "sibling",
+                    "usage": "'Death is the brother of Sleep, is he not?' And he kissed the Happy Prince on the lips, and fell down dead at his feet.",
+                    "meaning_in_context": "In this context, 'brother' refers to a metaphorical relationship between death and sleep."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "The streets looked as if they were made of silver",
+                "significance": "This refers to the Victorian era's fascination with snow and ice, which was often depicted in art and literature as a symbol of luxury and beauty. In this context, the 'silver' streets evoke a sense of opulence and grandeur.",
+                "improve_understanding_of_text": "For non-native speakers, understanding the cultural significance of silver in Victorian-era depictions can enhance their appreciation of the text's aesthetic descriptions."
+            },
+            {
+                "part_of_text": "the Prince is going to Egypt",
+                "significance": "Egypt was a significant destination for European royalty and nobility during the 19th century, particularly after the discovery of King Tutankhamun's tomb in 1922. This reference may evoke feelings of exoticism and grandeur.",
+                "improve_understanding_of_text": "For non-native speakers, recognizing Egypt as a culturally significant destination can provide context for the Prince's journey and deepen their understanding of the story's themes."
+            },
+            {
+                "part_of_text": "the House of Death",
+                "significance": "The concept of the 'House of Death' is rooted in various cultural and mythological traditions, including ancient Egyptian and Greek beliefs. In this context, it may represent a metaphorical or literal place of mortality.",
+                "improve_understanding_of_text": "For non-native speakers, understanding the cultural connotations of the 'House of Death' can enrich their comprehension of the story's themes and symbolism."
+            },
+            {
+                "part_of_text": "the Happy Prince",
+                "significance": "The Happy Prince is a character from Oscar Wilde's poem 'The Happy Prince and the Swan', which was first published in 1888. This reference may evoke associations with Wilde's literary style and themes.",
+                "improve_understanding_of_text": "For non-native speakers, recognizing the connection to Oscar Wilde's work can provide context for the story's tone and style, as well as deepen their understanding of the character's significance."
+            }
+        ],
+        "grade5": "One day, it started to snow and then frost came. The streets looked like they were made of silver because everything was so bright and shiny. Long icicles hung from the houses' roofs like sharp crystals. People wore warm clothes and little boys wore red hats and skated on the ice. A small swallow bird got colder and colder, but he didn't want to leave the prince's side. He liked the prince too much. The swallow found food outside a bakery when no one was looking and tried to stay warm by flapping his wings. Eventually, he knew he wouldn't survive. He had just enough strength to fly up to the prince's shoulder again. 'Goodbye, dear prince!' he whispered. 'Will you let me kiss your hand?' The prince said, 'I'm glad you're going to Egypt because you've been here too long. But I want you to kiss me on the lips because I love you.' The swallow said, 'I'm not going to Egypt. I'm going to a place called Death. Is that right?' He kissed the happy prince on the lips and fell down dead at his feet."
     },
     "18": {
         "content": "At that moment a curious crack sounded inside the statue, as if\nsomething had broken. The fact is that the leaden heart had snapped\nright in two. It certainly was a dreadfully hard frost.\nEarly the next morning the Mayor was walking in the square below in\ncompany with the Town Councillors. As they passed the column he looked\nup at the statue: \"Dear me! how shabby the Happy Prince looks!\" he said.\n\"How shabby, indeed!\" cried the Town Councillors, who always agreed with\nthe Mayor; and they went up to look at it.\n\"The ruby has fallen out of his sword, his eyes are gone, and he is\ngolden no longer,\" said the Mayor; \"in fact, he is little better than a\nbeggar!\"\n\"Little better than a beggar,\" said the Town Councillors.\n\"And here is actually a dead bird at his feet!\" continued the Mayor. \"We\nmust really issue a proclamation that birds are not to be allowed to die\nhere.\" And the Town Clerk made a note of the suggestion.\nSo they pulled down the statue of the Happy Prince. \"As he is no longer\nbeautiful he is no longer useful,\" said the Art Professor at the\nUniversity.\n",
         "paragraphs": {
             "74": {
                 "content": "At that moment a curious crack sounded inside the statue, as if\nsomething had broken. The fact is that the leaden heart had snapped\nright in two. It certainly was a dreadfully hard frost.",
-                "num_words": 34
+                "num_words": 34,
+                "content_hindi": "अचानक प्रतिमा के अंदर से एक अजीब सी दरार की आवाज आई। ऐसा लगा जैसे कुछ टूट गया हो। सच तो यह है कि सीसा लगा दिल बीच से ही टूट गया था। यह वास्तव में एक बहुत ही कठोर और ठंडी सर्दियों थी।"
             },
             "75": {
                 "content": "Early the next morning the Mayor was walking in the square below in\ncompany with the Town Councillors. As they passed the column he looked\nup at the statue: \"Dear me! how shabby the Happy Prince looks!\" he said.",
-                "num_words": 39
+                "num_words": 39,
+                "content_hindi": "अगली सुबह, महापौर को टाउन काउंसलरों के साथ टाउन स्क्वायर में चलते हुए देखा गया। जैसे ही वे स्तम्भ के पार पहुँचे, उन्होंने हैप्पी प्रिंस की मूर्ति को देखा। उन्होंने टिप्पणी की, \"हे प्रिय, हैप्पी प्रिंस काफी थका हुआ दिखता है!\""
             },
             "76": {
                 "content": "\"How shabby, indeed!\" cried the Town Councillors, who always agreed with\nthe Mayor; and they went up to look at it.",
-                "num_words": 21
+                "num_words": 21,
+                "content_hindi": "नगर परिषद के सदस्य बोले, \"वास्तव में कितना गरीब!\" वे हमेशा महापौर के साथ सहमत थे। फिर वे इसे देखने गए।"
             },
             "77": {
                 "content": "\"The ruby has fallen out of his sword, his eyes are gone, and he is\ngolden no longer,\" said the Mayor; \"in fact, he is little better than a\nbeggar!\"",
-                "num_words": 30
+                "num_words": 30,
+                "content_hindi": "मेयर ने कहा, \"रूबी उसकी तलवार से निकल गया है, उसकी आँखें चली गई हैं और वह अब सुवर्ण नहीं है।\" वास्तव में, वह लगभग एक भिखारी के बराबर गरीब है।"
             },
             "78": {
                 "content": "\"Little better than a beggar,\" said the Town Councillors.",
-                "num_words": 9
+                "num_words": 9,
+                "content_hindi": "नगर परिषद के सदस्यों ने उन्हें \"एक भिखारी से थोड़ा बेहतर\" बताया।"
             },
             "79": {
                 "content": "\"And here is actually a dead bird at his feet!\" continued the Mayor. \"We\nmust really issue a proclamation that birds are not to be allowed to die\nhere.\" And the Town Clerk made a note of the suggestion.",
-                "num_words": 39
+                "num_words": 39,
+                "content_hindi": "मेयर ने कहा, \"देखिए, उसके ठीक सामने एक मरा हुआ पक्षी है!\" हमें आधिकारिक घोषणा करने की आवश्यकता है कि पक्षियों को यहाँ मरने की अनुमति नहीं दी जानी चाहिए। टाउन क्लर्क ने इस विचार को लिख लिया।"
             },
             "80": {
                 "content": "So they pulled down the statue of the Happy Prince. \"As he is no longer\nbeautiful he is no longer useful,\" said the Art Professor at the\nUniversity.",
-                "num_words": 28
+                "num_words": 28,
+                "content_hindi": "उन्होंने हैप्पी प्रिंस की मूर्ति हटा दी। विश्वविद्यालय के कला प्रोफेसर ने कहा, \"चूंकि वह अब सुंदर नहीं है, वह अब उपयोगी नहीं है।\""
             }
         },
         "num_chars": 1068,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "A conversation between the Prince and the Swallow about a young man in a garret, struggling to write a play.",
+            "current_page_summary": "The Happy Prince's statue was found to have broken, with its leaden heart snapped in two. The Mayor and Town Councillors visited the statue, criticizing its condition, noting the loss of its ruby and eyes, and even finding a dead bird at its feet. They decided to pull down the statue, as it was no longer beautiful or useful, according to the Art Professor."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "leaden",
+                    "meaning": "heavy with lead",
+                    "synonym": "heavily weighted",
+                    "usage": "The statue was made of leaden heart, which meant it was very heavy.",
+                    "meaning_in_context": "Here, 'leaden' is used to describe the statue's material, emphasizing its heaviness."
+                },
+                {
+                    "word": "shabby",
+                    "meaning": "looking worn out or dirty",
+                    "synonym": "tattered",
+                    "usage": "The Happy Prince looked shabby after being left outside for so long.",
+                    "meaning_in_context": "In this context, 'shabby' is used to describe the statue's appearance, implying it has been neglected."
+                },
+                {
+                    "word": "ruby",
+                    "meaning": "a deep red gemstone",
+                    "synonym": "precious stone",
+                    "usage": "The Happy Prince's sword had a ruby that was now missing.",
+                    "meaning_in_context": "Here, 'ruby' is used to describe the gemstone on the sword, highlighting its loss."
+                },
+                {
+                    "word": "beggar",
+                    "meaning": "a person who asks for money or food in the street",
+                    "synonym": "vagrant",
+                    "usage": "The Mayor called the Happy Prince 'little better than a beggar' because he was no longer beautiful.",
+                    "meaning_in_context": "In this context, 'beggar' is used to describe someone who has lost their value or beauty."
+                },
+                {
+                    "word": "proclamation",
+                    "meaning": "an official announcement or declaration",
+                    "synonym": "declaration",
+                    "usage": "The Mayor suggested issuing a proclamation that birds were not allowed to die in the square.",
+                    "meaning_in_context": "Here, 'proclamation' is used to describe an official statement, emphasizing its importance."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "the leaden heart had snapped right in two",
+                "significance": "The use of 'leaden' to describe the heart is a metaphor that refers to the ancient Greek myth of Psyche and Eros, where Psyche's heart was made of lead. This allusion adds a layer of cultural context, highlighting the idea that the Happy Prince's heart has lost its value.",
+                "improve_understanding_of_text": "This reference helps non-native speakers understand the significance of the Happy Prince's broken heart in the context of the story."
+            },
+            {
+                "part_of_text": "the square below",
+                "significance": "The use of 'square' to describe a public gathering place is significant, as it refers to the traditional European town squares. This detail adds cultural context, highlighting the setting of the story in a European city.",
+                "improve_understanding_of_text": "This reference helps non-native speakers understand the historical and geographical context of the story, which is set in a European city."
+            },
+            {
+                "part_of_text": "the column",
+                "significance": "The use of 'column' to describe a public monument is significant, as it refers to the traditional Greek and Roman architectural style. This detail adds cultural context, highlighting the significance of the statue in the story.",
+                "improve_understanding_of_text": "This reference helps non-native speakers understand the historical and geographical context of the story, which is set in a European city with a rich architectural heritage."
+            },
+            {
+                "part_of_text": "the ruby has fallen out of his sword",
+                "significance": "The use of 'ruby' to describe the gemstone on the Happy Prince's sword is significant, as rubies were highly valued in ancient Europe. This detail adds cultural context, highlighting the significance of the gemstone in the story.",
+                "improve_understanding_of_text": "This reference helps non-native speakers understand the historical and cultural significance of the gemstone in the story."
+            },
+            {
+                "part_of_text": "the University",
+                "significance": "The mention of a university is significant, as it refers to the traditional European system of higher education. This detail adds cultural context, highlighting the setting of the story in a European city with a rich academic heritage.",
+                "improve_understanding_of_text": "This reference helps non-native speakers understand the historical and geographical context of the story, which is set in a European city."
+            }
+        ],
+        "grade5": "One day, a strange crack sounded inside the statue. It was like something had broken. The leaden heart of the Happy Prince had snapped in two. The air was very cold that morning. The Mayor was walking in the square with some important people. As they passed by the column, he looked up at the statue and said, 'Oh no! The Happy Prince looks very sad!' He meant that the prince's crown was missing, his eyes were gone, and he wasn't shiny anymore. In fact, he looked like a poor person!"
     },
     "19": {
         "content": "Then they melted the statue in a furnace, and the Mayor held a meeting\nof the Corporation to decide what was to be done with the metal. \"We\nmust have another statue, of course,\" he said, \"and it shall be a statue\nof myself.\"\n\"Of myself,\" said each of the Town Councillors, and they quarrelled.\nWhen I last heard of them they were quarrelling still.\n\"What a strange thing!\" said the overseer of the workmen at the foundry.\n\"This broken lead heart will not melt in the furnace. We must throw it\naway.\" So they threw it on a dust-heap where the dead Swallow was also\nlying.\n\"Bring me the two most precious things in the city,\" said God to one of\nHis Angels; and the Angel brought Him the leaden heart and the dead\nbird.\n\"You have rightly chosen,\" said God, \"for in my garden of Paradise this\nlittle bird shall sing for evermore, and in my city of gold the Happy\nPrince shall praise me.\"\n",
         "paragraphs": {
             "81": {
                 "content": "Then they melted the statue in a furnace, and the Mayor held a meeting\nof the Corporation to decide what was to be done with the metal. \"We\nmust have another statue, of course,\" he said, \"and it shall be a statue\nof myself.\"",
-                "num_words": 44
+                "num_words": 44,
+                "content_hindi": "इसके बाद उन्होंने मूर्ति को भट्टी में गर्म किया। इसके बाद महापौर ने पिघलाए गए धातु के साथ क्या करना है, इस पर चर्चा करने के लिए निगम के सदस्यों को इकट्ठा किया। उन्होंने सुझाव दिया, \"हमें निश्चित रूप से एक और प्रतिमा की आवश्यकता है।\" और यह मेरी खुद की प्रतिमा होनी चाहिए।"
             },
             "82": {
                 "content": "\"Of myself,\" said each of the Town Councillors, and they quarrelled.\nWhen I last heard of them they were quarrelling still.",
-                "num_words": 21
+                "num_words": 21,
+                "content_hindi": "प्रत्येक नगर पार्षद ने कहा, \"यह मेरे बारे में है\" और उन्होंने बहस शुरू कर दी। पिछली बार जब मैंने उनके बारे में सुना था, तब भी वे बहस कर रहे थे।"
             },
             "83": {
                 "content": "\"What a strange thing!\" said the overseer of the workmen at the foundry.\n\"This broken lead heart will not melt in the furnace. We must throw it\naway.\" So they threw it on a dust-heap where the dead Swallow was also\nlying.",
-                "num_words": 42
+                "num_words": 42,
+                "content_hindi": "फाउंड्री में कामगारों का पर्यवेक्षक हैरान था। उन्होंने कहा, \"यह टूटा हुआ सीसे का दिल भट्टी में पिघल नहीं रहा है। हमें इससे छुटकारा पाना चाहिए।\" इसके बाद उन्होंने इसे कचरे के ढेर पर फेंक दिया जहाँ मृत स्वालो भी था।"
             },
             "84": {
                 "content": "\"Bring me the two most precious things in the city,\" said God to one of\nHis Angels; and the Angel brought Him the leaden heart and the dead\nbird.",
-                "num_words": 29
+                "num_words": 29,
+                "content_hindi": "भगवान ने अपने एक दूत से उन्हें शहर की दो सबसे मूल्यवान वस्तुओं को लाने के लिए कहा। देवदूत ने ईश्वर के सामने एक सीसे जैसा ठंडा हृदय और एक मृत पक्षी लाकर जवाब दिया।"
             },
             "85": {
                 "content": "\"You have rightly chosen,\" said God, \"for in my garden of Paradise this\nlittle bird shall sing for evermore, and in my city of gold the Happy\nPrince shall praise me.\"",
-                "num_words": 31
+                "num_words": 31,
+                "content_hindi": "भगवान ने कहा, \"आपने सही विकल्प चुना है। मेरे स्वर्ग उद्यान में, यह छोटा सा पक्षी हमेशा गाता रहेगा। मेरे स्वर्ण शहर में, हैप्पी प्रिंस मेरी प्रशंसा करेगा।"
             }
         },
         "num_chars": 879,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "A conversation between the Prince and the Swallow about a young man in a garret, struggling to write a play.",
+            "current_page_summary": "The Mayor wants to create another statue of himself after melting the broken lead heart from the furnace. However, the Town Councillors disagree, and one overseer suggests throwing away the leaden heart due to its inability to melt. God then chooses the leaden heart and the dead Swallow as precious gifts for his Paradise garden and city of gold, where the Happy Prince will sing and praise him."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "quarrelling",
+                    "meaning": "arguing or fighting with someone",
+                    "synonym": "arguing",
+                    "usage": "The Town Councillors were quarrelling about the statue.",
+                    "meaning_in_context": "In this context, 'quarrelling' refers to a state of continuous argumentation or disagreement among the Town Councillors."
+                },
+                {
+                    "word": "leaden",
+                    "meaning": "made of lead",
+                    "synonym": "leaden",
+                    "usage": "The lead heart was made of a heavy, dense material.",
+                    "meaning_in_context": "In this context, 'leaden' refers to the statue's material being made of lead."
+                },
+                {
+                    "word": "Paradise",
+                    "meaning": "a place of great beauty or happiness",
+                    "synonym": "heaven",
+                    "usage": "God promised the Happy Prince a life in Paradise.",
+                    "meaning_in_context": "In this context, 'Paradise' refers to God's heavenly realm where the Happy Prince will live."
+                },
+                {
+                    "word": "garden",
+                    "meaning": "a plot of land used for growing flowers, fruits, or vegetables",
+                    "synonym": "orchard",
+                    "usage": "God promised the Happy Prince a garden in Paradise.",
+                    "meaning_in_context": "In this context, 'garden' refers to God's heavenly realm where the Happy Prince will live."
+                },
+                {
+                    "word": "city of gold",
+                    "meaning": "a place made entirely of gold",
+                    "synonym": "golden city",
+                    "usage": "God promised the Happy Prince a life in his city of gold.",
+                    "meaning_in_context": "In this context, 'city of gold' refers to God's heavenly realm where the Happy Prince will live."
+                },
+                {
+                    "word": "Happy Prince",
+                    "meaning": "a prince who is happy and content",
+                    "synonym": "joyful prince",
+                    "usage": "God promised the Happy Prince a life in his city of gold.",
+                    "meaning_in_context": "In this context, 'Happy Prince' refers to the statue that God has chosen to be resurrected."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "the Corporation",
+                "significance": "The Corporation refers to a local government body that oversees the administration of a city or town. In this context, it is likely referring to the municipal corporation of Manchester, England.",
+                "improve_understanding_of_text": "This reference provides insight into the historical and administrative context of Manchester during the time period when the story takes place."
+            },
+            {
+                "part_of_text": "the foundry",
+                "significance": "A foundry is a workshop where metal objects are made. In this context, it suggests that the story is set in an industrial or manufacturing environment.",
+                "improve_understanding_of_text": "This reference provides insight into the industrial and technological context of Manchester during the time period when the story takes place."
+            },
+            {
+                "part_of_text": "Paradise",
+                "significance": "In this context, Paradise refers to a heavenly or spiritual realm. It is likely referring to the biblical concept of Heaven or the afterlife.",
+                "improve_understanding_of_text": "This reference provides insight into the religious and spiritual context of the story, which may be unfamiliar to Hindi-speaking readers."
+            },
+            {
+                "part_of_text": "the Happy Prince",
+                "significance": "The Happy Prince is a character from Oscar Wilde's poem 'The Happy Prince and the Swan'. He is a prince who has been turned into a statue and is now singing in Paradise.",
+                "improve_understanding_of_text": "This reference provides insight into the literary context of the story, which may be unfamiliar to Hindi-speaking readers. It also highlights the themes of mortality, immortality, and redemption."
+            },
+            {
+                "part_of_text": "the dead Swallow",
+                "significance": "The dead Swallow is a symbol of death and decay. In this context, it suggests that the story is exploring themes of mortality and the afterlife.",
+                "improve_understanding_of_text": "This reference provides insight into the symbolic language used in the story, which may be unfamiliar to Hindi-speaking readers."
+            },
+            {
+                "part_of_text": "God",
+                "significance": "In this context, God is likely referring to a monotheistic deity. The use of God as a character suggests that the story is exploring themes of spirituality and morality.",
+                "improve_understanding_of_text": "This reference provides insight into the religious context of the story, which may be unfamiliar to Hindi-speaking readers."
+            },
+            {
+                "part_of_text": "the Angel",
+                "significance": "The Angel is a character who serves as a messenger or intermediary between God and humanity. In this context, it suggests that the story is exploring themes of spirituality and morality.",
+                "improve_understanding_of_text": "This reference provides insight into the symbolic language used in the story, which may be unfamiliar to Hindi-speaking readers."
+            }
+        ],
+        "grade5": "Then they melted the statue in a big fire. The Mayor had a meeting with the town leaders to decide what to do with the metal. 'We need another statue,' he said, 'and it should be a statue of me.' 'Of me' said each of the town leaders, and they started arguing. When I last heard about them, they were still fighting. A worker at the factory said, 'This broken heart won't melt in the fire. We have to throw it away.' So they threw it on a pile of trash where a dead bird was also lying. God told one of His angels to bring Him two special things from the city. The angel brought Him the melted heart and the dead bird. God said, 'You chose right,' because in his beautiful garden, the little bird will sing forever, and in his shiny city, the Happy Prince will praise me."
     }
 }
