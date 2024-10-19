@@ -6,7 +6,7 @@ from langchain.prompts import PromptTemplate
 import requests
 import json
 
-from hackathon.prompts.cultural_ref_prompt import CULTURAL_CONTEXT_PROMPT
+from hackathon.prompts.cultural_ref_prompt import CULTURAL_CONTEXT_PROMPT, CULTURAL_REF_FORMAT
 from utils.file_reader import read_json_file
 
 from utils.ai_helper import invoke_simple_chain
@@ -243,7 +243,7 @@ def summarize_by_page():
                 prompt = PromptTemplate(
                     input_variables=["content"],
                     template=template,
-                    partial_variables={"format_instructions": SUMMARY_FORMAT},
+                    partial_variables={"format_instructions": CULTURAL_REF_FORMAT},
                 )
 
             else:
@@ -278,26 +278,32 @@ def cultural_ref_page_wise():
     files = tqdm(os.listdir(output_folder))
     for filename in files:
 
+        if 'hindi' in filename:
+            continue
+
         file_path = file_path = output_folder + "/" + filename
         book = read_json_file(file_path)
         tqdm_book = tqdm(book)
         for page_no in tqdm_book:
+
+            if int(page_no) < 41:
+                continue
+
             tqdm_book.set_description("pageNo :" + page_no)
             page = book[page_no]
-            page_content = page["current_page"]
+            page_content = page["content"]
             input_data = {"current_page": page_content}
             template = CULTURAL_CONTEXT_PROMPT
             prompt = PromptTemplate(
                 input_variables=["current_page"],
                 template=template,
+                partial_variables={"format_instructions": CULTURAL_REF_FORMAT},
             )
 
             try:
                 result = invoke_simple_chain(prompt, input_data=input_data)
-                previous_summary = (
-                    result.strip().replace("\n", "").replace("{", "").replace("}", "")
-                )
-                book[page_no]["cultural_ref"] = previous_summary
+                json_object = json.loads(result)
+                book[page_no]["cultural_ref"] = json_object["cultural_historical_geographical_context"]
                 if int(page_no) % 10 == 0:
                     write_json_file(file_path, book)
             except Exception as ex:
@@ -384,5 +390,34 @@ def cleanse_text_of_unwanted_characters(page):
 # pre_process()
 # summarize_by_page()
 # pre_process()
-fetch_vocab_by_page()
+# fetch_vocab_by_page()
+# cultural_ref_page_wise()
 
+def merge():
+    main_file = get_absolute_path("server/hackathon/output/pg766.json")
+    hindi_file = get_absolute_path("server/hackathon/output/pg766-hindi.json")
+    final_file = get_absolute_path("server/hackathon/output/pg766-final.json")
+
+    book = read_json_file(main_file)
+    hindi_json = read_json_file(hindi_file)
+
+    tqdm_book = tqdm(book)
+    for page_no in tqdm(book):
+        try:
+
+            tqdm_book.set_description("pageNo :" + page_no)
+            page = book[page_no]
+            paragraphs = page["paragraphs"]
+            for paragraph_number in tqdm(paragraphs):
+                hindi = hindi_json[page_no][paragraph_number]
+                book[page_no][paragraph_number]["content_hindi"] = hindi
+
+            if int(page_no) % 10 == 0:
+                write_json_file(final_file, book)
+
+        except Exception as ex:
+            print("error " + str(ex))
+            write_json_file(final_file, book)
+
+
+merge()
