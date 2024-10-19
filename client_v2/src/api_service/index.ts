@@ -30,7 +30,8 @@ class ApiService {
           summary_so_far: `${bookInfo?.summary?.page_summary_so_far} ${bookInfo?.summary?.current_page_summary}`,
           vocab: bookInfo?.vocab?.novel_words,
           cultural_ref: bookInfo?.cultural_ref,
-          content: bookInfo?.content
+          content: bookInfo?.content,
+          grade5: bookInfo?.grade5
         }
       })
     }

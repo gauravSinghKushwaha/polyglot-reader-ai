@@ -32,6 +32,7 @@ export type IBookPage = {
     paragraphs: IBookParaInfo[];
     cultural_ref: ICultureRef[];
     content: string;
+    grade5: string;
 }
 export type IBookInfo = {
     isbn: string; 

@@ -6,12 +6,18 @@ import { Translate } from "./Translate";
 import { QuesAndAns } from "./QuesAndAns";
 import './styles.scss';
 import { usePolyglotReader } from "../../state";
+import { EasyLevel } from "./EasyLevel";
 
 const Tabs = [
     {
         icon: 'bi-journal-text',
         label: 'Summary',
         Component: <PageSummary />
+    },
+    {
+        icon: 'bi-journal-text',
+        label: 'Easy Reading',
+        Component: <EasyLevel />
     },
     {
         icon: 'bi-bookshelf',
