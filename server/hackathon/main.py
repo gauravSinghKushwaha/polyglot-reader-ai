@@ -321,7 +321,9 @@ def pre_process():
         extract_pages_paragraphs_from_txt_file(input_folder, output_folder, filename)
 
     files = tqdm(os.listdir(output_folder))
-    for filename in files and filename not in filename["pg766.txt", "pg30120.txt"]:
+    for filename in files:
+        if filename in ["pg766.json", "pg30120.json"]:
+            continue
         output = output_folder + "/" + filename
         book = read_json_file(output)
 
