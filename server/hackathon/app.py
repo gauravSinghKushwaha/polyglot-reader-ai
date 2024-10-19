@@ -1,4 +1,3 @@
-import json
 import os
 from typing import Optional
 
@@ -29,7 +28,7 @@ app.add_middleware(
 def get_absolute_path(relative_path):
     return os.path.abspath(relative_path)
 
-@app.get("/book/")
+@app.get("/book")
 async def book(book_id: str, language: Optional[str] = None):
     if not book_id:
         raise HTTPException(status_code=400, detail="Book ID required")
