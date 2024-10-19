@@ -9,7 +9,7 @@ class SelectedTextModel(BaseModel):
     )
 
     def __str__(self):
-        return f"HTML: {self.html}"
+        return f"data: {self.html}"
 
     def to_dict(self):
-        return {"html": self.html}
+        return {"data": self.html}
