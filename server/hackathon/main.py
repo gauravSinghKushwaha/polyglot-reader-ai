@@ -5,6 +5,8 @@ from retry import retry
 from langchain.prompts import PromptTemplate
 import requests
 import json
+
+from hackathon.prompts.cultural_ref_prompt import CULTURAL_CONTEXT_PROMPT
 from utils.file_reader import read_json_file
 
 from utils.ai_helper import invoke_simple_chain
@@ -120,6 +122,8 @@ def translate_page_wise(pages, file_path):
     translated_pages = pages
     for page_number in pages:
         try:
+            if int(page_number) < 111:
+                continue
             print("\nTranslating page number: " + str(page_number))
             page = pages[page_number]
             paragraphs = page["paragraphs"]
@@ -154,7 +158,7 @@ def translate_text_with_sarvam(
     url = "https://api.sarvam.ai/translate"
     headers = {
         "Content-Type": "application/json",
-        "api-subscription-key": "30908b39-df16-4c6a-a64c-7819055ab33c",
+        "api-subscription-key": "570d57a1-a198-4db6-9193-dfa7cb875ccc",
     }
 
     payload = {
@@ -192,8 +196,8 @@ def translate_text_with_llama(source_language, target_language, text):
     return result
 
 def pre_process():
-    input_folder = get_absolute_path("server/hackathon/books")
-    output_folder = get_absolute_path("server/hackathon/output")
+    input_folder = get_absolute_path("hackathon/books")
+    output_folder = get_absolute_path("hackathon/output")
 
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
@@ -202,13 +206,16 @@ def pre_process():
     for filename in files:
 
         # Extract chapters and paragraphs
-        book_structure = extract_chapters_and_paragraphs(input_folder + "/" + filename)
-        pages = paginate_book(book_structure)
+        # book_structure = extract_chapters_and_paragraphs(input_folder + "/" + filename)
+        # pages = paginate_book(book_structure)
         # write_json_file(output_folder + '/' + filename.replace("txt", "json"), pages)
 
+        pages = read_json_file(output_folder + '/' + filename.replace(".txt", "-hindi.json"))
         file_path = output_folder + '/' + filename.replace(".txt", "-hindi.json")
         translated_pages = translate_page_wise(pages, file_path)
         write_json_file(file_path, translated_pages)
+        cultural_refs = cultural_ref_page_wise(pages, file_path)
+        write_json_file(file_path, cultural_refs)
 
         # summarize_page_wise(pages)
 
@@ -216,7 +223,7 @@ def pre_process():
 def summarize_by_page():
     # def summarize_by_page(source_language, target_language, text):
 
-    output_folder = get_absolute_path("server/hackathon/output")
+    output_folder = get_absolute_path("hackathon/output")
 
     files = tqdm(os.listdir(output_folder))
     for filename in files:
@@ -261,6 +268,39 @@ def summarize_by_page():
 
         write_json_file(file_path, book)
 
+def cultural_ref_page_wise():
 
-summarize_by_page()
-# pre_process()
+    output_folder = get_absolute_path("hackathon/output")
+
+    files = tqdm(os.listdir(output_folder))
+    for filename in files:
+
+        file_path = file_path = output_folder + "/" + filename
+        book = read_json_file(file_path)
+        tqdm_book = tqdm(book)
+        for page_no in tqdm_book:
+            tqdm_book.set_description("pageNo :" + page_no)
+            page = book[page_no]
+            page_content = page["current_page"]
+            input_data = {"current_page": page_content}
+            template = CULTURAL_CONTEXT_PROMPT
+            prompt = PromptTemplate(
+                input_variables=["current_page"],
+                template=template,
+            )
+
+            try:
+                result = invoke_simple_chain(prompt, input_data=input_data)
+                previous_summary = (
+                    result.strip().replace("\n", "").replace("{", "").replace("}", "")
+                )
+                book[page_no]["cultural_ref"] = previous_summary
+                if int(page_no) % 10 == 0:
+                    write_json_file(file_path, book)
+            except Exception as ex:
+                print("error " + str(ex))
+
+        write_json_file(file_path, book)
+
+# summarize_by_page()
+pre_process()
