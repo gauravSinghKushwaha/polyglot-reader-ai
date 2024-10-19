@@ -25,6 +25,7 @@ from prompts.grade_appropriate import GRADE_LEVEL_5_PROMPT, GRADE_LEVEL_FORMAT
 def get_absolute_path(relative_path):
     return os.path.abspath(relative_path)
 
+
 def extract_chapters_and_paragraphs(file_path):
     with open(file_path, "r", encoding="utf-8") as file:
         content = file.read()
@@ -61,6 +62,7 @@ def extract_chapters_and_paragraphs(file_path):
 
         json.dumps(result, indent=4)
     return result
+
 
 def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
     pages = {}
@@ -119,6 +121,7 @@ def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
 
     return pages
 
+
 def translate_page_wise(page_no, book):
     print("Translating page wise.....")
 
@@ -126,14 +129,13 @@ def translate_page_wise(page_no, book):
     paragraphs = page["paragraphs"]
     for paragraph_number in tqdm(paragraphs):
         paragraph = paragraphs[paragraph_number]
-        output = translate_text_with_sarvam(
-            "en-IN", "hi-IN", paragraph["content"]
-        )
+        output = translate_text_with_sarvam("en-IN", "hi-IN", paragraph["content"])
         # output = translate_text_with_llama("English", "Spanish", paragraph['content'])
         page["paragraphs"][paragraph_number]["content_hindi"] = output
 
     book[page_no] = page
     return book
+
 
 @retry(
     exceptions=(Exception),
@@ -174,6 +176,7 @@ def translate_text_with_sarvam(
     else:
         return f"Error: {response.status_code}, {response.text}"
 
+
 def translate_text_with_llama(source_language, target_language, text):
     prompt = PromptTemplate(
         input_variables=["content"],
@@ -183,6 +186,7 @@ def translate_text_with_llama(source_language, target_language, text):
     )
     result = invoke_simple_chain(prompt, input_data={"content": text})
     return result
+
 
 def pre_process():
     input_folder = get_absolute_path("hackathon/books")
@@ -207,20 +211,20 @@ def pre_process():
                 tqdm_book.set_description("pageNo :" + page_no)
                 page = book[page_no]
 
-                if 'summary' not in page:
+                if "summary" not in page:
                     summaries = summarize_by_page(
                         page_no=page_no, previous_summary=previous_summary, page=page
                     )
                     if "previous_summary" in summaries:
                         previous_summary = summaries["previous_summary"]
 
-                if 'vocab' not in page:
+                if "vocab" not in page:
                     fetch_vocab_by_page(page=page)
 
-                if 'cultural_ref' not in page:                
+                if "cultural_ref" not in page:
                     fetch_culture_ref_by_page(page_no=page_no, book=book)
-                
-                if 'grade5' not in page:                
+
+                if "grade5" not in page:
                     convert_to_chosen_grade(page=page, grade=None)
 
                 translate_page_wise(page_no=page_no, book=book)
@@ -230,6 +234,7 @@ def pre_process():
 
             write_json_file(output, book)
 
+
 def extract_pages_paragraphs_from_txt_file(input_folder, output_folder, filename):
     book_structure = extract_chapters_and_paragraphs(input_folder + "/" + filename)
     pages = paginate_book(book_structure)
@@ -237,6 +242,7 @@ def extract_pages_paragraphs_from_txt_file(input_folder, output_folder, filename
     output = output_folder + "/" + filename.replace("txt", "json")
     write_json_file(output_folder + "/" + filename.replace("txt", "json"), pages)
     return output
+
 
 def summarize_by_page(page_no, previous_summary, page):
     cleanse_text_of_unwanted_characters(page=page)
@@ -276,6 +282,7 @@ def summarize_by_page(page_no, previous_summary, page):
     except Exception as ex:
         print("error " + str(ex))
 
+
 def fetch_culture_ref_by_page(page_no, book):
 
     page = book[page_no]
@@ -295,6 +302,7 @@ def fetch_culture_ref_by_page(page_no, book):
     except Exception as ex:
         print("error " + str(ex))
 
+
 def fetch_vocab_by_page(page):
 
     page_content = page["content"]
@@ -312,6 +320,7 @@ def fetch_vocab_by_page(page):
         page["vocab"] = json_object
     except Exception as ex:
         print("error " + str(ex))
+
 
 def convert_to_chosen_grade(page, grade):
 
@@ -335,6 +344,7 @@ def convert_to_chosen_grade(page, grade):
     except Exception as ex:
         print("error " + str(ex))
 
+
 def cleanse_text_of_unwanted_characters(page):
     page["content"] = (
         page["content"]
@@ -357,5 +367,6 @@ def cleanse_text_of_unwanted_characters(page):
                 .replace("\u201c", "“")
                 .replace("\u201d", "”")
             )
+
 
 pre_process()
