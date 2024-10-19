@@ -15,6 +15,7 @@ from tqdm import tqdm
 from prompts.summarize_prompt import (
     SUMMARIZE_FIRST_PAGE_PROMPT,
     SUMMARIZE_OTHER_PAGE_PROMPT,
+    SUMMARY_FORMAT,
 )
 from prompts.vocab_prompt import VOCAB_PROMPT_V2, VOCAB_FORMAT
 
@@ -222,7 +223,7 @@ def pre_process():
 def summarize_by_page():
     # def summarize_by_page(source_language, target_language, text):
 
-    output_folder = get_absolute_path("hackathon/output")
+    output_folder = get_absolute_path("server/hackathon/output")
 
     files = tqdm(os.listdir(output_folder))
     for filename in files:
@@ -242,6 +243,7 @@ def summarize_by_page():
                 prompt = PromptTemplate(
                     input_variables=["content"],
                     template=template,
+                    partial_variables={"format_instructions": SUMMARY_FORMAT},
                 )
 
             else:
@@ -251,6 +253,7 @@ def summarize_by_page():
                 prompt = PromptTemplate(
                     input_variables=["content", previous_summary],
                     template=template,
+                    partial_variables={"format_instructions": SUMMARY_FORMAT},
                 )
                 input_data["previous_summary"] = previous_summary
 
@@ -259,7 +262,8 @@ def summarize_by_page():
                 previous_summary = (
                     result.strip().replace("\n", "").replace("{", "").replace("}", "")
                 )
-                book[page_no]["summary"] = previous_summary
+                json_object = json.loads(result)
+                book[page_no]["vocab"] = json_object
                 if int(page_no) % 10 == 0:
                     write_json_file(file_path, book)
             except Exception as ex:
