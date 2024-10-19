@@ -5,11 +5,12 @@ import { PageVocab } from "./PageVocab";
 import { Translate } from "./Translate";
 import { QuesAndAns } from "./QuesAndAns";
 import './styles.scss';
+import { usePolyglotReader } from "../../state";
 
 const Tabs = [
     {
         icon: 'bi-journal-text',
-        label: 'Page Summary',
+        label: 'Summary',
         Component: <PageSummary />
     },
     {
@@ -30,6 +31,7 @@ const Tabs = [
 ]
 
 export const DetailView = () => {
+    const { currentPage } = usePolyglotReader();
     const [selectedTab, setSelectedTab] = useState(Tabs[0]);
 
     return (
@@ -37,7 +39,7 @@ export const DetailView = () => {
             <Box className="tabs">
                 {Tabs.map((item) => <div onClick={() => setSelectedTab(item)} className={selectedTab.label == item.label ? 'active' : ''}><i className={`bi ${item.icon}`}></i> {item.label}</div>)}
             </Box>
-            {selectedTab?.Component}
+            <Box key={currentPage} style={{padding: 24, height: "calc(100vh - 165px)", overflow: "auto"}}>{selectedTab?.Component}</Box>
         </>
     )
 }
