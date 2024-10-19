@@ -55,7 +55,7 @@ def extract_main_content(content: str) -> Dict:
         info = {
             "name": "",
             "author": "",
-            "num_pages": len(content.split("\n")) // 30, 
+            "num_pages": len(content.split("\n")) // 30,
             "book_start_page": 1,
             "book_end_page": len(content.split("\n")) // 30,
             "main_content": content,
@@ -148,7 +148,7 @@ def main():
 
 
 def extract_chapters_and_paragraphs(file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
+    with open(file_path, "r", encoding="utf-8") as file:
         content = file.read()
 
     # Pattern to match chapter titles (assuming they start with "CHAPTER" and a number)
@@ -161,18 +161,22 @@ def extract_chapters_and_paragraphs(file_path):
     paragraph_index = 0
 
     for i, chapter_text in enumerate(chapters):
-        if chapter_text.strip():  # To handle cases where the split produces empty content
-            chapter_title = chapter_titles[i] if i < len(chapter_titles) else "Unknown Chapter"
-            
+        if (
+            chapter_text.strip()
+        ):  # To handle cases where the split produces empty content
+            chapter_title = (
+                chapter_titles[i] if i < len(chapter_titles) else "Unknown Chapter"
+            )
+
             # Split the chapter content into paragraphs (each separated by two or more newlines)
-            paragraphs = re.split(r'\n\s*\n', chapter_text.strip())
+            paragraphs = re.split(r"\n\s*\n", chapter_text.strip())
 
             for paragraph in paragraphs:
                 if paragraph.strip():  # Ignore empty paragraphs
                     paragraph_data = {
                         "content": paragraph.strip(),
                         "num_words": len(paragraph.split()),
-                        "chapter": chapter_title.strip()
+                        "chapter": chapter_title.strip(),
                     }
                     result["paragraphs"].append({paragraph_index: paragraph_data})
                     paragraph_index += 1
@@ -180,12 +184,13 @@ def extract_chapters_and_paragraphs(file_path):
         json.dumps(result, indent=4)
     return result
 
+
 def group_paragraphs_by_chapter(book_json):
     grouped_paragraphs = {}
 
-    for paragraph_entry in book_json['paragraphs']:
+    for paragraph_entry in book_json["paragraphs"]:
         for index, paragraph_details in paragraph_entry.items():
-            chapter = paragraph_details['chapter']
+            chapter = paragraph_details["chapter"]
             paragraph_index = int(index)
 
             if chapter not in grouped_paragraphs:
@@ -195,13 +200,14 @@ def group_paragraphs_by_chapter(book_json):
 
     return grouped_paragraphs
 
+
 def get_content_by_chapter_json(book_json):
     content_by_chapter = {}
 
-    for paragraph_entry in book_json['paragraphs']:
+    for paragraph_entry in book_json["paragraphs"]:
         for _, paragraph_details in paragraph_entry.items():
-            chapter = paragraph_details['chapter']
-            paragraph_content = paragraph_details['content']
+            chapter = paragraph_details["chapter"]
+            paragraph_content = paragraph_details["content"]
 
             # Ensure a new list is created for each chapter
             if chapter not in content_by_chapter:
@@ -216,7 +222,7 @@ def get_content_by_chapter_json(book_json):
 def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
     pages = {}
     current_page = {"content": "", "paragraphs": {}, "num_words": 0, "chapter": None}
-    current_word_count = 0
+    current_character_count = 0
     page_count = 0  # To keep track of page number
 
     # Iterate over the paragraphs in the book_json
@@ -224,18 +230,24 @@ def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
         for key, details in paragraph.items():
             paragraph_content = details["content"].strip()
             num_words = details["num_words"]
+            num_characters = (
+                len(paragraph_content)
+                if paragraph_content and len(paragraph_content) >= 0
+                else 0
+            )
             chapter = details["chapter"].strip()
 
             # Check if we need to start a new page
             if (
-                current_word_count + num_words + next_paragraph_padding > word_limit
+                current_character_count + num_characters + next_paragraph_padding
+                > word_limit
                 or current_page["chapter"] is None
                 or current_page["chapter"] != chapter
             ):
                 # Save the current page to pages dictionary if it has content
-                if current_word_count > 0:
-                    current_page["num_words"] = (
-                        current_word_count  # Update num_words here
+                if current_character_count > 0:
+                    current_page["num_chars"] = (
+                        current_character_count  # Update num_words here
                     )
                     pages[str(page_count)] = current_page
 
@@ -243,10 +255,10 @@ def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
                 current_page = {
                     "content": "",
                     "paragraphs": {},
-                    "num_words": 0,
+                    "num_chars": 0,
                     "chapter": chapter,
                 }
-                current_word_count = 0
+                current_character_count = 0
                 page_count += 1
 
             # Append the paragraph content and update counts
@@ -255,20 +267,20 @@ def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
                 "content": paragraph_content,
                 "num_words": num_words,
             }
-            current_word_count += num_words
+            current_character_count += num_characters
 
     # Add the last page if it has content
-    if current_word_count > 0:
-        current_page["num_words"] = current_word_count
+    if current_character_count > 0:
+        current_page["num_chars"] = current_character_count
         pages[str(page_count)] = current_page
 
     return pages
 
 
 def pre_process():
-    base_folder = '/Users/gauravsinghkushwaha/Documents/code/splashlearn/polyglot-reader-ai/server/hackathon'
-    input_folder = base_folder+ "/books"
-    output_folder = base_folder+ "/output"
+    base_folder = "/Users/gauravsinghkushwaha/Documents/code/splashlearn/polyglot-reader-ai/server/hackathon"
+    input_folder = base_folder + "/books"
+    output_folder = base_folder + "/output"
 
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
@@ -277,12 +289,13 @@ def pre_process():
     for filename in files:
 
         # Extract chapters and paragraphs
-        book_structure = extract_chapters_and_paragraphs(input_folder + '/' + filename)
+        book_structure = extract_chapters_and_paragraphs(input_folder + "/" + filename)
         pages = paginate_book(book_structure)
-        write_json_file(output_folder + '/' + filename.replace("txt", "json"), pages)
+        write_json_file(output_folder + "/" + filename.replace("txt", "json"), pages)
 
         # translate_page_wise(pages)
         # summarize_page_wise(pages)
+
 
 pre_process()
 
@@ -296,11 +309,14 @@ def translate_page_wise(pages):
         translated_pages.append(output)
     return translated_pages
 
-def translate_text_with_sarvam(source_language, target_language, text, speaker_gender="Male", mode="formal"):
+
+def translate_text_with_sarvam(
+    source_language, target_language, text, speaker_gender="Male", mode="formal"
+):
     url = "https://api.sarvam.ai/translate"
     headers = {
         "Content-Type": "application/json",
-        "api-subscription-key": "30908b39-df16-4c6a-a64c-7819055ab33c"
+        "api-subscription-key": "30908b39-df16-4c6a-a64c-7819055ab33c",
     }
 
     payload = {
@@ -310,7 +326,7 @@ def translate_text_with_sarvam(source_language, target_language, text, speaker_g
         "model": "mayura:v1",
         "enable_preprocessing": True,
         "input": text,
-        "speaker_gender": speaker_gender
+        "speaker_gender": speaker_gender,
     }
 
     response = requests.post(url, headers=headers, data=json.dumps(payload))
@@ -321,6 +337,7 @@ def translate_text_with_sarvam(source_language, target_language, text, speaker_g
     else:
         return f"Error: {response.status_code}, {response.text}"
 
+
 def translate_text_with_llama(source_language, target_language, text):
     prompt = PromptTemplate(
         input_variables=["content"],
@@ -328,8 +345,9 @@ def translate_text_with_llama(source_language, target_language, text):
             
         """,
     )
-    result = invoke_simple_chain(prompt, input_data={ "content": text})
+    result = invoke_simple_chain(prompt, input_data={"content": text})
     return result
+
 
 # if __name__ == "__main__":
 # main()
