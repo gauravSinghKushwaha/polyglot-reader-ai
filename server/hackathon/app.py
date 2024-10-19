@@ -1,5 +1,6 @@
 import json
 import os
+from typing import Optional
 
 import uvicorn
 from fastapi import FastAPI, HTTPException
@@ -29,11 +30,15 @@ def get_absolute_path(relative_path):
     return os.path.abspath(relative_path)
 
 @app.get("/book/")
-async def book(book_id: str):
+async def book(book_id: str, language: Optional[str] = "None"):
     if not book_id:
         raise HTTPException(status_code=400, detail="Book ID required")
     try:
-        book_file_json = "/" + book_id + ".json"
+        if language is not None:
+            book_file_json = "/" + book_id + "-" + language + ".json"
+        else:
+            book_file_json = "/" + book_id + "-.json"
+
         result = read_json_file(get_absolute_path("hackathon/output") + book_file_json)
         return ResponseBuilder.build_response(result)
     except Exception as ex:
