@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, ReactNode, useEffect, useMemo } from 'react';
-import { IBook } from './api_service/interface';
+import { IBook, IBookInfo } from './api_service/interface';
 import apiService from './api_service';
 
 interface PolyglotReaderContextType {
@@ -7,7 +7,13 @@ interface PolyglotReaderContextType {
     currentBook: IBook | undefined;
     setCurrentBook: React.Dispatch<React.SetStateAction<IBook | undefined>>;
     defaultLanguage: string; 
-    setDefaultLanguage: React.Dispatch<React.SetStateAction<string>>
+    setDefaultLanguage: React.Dispatch<React.SetStateAction<string>>;
+    currentPage: number;
+    setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
+    bookInfo: IBookInfo | undefined;
+    setBookInfo: React.Dispatch<React.SetStateAction<IBookInfo | undefined>>;
+    selectionText: string | undefined; 
+    setSelectionText: React.Dispatch<React.SetStateAction<string | undefined>>;
 }
 
 const PolyglotReaderContext = createContext<PolyglotReaderContextType | undefined>(undefined);
@@ -16,6 +22,9 @@ export const PolyglotReaderProvider: React.FC<{ children: ReactNode }> = ({ chil
     const [bookList, setBookList] = useState<IBook[]>([]);
     const [defaultLanguage, setDefaultLanguage] = useState<string>("Hindi");
     const [currentBook, setCurrentBook] = useState<IBook | undefined>();
+    const [currentPage, setCurrentPage] = useState(0);
+    const [bookInfo, setBookInfo] = useState<IBookInfo>();
+    const [selectionText, setSelectionText] = useState<string>();
 
     useEffect(() => {
         apiService.getBookList().then((response) => setBookList(response));
@@ -27,8 +36,14 @@ export const PolyglotReaderProvider: React.FC<{ children: ReactNode }> = ({ chil
                 bookList,
                 currentBook,
                 defaultLanguage,
+                currentPage,
+                bookInfo,
+                selectionText,
                 setCurrentBook,
-                setDefaultLanguage
+                setDefaultLanguage,
+                setCurrentPage,
+                setBookInfo,
+                setSelectionText
             }}
         >
             {children}
