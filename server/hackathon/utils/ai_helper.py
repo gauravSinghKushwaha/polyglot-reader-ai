@@ -34,6 +34,7 @@ def invoke_prompt(
     model = get_llm()
     run_id = uuid.uuid4()
     chain = prompt | model | pydantic_parser
+    print(prompt.format(**input_data))
     result = chain.invoke(input_data, config={"run_id": run_id})
     return run_id, result
 
@@ -43,6 +44,7 @@ def invoke_simple_chain(prompt: PromptTemplate, input_data: dict):
     model = get_llm()
     run_id = uuid.uuid4()
     chain = prompt | model
+    print(prompt.format(**input_data))
     result = chain.invoke(input_data, config={"run_id": run_id})
     return result
 
@@ -52,10 +54,11 @@ def stream_answer(
 ):
     model = get_llm()
     run_id = uuid.uuid4()
-    chain = prompt | model | pydantic_parser
+    chain = prompt | model
     print(prompt.format(**input_data))
 
     for chunk in chain.stream(input_data, config={"run_id": run_id}):
+        print(chunk)
         yield chunk  # Yield each chunk as it's produced
 
 def stream_simple_answer(
@@ -67,4 +70,5 @@ def stream_simple_answer(
     print(prompt.format(**input_data))
 
     for chunk in chain.stream(input_data, config={"run_id": run_id}):
+        print(chunk)
         yield chunk  # Yield each chunk as it's produced

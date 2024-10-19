@@ -1,5 +1,5 @@
 from pydantic import BaseModel
 
-class SelectedTextDto(BaseModel):
+class QueryResponderDto(BaseModel):
     text: str
-    content: str
+    query: str
