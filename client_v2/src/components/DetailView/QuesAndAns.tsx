@@ -40,7 +40,6 @@ export const QuesAndAns: React.FC = () => {
         return translation;
     };
 
-
     const setAnswer = (id: string, text: string, query: string) => {
         apiService.askQuery(text, query, (chunk) => {
             chatList[id] = { ...chatList[id], ans: extractText(chunk) };
@@ -98,7 +97,7 @@ export const QuesAndAns: React.FC = () => {
                         <div className="selected-text">
                             <div className="text">{selectionText}</div>
                             <div className="controls">
-                                <button onClick={() => setMessage('get_info', selectionText)}>Get info</button>
+                                <button onClick={() => setMessage('get_info', selectionText)}>Explain</button>
                                 {/* <button onClick={() => setMessage('translate', selectionText)}>Translate</button> */}
                                 {/* <button onClick={() => setMessage(isWord ? 'vocab' : 'build_summary', selectionText)}>{isWord ? 'Vocab' : 'Comprehension'}</button> */}
                             </div>
