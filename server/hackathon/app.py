@@ -4,6 +4,10 @@ import os
 import uvicorn
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from sse_starlette import EventSourceResponse
+
+from hackathon.models.server.translate_request_dto import TranslateTextDto
+from hackathon.services.language_translation_service import LanguageTranslationService
 from hackathon.utils.response_builder import ResponseBuilder
 from hackathon.utils.file_reader import read_json_file
 
@@ -12,6 +16,7 @@ from hackathon.utils.file_reader import read_json_file
 SUPPORTED_LANGUAGES = ["English", "German", "French", "Italian", "Portuguese", "Hindi", "Spanish", "Thai"]
 
 app = FastAPI()
+translation_service = LanguageTranslationService()
 
 app.add_middleware(
     CORSMiddleware,
@@ -35,23 +40,23 @@ async def book(book_id: str):
         print("Exception: ", ex)
         raise HTTPException(status_code=422, detail="AI could not respond to your request.")
 
-# @app.post("/translate")
-# def translate_text_stream(req: TranslateTextDto):
-#     if not req.text or not req.target_language:
-#         raise HTTPException(status_code=400, detail="Text and target language are required")
-#
-#     def event_generator():
-#         try:
-#             # Call the function that generates your answer, yielding results as they are produced
-#             for answer_chunk in translation_service.translate_stream(req.text, req.target_language):
-#                 yield answer_chunk.translated_text # SSE format
-#         except Exception as ex:
-#             print("Exception: ", ex)
-#             yield "data: AI could not respond to your request.\n\n"
-#
-#     return EventSourceResponse(event_generator(), media_type="text/event-stream")
-#
-#
+@app.post("/translate")
+def translate_text_stream(req: TranslateTextDto):
+    if not req.text or not req.target_language:
+        raise HTTPException(status_code=400, detail="Text and target language are required")
+
+    def event_generator():
+        try:
+            # Call the function that generates your answer, yielding results as they are produced
+            for answer_chunk in translation_service.translate_stream(req.text, req.target_language):
+                yield answer_chunk.translated_text # SSE format
+        except Exception as ex:
+            print("Exception: ", ex)
+            yield "data: AI could not respond to your request.\n\n"
+
+    return EventSourceResponse(event_generator(), media_type="text/event-stream")
+
+
 # @app.post("/summary")
 # def build_summary_stream(req: SummarizeTextDto):
 #     if not req.text:

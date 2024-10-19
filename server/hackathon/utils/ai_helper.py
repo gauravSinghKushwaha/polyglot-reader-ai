@@ -40,7 +40,7 @@ def get_llm():
         return getOpenAiLLMModel()
     
     return OllamaLLM(
-        # base_url= "https://pfai.splashmath.com",
+        base_url= "https://pfai.splashmath.com",
         model="llama3.2",
         temperature=0,
         format="json",
