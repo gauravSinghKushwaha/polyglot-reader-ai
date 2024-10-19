@@ -243,10 +243,10 @@ def translate_cultural_ref(page):
         hindi_dict = {}
         for k in cultural_ref:
             key_hindi = k + "_hindi" if "_hindi" not in k else k
-            if key_hindi in cultural_ref:
-                continue
+            # if key_hindi in cultural_ref:
+            #     continue
             try:
-                output = translate_text_with_sarvam(
+                output = translate_text_with_sarvam( 
                     "en-IN",
                     "hi-IN",
                     remove_unwanted_characters_from_str(cultural_ref[k]),
@@ -273,7 +273,7 @@ def translate_text_with_sarvam(
     url = "https://api.sarvam.ai/translate"
     headers = {
         "Content-Type": "application/json",
-        "api-subscription-key": "ae86d0e7-7c49-4896-84fb-2c63ce35f2c9",
+        "api-subscription-key": "cf0b850b-1357-4dfa-a604-704e427d62f7",
     }
 
     payload = {
@@ -324,8 +324,6 @@ def pre_process():
 
     files = tqdm(os.listdir(output_folder))
     for filename in files:
-        # if filename in ["pg766.json", "pg30120.json"]:
-        #     continue
         output = output_folder + "/" + filename
         book = read_json_file(output)
 
@@ -350,9 +348,14 @@ def pre_process():
                 fetch_vocab_by_page(page=page)
 
             if "cultural_ref" not in page or 1==1:
-                fetch_culture_ref_by_page(page_no=page_no, book=book)
+                if 'pg766' in filename:
+                    if int(page_no) > 27:
+                        fetch_culture_ref_by_page(page_no=page_no, book=book)
+                else:
+                    fetch_culture_ref_by_page(page_no=page_no, book=book)
 
-            if "grade5" not in page:
+
+            if "grade5" not in page: 
                 convert_to_chosen_grade(page=page, grade=None)
 
             translate_page_wise(page_no=page_no, book=book)
