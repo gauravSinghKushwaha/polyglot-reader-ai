@@ -212,16 +212,11 @@ def pre_process():
     files = os.listdir(input_folder)
     for filename in files:
 
-        book_structure = extract_chapters_and_paragraphs(input_folder + "/" + filename)
-        pages = paginate_book(book_structure)
+        extract_pages_paragraphs_from_txt_file(input_folder, output_folder, filename)
 
-        output = output_folder + "/" + filename.replace("txt", "json")
-        write_json_file(output_folder + "/" + filename.replace("txt", "json"), pages)
-
-        output_folder = get_absolute_path("server/hackathon/output")
         files = tqdm(os.listdir(output_folder))
         for filename in files:
-
+            output = output_folder + "/" + filename
             book = read_json_file(output)
 
             previous_summary = ""
@@ -246,6 +241,15 @@ def pre_process():
                     write_json_file(output, book)
 
         write_json_file(output, book)
+
+
+def extract_pages_paragraphs_from_txt_file(input_folder, output_folder, filename):
+    book_structure = extract_chapters_and_paragraphs(input_folder + "/" + filename)
+    pages = paginate_book(book_structure)
+
+    output = output_folder + "/" + filename.replace("txt", "json")
+    write_json_file(output_folder + "/" + filename.replace("txt", "json"), pages)
+    return output
 
 
 def summarize_by_page(page_no, previous_summary, page):
