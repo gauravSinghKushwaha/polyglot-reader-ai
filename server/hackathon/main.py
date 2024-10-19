@@ -125,7 +125,11 @@ def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
 def translate_page_wise(page_no, book):
     page = book[page_no]
     paragraphs = page["paragraphs"]
-    for paragraph_number in tqdm(paragraphs):
+    tqdm_para = tqdm(paragraphs)
+    for paragraph_number in tqdm_para:
+        tqdm_para.set_description(
+            "page>>" + page_no + " paragraph_number >>" + paragraph_number
+        )
         if "content_hindi" not in page["paragraphs"][paragraph_number]:
             paragraph = paragraphs[paragraph_number]
             output = translate_text_with_sarvam("en-IN", "hi-IN", paragraph["content"])
