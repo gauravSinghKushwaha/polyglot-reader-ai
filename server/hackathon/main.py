@@ -1,4 +1,5 @@
 import os
+import os.path
 import re
 from time import sleep
 from retry import retry
@@ -359,9 +360,6 @@ def pre_process():
                 write_json_file(output, book)
 
         write_json_file(output, book)
-
-
-import os.path
 
 
 def extract_pages_paragraphs_from_txt_file(input_folder, output_folder, filename):
