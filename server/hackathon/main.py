@@ -6,7 +6,8 @@ from langchain.prompts import PromptTemplate
 import requests
 import json
 
-from prompts.cultural_ref_prompt import CULTURAL_CONTEXT_PROMPT
+from prompts.cultural_ref_prompt import CULTURAL_CONTEXT_PROMPT, CULTURAL_REF_FORMAT
+
 from utils.file_reader import read_json_file
 
 from utils.ai_helper import invoke_simple_chain
@@ -19,10 +20,8 @@ from prompts.summarize_prompt import (
 )
 from prompts.vocab_prompt import VOCAB_PROMPT_V2, VOCAB_FORMAT
 
-
 def get_absolute_path(relative_path):
     return os.path.abspath(relative_path)
-
 
 def extract_chapters_and_paragraphs(file_path):
     with open(file_path, "r", encoding="utf-8") as file:
@@ -60,7 +59,6 @@ def extract_chapters_and_paragraphs(file_path):
 
         json.dumps(result, indent=4)
     return result
-
 
 def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
     pages = {}
@@ -119,7 +117,6 @@ def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
 
     return pages
 
-
 def translate_page_wise(pages, file_path):
     print("Translating page wise.....")
     translated_pages = pages
@@ -147,7 +144,6 @@ def translate_page_wise(pages, file_path):
             print(ex)
 
     return translated_pages
-
 
 @retry(
     exceptions=(Exception),
@@ -188,7 +184,6 @@ def translate_text_with_sarvam(
     else:
         return f"Error: {response.status_code}, {response.text}"
 
-
 def translate_text_with_llama(source_language, target_language, text):
     prompt = PromptTemplate(
         input_variables=["content"],
@@ -198,7 +193,6 @@ def translate_text_with_llama(source_language, target_language, text):
     )
     result = invoke_simple_chain(prompt, input_data={"content": text})
     return result
-
 
 def pre_process():
     input_folder = get_absolute_path("server/hackathon/books")
@@ -232,16 +226,15 @@ def pre_process():
                 summaries = summarize_by_page(
                     page_no=page_no, previous_summary=previous_summary, page=page
                 )
-                previous_summary = summaries["previous_summary"]
-
-                fetch_vocab_by_page(page_no=page_no, page=page)
-                if int(page_no) % 5 == 0:
-                    write_json_file(output, book)
+                fetch_vocab_by_page(page_no=page_no, book=book)
+                fetch_culture_ref_by_page(page_no=page_no, book=book)
+            if int(page_no) % 10 == 0:
+                write_json_file(output, book)
 
         write_json_file(output, book)
 
-
-def summarize_by_page(page_no, previous_summary, page):
+def summarize_by_page(page_no, previous_summary, book):
+    page = book[page_no]
     cleanse_text_of_unwanted_characters(page=page)
     page_content = page["content"]
     input_data = {"content": page_content}
@@ -279,6 +272,22 @@ def summarize_by_page(page_no, previous_summary, page):
     except Exception as ex:
         print("error " + str(ex))
 
+def fetch_culture_ref_by_page(page_no, book):
+
+    page = book[page_no]
+    page_content = page["content"]
+    input_data = {"content": page_content}
+    try:
+        prompt = PromptTemplate(
+            input_variables=["current_page"],
+            template=CULTURAL_CONTEXT_PROMPT,
+            partial_variables={"format_instructions": CULTURAL_REF_FORMAT},
+        )
+        result = invoke_simple_chain(prompt, input_data=input_data)
+        json_object = json.loads(result)
+        book[page_no]["cultural_ref"] = json_object["cultural_historical_geographical_context"]
+    except Exception as ex:
+        print("error " + str(ex))
 
 def fetch_vocab_by_page(page_no, page):
 
@@ -297,7 +306,6 @@ def fetch_vocab_by_page(page_no, page):
         page["vocab"] = json_object
     except Exception as ex:
         print("error " + str(ex))
-
 
 def cleanse_text_of_unwanted_characters(page):
     page["content"] = (
@@ -321,6 +329,5 @@ def cleanse_text_of_unwanted_characters(page):
                 .replace("\u201c", "“")
                 .replace("\u201d", "”")
             )
-
 
 pre_process()
