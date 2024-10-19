@@ -10,6 +10,10 @@ from utils.ai_helper import invoke_simple_chain
 from utils.file_writer import write_json_file
 from tqdm import tqdm
 
+
+def get_absolute_path(relative_path):
+    return os.path.abspath(relative_path)
+
 def read_book(file_path: str) -> str:
     with open(file_path, "r", encoding="utf-8") as file:
         return file.read()
@@ -81,7 +85,7 @@ def extract_chapters_and_paragraphs(file_path):
 
 def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
     pages = {}
-    current_page = {"content": "", "paragraphs": {}, "num_words": 0}
+    current_page = {"content": "", "paragraphs": {}, "num_words": 0, "chapter": None}
     current_word_count = 0
     page_count = 0  # To keep track of page number
 
@@ -90,16 +94,20 @@ def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
         for key, details in paragraph.items():
             paragraph_content = details["content"]
             num_words = details["num_words"]
+            chapter = details["chapter"]
 
-            # Check if adding the next paragraph exceeds the limit
-            if current_word_count + num_words + next_paragraph_padding > word_limit:
-                # Save the current page to pages dictionary
-                pages[str(page_count)] = current_page
+            # Check if we need to start a new page
+            if current_word_count + num_words + next_paragraph_padding > word_limit or current_page[
+                "chapter"] is None or current_page["chapter"] != chapter:
+                # Save the current page to pages dictionary if it has content
+                if current_word_count > 0:
+                    current_page["num_words"] = current_word_count  # Update num_words here
+                    pages[str(page_count)] = current_page
 
                 # Start a new page
-                page_count += 1
-                current_page = {"content": "", "paragraphs": {}, "num_words": 0}
+                current_page = {"content": "", "paragraphs": {}, "num_words": 0, "chapter": chapter}
                 current_word_count = 0
+                page_count += 1
 
             # Append the paragraph content and update counts
             current_page["content"] += paragraph_content + "\n"
@@ -112,24 +120,6 @@ def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
         pages[str(page_count)] = current_page
 
     return pages
-
-def pre_process():
-    input_folder = "/Users/sarthakbaweja/projects/polyglot-reader-ai/server/hackathon/books"
-    output_folder = "/Users/sarthakbaweja/projects/polyglot-reader-ai/server/hackathon/output"
-
-    if not os.path.exists(output_folder):
-        os.makedirs(output_folder)
-
-    files = tqdm(os.listdir(input_folder))
-    for filename in files:
-
-        # Extract chapters and paragraphs
-        book_structure = extract_chapters_and_paragraphs(input_folder + '/' + filename)
-        pages = paginate_book(book_structure)
-        write_json_file(output_folder + '/' + filename.replace("txt", "json"), pages)
-
-        # translate_page_wise(pages)
-        # summarize_page_wise(pages)
 
 def translate_page_wise(pages):
     print("Translating chapter wise")
@@ -174,5 +164,23 @@ def translate_text_with_llama(source_language, target_language, text):
     )
     result = invoke_simple_chain(prompt, input_data={"content": text})
     return result
+
+def pre_process():
+    input_folder = get_absolute_path("hackathon/books")
+    output_folder = get_absolute_path("hackathon/output")
+
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+
+    files = tqdm(os.listdir(input_folder))
+    for filename in files:
+
+        # Extract chapters and paragraphs
+        book_structure = extract_chapters_and_paragraphs(input_folder + '/' + filename)
+        pages = paginate_book(book_structure)
+        write_json_file(output_folder + '/' + filename.replace("txt", "json"), pages)
+
+        # translate_page_wise(pages)
+        # summarize_page_wise(pages)
 
 pre_process()
