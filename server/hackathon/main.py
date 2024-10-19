@@ -14,6 +14,7 @@ from prompts.summarize_prompt import (
     SUMMARIZE_FIRST_PAGE_PROMPT,
     SUMMARIZE_OTHER_PAGE_PROMPT,
 )
+from prompts.vocab_prompt import VOCAB_PROMPT_V2, VOCAB_FORMAT
 
 
 def get_absolute_path(relative_path):
@@ -225,7 +226,7 @@ def summarize_by_page():
                     result.strip().replace("\n", "").replace("{", "").replace("}", "")
                 )
                 book[page_no]["summary"] = previous_summary
-                if int(page_no) %10 == 0:
+                if int(page_no) % 10 == 0:
                     write_json_file(file_path, book)
             except Exception as ex:
                 print("error " + str(ex))
@@ -233,5 +234,82 @@ def summarize_by_page():
         write_json_file(file_path, book)
 
 
-summarize_by_page()
+def fetch_vocab_by_page():
+    # def summarize_by_page(source_language, target_language, text):
+
+    output_folder = get_absolute_path("server/hackathon/output")
+
+    files = tqdm(os.listdir(output_folder))
+    for filename in files:
+
+        file_path = file_path = output_folder + "/" + filename
+        book = read_json_file(file_path)
+
+        tqdm_book = tqdm(book)
+        for page_no in tqdm_book:
+            tqdm_book.set_description("pageNo :" + page_no)
+            page = book[page_no]
+
+            ## cleansing text... 1 teer 2 shikar :)
+            cleanse_text_of_unwanted_characters(page)
+
+            page_content = page["content"]
+            input_data = {"content": page_content}
+            try:
+
+                prompt = PromptTemplate(
+                    input_variables=["content"],
+                    template=VOCAB_PROMPT_V2,
+                    partial_variables={"format_instructions": VOCAB_FORMAT},
+                )
+
+                result = invoke_simple_chain(prompt, input_data=input_data)
+                json_object = json.loads(result)
+                book[page_no]["vocab"] = json_object
+                if int(page_no) % 10 == 0:
+                    write_json_file(file_path, book)
+            except Exception as ex:
+                print("error " + str(ex))
+
+        write_json_file(file_path, book)
+
+
+def cleanse_text_of_unwanted_characters(page):
+    page["content"] = (
+        page["content"]
+        .replace("\u2019", "'")
+        .replace("\u2018", "'")
+        .replace("\u2013", "-")
+        .replace("\u00a9", "©")
+        .replace("\u201c", "“")
+        .replace("\u201d", "”")
+    )
+
+    if "summary" in page:
+        page["summary"] = (
+            page["summary"]
+            .replace("\u2019", "'")
+            .replace("\u2018", "'")
+            .replace("\u2013", "-")
+            .replace("\u00a9", "©")
+            .replace("\u201c", "“")
+            .replace("\u201d", "”")
+        )
+
+    for para in page["paragraphs"]:
+        if para in page["paragraphs"]:
+            page["paragraphs"][para]["content"] = (
+                page["paragraphs"][para]["content"]
+                .replace("\u2019", "'")
+                .replace("\u2018", "'")
+                .replace("\u2013", "-")
+                .replace("\u00a9", "©")
+                .replace("\u201c", "“")
+                .replace("\u201d", "”")
+            )
+
+
+# summarize_by_page()
+fetch_vocab_by_page()
+
 # pre_process()
