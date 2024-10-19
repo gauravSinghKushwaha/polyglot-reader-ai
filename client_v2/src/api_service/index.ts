@@ -27,7 +27,7 @@ class ApiService {
           id,
           chapter: bookInfo.chapter,
           paragraphs,
-          summary_so_far: `${bookInfo?.summary?.current_page_summary} ${bookInfo?.summary?.page_summary_so_far}`,
+          summary_so_far: `${bookInfo?.summary?.page_summary_so_far} ${bookInfo?.summary?.current_page_summary}`,
           vocab: bookInfo?.vocab?.novel_words,
           cultural_ref: bookInfo?.cultural_ref,
           content: bookInfo?.content

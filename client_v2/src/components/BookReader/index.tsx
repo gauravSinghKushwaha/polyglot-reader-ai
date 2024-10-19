@@ -19,7 +19,7 @@ export const BookReader = ({ onBack }: any) => {
         return () => {
             speechSynthesis.cancel();
         }
-    }, []);
+    }, [currentPara]);
 
     useEffect(() => {
         if (currentBook?.isbn) {
@@ -33,9 +33,68 @@ export const BookReader = ({ onBack }: any) => {
         return null;
     }
 
+    const speak1 = (index: number = 0) => {
+        const para = bookInfo?.pages[currentPage]?.paragraphs;
+        const content = para?.[index]?.content;
+
+        if(!content?.length) {
+            return null;
+        }
+
+        const options = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'API-Subscription-Key': 'ae86d0e7-7c49-4896-84fb-2c63ce35f2c9' },
+            body: JSON.stringify({ "inputs": [content], "target_language_code": "en-IN", "speaker": "amol", "pitch": 0, "pace": 1, "loudness": 1.5, "speech_sample_rate": 8000, "enable_preprocessing": true, "model": "bulbul:v1" })
+        };
+
+        fetch('https://api.sarvam.ai/text-to-speech', options)
+            .then(response => response.json())
+            .then(response => {
+                const binaryString = atob(response?.audios?.[0]);
+
+                // Convert binary string to Uint8Array
+                const len = binaryString.length;
+                const bytes = new Uint8Array(len);
+                for (let i = 0; i < len; i++) {
+                    bytes[i] = binaryString.charCodeAt(i);
+                }
+
+                // Create a Blob from the Uint8Array
+                const blob = new Blob([bytes], { type: "audio/wav" });
+                const url = URL.createObjectURL(blob);
+                // setAudioUrl(url);
+
+                 // Create audio element
+                 const audioElement = document.createElement('audio');
+                 audioElement.src = url;
+                 audioElement.controls = true; // Add controls to play/pause the audio
+                 audioElement.autoplay = true; // Automatically play audio
+
+                 // Clear previous audio and append new audio element
+                 audioElement.innerHTML = ''; // Clear previous audio elements
+                 audioElement.appendChild(audioElement);
+
+                //  audioElement.play();
+
+                 audioElement.addEventListener("ended", () => {
+                    setCurrentPara(pre => pre+1);
+                    setTimeout(() => {
+                        speak(currentPara + 1);
+                    }, 0)
+                 })
+            })
+            .catch(err => console.error(err));
+    };
+
     const speak = (index: number = 0) => {
         const para = bookInfo?.pages[currentPage]?.paragraphs;
         const content = para?.[index]?.content;
+
+        if(!content?.length) {
+            return;
+        } else {
+            speechSynthesis.cancel();
+        }
 
         // Create a SpeechSynthesisUtterance
         const utterance = new SpeechSynthesisUtterance(content);
@@ -44,7 +103,7 @@ export const BookReader = ({ onBack }: any) => {
 
         // Select a voice
         const voices = speechSynthesis.getVoices();
-        utterance.voice = voices[0]; // Choose a specific voice
+        utterance.voice = voices[1]; // Choose a specific voice
 
         // Highlight text while reading
         utterance.onboundary = (event) => {
@@ -57,9 +116,13 @@ export const BookReader = ({ onBack }: any) => {
 
         // Move to the next paragraph after the current one finishes
         utterance.onend = () => {
-            if ((currentPara + 1) < para.length) {
-                setCurrentPara(currentPara + 1); // Update paragraph index
-                speak(currentPara + 1); // Speak the next paragraph
+            if ((index + 1) < para.length) {
+                setCurrentPara(index + 1); // Update paragraph index
+                setTimeout(() => {
+                    speak(index + 1);
+                }, 1000)
+            } else {
+                speechSynthesis.cancel();
             }
         };
 
@@ -85,8 +148,8 @@ export const BookReader = ({ onBack }: any) => {
             <Box className="body">
                 <Box className="book-content">
                     <Box className="chapter-name">
-                        <small><b>{bookInfo.pages[currentPage].chapter}</b></small> 
-                        (<a onClick={() => speak()}>Read page</a>)
+                        <b>{bookInfo.pages[currentPage].chapter}</b>
+                        (<small><i><a onClick={() => speak()}>Read page</a></i></small>)
                     </Box>
                     
                     <Box className="para-list">
