@@ -225,11 +225,13 @@ def summarize_by_page():
                     result.strip().replace("\n", "").replace("{", "").replace("}", "")
                 )
                 book[page_no]["summary"] = previous_summary
+                if int(page_no) %10 == 0:
+                    write_json_file(file_path, book)
             except Exception as ex:
                 print("error " + str(ex))
 
         write_json_file(file_path, book)
 
 
-# summarize_by_page()
+summarize_by_page()
 # pre_process()
