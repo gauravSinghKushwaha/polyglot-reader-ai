@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { usePolyglotReader } from "../../state";
 import { Box } from "../basic/Box";
 import { Button } from "../basic/Button";
@@ -10,7 +10,7 @@ import { DetailView } from "../DetailView";
 const SUPPORTED_LANGUAGES = ['English', 'Hindi', 'Spanish', 'French'];
 
 export const BookReader = ({ onBack }: any) => {
-    const { currentBook, defaultLanguage, setDefaultLanguage, setBookInfo, bookInfo, currentPage, setCurrentPage } = usePolyglotReader();
+    const { currentBook, defaultLanguage, setDefaultLanguage, setBookInfo, bookInfo, currentPage, setCurrentPage, selectedTab, selectionText } = usePolyglotReader();
     const [showDetailView, toggleDetailView] = useState(false);
     const [currentPara, setCurrentPara] = useState(0);
     const [highlightedIndex, setHighlightedIndex] = useState(-1); // To track the word being highlighted
@@ -28,6 +28,25 @@ export const BookReader = ({ onBack }: any) => {
             });
         }
     }, [currentBook?.isbn]);
+
+    useEffect(() => {
+        if(selectionText?.length) {
+            toggleDetailView(true);
+        }
+    }, [selectionText]);
+
+    const searchWords = useMemo(() => {
+        if(selectedTab?.label) {
+            switch(selectedTab.label) {
+                case 'Summary':
+                    return bookInfo?.pages?.[currentPage]?.cultural_ref?.map((item) => item.part_of_text) || [];
+                case 'Vocabulary':
+                    return bookInfo?.pages?.[currentPage]?.vocab?.map((item) => item.word) || [];
+            }
+        }
+
+        return [];
+    }, [selectedTab, currentPage]);
 
     if (!currentBook?.name || !bookInfo?.isbn) {
         return null;
@@ -131,13 +150,13 @@ export const BookReader = ({ onBack }: any) => {
     };
 
     return (
-        <Box className="book-reader">
+        <Box className={`book-reader ${selectedTab?.label}`}>
             <Box className="header">
                 <Button onClick={onBack}>Go back to Library</Button>
-                <Box>
+                {/* <Box> */}
                     <h3>{currentBook.name}</h3>
-                    <sub><i>- by {currentBook.author}</i></sub>
-                </Box>
+                    {/* <sub><i>- by {currentBook.author}</i></sub> */}
+                {/* </Box> */}
                 <select value={defaultLanguage} onChange={(e) => {
                     setDefaultLanguage(e.currentTarget.value);
                 }}>
@@ -148,27 +167,38 @@ export const BookReader = ({ onBack }: any) => {
             <Box className="body">
                 <Box className="book-content">
                     <Box className="chapter-name">
-                        <b>{bookInfo.pages[currentPage].chapter}</b>
-                        (<small><i><a onClick={() => speak()}>Read page</a></i></small>)
+                        {bookInfo.pages[currentPage].chapter}
+                        {/* (<small><i><a onClick={() => speak()}>Read page</a></i></small>) */}
                     </Box>
                     
                     <Box className="para-list">
-                        {bookInfo.pages[currentPage].paragraphs.map((item, paraIndex) => (
-                            <Box key={paraIndex} className="para">
-                                <Box className="para-margin"></Box>
-                                {/* Highlight words dynamically */}
-                                {item.content.split(' ').map((word, wordIndex) => (
-                                    <span
-                                        key={wordIndex}
-                                        style={{
-                                            backgroundColor: wordIndex === highlightedIndex && paraIndex === currentPara ? 'yellow' : 'transparent',
-                                        }}
-                                    >
-                                        {word}{' '}
-                                    </span>
-                                ))}
-                            </Box>
-                        ))}
+                        {bookInfo.pages[currentPage].paragraphs.map((item, paraIndex) => {
+                            let content = item.content.replaceAll("\n", " ");
+                            searchWords.forEach((item) => {
+                                content = content.split(item).join(`<span class="highlight">${item}</span>`);
+                            });
+                            return (
+                                <Box key={paraIndex} className="para">
+                                    <Box className="para-margin"></Box>
+                                    {/* Highlight words dynamically */}
+                                    <span dangerouslySetInnerHTML={{__html: content}}></span>
+                                    {/* {item.content.replaceAll("\n", " ").split(' ').map((word, wordIndex) => {
+                                        const cleanWord = word.replace(/[.,!?"']/g, "").trim().toLowerCase();
+                                        return (
+                                            <span
+                                                key={wordIndex}
+                                                style={{
+                                                    backgroundColor: wordIndex === highlightedIndex && paraIndex === currentPara ? 'yellow' : 'transparent',
+                                                    borderBottom: searchWords.includes(cleanWord) ? "3px solid rgb(140, 41, 233)" : "none"
+                                                }}
+                                            >
+                                                {word}{' '}
+                                            </span>
+                                        )
+                                    })} */}
+                                </Box>
+                            )
+                        })}
                     </Box>
 
                     <Box className="pagination">

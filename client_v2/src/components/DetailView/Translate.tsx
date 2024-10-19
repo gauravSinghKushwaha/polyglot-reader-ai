@@ -48,6 +48,6 @@ export const Translate = () => {
     }, [currentPage, defaultLanguage])
 
     return (
-        <Box dangerouslySetInnerHTML={{__html: translation || ""}}></Box>
+        <Box className="translate" dangerouslySetInnerHTML={{__html: translation || ""}}></Box>
     )
 }

@@ -1,12 +1,12 @@
 import { IBook } from "./interface";
 
 export const BOOK_LIST: IBook[] = [
-    {
-        "isbn": "2000",
-        "name": "Don Quijote",
-        "author": "Cervantes Saavedra, Miguel de, 1547-1616",
-        "thumbnail": "https://www.gutenberg.org/cache/epub/2000/pg2000.cover.medium.jpg"
-    },
+    // {
+    //     "isbn": "2000",
+    //     "name": "Don Quijote",
+    //     "author": "Cervantes Saavedra, Miguel de, 1547-1616",
+    //     "thumbnail": "https://www.gutenberg.org/cache/epub/2000/pg2000.cover.medium.jpg"
+    // },
     {
         "isbn": "766",
         "name": "David Copperfield",

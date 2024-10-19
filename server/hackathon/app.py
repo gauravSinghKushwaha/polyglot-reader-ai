@@ -81,11 +81,17 @@ def ask_question_stream(req: QueryResponderDto):
 def selected_text(req: SelectedTextDto):
     if not req.text or not req.content or not req.target_language:
         raise HTTPException(status_code=400, detail="Text, content and language are required")
-    try:
-        return selected_text_service.generate_meta_data(req.text, req.content, req.target_language)
-    except Exception as ex:
-        print("Exception: ", ex)
-        return "data: AI could not respond to your request.\n\n"
+
+    def event_generator():
+        try:
+            # Call the function that generates your answer, yielding results as they are produced
+            for answer_chunk in selected_text_service.generate_meta_data(req.text, req.content, req.target_language):
+                yield answer_chunk # SSE format
+        except Exception as ex:
+            print("Exception: ", ex)
+            yield "data: AI could not respond to your request.\n\n"
+
+    return EventSourceResponse(event_generator(), media_type="text/event-stream")
 
 
 # @app.post("/summary")

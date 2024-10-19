@@ -7,6 +7,7 @@ from langchain.prompts import PromptTemplate
 import requests
 import json
 
+from hackathon.services.vector_store import add_pages_to_vector_store, query_db
 from prompts.cultural_ref_prompt import CULTURAL_CONTEXT_PROMPT, CULTURAL_REF_FORMAT
 
 from utils.file_reader import read_json_file
@@ -497,5 +498,12 @@ def remove_unwanted_characters_from_str(str):
         .replace("\u201d", "”")
     )
 
+def populate_vector_store():
+    output_folder = get_absolute_path("hackathon/output")
+    files = os.listdir(output_folder)
+    for filename in files:
+        output = output_folder + "/" + filename
+        book = read_json_file(output)
+        add_pages_to_vector_store(book_id=filename.replace(".json", ""), pages=book)
 
-pre_process()
+# results = query_db(query=query, page_no=page_no, book_id=book_number)

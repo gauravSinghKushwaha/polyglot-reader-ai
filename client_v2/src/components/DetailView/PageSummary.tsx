@@ -5,16 +5,18 @@ export const PageSummary = () => {
     const { bookInfo, currentPage } = usePolyglotReader()
 
     return (
-        <Box>
+        <Box className="page-summary">
             <h3>Recap ...</h3>
-            <i>{bookInfo?.pages?.[currentPage]?.summary_so_far}</i>
+            <Box className="recap"><i>{bookInfo?.pages?.[currentPage]?.summary_so_far}</i></Box>
             <div>
                 <h3>Important Text</h3>
                 {bookInfo?.pages?.[currentPage]?.cultural_ref?.map((item, index) => (
                     <div key={index} className="text-card">
-                        <h4>Part of Text: "{item.part_of_text}"</h4>
-                        <p><strong>Significance:</strong> {item.significance}</p>
-                        <p><strong>Improvement in Understanding:</strong> {item.improve_understanding_of_text}</p>
+                        <h4><i>"{item.part_of_text}"</i></h4>
+                        <strong>Significance:</strong>
+                        <p>{item.significance}</p>
+                        <strong>Improvement in Understanding:</strong>
+                        <p>{item.improve_understanding_of_text}</p>
                     </div>
                 ))}
             </div>

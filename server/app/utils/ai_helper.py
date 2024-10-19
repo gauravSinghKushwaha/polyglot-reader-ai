@@ -7,7 +7,9 @@ from langchain_core.prompts import PromptTemplate
 from retry import retry
 
 
-def create_prompt_template(template: str, input_variables=None, partial_variables=None) -> PromptTemplate:
+def create_prompt_template(
+    template: str, input_variables=None, partial_variables=None
+) -> PromptTemplate:
     """
     Reusable method to create a PromptTemplate from a template string.
     """
@@ -17,6 +19,7 @@ def create_prompt_template(template: str, input_variables=None, partial_variable
         partial_variables=partial_variables or {},
     )
 
+
 @retry(
     exceptions=OutputParserException,
     delay=1,
@@ -24,17 +27,18 @@ def create_prompt_template(template: str, input_variables=None, partial_variable
     max_delay=4,
     tries=1,
 )
-
 def get_llm():
     return OllamaLLM(
-        base_url= "https://pfai.splashmath.com",
+        # base_url= "https://pfai.splashmath.com",
         model="llama3.2",
         temperature=0,
         format="json",
     )
 
 
-def invoke_prompt(prompt: PromptTemplate, pydantic_parser: PydanticOutputParser, input_data: dict):
+def invoke_prompt(
+    prompt: PromptTemplate, pydantic_parser: PydanticOutputParser, input_data: dict
+):
 
     model = get_llm()
     run_id = uuid.uuid4()
@@ -42,7 +46,10 @@ def invoke_prompt(prompt: PromptTemplate, pydantic_parser: PydanticOutputParser,
     result = chain.invoke(input_data, config={"run_id": run_id})
     return run_id, result
 
-def stream_answer(prompt: PromptTemplate, pydantic_parser: PydanticOutputParser, input_data: dict):
+
+def stream_answer(
+    prompt: PromptTemplate, pydantic_parser: PydanticOutputParser, input_data: dict
+):
     model = get_llm()
     run_id = uuid.uuid4()
     chain = prompt | model | pydantic_parser
@@ -50,4 +57,3 @@ def stream_answer(prompt: PromptTemplate, pydantic_parser: PydanticOutputParser,
 
     for chunk in chain.stream(input_data, config={"run_id": run_id}):
         yield chunk  # Yield each chunk as it's produced
-

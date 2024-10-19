@@ -7,8 +7,8 @@ export const EasyLevel = () => {
     const array = bookInfo?.pages?.[currentPage]?.grade5?.split(".")
 
     return (
-        <Box>
-            {array?.map((item) => <Box><i>{item}.</i></Box>)}
+        <Box className="easy-level">
+            {array?.map((item) => <Box>{item}.</Box>)}
         </Box>
     )
 }
