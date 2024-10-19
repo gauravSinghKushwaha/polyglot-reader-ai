@@ -392,32 +392,3 @@ def cleanse_text_of_unwanted_characters(page):
 # pre_process()
 # fetch_vocab_by_page()
 # cultural_ref_page_wise()
-
-def merge():
-    main_file = get_absolute_path("server/hackathon/output/pg766.json")
-    hindi_file = get_absolute_path("server/hackathon/output/pg766-hindi.json")
-    final_file = get_absolute_path("server/hackathon/output/pg766-final.json")
-
-    book = read_json_file(main_file)
-    hindi_json = read_json_file(hindi_file)
-
-    tqdm_book = tqdm(book)
-    for page_no in tqdm(book):
-        try:
-
-            tqdm_book.set_description("pageNo :" + page_no)
-            page = book[page_no]
-            paragraphs = page["paragraphs"]
-            for paragraph_number in tqdm(paragraphs):
-                hindi = hindi_json[page_no][paragraph_number]
-                book[page_no][paragraph_number]["content_hindi"] = hindi
-
-            if int(page_no) % 10 == 0:
-                write_json_file(final_file, book)
-
-        except Exception as ex:
-            print("error " + str(ex))
-            write_json_file(final_file, book)
-
-
-merge()
