@@ -29,7 +29,7 @@ async def book(book_id: str):
         raise HTTPException(status_code=400, detail="Book ID required")
     try:
         book_file_json = "/" + book_id + ".json"
-        result = read_json_file(get_absolute_path("server/hackathon/output") + book_file_json)
+        result = read_json_file(get_absolute_path("hackathon/output") + book_file_json)
         return ResponseBuilder.build_response(result)
     except Exception as ex:
         print("Exception: ", ex)
