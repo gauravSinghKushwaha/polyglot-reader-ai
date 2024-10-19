@@ -54,12 +54,12 @@ def stream_answer(
 ):
     model = get_llm()
     run_id = uuid.uuid4()
-    chain = prompt | model
+    chain = prompt | model | pydantic_parser
     # print(prompt.format(**input_data))
 
     for chunk in chain.stream(input_data, config={"run_id": run_id}):
-        # print(chunk)
-        yield chunk  # Yield each chunk as it's produced
+        print(chunk)
+        yield chunk # Yield each chunk as it's produced
 
 def stream_simple_answer(
     prompt: PromptTemplate, input_data: dict

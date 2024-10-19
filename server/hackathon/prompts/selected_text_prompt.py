@@ -11,7 +11,7 @@ Analyze the selected text below. Based on what is selected, perform ONLY one of 
 3. If the selected text is a series of words, provide it's meaning and significance in the context of teh page, and translation of the same in {target_language}.
 
 
-Make a HTML string as per instruction below
+Accomplish the above tasks and return your response as HTML text as per instruction below
 {format_instructions}
 
 SELECTED TEXT: \"""
@@ -25,4 +25,4 @@ CURRENT PAGE:
 
 """
 
-SELECTED_TEXT_FORMAT = """Provide response in html format to show in a popup use tag h1, p, ul, li only and links in a[target = _blank] tag. In HTML provide body only. Whenever you translate in {target_language}, use native script of {target_language} for the output"""
+SELECTED_TEXT_FORMAT = """Provide your response as HTML text to show in a popup use tag h1, p, ul, li only and links in a[target = _blank] tag. In HTML provide body only. Whenever you translate in {target_language}, use native script of {target_language} for the output"""
