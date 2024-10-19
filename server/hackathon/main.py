@@ -128,12 +128,12 @@ def translate_page_wise(page_no, book):
     page = book[page_no]
     paragraphs = page["paragraphs"]
     for paragraph_number in tqdm(paragraphs):
-        paragraph = paragraphs[paragraph_number]
-        output = translate_text_with_sarvam("en-IN", "hi-IN", paragraph["content"])
-        # output = translate_text_with_llama("English", "Spanish", paragraph['content'])
-        page["paragraphs"][paragraph_number]["content_hindi"] = output
+        if "content_hindi" not in page["paragraphs"][paragraph_number]:
+            paragraph = paragraphs[paragraph_number]
+            output = translate_text_with_sarvam("en-IN", "hi-IN", paragraph["content"])
+            # output = translate_text_with_llama("English", "Spanish", paragraph['content'])
+            page["paragraphs"][paragraph_number]["content_hindi"] = output
 
-    book[page_no] = page
     return book
 
 
