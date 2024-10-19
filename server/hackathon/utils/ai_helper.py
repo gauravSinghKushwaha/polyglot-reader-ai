@@ -57,3 +57,14 @@ def stream_answer(
 
     for chunk in chain.stream(input_data, config={"run_id": run_id}):
         yield chunk  # Yield each chunk as it's produced
+
+def stream_simple_answer(
+    prompt: PromptTemplate, input_data: dict
+):
+    model = get_llm()
+    run_id = uuid.uuid4()
+    chain = prompt | model
+    print(prompt.format(**input_data))
+
+    for chunk in chain.stream(input_data, config={"run_id": run_id}):
+        yield chunk  # Yield each chunk as it's produced

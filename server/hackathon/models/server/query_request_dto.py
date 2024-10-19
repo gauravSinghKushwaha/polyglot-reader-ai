@@ -1,6 +1,5 @@
 from pydantic import BaseModel
-from typing import Optional
 
-class AnswerQueryDto(BaseModel):
+class SelectedTextDto(BaseModel):
     text: str
-    query: str
+    content: str
