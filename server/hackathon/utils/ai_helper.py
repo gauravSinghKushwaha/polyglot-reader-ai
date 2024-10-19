@@ -4,8 +4,10 @@ from langchain_ollama.llms import OllamaLLM
 from langchain_core.exceptions import OutputParserException
 from langchain_core.output_parsers import PydanticOutputParser
 from langchain_core.prompts import PromptTemplate
+from langchain_openai import ChatOpenAI,OpenAI
 from retry import retry
 
+USE_OPENAI = False
 
 def create_prompt_template(template: str, input_variables=None, partial_variables=None) -> PromptTemplate:
     """
@@ -25,7 +27,19 @@ def create_prompt_template(template: str, input_variables=None, partial_variable
     tries=1,
 )
 
+def getOpenAiLLMModel():
+    LLM_MODEL_SMALL_CONTEXT_OPENAI = ChatOpenAI(
+        name="gpt-4", temperature=0,
+    )
+
+    # LLM_MODEL_SMALL_CONTEXT_OPENAI = OpenAI(model="gpt-3.5-turbo",temperature=0)
+
+    return LLM_MODEL_SMALL_CONTEXT_OPENAI
+
 def get_llm():
+    if USE_OPENAI:
+        return getOpenAiLLMModel()
+    
     return OllamaLLM(
         # base_url= "https://pfai.splashmath.com",
         model="llama3.2",
