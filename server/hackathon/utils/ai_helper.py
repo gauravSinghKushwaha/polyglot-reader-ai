@@ -63,13 +63,6 @@ def invoke_prompt(
     return run_id, result
 
 
-@retry(
-    exceptions=(ValueError, TypeError, OutputParserException),
-    delay=1,
-    backoff=2,
-    max_delay=4,
-    tries=1,
-)
 def invoke_simple_chain(prompt: PromptTemplate, input_data: dict):
 
     model = get_llm()
