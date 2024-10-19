@@ -1,10 +1,12 @@
 import os
-import json
 import re
-from typing import List, Dict
+from time import sleep
+from retry import retry
 from langchain.prompts import PromptTemplate
 import requests
 import json
+
+from hackathon.prompts.cultural_ref_prompt import CULTURAL_CONTEXT_PROMPT
 from utils.file_reader import read_json_file
 
 from utils.ai_helper import invoke_simple_chain
@@ -117,24 +119,46 @@ def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
 
     return pages
 
+def translate_page_wise(pages, file_path):
+    print("Translating page wise.....")
+    translated_pages = pages
+    for page_number in pages:
+        try:
+            print("\nTranslating page number: " + str(page_number))
+            page = pages[page_number]
+            paragraphs = page["paragraphs"]
+            translated_paragraphs = {}
+            for paragraph_number in tqdm(paragraphs):
+                paragraph = paragraphs[paragraph_number]
+                output = translate_text_with_sarvam("en-IN", "hi-IN", paragraph['content'])
+                # output = translate_text_with_llama("English", "Spanish", paragraph['content'])
+                translated_paragraphs[paragraph_number] = output
 
-def translate_page_wise(pages):
-    print("Translating chapter wise")
-    translated_pages = []
-    for page in pages:
-        output = translate_text_with_sarvam("English", "Hindi", page)
-        # output = translate_text_with_llama("English", "Spanish", page)
-        translated_pages.append(output)
+            translated_pages[page_number] = translated_paragraphs
+
+            if int(page_number) % 5 == 0:
+                print("Saving json output...")
+                # return translated_pages
+                write_json_file(file_path, translated_pages)
+        except Exception as ex:
+            print(ex)
+
     return translated_pages
 
-
+@retry(
+        exceptions=(Exception),
+        delay=1,
+        backoff=2,
+        max_delay=4,
+        tries=1,
+)
 def translate_text_with_sarvam(
     source_language, target_language, text, speaker_gender="Male", mode="formal"
 ):
     url = "https://api.sarvam.ai/translate"
     headers = {
         "Content-Type": "application/json",
-        "api-subscription-key": "30908b39-df16-4c6a-a64c-7819055ab33c",
+        "api-subscription-key": "570d57a1-a198-4db6-9193-dfa7cb875ccc",
     }
 
     payload = {
@@ -149,9 +173,14 @@ def translate_text_with_sarvam(
 
     response = requests.post(url, headers=headers, data=json.dumps(payload))
 
+    if response.status_code == 429:
+        print("429 error received, waiting for 1 minute")
+        sleep(60)
+        response = requests.post(url, headers=headers, data=json.dumps(payload))
+
     if response.status_code == 200:
         translated_data = response.json()
-        return translated_data.get("output", "Translation failed, no output.")
+        return translated_data.get("translated_text", "Translation failed, no output.")
     else:
         return f"Error: {response.status_code}, {response.text}"
 
@@ -166,7 +195,6 @@ def translate_text_with_llama(source_language, target_language, text):
     result = invoke_simple_chain(prompt, input_data={"content": text})
     return result
 
-
 def pre_process():
     input_folder = get_absolute_path("server/hackathon/books")
     output_folder = get_absolute_path("server/hackathon/output")
@@ -174,11 +202,12 @@ def pre_process():
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
-    files = tqdm(os.listdir(input_folder))
+    files = os.listdir(input_folder)
     for filename in files:
 
         book_structure = extract_chapters_and_paragraphs(input_folder + "/" + filename)
         pages = paginate_book(book_structure)
+
 
         output = output_folder + "/" + filename.replace("txt", "json")
         write_json_file(output_folder + "/" + filename.replace("txt", "json"), pages)
@@ -294,7 +323,5 @@ def cleanse_text_of_unwanted_characters(page):
             )
 
 
-# summarize_by_page()
-# fetch_vocab_by_page()
 
 pre_process()

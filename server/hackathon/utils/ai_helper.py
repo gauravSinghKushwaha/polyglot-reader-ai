@@ -1,12 +1,8 @@
 import uuid
 
-from langchain_ollama.llms import OllamaLLM
-from langchain_core.exceptions import OutputParserException
 from langchain_core.output_parsers import PydanticOutputParser
 from langchain_core.prompts import PromptTemplate
-from retry import retry
-
-USE_OPENAI = False
+from langchain_ollama.llms import OllamaLLM
 
 
 def create_prompt_template(
@@ -21,28 +17,7 @@ def create_prompt_template(
         partial_variables=partial_variables or {},
     )
 
-
-@retry(
-    exceptions=OutputParserException,
-    delay=1,
-    backoff=2,
-    max_delay=4,
-    tries=1,
-)
-def getOpenAiLLMModel():
-    LLM_MODEL_SMALL_CONTEXT_OPENAI = ChatOpenAI(
-        name="gpt-4",
-        temperature=0,
-    )
-
-    # LLM_MODEL_SMALL_CONTEXT_OPENAI = OpenAI(model="gpt-3.5-turbo",temperature=0)
-
-    return LLM_MODEL_SMALL_CONTEXT_OPENAI
-
-
 def get_llm():
-    if USE_OPENAI:
-        return getOpenAiLLMModel()
 
     return OllamaLLM(
         base_url="https://pfai.splashmath.com",
