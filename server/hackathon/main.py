@@ -151,6 +151,119 @@ def translate_page_wise(page_no, book):
     max_delay=4,
     tries=1,
 )
+def translate_word(page):
+    if (
+        not "vocab" in page
+        or not page["vocab"]["novel_words"]
+        or len(page["vocab"]["novel_words"]) <= 0
+    ):
+        return
+
+    words = page["vocab"]["novel_words"]
+    tqdm_words = tqdm(words)
+    for elem in tqdm_words:
+        tqdm_elem = tqdm(elem)
+        hindi_dict = {}
+        for key in tqdm_elem:
+            key_hindi = key + "_hindi" if "_hindi" not in key else key
+            if key_hindi in elem:
+                continue
+            value = elem[key]
+            if len(value) > 0:
+                tqdm_elem.set_description("key >>" + key + " value >> " + value)
+                try:
+                    output = translate_text_with_sarvam("en-IN", "hi-IN", value)
+                    hindi_dict[key_hindi] = remove_unwanted_characters_from_str(output)
+                except Exception as ex:
+                    print(ex)
+
+        if len(hindi_dict) > 0:
+            for k in hindi_dict:
+                elem[k] = hindi_dict[k]
+
+
+@retry(
+    exceptions=(Exception),
+    delay=1,
+    backoff=2,
+    max_delay=4,
+    tries=1,
+)
+def translate_summary(page):
+
+    if not "summary" in page:
+        return
+
+    summaries = page["summary"]
+    tqdm_summaries = tqdm(summaries)
+
+    hindi_dict = {}
+    for summary in tqdm_summaries:
+        key_hindi = summary + "_hindi" if "_hindi" not in summary else summary
+
+        if key_hindi in summary:
+            continue
+        try:
+            output = translate_text_with_sarvam(
+                "en-IN",
+                "hi-IN",
+                remove_unwanted_characters_from_str(summaries[summary]),
+            )
+            hindi_dict[key_hindi] = remove_unwanted_characters_from_str(output)
+        except Exception as ex:
+            print(ex)
+
+    if len(hindi_dict) > 0:
+        for k in hindi_dict:
+            summaries[k] = hindi_dict[k]
+
+
+@retry(
+    exceptions=(Exception),
+    delay=1,
+    backoff=2,
+    max_delay=4,
+    tries=1,
+)
+def translate_cultural_ref(page):
+
+    if not "cultural_ref" in page:
+        return
+
+    cultural_refs = page["cultural_ref"]
+    if len(cultural_refs) <= 0:
+        return
+
+    tqdm_cultural_refs = tqdm(cultural_refs)
+
+    for cultural_ref in tqdm_cultural_refs:
+        hindi_dict = {}
+        for k in cultural_ref:
+            key_hindi = k + "_hindi" if "_hindi" not in k else k
+            if key_hindi in cultural_ref:
+                continue
+            try:
+                output = translate_text_with_sarvam(
+                    "en-IN",
+                    "hi-IN",
+                    remove_unwanted_characters_from_str(cultural_ref[k]),
+                )
+                hindi_dict[key_hindi] = remove_unwanted_characters_from_str(output)
+            except Exception as ex:
+                print(ex)
+
+        if len(hindi_dict) > 0:
+            for k in hindi_dict:
+                cultural_ref[k] = hindi_dict[k]
+
+
+@retry(
+    exceptions=(Exception),
+    delay=1,
+    backoff=2,
+    max_delay=4,
+    tries=1,
+)
 def translate_text_with_sarvam(
     source_language, target_language, text, speaker_gender="Male", mode="formal"
 ):
@@ -174,7 +287,7 @@ def translate_text_with_sarvam(
 
     if response.status_code == 429:
         print("429 error received, waiting for 1 minute")
-        sleep(60)
+        sleep(10)
         response = requests.post(url, headers=headers, data=json.dumps(payload))
 
     if response.status_code == 200:
@@ -234,6 +347,12 @@ def pre_process():
                 convert_to_chosen_grade(page=page, grade=None)
 
             translate_page_wise(page_no=page_no, book=book)
+
+            translate_word(page=page)
+
+            translate_summary(page=page)
+
+            translate_cultural_ref(page=page)
 
             if int(page_no) % 10 == 0:
                 write_json_file(output, book)
@@ -354,27 +473,24 @@ def convert_to_chosen_grade(page, grade):
 
 
 def cleanse_text_of_unwanted_characters(page):
-    page["content"] = (
-        page["content"]
-        .replace("\u2019", "'")
+    page["content"] = remove_unwanted_characters_from_str(page["content"])
+
+    for para in page["paragraphs"]:
+        if para in page["paragraphs"]:
+            page["paragraphs"][para]["content"] = remove_unwanted_characters_from_str(
+                page["paragraphs"][para]["content"]
+            )
+
+
+def remove_unwanted_characters_from_str(str):
+    return (
+        str.replace("\u2019", "'")
         .replace("\u2018", "'")
         .replace("\u2013", "-")
         .replace("\u00a9", "©")
         .replace("\u201c", "“")
         .replace("\u201d", "”")
     )
-
-    for para in page["paragraphs"]:
-        if para in page["paragraphs"]:
-            page["paragraphs"][para]["content"] = (
-                page["paragraphs"][para]["content"]
-                .replace("\u2019", "'")
-                .replace("\u2018", "'")
-                .replace("\u2013", "-")
-                .replace("\u00a9", "©")
-                .replace("\u201c", "“")
-                .replace("\u201d", "”")
-            )
 
 
 pre_process()
