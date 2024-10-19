@@ -1,0 +1,31 @@
+.tabs {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    // box-shadow: 0px 1px 4px 0.5px #00000048;
+    z-index: 999;
+    background-color: #fff;
+    border-bottom: 1px solid #00000048;
+
+    &>div {
+        padding: 16px;
+        width: 25%;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.5s;
+        border-bottom: 2px solid #fff;
+
+        &:hover {
+            background-color: #cccccca6;
+        }
+
+        &.active {
+            border-bottom: 2px solid #7a10c5;
+            color: #7a10c5;
+        }
+    }
+}

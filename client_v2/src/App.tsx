@@ -1,28 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
+import './components/basic/styles.scss';
 import './App.scss';
-import { PolyglotReaderProvider } from './state';
+import { BookList } from './components/BookList';
+import { BookReader } from './components/BookReader';
+import { Box } from './components/basic/Box';
 
 function App() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const showReaderPage = () => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % 2);
+  };
+
+  const showBookListPage = () => {
+    setActiveIndex((prevIndex) => (prevIndex - 1) % 2);
+  };
+
   return (
-    <PolyglotReaderProvider>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    </PolyglotReaderProvider>
+    <Box className='app' style={{ transform: `translateX(-${activeIndex * 100}vw)` }}>
+      <BookList onBookSelect={showReaderPage}/>
+      <BookReader onBack={showBookListPage}/>
+    </Box>
   );
 }
 

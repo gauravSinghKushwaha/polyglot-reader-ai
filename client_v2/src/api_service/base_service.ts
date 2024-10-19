@@ -1,6 +1,6 @@
 class BaseService {
     static instance: BaseService;
-    baseUrl = 'https://api.example.com'; // Hardcoded base URL
+    baseUrl = 'http://localhost:8000'; // Hardcoded base URL
     headers = {};
   
     constructor() {
@@ -10,14 +10,15 @@ class BaseService {
       BaseService.instance = this;
     }
   
-    async get(endpoint: string) {
+    async get(endpoint: string, params: any) {
       try {
-        const response = await fetch(`${this.baseUrl}${endpoint}`, {
+        const queryString = new URLSearchParams(params || {}).toString();
+        const response = await fetch(`${this.baseUrl}${endpoint}?${queryString}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
             ...this.headers,
-          },
+          }
         });
         if (!response.ok) {
           throw new Error(`GET request failed with status: ${response.status}`);
@@ -84,6 +85,6 @@ class BaseService {
   }
   
   // Export a single instance of BaseService
-  const apiService = new BaseService();
-  export default apiService;
+  const baseService = new BaseService();
+  export default baseService;
   

@@ -5,14 +5,20 @@ from retry import retry
 from langchain.prompts import PromptTemplate
 import requests
 import json
+from utils.file_reader import read_json_file
 
 from utils.ai_helper import invoke_simple_chain
 from utils.file_writer import write_json_file
 from tqdm import tqdm
+from prompts.summarize_prompt import (
+    SUMMARIZE_FIRST_PAGE_PROMPT,
+    SUMMARIZE_OTHER_PAGE_PROMPT,
+)
 
 
 def get_absolute_path(relative_path):
     return os.path.abspath(relative_path)
+
 
 def extract_chapters_and_paragraphs(file_path):
     with open(file_path, "r", encoding="utf-8") as file:
@@ -50,6 +56,7 @@ def extract_chapters_and_paragraphs(file_path):
 
         json.dumps(result, indent=4)
     return result
+
 
 def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
     pages = {}
@@ -140,7 +147,7 @@ def translate_page_wise(pages, file_path):
         backoff=2,
         max_delay=4,
         tries=1,
-    )
+)
 def translate_text_with_sarvam(
     source_language, target_language, text, speaker_gender="Male", mode="formal"
 ):
@@ -162,9 +169,9 @@ def translate_text_with_sarvam(
 
     response = requests.post(url, headers=headers, data=json.dumps(payload))
 
-    if response.status_code == 429 or response.headers.get("Retry-After") is not None:
-        print("Retry-After rcvd ----" + str(response.headers.get("Retry-After")))
-        sleep(response.headers.get("Retry-After"))
+    if response.status_code == 429:
+        print("429 error received, waiting for 1 minute")
+        sleep(60)
         response = requests.post(url, headers=headers, data=json.dumps(payload))
 
     if response.status_code == 200:
@@ -172,6 +179,7 @@ def translate_text_with_sarvam(
         return translated_data.get("translated_text", "Translation failed, no output.")
     else:
         return f"Error: {response.status_code}, {response.text}"
+
 
 def translate_text_with_llama(source_language, target_language, text):
     prompt = PromptTemplate(
@@ -183,38 +191,9 @@ def translate_text_with_llama(source_language, target_language, text):
     result = invoke_simple_chain(prompt, input_data={"content": text})
     return result
 
-def get_vocab(content):
-    prompt = PromptTemplate(
-        input_variables=["content"],
-        template="""
-            Given the following book content, please extract the following information:
-            1. Book name
-            2. Author
-            3. Total number of pages
-            4. Start page of the main content (excluding preface, table of contents, etc.)
-            5. End page of the main content (excluding appendices, index, etc.)
-            6. The main content of the book (excluding front matter and back matter)
-    
-            Book content:
-            {content}
-    
-            Provide the information in the following JSON format:
-            {{
-                "name": "Book name",
-                "author": "Author name",
-                "num_pages": total number of pages,
-                "book_start_page": start page number,
-                "book_end_page": end page number,
-                "main_content": "The extracted main content of the book"
-            }}
-        """
-    )
-
-    return invoke_simple_chain(prompt=prompt, input_data={"content": content })
-
 def pre_process():
-    input_folder = get_absolute_path("hackathon/books")
-    output_folder = get_absolute_path("hackathon/output")
+    input_folder = get_absolute_path("server/hackathon/books")
+    output_folder = get_absolute_path("server/hackathon/output")
 
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
@@ -223,7 +202,7 @@ def pre_process():
     for filename in files:
 
         # Extract chapters and paragraphs
-        book_structure = extract_chapters_and_paragraphs(input_folder + '/' + filename)
+        book_structure = extract_chapters_and_paragraphs(input_folder + "/" + filename)
         pages = paginate_book(book_structure)
         # write_json_file(output_folder + '/' + filename.replace("txt", "json"), pages)
 
@@ -233,4 +212,55 @@ def pre_process():
 
         # summarize_page_wise(pages)
 
-pre_process()
+
+def summarize_by_page():
+    # def summarize_by_page(source_language, target_language, text):
+
+    output_folder = get_absolute_path("server/hackathon/output")
+
+    files = tqdm(os.listdir(output_folder))
+    for filename in files:
+
+        file_path = file_path = output_folder + "/" + filename
+        book = read_json_file(file_path)
+        previous_summary = ""
+
+        tqdm_book = tqdm(book)
+        for page_no in tqdm_book:
+            tqdm_book.set_description("pageNo :" + page_no)
+            page = book[page_no]
+            page_content = page["content"]
+            input_data = {"content": page_content}
+            if page_no == "1":
+                template = SUMMARIZE_FIRST_PAGE_PROMPT
+                prompt = PromptTemplate(
+                    input_variables=["content"],
+                    template=template,
+                )
+
+            else:
+                template = SUMMARIZE_OTHER_PAGE_PROMPT.replace(
+                    "{previous_summary}", previous_summary
+                )
+                prompt = PromptTemplate(
+                    input_variables=["content", previous_summary],
+                    template=template,
+                )
+                input_data["previous_summary"] = previous_summary
+
+            try:
+                result = invoke_simple_chain(prompt, input_data=input_data)
+                previous_summary = (
+                    result.strip().replace("\n", "").replace("{", "").replace("}", "")
+                )
+                book[page_no]["summary"] = previous_summary
+                if int(page_no) %10 == 0:
+                    write_json_file(file_path, book)
+            except Exception as ex:
+                print("error " + str(ex))
+
+        write_json_file(file_path, book)
+
+
+summarize_by_page()
+# pre_process()

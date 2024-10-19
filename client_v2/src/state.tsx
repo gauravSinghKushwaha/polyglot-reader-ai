@@ -4,19 +4,33 @@ import apiService from './api_service';
 
 interface PolyglotReaderContextType {
     bookList: IBook[];
+    currentBook: IBook | undefined;
+    setCurrentBook: React.Dispatch<React.SetStateAction<IBook | undefined>>;
+    defaultLanguage: string; 
+    setDefaultLanguage: React.Dispatch<React.SetStateAction<string>>
 }
 
 const PolyglotReaderContext = createContext<PolyglotReaderContextType | undefined>(undefined);
 
 export const PolyglotReaderProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     const [bookList, setBookList] = useState<IBook[]>([]);
+    const [defaultLanguage, setDefaultLanguage] = useState<string>("Hindi");
+    const [currentBook, setCurrentBook] = useState<IBook | undefined>();
 
     useEffect(() => {
         apiService.getBookList().then((response) => setBookList(response));
     }, []);
 
     return (
-        <PolyglotReaderContext.Provider value={{ bookList }}>
+        <PolyglotReaderContext.Provider
+            value={{
+                bookList,
+                currentBook,
+                defaultLanguage,
+                setCurrentBook,
+                setDefaultLanguage
+            }}
+        >
             {children}
         </PolyglotReaderContext.Provider>
     );
