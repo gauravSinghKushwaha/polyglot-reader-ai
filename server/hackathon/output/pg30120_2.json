@@ -24,11 +24,11 @@
             }
         },
         "num_chars": 949,
-        "chapter": "Unknown Chapter",
+        "chapter": "Chapter 2.",
         "summary": {
             "page_summary_so_far": "Every afternoon, as they were coming from school, the children used to go and play in the Giant's garden. The garden was large and lovely with soft green grass, beautiful flowers, and twelve peach-trees.",
             "current_page_summary": "The children enjoyed playing in the garden, listening to birds singing sweetly. However, their fun was interrupted when the Giant returned from a seven-year visit to his friend the Cornish ogre.",
-            "page_summary_so_far_hindi": "हर दिन, स्कूल के बाद, बच्चे खेलने के लिए जायंट के बगीचे में जाते थे। उद्यान काफी बड़ा और बहुत सुंदर था, जिसमें चिकनी हरी घास, सुंदर फूल और बारह आड़ू के पेड़ थे।",
+            "page_summary_so_far_hindi": "स्कूल के बाद हर दिन बच्चे खेलने के लिए जायंट के बगीचे में जाते थे। उद्यान काफी बड़ा और बहुत सुंदर था, जिसमें चिकनी हरी घास, सुंदर फूल और बारह आड़ू के पेड़ थे।",
             "current_page_summary_hindi": "बच्चों को बगीचे में खेलने में बहुत अच्छा लगा, जहाँ वे पक्षियों को उनके सुंदर गीत गाते हुए सुन सकते थे। लेकिन जब दाइदानू अपने दोस्त, कॉर्नवाल के राक्षस से मिलने के लिए सात साल की यात्रा से वापस आया तो उनका खेलने का समय कम हो गया।"
         },
         "vocab": {
@@ -76,33 +76,33 @@
                 "part_of_text": "Cornish ogre",
                 "significance": "The Cornish ogre is a reference to a mythical creature from Cornish folklore. In Cornwall, a region in the southwestern tip of England, there are stories about a giant or ogre-like creature that inhabits the land.",
                 "improve_understanding_of_text": "This mention adds cultural context to the story and helps non-native speakers understand the setting as being in England, rather than India.",
-                "part_of_text_hindi": "कॉर्निश ऑगर",
-                "significance_hindi": "कॉर्निश ऑगर एक ऐसा शब्द है जो कॉर्नवाल की लोककथाओं के एक पौराणिक प्राणी की कहानियों से आया है। कॉर्नवाल इंग्लैंड का एक हिस्सा है, जो दक्षिण-पश्चिम में स्थित है। इन कहानियों के अनुसार, एक बड़ा या दानव जैसा प्राणी है जो इस क्षेत्र में रहता है।",
-                "improve_understanding_of_text_hindi": "यह संदर्भ कथा को सांस्कृतिक पृष्ठभूमि प्रदान करता है और उन लोगों के लिए जो मूल अंग्रेजी वक्ता नहीं हैं, भारत के बजाय इंग्लैंड में होने के रूप में सेटिंग को स्पष्ट करने में सहायता करता है।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "\"कॉर्निश ओग्रे\" शब्द दक्षिण-पश्चिम इंग्लैंड के एक क्षेत्र कॉर्नवाल की लोककथाओं से आया है। इन कहानियों के अनुसार, इस क्षेत्र में एक बड़ा या दानव जैसा प्राणी रहता है।",
+                "improve_understanding_of_text_hindi": "यह संदर्भ कहानी एक सांस्कृतिक पृष्ठभूमि प्रदान करती है और उन लोगों के लिए जो मूल अंग्रेज़ी वक्ता नहीं हैं, भारत के बजाय इंग्लैंड की व्यवस्था को स्पष्ट करने में मदद करती है।"
             },
             {
                 "part_of_text": "Giant's garden",
                 "significance": "The 'Giant's garden' is a metaphor for a magical or idyllic place. In many cultures, gardens are considered sacred spaces that bring people closer to nature and each other.",
                 "improve_understanding_of_text": "This mention adds a layer of depth to the story, highlighting the importance of nature and the human connection with it.",
-                "part_of_text_hindi": "जायंट का बगीचा",
-                "significance_hindi": "'दैत्य उद्यान' शब्द एक भावात्मक शब्द है जो एक काल्पनिक या निर्मल वातावरण का प्रतिनिधित्व करता है। विभिन्न समाजों में, उद्यानों को विशेष क्षेत्रों के रूप में देखा जाता है जो लोगों को प्रकृति और एक दूसरे के साथ जुड़ने में मदद करते हैं।",
-                "improve_understanding_of_text_hindi": "यह संदर्भ कथा को एक समृद्ध अर्थ देता है, जो प्रकृति के महत्व और मनुष्यों और प्राकृतिक दुनिया के बीच बंधन पर जोर देता है।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "'दैत्य उद्यान' शब्द एक ऐसी जगह को संदर्भित करता है जो काल्पनिक और शांत दोनों है। विभिन्न समाजों में, उद्यानों को विशेष क्षेत्रों के रूप में देखा जाता है जो लोगों को प्रकृति और एक-दूसरे के साथ जुड़ने में मदद करते हैं।",
+                "improve_understanding_of_text_hindi": "यह संदर्भ कहानी प्रकृति के महत्व और मनुष्यों और प्राकृतिक दुनिया के बीच संबंध पर जोर देते हुए एक समृद्ध अर्थ देती है।"
             },
             {
                 "part_of_text": "school",
                 "significance": "The fact that the children are coming from school suggests that this is a modern or contemporary setting. In many Indian cultures, education is highly valued, but the concept of formal schooling as we know it today may not be as prevalent.",
                 "improve_understanding_of_text": "This mention helps non-native speakers understand the time period and setting of the story, which may be unfamiliar to them.",
-                "part_of_text_hindi": "विद्यालय",
-                "significance_hindi": "यह विचार कि बच्चे विद्यालय से लौट रहे हैं, यह दर्शाता है कि यह दृश्य एक आधुनिक या समकालीन समय में स्थापित है। कई भारतीय समाजों में शिक्षा का अत्यधिक सम्मान किया जाता है, लेकिन औपचारिक स्कूली शिक्षा का विचार, जैसा कि हम आज इसे समझते हैं, शायद उतना आम नहीं हो सकता है।",
-                "improve_understanding_of_text_hindi": "यह संदर्भ उन लोगों को समझने में सहायता कर सकता है जो मूल अंग्रेजी वक्ता नहीं हैं और कथा की समय सीमा और वातावरण को समझते हैं। यह उनके लिए एक नई अवधारणा हो सकती है।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "यह विचार कि बच्चे विद्यालय से लौट रहे हैं, यह दर्शाता है कि यह दृश्य आधुनिक या समकालीन समय में स्थापित है। कई भारतीय समाजों में शिक्षा को बहुत महत्व दिया जाता है। हालाँकि, जैसा कि हम आज इसे समझते हैं, औपचारिक स्कूली शिक्षा की अवधारणा शायद उतनी आम नहीं रही होगी।",
+                "improve_understanding_of_text_hindi": "यह संदर्भ उन लोगों को समझने में मदद कर सकता है जो मूल अंग्रेजी वक्ता नहीं हैं, कथा समय और सेटिंग की अवधारणा को समझते हैं। यह उनके लिए एक नया विचार हो सकता है।"
             },
             {
                 "part_of_text": "autumn",
                 "significance": "In many Western cultures, autumn is associated with harvest season and the changing of the seasons. This may not be as significant in Indian culture, where the monsoon season is more prominent.",
                 "improve_understanding_of_text": "This mention adds cultural context to the story, highlighting the differences between Western and Indian cultures.",
-                "part_of_text_hindi": "शरद ऋतु",
-                "significance_hindi": "कई पश्चिमी समाजों में, शरद ऋतु को अक्सर फसल कटाई के मौसम और एक मौसम से दूसरे मौसम में जाने से जोड़ा जाता है। हालांकि, यह भारतीय संस्कृति में उतना प्रासंगिक नहीं हो सकता है, जहाँ मानसून का मौसम अधिक ध्यान देने योग्य है।",
-                "improve_understanding_of_text_hindi": "यह संदर्भ पश्चिमी और भारतीय संस्कृतियों के बीच अंतर पर जोर देते हुए कथा को सांस्कृतिक पृष्ठभूमि देता है।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "कई पश्चिमी समाजों में, शरद ऋतु को अक्सर फसल कटाई के समय और एक मौसम से दूसरे मौसम में परिवर्तन से जोड़ा जाता है। हालाँकि, यह भारतीय संस्कृति में उतना प्रासंगिक नहीं हो सकता है, जहाँ मानसून का मौसम अधिक उल्लेखनीय है।",
+                "improve_understanding_of_text_hindi": "यह संदर्भ पश्चिमी और भारतीय संस्कृतियों के बीच के अंतरों पर प्रकाश डालता है, जो कहानी के लिए एक सांस्कृतिक पृष्ठभूमि प्रदान करता है।"
             }
         ],
         "grade5": "Every afternoon, as they were coming home from school, the kids would go and play in the Giant's garden. It was a big, beautiful garden with soft green grass. There were flowers all over the grass that looked like stars, and there were twelve peach trees that bloomed with pink and white flowers in the spring and produced yummy fruit in the fall. The birds sat on the trees and sang so sweetly that the kids would stop playing to listen. "
@@ -132,7 +132,7 @@
             }
         },
         "num_chars": 576,
-        "chapter": "Unknown Chapter",
+        "chapter": "Chapter 2.",
         "summary": {
             "page_summary_so_far": "The children enjoyed playing in the garden, listening to birds singing sweetly. However, their fun was interrupted when the Giant returned from a seven-year visit to his friend the Cornish ogre.",
             "current_page_summary": "The Giant built a high wall around his garden and posted a notice warning trespassers of prosecution. He declared that only he could play in his own garden, showing his selfish nature. The children were left without a place to play and would often wander around the wall, reminiscing about their happy times in the beautiful garden.",
@@ -172,25 +172,25 @@
                 "part_of_text": "Giant",
                 "significance": "The term 'Giant' might be culturally significant in Western literature, but for Hindi-speaking people from India, it may not hold the same connotation. In Hindu mythology, there are several giants mentioned, such as the Asuras and the Daityas, who were often depicted as powerful beings. However, in this context, the Giant's behavior is more akin to a selfish and tyrannical ruler, which might be seen as a critique of authoritarianism.",
                 "improve_understanding_of_text": "To better understand the text, it would be helpful to consider the cultural significance of giants in Western literature and how they are often depicted as powerful, yet flawed characters.",
-                "part_of_text_hindi": "दैत्य",
-                "significance_hindi": "भारत की हिंदी भाषी संस्कृतियों में इसके महत्व की तुलना में पश्चिमी साहित्य में 'दैत्य' शब्द का एक अलग अर्थ हो सकता है। हिंदू पौराणिक कथाओं में, कई दैत्य जैसे प्राणी हैं जिन्हें असुर और दैत्य के रूप में जाना जाता है। इन प्राणियों को अक्सर बड़ी ताकत के रूप में चित्रित किया जाता था। लेकिन दैत्य की कहानी में दैत्य के कार्य अधिक स्वार्थी और दमनकारी नेता के कार्यों की तरह हैं। इस चित्रण को अधिनायकवादी शासन के नकारात्मक पहलुओं पर एक टिप्पणी के रूप में देखा जा सकता है।",
-                "improve_understanding_of_text_hindi": "पाठ की गहरी समझ के लिए, यह सोचना उपयोगी है कि पश्चिमी साहित्य में दानवों को कैसे चित्रित किया जाता है। आम तौर पर, दिग्गजों को मजबूत के रूप में दिखाया जाता है, लेकिन अपूर्ण पात्रों के रूप में भी दिखाया जाता है। इस चित्रण को कई कहानियों और किंवदंतियों में देखा जा सकता है, जहाँ दैत्यों को अक्सर महान शक्ति के रूप में चित्रित किया जाता है, लेकिन गलतियाँ करने या कमजोरियाँ होने के रूप में भी दर्शाया जाता है। दैत्यों का यह चित्रण परिकथाओं से लेकर महाकाव्य कविताओं तक साहित्य के कई अलग-अलग रूपों में देखा जा सकता है।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "भारत में हिंदी बोलने वाली संस्कृतियों में, 'दैत्य' शब्द का पश्चिमी साहित्य में इसके अर्थ की तुलना में एक अलग महत्व है। हिंदू पौराणिक कथाओं में 'दैत्य' या 'असुर' के रूप में जाने वाले कई प्राणी हैं। इन जीवों को अक्सर महान शक्ति के रूप में चित्रित किया जाता है। हालाँकि, 'दैत्य' की कहानी में, इन जीवों को स्वार्थी और उत्पीड़क नेताओं के रूप में चित्रित किया गया है। इस चित्रण को अधिनायकवादी शासन के नकारात्मक पहलुओं पर एक टिप्पणी के रूप में देखा जा सकता है।",
+                "improve_understanding_of_text_hindi": "पाठ की गहरी समझ के लिए, यह विचार करना सहायक है कि पश्चिमी साहित्य में राक्षसों को कैसे चित्रित किया गया है। आम तौर पर, दिग्गजों को मजबूत के रूप में दर्शाया जाता है, लेकिन उन्हें अधूरे पात्रों के रूप में भी दिखाया जा सकता है। यह चित्रण कई कहानियों और किंवदंतियों में देखा जा सकता है जहां राक्षसों को अक्सर महान शक्ति के रूप में चित्रित किया जाता है। हालाँकि, इन गलतियों या कमजोरियों को भी दर्शाया गया है। लोक कथाओं से लेकर महाकाव्य कविताओं तक, राक्षसों का चित्रण साहित्य के विभिन्न रूपों में देखा जा सकता है।"
             },
             {
                 "part_of_text": "road",
                 "significance": "The road mentioned in the text might refer to a rural or countryside setting, which is common in many parts of India. However, without more context, it's difficult to say for certain. The use of the word 'road' instead of a more local term like 'path' or 'gali' might suggest a more Westernized or urban setting.",
                 "improve_understanding_of_text": "To better understand the text, it would be helpful to consider the cultural significance of roads in different regions and how they are used in rural vs. urban settings.",
-                "part_of_text_hindi": "सड़क",
-                "significance_hindi": "पाठ में जिस सड़क के बारे में बात की गई है, वह ग्रामीण या ग्रामीण क्षेत्र के बारे में हो सकती है, जो भारत के कई क्षेत्रों में आम है। लेकिन अधिक विवरण के बिना, इसकी पुष्टि करना मुश्किल है। 'पथ' या 'गली' जैसे अधिक स्थानीय शब्द के बजाय 'सड़क' शब्द का उपयोग अधिक पश्चिमीकरण या शहरी वातावरण का संकेत दे सकता है।",
-                "improve_understanding_of_text_hindi": "पाठ की गहरी समझ के लिए, दुनिया के विभिन्न हिस्सों में सड़कों के सांस्कृतिक महत्व के बारे में सोचना महत्वपूर्ण है। यह भी महत्वपूर्ण है कि ग्रामीण क्षेत्रों और शहरी क्षेत्रों में सड़कों का उपयोग कैसे किया जाता है, इस पर विचार किया जाए।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "पाठ में एक सड़क की चर्चा की गई है, जो भारत के कई हिस्सों में आम है और जो ग्रामीण या ग्रामीण क्षेत्र हो सकता है। हालाँकि, अधिक विवरण के बिना इसकी पुष्टि करना मुश्किल है। 'पथ' या 'गली' जैसे अधिक स्थानीय शब्दों के बजाय 'सड़क' शब्द का उपयोग करना अधिक पश्चिमीकरण या शहरी वातावरण का संकेत दे सकता है।",
+                "improve_understanding_of_text_hindi": "पाठ की गहरी समझ के लिए, दुनिया के विभिन्न हिस्सों में सड़कों के सांस्कृतिक महत्व पर विचार करना महत्वपूर्ण है। यह भी सोचना महत्वपूर्ण है कि ग्रामीण और शहरी क्षेत्रों में सड़कों का उपयोग कैसे किया जाता है।"
             },
             {
                 "part_of_text": "Garden",
                 "significance": "The concept of a garden as a private space for recreation and relaxation is an important one in many Indian cultures, particularly in the context of urbanization and growing cities. The Giant's desire to keep his garden private might be seen as a commentary on class divisions and social inequality.",
                 "improve_understanding_of_text": "To better understand the text, it would be helpful to consider the cultural significance of gardens in Indian society and how they are used as public spaces for recreation and relaxation.",
-                "part_of_text_hindi": "बगीचा",
-                "significance_hindi": "छुट्टी और आराम के लिए एक व्यक्तिगत क्षेत्र के रूप में बगीचे का विचार कई भारतीय संस्कृतियों का एक महत्वपूर्ण हिस्सा है। यह शहरीकरण और शहरों के विस्तार के मद्देनजर विशेष रूप से प्रासंगिक है। दैत्य की अपने बगीचे को अपने पास रखने की इच्छा को सामाजिक वर्ग में अंतरों और संसाधनों के अनुचित वितरण पर एक प्रतिबिंब के रूप में समझा जा सकता है।",
-                "improve_understanding_of_text_hindi": "पाठ की गहरी समझ के लिए, भारतीय संस्कृति में उद्यानों के सांस्कृतिक महत्व के बारे में सोचना महत्वपूर्ण है। भारतीय समाज में, उद्यान न केवल व्यक्तिगत उपयोग के लिए निजी स्थान हैं, बल्कि सार्वजनिक क्षेत्रों के रूप में भी कार्य करते हैं जहाँ लोग मस्ती और आराम करने जा सकते हैं।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "आराम और फुर्सत के लिए एक व्यक्तिगत स्थान के रूप में बगीचे का विचार कई भारतीय संस्कृतियों का एक महत्वपूर्ण हिस्सा है। यह शहरीकरण और शहरों के विस्तार के संदर्भ में विशेष रूप से प्रासंगिक है। अपने बगीचे की इच्छा को सामाजिक वर्ग के अंतरों और संसाधनों के अनुचित वितरण के प्रतिबिंब के रूप में देखा जा सकता है।",
+                "improve_understanding_of_text_hindi": "भारतीय संस्कृति में उद्यानों के सांस्कृतिक महत्व को समझना गहरी समझ के लिए महत्वपूर्ण है। भारतीय समाज में, उद्यान न केवल व्यक्तिगत उपयोग के लिए निजी स्थान हैं, बल्कि सार्वजनिक क्षेत्रों के रूप में भी काम करते हैं जहाँ लोग आराम कर सकते हैं और आनंद ले सकते हैं।"
             }
         ],
         "grade5": "A giant had a special garden that was all his own. He said, 'This is my garden, and I don't want anyone else to play in it.' So he built a big wall around it and put up a sign that said: TRESPASSERS WILL BE PROSECUTED. The giant was very selfish. The poor kids didn't have anywhere to play anymore. They tried playing on the road, but it was too dusty and had hard stones. They liked to walk around the high wall when they were done with their lessons and talk about the beautiful garden inside. 'We were so happy there!' they said to each other."
@@ -205,12 +205,12 @@
             }
         },
         "num_chars": 1163,
-        "chapter": "Unknown Chapter",
+        "chapter": "Chapter 2.",
         "summary": {
             "page_summary_so_far": "The children enjoyed playing in the garden, but their fun was interrupted when the Giant returned from a seven-year visit to his friend the Cornish ogre.",
             "current_page_summary": "As winter persisted in the garden of the Selfish Giant, the arrival of Spring brought life to other parts of the country. However, the garden remained frozen due to the absence of children, causing flowers and birds to avoid it. The Snow and Frost took advantage of this situation, covering the grass with their presence and painting the trees silver. They invited the North Wind to join them, who then roared about the garden, blew down chimney-pots, and was followed by the Hail, who rattled on the roof for three hours a day before running around the garden.",
             "page_summary_so_far_hindi": "बच्चों को बगीचे में खेलना बहुत अच्छा लगा। हालाँकि, जब दाइदानूस अपने दोस्त, कॉर्निश राक्षस से मिलने के लिए सात साल की यात्रा से वापस आया, तो उनके खेलने का समय कम हो गया।",
-            "current_page_summary_hindi": "जैसे-जैसे सर्दी ने सेल्फिश जायंट के बगीचे पर अपना दबदबा बनाए रखा, वसंत ने अन्य क्षेत्रों में नया जीवन लाया। लेकिन बगीचा सुनसान रहा क्योंकि आसपास कोई बच्चा नहीं था। इससे फूल और पक्षी इससे दूर भाग जाते थे। बर्फ और पाले ने इसका फायदा उठाया और अपनी उपस्थिति से घास को ढक दिया। उन्होंने पेड़ों को चांदी भी रंगा। इसके बाद उन्होंने उत्तरी पवन को अपने साथ शामिल होने के लिए आमंत्रित किया। उत्तरी हवा ने बगीचे में जोर से गर्जना की, चिमनी के बर्तनों को गिरा दिया और उसके बाद ओलावृष्टि हुई। हल दिन में तीन घंटे तक छत पर खटखटाने की आवाज करता था और फिर बगीचे में इधर-उधर भागता था।"
+            "current_page_summary_hindi": "जैसे-जैसे सर्दी ने सेल्फिश जायंट के बगीचे पर अपना दबदबा बनाए रखा, वसंत ने अन्य क्षेत्रों में नया जीवन लाया। लेकिन बगीचा सुनसान रहा क्योंकि आसपास कोई बच्चा नहीं था। इससे फूल और पक्षी इससे दूर भाग जाते थे। बर्फ और पाले ने इसका फायदा उठाया और अपनी उपस्थिति से घास को ढक दिया। उन्होंने पेड़ों को चांदी भी रंगा। फिर उन्होंने उत्तर पवन को अपने साथ आने के लिए आमंत्रित किया। उत्तरी हवा ने बगीचे में जोर से गर्जना की, चिमनी के बर्तनों को गिरा दिया और उसके बाद ओलावृष्टि हुई। हल दिन में तीन घंटे तक छत पर खटखटाने की आवाज करता था और फिर बगीचे में इधर-उधर भागता था।"
         },
         "vocab": {
             "novel_words": [
@@ -281,33 +281,33 @@
                 "part_of_text": "the garden of the Selfish Giant",
                 "significance": "The name 'Selfish Giant' refers to a character from English folklore, specifically a giant who is depicted as selfish and greedy. This reference may not be immediately intuitive for Hindi-speaking people from India, as it is rooted in European folklore.",
                 "improve_understanding_of_text": "To better understand the context of this page, non-native speakers need to know about the character of the Selfish Giant and its significance in English folklore.",
-                "part_of_text_hindi": "द गार्डन ऑफ द सेल्फिश जायंट ऑस्कर वाइल्ड द्वारा लिखित एक कहानी है। कहानी एक दानव के बारे में है जो अपने आंगन में एक सुंदर बगीचा बनाता है। फिर वह यह सब अपने पास रखने का फैसला करता है और किसी और को अंदर नहीं आने देता। लेकिन, उसे जल्द ही पता चलता है कि उसका स्वार्थ उतना संतोषजनक नहीं है जितना उसने सोचा था। यह कहानी साझा करने और दयालुता के महत्व पर एक टिप्पणी है।",
-                "significance_hindi": "'सेल्फिश जायंट' शब्द अंग्रेजी लोककथाओं में एक आकृति से आया है। इस दैत्य को अक्सर बहुत आत्मकेंद्रित और लालची के रूप में चित्रित किया जाता है। हालाँकि, यह नाम शायद भारत के उन लोगों द्वारा आसानी से नहीं समझा जा सकता जो हिंदी बोलते हैं, क्योंकि यह यूरोपीय लोककथाओं की कहानियों पर आधारित है।",
-                "improve_understanding_of_text_hindi": "इस पृष्ठ के अर्थ को पूरी तरह से समझने के लिए, जो लोग मूल अंग्रेजी वक्ता नहीं हैं, उनके लिए स्वार्थी दैत्य के चरित्र और अंग्रेजी लोककथाओं में इसके महत्व को समझना महत्वपूर्ण है।"
+                "part_of_text_hindi": "\"द गार्डन ऑफ द सेल्फिश जायंट\" ऑस्कर वाइल्ड द्वारा लिखित एक कहानी है। कहानी एक दानव के इर्द-गिर्द घूमती है जो अपने आंगन में एक सुंदर बगीचा बनाता है। वह सब कुछ अपने तक रखने का फैसला करता है और किसी और को प्रवेश करने की अनुमति नहीं देता है। लेकिन, उसे जल्द ही एहसास होता है कि उसका स्वार्थ उसे उतनी संतुष्टि नहीं देता जितना वह चाहता था। यह कहानी साझा करने और दयालुता के महत्व पर एक टिप्पणी के रूप में काम करती है।",
+                "significance_hindi": "'सेल्फिश जायंट' शब्द अंग्रेजी लोककथाओं से आया है। इस दैत्य को अक्सर बहुत आत्मकेंद्रित और लालची के रूप में चित्रित किया जाता है। हालाँकि, यह नाम उन लोगों द्वारा आसानी से नहीं समझा जा सकता जो हिंदी बोलते हैं, क्योंकि यह यूरोपीय लोककथाओं की कहानियों पर आधारित है।",
+                "improve_understanding_of_text_hindi": "इस पृष्ठ के अर्थ को पूरी तरह से समझने के लिए, जो लोग मूल अंग्रेजी वक्ता नहीं हैं, उनके लिए लालची राक्षस के चरित्र और अंग्रेजी लोककथाओं में इसके महत्व को समझना महत्वपूर्ण है।"
             },
             {
                 "part_of_text": "the North Wind",
                 "significance": "The North Wind is a figure from European folklore, often depicted as a powerful and fierce wind. In this context, it may be unfamiliar to Hindi-speaking people from India, who have their own rich tradition of wind deities like Vayu.",
                 "improve_understanding_of_text": "To better understand the context of this page, non-native speakers need to know about the character of the North Wind and its significance in European folklore.",
-                "part_of_text_hindi": "उत्तर हवा",
-                "significance_hindi": "उत्तर हवा यूरोपीय लोककथाओं का एक पात्र है, जिसे आम तौर पर हवा की एक तेज और तीव्र झोंझट के रूप में दिखाया जाता है। यह अवधारणा शायद भारत के उन लोगों के लिए अच्छी तरह से ज्ञात नहीं है जो हिंदी बोलते हैं, क्योंकि उनकी वायु जैसे पवन देवताओं की अपनी विरासत है।",
-                "improve_understanding_of_text_hindi": "इस पृष्ठ के अर्थ को पूरी तरह से समझने के लिए, जो मूल वक्ता नहीं हैं, उनके लिए उत्तरी हवा के चरित्र और यूरोपीय लोककथाओं में इसके महत्व को समझना महत्वपूर्ण है।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "उत्तर पवन की अवधारणा यूरोपीय लोककथाओं में एक चरित्र है, जिसे अक्सर हवा की एक तेज और उग्र झोंकेदार गति के रूप में दर्शाया जाता है। यह विचार उन लोगों के लिए शायद उतना प्रसिद्ध नहीं है जो हिंदी बोलते हैं, क्योंकि पवन जैसे पवन देवता की उनकी अपनी विरासत है।",
+                "improve_understanding_of_text_hindi": "इस पृष्ठ को पूरी तरह से समझने के लिए, जो मूल लेखक नहीं हैं, उनके लिए उत्तरी हवा की प्रकृति और यूरोपीय लोककथाओं में इसके महत्व को समझना महत्वपूर्ण है।"
             },
             {
                 "part_of_text": "the Hail",
                 "significance": "Hail is a natural phenomenon that can be intense and destructive. In this context, it may not be immediately clear to Hindi-speaking people from India, who have their own experiences with hailstorms.",
                 "improve_understanding_of_text": "To better understand the context of this page, non-native speakers need to know about the characteristics of hail and its impact on the environment.",
-                "part_of_text_hindi": "हेली",
-                "significance_hindi": "ओलावृष्टि एक प्राकृतिक घटना है जो बहुत शक्तिशाली हो सकती है और बहुत अधिक नुकसान पहुँचा सकती है। भारत से हिंदी बोलने वाले लोगों के लिए, यह उनके लिए स्पष्ट नहीं हो सकता है, क्योंकि ओलावृष्टि के साथ उनके अपने अनुभव हैं।",
-                "improve_understanding_of_text_hindi": "इस पृष्ठ की सामग्री को पूरी तरह से समझने के लिए, जो मूल वक्ता नहीं हैं, उनके लिए ओलावृष्टि और पर्यावरण पर इसके प्रभावों की बुनियादी समझ होना सहायक है।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "ओलावृष्टि एक प्राकृतिक घटना है जो बहुत शक्तिशाली हो सकती है और बहुत अधिक नुकसान कर सकती है। भारत में हिंदी बोलने वाले लोगों के लिए, यह शायद उनके लिए स्पष्ट नहीं होगा क्योंकि ओलावृष्टि के बारे में उनके अपने अनुभव हैं।",
+                "improve_understanding_of_text_hindi": "यदि आप तूफानों और पर्यावरण के प्रभावों को समझते हैं तो इस पृष्ठ की विषय-वस्तु को समझना आसान है।"
             },
             {
                 "part_of_text": "the Snow and the Frost",
                 "significance": "The Snow and the Frost are personifications of winter, a season that is deeply ingrained in European folklore. This reference may not be immediately familiar to Hindi-speaking people from India, who have their own traditions and myths surrounding winter.",
                 "improve_understanding_of_text": "To better understand the context of this page, non-native speakers need to know about the personification of winter in European folklore.",
-                "part_of_text_hindi": "बर्फ और पाला",
-                "significance_hindi": "बर्फ और पाला सर्दियों के प्रतीक हैं, जो वर्ष का एक ऐसा समय है जो यूरोपीय लोककथाओं का एक बहुत ही महत्वपूर्ण हिस्सा है। यह शायद ऐसी चीज नहीं है जिससे हिंदी बोलने वाले भारत के लोग बहुत परिचित हों। सर्दियों के बारे में उनकी अपनी कहानियाँ और मिथक हैं।",
-                "improve_understanding_of_text_hindi": "इस पृष्ठ के अर्थ को पूरी तरह से समझने के लिए, जो लोग मूल वक्ता नहीं हैं, उनके लिए यूरोपीय लोककथाओं में सर्दियों के मानवीकरण की अवधारणा को समझना महत्वपूर्ण है। इसका मतलब है कि सर्दियों को अक्सर कहानियों और किंवदंतियों में एक चरित्र के रूप में चित्रित किया जाता है, जिससे इसे मानवीय जैसे गुण मिलते हैं। इससे पृष्ठ के सांस्कृतिक और ऐतिहासिक संदर्भ को समझने में मदद मिल सकती है।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "बर्फ और पाला सर्दियों के प्रतीक हैं, जो वर्ष का एक ऐसा समय है जो यूरोपीय लोककथाओं में बहुत महत्वपूर्ण है। यह ऐसी चीज़ नहीं है जिससे हिंदी बोलने वाले और भारत में रहने वाले लोग बहुत परिचित हों। सर्दियों के बारे में उनकी अपनी कहानियाँ और मिथक हैं।",
+                "improve_understanding_of_text_hindi": "इस पृष्ठ को पूरी तरह से समझने के लिए, जो मूल लेखक नहीं हैं, उनके लिए यूरोपीय लोककथाओं में सर्दियों को मानव रूप देने की अवधारणा को समझना महत्वपूर्ण है। इसका मतलब है कि सर्दियों को अक्सर कहानियों और किंवदंतियों में एक चरित्र के रूप में चित्रित किया जाता है, जिससे उसे मानवीय जैसे गुण मिलते हैं। इस समझ से पृष्ठ के सांस्कृतिक और ऐतिहासिक संदर्भ की व्याख्या करने में मदद मिल सकती है।"
             }
         ],
         "grade5": "One day, Spring arrived all over the country. There were little flowers and birds everywhere. But in the Selfish Giant's garden, it was still winter. The birds didn't want to sing because there were no children around. The trees also forgot to bloom. A beautiful flower poked its head out of the grass, but when it saw a notice saying 'No Children Allowed,' it felt sorry for them and went back underground. It fell asleep. Only the Snow and Frost were happy. They said, 'Spring has forgotten about this garden! We'll stay here all year!' The Snow covered the grass with her big white blanket, and the Frost painted the trees silver. Then they invited the North Wind to join them. He came dressed in warm clothes and roared loudly about the garden. He blew down the chimney pots and said, 'This is a great place! Let's invite the Hail to visit.' So the Hail came every day for three hours. He rattled on the roof of the castle until it broke most of the slates. Then he ran around the garden as fast as he could."
@@ -337,11 +337,11 @@
             }
         },
         "num_chars": 1099,
-        "chapter": "Unknown Chapter",
+        "chapter": "Chapter 2.",
         "summary": {
             "page_summary_so_far": "The children enjoyed playing in the garden, but their fun was interrupted when the Giant returned from a seven-year visit to his friend the Cornish ogre.",
             "current_page_summary": "The Selfish Giant sat at his window, lamenting the lack of Spring and Summer in his cold white garden. The Autumn brought golden fruit to other gardens, but none to his own due to his selfish nature. One morning, he heard a beautiful song from a linnet outside his window, which filled him with hope that Spring had finally arrived. He jumped out of bed to investigate and see what the new season had brought.",
-            "page_summary_so_far_hindi": "बच्चों को बगीचे में खेलना बहुत अच्छा लग रहा था। हालाँकि, जब दाइदानूस अपने दोस्त, कॉर्निश राक्षस से मिलने के लिए सात साल की यात्रा से वापस आया, तो उनके खेलने का समय कम हो गया।",
+            "page_summary_so_far_hindi": "बच्चों को बगीचे में खेलना बहुत अच्छा लगा। हालाँकि, जब दाइदानूस अपने दोस्त, कॉर्निश राक्षस से मिलने के लिए सात साल की यात्रा से वापस आया, तो उनके खेलने का समय कम हो गया।",
             "current_page_summary_hindi": "स्वार्थी दैत्य अपनी खिड़की के पास बैठा था, दुखी महसूस कर रहा था क्योंकि उसका बगीचा अभी भी ठंडा और सफेद था, जिसमें वसंत या गर्मियों के कोई संकेत नहीं थे। उसने देखा कि अन्य उद्यान शरद ऋतु के मौसम में स्वर्णिम फलों से भरे हुए थे, लेकिन उसका अपना उद्यान उसके स्वार्थी व्यवहार के कारण बंजर था। एक दिन, उसने अपनी खिड़की के बाहर एक लिननेट पक्षी से एक सुंदर गीत सुना। इस मीठे गीत ने उन्हें उम्मीद की भावना से भर दिया कि आखिरकार वसंत आ गया है। वह जल्दी से बिस्तर से बाहर निकला यह देखने के लिए कि नया सत्र क्या लेकर आया है।"
         },
         "vocab": {
@@ -389,49 +389,49 @@
                 "part_of_text": "the King's musicians passing by",
                 "significance": "The reference to a king is significant in the context of European folklore, where kings are often depicted as powerful and wise rulers. In this story, the Giant mistakenly believes that the music coming from outside his window is being played by the King's musicians, highlighting his isolation and lack of connection with the world beyond his garden.",
                 "improve_understanding_of_text": "This reference can help non-native speakers understand the cultural context of European folklore and the Giant's perception of himself as isolated from the rest of society.",
-                "part_of_text_hindi": "राजा के संगीतकार उनके साथ चलते हैं",
-                "significance_hindi": "यूरोपीय लोककथाओं में राजाओं को अक्सर मजबूत और बुद्धिमान नेताओं के रूप में चित्रित किया जाता है। इस कहानी में, दैत्य गलती से सोचता है कि वह जो संगीत अपनी खिड़की के बाहर से आता हुआ सुन रहा है, वह राजा के संगीतकारों द्वारा प्रस्तुत किया जा रहा है। इससे पता चलता है कि वह अपने बगीचे के बाहर की दुनिया से कितना अलग रहता है।",
-                "improve_understanding_of_text_hindi": "यह संदर्भ उन लोगों को समझने में सहायता कर सकता है जो मूल वक्ता नहीं हैं और यूरोपीय लोककथाओं की सांस्कृतिक पृष्ठभूमि और विशालकाय की व्यापक समुदाय से अलग होने की भावना को समझते हैं।"
+                "part_of_text_hindi": "राजा के संगीतकार उनके साथ होते हैं।",
+                "significance_hindi": "यूरोपीय लोककथाओं में राजाओं को अक्सर मजबूत और बुद्धिमान नेताओं के रूप में चित्रित किया जाता है। इस कहानी में, राक्षस गलती से यह मान लेता है कि वह जो संगीत अपनी खिड़की के बाहर से आता हुआ सुन रहा है, वह राजा के संगीतकारों द्वारा बजाया जा रहा है। इससे पता चलता है कि वह अपने बगीचे के बाहर की दुनिया से कितना अलग-थलग है।",
+                "improve_understanding_of_text_hindi": "यह संदर्भ उन लोगों की मदद कर सकता है जो मूल वक्ता नहीं हैं और यूरोपीय लोककथाओं और राक्षसों के विशाल समुदाय की सांस्कृतिक पृष्ठभूमि से अपरिचित हैं।"
             },
             {
                 "part_of_text": "the North Wind",
                 "significance": "The North Wind is a symbol in European folklore, often associated with harsh weather conditions and winter. In this story, the North Wind represents the cold and unforgiving nature of the Giant's garden.",
                 "improve_understanding_of_text": "This reference can help non-native speakers understand the cultural context of European folklore and the symbolism used to describe the Giant's environment.",
-                "part_of_text_hindi": "उत्तर हवा",
-                "significance_hindi": "उत्तर पवन यूरोपीय लोक कथाओं में एक आम व्यक्ति है। यह आम तौर पर खराब मौसम और सर्दियों से जुड़ा होता है। इस विशेष कहानी में, नॉर्थ विंड का अर्थ है दैत्य के बगीचे का कठोर और अपरिवर्तनशील वातावरण।",
-                "improve_understanding_of_text_hindi": "यह मार्गदर्शिका उन लोगों को यूरोपीय लोककथाओं की सांस्कृतिक पृष्ठभूमि और दैत्य के परिवेश का वर्णन करने के लिए उपयोग किए जाने वाले प्रतीकों को समझने में मदद कर सकती है जो मूल वक्ता नहीं हैं।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "उत्तर पवन यूरोपीय लोक कथाओं में एक आम व्यक्ति है। यह अक्सर खराब मौसम और कठोर सर्दियों से जुड़ा होता है। इस विशेष कहानी में, उत्तर हवा राक्षस के बगीचे के कठोर और अपरिवर्तनीय वातावरण को संदर्भित करती है।",
+                "improve_understanding_of_text_hindi": "यह मार्गदर्शिका उन लोगों को समझने में सहायता कर सकती है जो मूल वक्ता नहीं हैं और यूरोपीय लोककथाओं की सांस्कृतिक पृष्ठभूमि और राक्षस के वातावरण का वर्णन करने के लिए उपयोग किए जाने वाले प्रतीकों को समझने में सहायता कर सकती है।"
             },
             {
                 "part_of_text": "the Autumn",
                 "significance": "The Autumn is a season in European folklore, often associated with harvest and abundance. In this story, the Autumn gives golden fruit to every garden except the Giant's, highlighting his isolation from nature.",
                 "improve_understanding_of_text": "This reference can help non-native speakers understand the cultural context of European folklore and the symbolism used to describe the Giant's environment.",
-                "part_of_text_hindi": "शरद ऋतु",
-                "significance_hindi": "शरद ऋतु वर्ष का एक ऐसा समय है जो अक्सर यूरोपीय लोककथाओं में फसल और प्रचुरता से जुड़ा होता है। इस कहानी में, शरद ऋतु हर बगीचे में स्वर्ण फल प्रदान करती है, सिवाय दैत्य के, जो प्रकृति से उसके विच्छेदन पर जोर देती है।",
-                "improve_understanding_of_text_hindi": "यह मार्गदर्शिका उन लोगों को यूरोपीय लोककथाओं की सांस्कृतिक पृष्ठभूमि और दैत्य के परिवेश का वर्णन करने के लिए उपयोग किए जाने वाले प्रतीकों को समझने में सहायता कर सकती है जो मूल वक्ता नहीं हैं।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "शरद ऋतु वर्ष का एक ऐसा समय है जो अक्सर यूरोपीय लोककथाओं में फसल कटाई और प्रचुरता से जुड़ा होता है। इस कहानी में, शरद ऋतु हर बगीचे में सुनहरे फल लाती है, सिवाय उस राक्षस के, जो खुद को प्रकृति से अलग करने पर जोर देता है।",
+                "improve_understanding_of_text_hindi": "यह मार्गदर्शिका उन लोगों को समझने में मदद कर सकती है जो मूल वक्ता नहीं हैं, यूरोपीय लोककथाओं की सांस्कृतिक पृष्ठभूमि और राक्षस के वातावरण का वर्णन करने के लिए उपयोग किए जाने वाले प्रतीकों को समझने में मदद कर सकती है।"
             },
             {
                 "part_of_text": "the Hail",
                 "significance": "Hail is a natural phenomenon in European folklore, often associated with bad weather and winter. In this story, the Hail represents the harsh conditions that the Giant has to endure.",
                 "improve_understanding_of_text": "This reference can help non-native speakers understand the cultural context of European folklore and the symbolism used to describe the Giant's environment.",
-                "part_of_text_hindi": "हेली",
-                "significance_hindi": "ओलावृष्टि यूरोपीय लोककथाओं में एक आम घटना है, जिसे अक्सर खराब मौसम और सर्दियों से जोड़ा जाता है। इस कथा में, ओला उन कठिन परिस्थितियों का प्रतीक है जिनका विशालकाय को सामना करना पड़ता है।",
-                "improve_understanding_of_text_hindi": "यह मार्गदर्शिका उन लोगों को यूरोपीय लोककथाओं की सांस्कृतिक पृष्ठभूमि और दैत्य के परिवेश का वर्णन करने के लिए उपयोग किए जाने वाले प्रतीकों को समझने में सहायता कर सकती है जो मूल वक्ता नहीं हैं।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "ओलावृष्टि यूरोपीय लोककथाओं में एक आम घटना है, जो अक्सर खराब मौसम और कठोर सर्दियों से जुड़ी होती है। इन कहानियों में, ओलावृष्टि मुश्किल परिस्थितियों के खिलाफ दैत्य के संघर्षों का प्रतीक है।",
+                "improve_understanding_of_text_hindi": "यह मार्गदर्शिका उन लोगों को समझने में मदद कर सकती है जो मूल वक्ता नहीं हैं, यूरोपीय लोककथाओं की सांस्कृतिक पृष्ठभूमि और राक्षस के वातावरण का वर्णन करने के लिए उपयोग किए जाने वाले प्रतीकों को समझने में मदद कर सकती है।"
             },
             {
                 "part_of_text": "the Snow",
                 "significance": "Snow is a natural phenomenon in European folklore, often associated with winter and cold weather. In this story, the Snow represents the constant presence of winter in the Giant's garden.",
                 "improve_understanding_of_text": "This reference can help non-native speakers understand the cultural context of European folklore and the symbolism used to describe the Giant's environment.",
-                "part_of_text_hindi": "बर्फ",
-                "significance_hindi": "बर्फ यूरोपीय लोककथाओं में एक आम घटना है, जो आम तौर पर सर्दियों और ठंडी हवा से जुड़ी होती है। इस आख्यान में, बर्फ राक्षस के बगीचे में सर्दियों की निरंतर उपस्थिति का प्रतीक है।",
-                "improve_understanding_of_text_hindi": "यह मार्गदर्शिका उन लोगों को यूरोपीय लोककथाओं की सांस्कृतिक पृष्ठभूमि और दैत्य के परिवेश का वर्णन करने के लिए उपयोग किए जाने वाले प्रतीकों को समझने में सहायता कर सकती है जो मूल वक्ता नहीं हैं।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "यूरोपीय लोककथाओं में बर्फ एक आम घटना है, जो अक्सर ठंड के मौसम और सर्दियों से जुड़ी होती है। इन कहानियों में बर्फ को अक्सर सर्दियों की निरंतर उपस्थिति के प्रतीक के रूप में देखा जाता है। यह बर्फ के राक्षस के बगीचे की तरह है, जहाँ सर्दी हमेशा मौजूद रहती है।",
+                "improve_understanding_of_text_hindi": "यह मार्गदर्शिका उन लोगों को समझने में मदद कर सकती है जो मूल वक्ता नहीं हैं, यूरोपीय लोककथाओं की सांस्कृतिक पृष्ठभूमि और राक्षस के वातावरण का वर्णन करने के लिए उपयोग किए जाने वाले प्रतीकों को समझने में मदद कर सकती है।"
             },
             {
                 "part_of_text": "the Garden",
                 "significance": "The Garden is a symbol in European folklore, often associated with beauty, nature, and growth. In this story, the Giant's garden represents his isolation from nature and his disconnection from the world beyond.",
                 "improve_understanding_of_text": "This reference can help non-native speakers understand the cultural context of European folklore and the symbolism used to describe the Giant's environment.",
-                "part_of_text_hindi": "उद्यान",
-                "significance_hindi": "यूरोपीय लोककथाओं में उद्यान एक आम प्रतीक है। इसे अक्सर सुंदरता, प्रकृति और विकास जैसी चीजों से जोड़ा जाता है। इस कहानी में, दैत्य का बगीचा प्रकृति से उसके अलगाव और अपने दायरे से बाहर की दुनिया से उसके संबंध की कमी का प्रतीक है।",
-                "improve_understanding_of_text_hindi": "यह मार्गदर्शिका उन लोगों को यूरोपीय लोककथाओं की सांस्कृतिक पृष्ठभूमि और दैत्य के परिवेश का वर्णन करने के लिए उपयोग किए जाने वाले प्रतीकों को समझने में मदद कर सकती है जो मूल वक्ता नहीं हैं।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "यूरोपीय लोककथाओं में, एक बगीचा अक्सर एक प्रतीक होता है। यह आम तौर पर सुंदरता, प्रकृति और विकास जैसी चीजों से जुड़ा होता है। इस कहानी में, राक्षस का बगीचा प्रकृति से उसके अलगाव और अपने क्षेत्र से परे की दुनिया से उसके संबंध की कमी का प्रतिनिधित्व करता है।",
+                "improve_understanding_of_text_hindi": "यह मार्गदर्शिका उन लोगों को समझने में मदद कर सकती है जो मूल वक्ता नहीं हैं, यूरोपीय लोककथाओं की सांस्कृतिक पृष्ठभूमि और राक्षस के वातावरण का वर्णन करने के लिए उपयोग किए जाने वाले प्रतीकों को समझने में मदद कर सकती है।"
             }
         ],
         "grade5": "There was a big, mean giant who didn't like anyone or anything. He sat by his window looking at his cold, white garden. He wished for the weather to change. But no matter what he wanted, spring never came and summer never came either. Autumn brought yummy fruit to all the gardens, but not to the giant's garden. The autumn fairy said, 'He is too selfish.' So it was always winter in the giant's garden. There was snow, hail, and frost everywhere. One morning, the giant woke up early and heard beautiful music coming from outside his window. He thought it might be the king's musicians passing by. But it was just a little bird singing its heart out! The giant hadn't heard a bird sing in his garden for a long time, so it sounded like the most beautiful music he had ever heard. The snow stopped falling, and the wind stopped howling. A nice smell came through the open window. 'Maybe spring has finally come,' said the giant. He jumped out of bed and looked out the window to see what was happening."
@@ -456,7 +456,7 @@
             }
         },
         "num_chars": 1056,
-        "chapter": "Unknown Chapter",
+        "chapter": "Chapter 2.",
         "summary": {
             "page_summary_so_far": "The children enjoyed playing in the garden, but their fun was interrupted when the Giant returned from a seven-year visit to his friend the Cornish ogre.",
             "current_page_summary": "In this new scene, the Giant observes children sitting in trees, surrounded by blossoms and birds celebrating their return. However, one corner of the garden remains winter-like, with a small boy crying bitterly under a frost-covered tree. The Tree tries to comfort the boy by bending its branches down, but it's too tiny for him to climb up.",
@@ -544,21 +544,21 @@
                 "part_of_text": "In every tree that he could see there was a little child.",
                 "significance": "This reference to children in trees is likely inspired by European folklore, particularly the tradition of fairies and woodland spirits. In many European cultures, trees are seen as magical and inhabited by supernatural beings.",
                 "improve_understanding_of_text": "For non-native speakers, this detail may help them understand the whimsical and fantastical nature of the story, which is reminiscent of European folklore.",
-                "part_of_text_hindi": "हर पेड़ में, जिसे वह देख सकता था, एक छोटा बच्चा था।",
-                "significance_hindi": "पेड़ों में बच्चों का उल्लेख यूरोपीय लोककथाओं, विशेष रूप से परियों और जंगली आत्माओं के बारे में कहानियों की ओर इशारा हो सकता है। कई यूरोपीय संस्कृतियों में, पेड़ों को अक्सर जादुई शक्तियों के रूप में और अलौकिक प्राणियों के घर के रूप में देखा जाता है।",
-                "improve_understanding_of_text_hindi": "जो मूल वक्ता नहीं हैं, उनके लिए यह जानकारी उन्हें कथा के चंचल और कल्पनाशील पहलुओं को समझने में मदद कर सकती है। यह यूरोपीय लोककथाओं में पाई जाने वाली शैली के समान है।"
+                "part_of_text_hindi": "हर पेड़ पर, एक छोटा बच्चा था जिसे वह देख सकता था।",
+                "significance_hindi": "पेड़ों में बच्चों का उल्लेख यूरोपीय लोककथाओं, विशेष रूप से परियों और जंगली आत्माओं के बारे में, का संदर्भ हो सकता है। कई यूरोपीय संस्कृतियों में, पेड़ों को अक्सर जादुई शक्तियों और अलौकिक प्राणियों के घर के रूप में देखा जाता है।",
+                "improve_understanding_of_text_hindi": "यह जानकारी उन लोगों के लिए सहायक हो सकती है जो मूल निर्माता नहीं हैं। यह उन्हें कहानी कहने के गतिशील और कल्पनाशील पहलुओं को समझने में सहायता कर सकता है। यह शैली यूरोपीय लोककथाओं में पाई जाने वाली शैली के समान है।"
             },
             {
                 "part_of_text": "It was the farthest corner of the garden, and in it was standing a little boy.",
                 "significance": "The reference to a specific location (the 'farthest corner' of the garden) may be intended to evoke a sense of isolation or wilderness. In Indian culture, gardens are often seen as sacred spaces, but this particular detail may suggest that this is not a typical or common setting in Indian literature.",
-                "part_of_text_hindi": "बगीचे में एक बहुत ही दूर का कोना था और उस कोने में एक छोटा सा बच्चा खड़ा था।",
-                "significance_hindi": "एक विशिष्ट स्थान (बगीचे का 'सबसे दूर का कोने') का उल्लेख अकेले होने या जंगली क्षेत्र में होने की भावना पैदा करने के लिए किया जा सकता है। भारतीय संस्कृति में बगीचों को आम तौर पर पवित्र स्थान माना जाता है। हालाँकि, इस विशिष्ट विवरण से यह संकेत मिल सकता है कि यह भारतीय साहित्य में एक विशिष्ट या सामान्य परिवेश नहीं है।"
+                "part_of_text_hindi": "बगीचे में बहुत दूर का एक कोना था और उस कोने में एक छोटा बच्चा खड़ा था।",
+                "significance_hindi": "एक विशिष्ट स्थान (बगीचे का \"सबसे दूर का कोना\") का उपयोग अलगाव या जंगल में होने की भावना पैदा करने के लिए किया जा सकता है। भारतीय संस्कृति में उद्यानों को आम तौर पर पवित्र स्थान माना जाता है। हालाँकि, यह विशिष्ट विवरण यह सुझाव दे सकता है कि यह भारतीय साहित्य में एक विशिष्ट या सामान्य परिवेश नहीं है।"
             },
             {
                 "part_of_text": "The North Wind was blowing and roaring above it.",
                 "significance": "The mention of the North Wind may be intended to evoke a sense of harsh weather conditions. In many cultures, including Indian culture, wind is seen as a powerful and potentially destructive force.",
-                "part_of_text_hindi": "उत्तरी हवा चल रही थी और उसके ऊपर से जोर से आवाज़ आ रही थी।",
-                "significance_hindi": "उत्तर हवा के संदर्भ का अर्थ गंभीर मौसम की स्थिति का सुझाव देना हो सकता है। भारतीय संस्कृति सहित कई समाजों में, पवन को अक्सर एक मजबूत और संभावित रूप से हानिकारक तत्व के रूप में देखा जाता है।"
+                "part_of_text_hindi": "हवा उत्तर से बह रही थी और ऊपर से एक तेज आवाज आ रही थी।",
+                "significance_hindi": "\"उत्तरी हवा\" शब्द कभी-कभी गंभीर मौसम की स्थिति का संकेत दे सकता है। भारतीय संस्कृति सहित कई संस्कृतियों में, पवन को अक्सर एक मजबूत और संभावित हानिकारक तत्व के रूप में देखा जाता है।"
             }
         ],
         "grade5": "He saw a very special sight. The children had sneaked into the garden through a small hole in the wall. They were sitting in the trees, and every tree he looked at had a little child inside it. The trees were happy to see the kids again and covered themselves with beautiful flowers. They waved their branches above the children's heads, and the birds flew around, chirping happily. The flowers peeked out from the green grass and laughed. It was a wonderful scene, except for one corner that still looked like winter. That part of the garden was very cold, and in it stood a little boy alone."
@@ -573,12 +573,12 @@
             }
         },
         "num_chars": 339,
-        "chapter": "Unknown Chapter",
+        "chapter": "Chapter 2.",
         "summary": {
             "page_summary_so_far": "A story about a giant who has been selfish and isolated from nature.",
             "current_page_summary": "The giant, filled with remorse, decides to make amends by putting the little boy on top of a tree and knocking down his wall, transforming his garden into a children's playground.",
-            "page_summary_so_far_hindi": "किसी ज़माने में ग्रोग नामक एक दैत्य था। ग्रॉग अविश्वसनीय रूप से बड़ा था, इतना बड़ा कि वह आसानी से एक कदम के साथ एक घर को कुचल सकता था। वह पहाड़ों में एक विशाल, अलग-थलग गुफा में रहता था। ग्रॉग बहुत स्वार्थी था और केवल अपनी परवाह करता था। उन्होंने अपने अधिकांश दिन अकेले बिताए, जो कुछ भी वे चाहते थे वह खाया और जो कुछ भी उन्हें अच्छा लगा वह किया। एक दिन, पास के जंगल के जानवरों के एक समूह ने ग्रॉग से मिलने का फैसला किया। उन्होंने उसके विशाल आकार के बारे में सुना था और उसे खुद से देखना चाहते थे। एक खरगोश, एक गिलहरी और एक पक्षी सहित जानवर, जादुई दैत्य से मिलने के लिए उत्सुक और उत्साहित थे। वे यह न जाने कि क्या उम्मीद की जाए, ग्रोग की गुफा के पास सावधानी से पहुँचे। जब वे गुफा में प्रवेश कर गए, तो उन्हें ग्रोग को सोने और कीमती रत्नों के ढेर पर बैठे देखकर हैरानी हुई। वह वर्षों से एकत्र किए गए खजाने के ढेर से घिरा हुआ था। दैत्य की संपत्ति से जानवर चकित हो गए और उन्होंने उससे पूछा कि वह इतना अमीर क्यों है। ग्रॉग ने समझाया कि उसने इन सभी खजाने को खुद इकट्ठा किया था, बिना किसी और की मदद के। जानवर ग्रॉग की संपत्ति से प्रभावित हुए, लेकिन उन्होंने यह भी देखा कि वह बहुत अकेला था। उन्होंने उससे पूछा कि उसके कोई दोस्त क्यों नहीं हैं, और ग्रॉग ने बताया कि उसे किसी और की ज़रूरत नहीं है। वह अपनी संपत्ति से खुश था और उसे किसी और की संगत की आवश्यकता नहीं थी। जानवरों ने ग्रॉग की गुफा छोड़ने का फैसला किया, लेकिन वे उसके लिए खेद महसूस करते हुए भी कुछ कर नहीं सके। उन्हें एहसास हुआ कि भले ही ग्रॉग अमीर था, लेकिन वह बहुत अकेला भी था। वे गुफा से बाहर निकल गए, लेकिन वे ग्रोग को नहीं भूले। उन्होंने फिर से उससे मिलने और उसे दोस्ती के महत्व को समझने की कोशिश करने का फैसला किया। अगले दिन, जानवर ग्रोग़ की गुफा में वापस आ गए। वे अपने साथ उपहार लाए, जिसमें एक सुंदर फूल, एक चमकदार चट्टान और एक स्वादिष्ट फल का टुकड़ा शामिल था। उन्होंने ग्रोग को ये उपहार दिए और उसे अपने दोस्तों के साथ साझा करने के लिए कहा। ग्रॉग जानवरों की उदारता से हैरान हो गया और उसने अपनी संपत्ति उन्हें बाँट देने का फैसला किया। उस दिन से, ग्रॉग बदलने लगा। उसने दोस्ती के महत्व को समझने लगा और दूसरों के साथ अपनी संपत्ति बाँटना शुरू कर दिया। वह एक दयालु और उदार दानव बन गया और जानवर उसके दोस्त बन गए। ग्रॉग को पता चला कि भले ही वह अमीर था, लेकिन वह अकेला भी था। उन्होंने महसूस किया कि धन रखने से ज्यादा महत्वपूर्ण दोस्तों का होना है। और इसलिए, ग्रॉग अपने पशु मित्रों और संग्रहीत खजाने से घिरा हुआ खुशी से जीवन बिताया। उसे पता चला कि",
-            "current_page_summary_hindi": "बड़ा, पछतावा करने वाला प्राणी छोटे लड़के को एक पेड़ पर ऊपर रखकर और उसकी दीवार को गिराकर चीजों को ठीक करना चुनता है। यह क्रिया लड़के के बगीचे को बच्चों के खेलने के लिए एक मज़ेदार क्षेत्र में बदल देती है।"
+            "page_summary_so_far_hindi": "किसी ज़माने में ग्रोग नाम का एक दैत्य था। ग्रॉग अविश्वसनीय रूप से बड़ा था, इतना बड़ा कि वह आसानी से एक कदम के साथ एक घर को कुचल सकता था। वे पहाड़ों में गहराई में एक विशाल, अलग-थलग गुफा में रहते थे। ग्रॉग बहुत स्वार्थी था और केवल अपनी परवाह करता था। उन्होंने अपने अधिकांश दिन अकेले बिताए, जो कुछ भी वे चाहते थे वह खाया और जो कुछ भी उन्हें अच्छा लगा वह किया। एक दिन, पास के जंगल के जानवरों के एक समूह ने ग्रॉग से मिलने का फैसला किया। उन्होंने उसके विशाल आकार के बारे में सुना था और खुद उसे देखना चाहते थे। जानवर उत्सुक और थोड़े से डरे हुए थे, लेकिन वे बहुत मिलनसार भी थे। वे ग्रॉग के साथ साझा करने के लिए शहद, जामुन और अन्य स्वादिष्ट व्यंजन के उपहार लाए। जब जानवर गुफा में पहुँचे, तो वे ग्रोग के आकार से चकित थे। उन्होंने पहले कभी भी उसके जैसा कुछ नहीं देखा था। ग्रॉग जानवरों को देखकर हैरान रह गया और यह जानने के लिए उत्सुक था कि वे उससे मिलने क्यों आए हैं। जानवरों ने बताया कि उन्होंने उसके आकार के बारे में सुना था और खुद उससे मिलना चाहते थे। वे उसके साथ साझा करने के लिए उपहार भी लाए। ग्रॉग जानवरों के दयालु भाव से प्रभावित हुआ और उसने अपना भोजन उनके साथ बाँट लेने का फैसला किया। वह किसी की संगत में इतना खुश था कि वह अपने स्वार्थी तरीकों को भूल गया। जानवर और ग्रॉग जल्द ही अच्छे दोस्त बन गए और उन्होंने कई खुशनुमा दिन साथ बिताए। वे पहाड़ों की खोज करते थे, खेल खेलते थे और कहानियाँ साझा करते थे। जैसे-जैसे समय बीतता गया, ग्रोग को एहसास हुआ कि उसे स्वार्थी और अलग-थलग रहने की आवश्यकता नहीं है। उन्होंने सीखा कि दोस्तों के होने और दूसरों के साथ साझा करना जीवन को और अधिक सुखद बनाता है। जानवरों ने उसे सिखाया कि भले ही वह अलग था, फिर भी वह उनके समुदाय का हिस्सा बन सकता है। ग्रॉग जानवरों की दोस्ती के लिए आभारी था और उसने अपने तरीके बदलने का फैसला किया। उस दिन से, ग्रॉग एक दयालु और सौम्य दानव बन गया। उन्होंने अपनी गुफा में रहना जारी रखा, लेकिन वे अब अकेले नहीं थे। उन्होंने अपने दिनों को अपने पशु मित्रों के साथ पहाड़ों की खोज में और जरूरतमंद लोगों की मदद में बिताया। ग्रॉग को पता चला कि सबसे बड़े और सबसे शक्तिशाली प्राणी भी बदल सकते हैं और दयालु और करुणामय बन सकते हैं।",
+            "current_page_summary_hindi": "बड़ा, पछतावा करने वाला प्राणी छोटे बच्चे को पेड़ के शीर्ष पर रखकर और उसकी दीवार को गिराकर चीजों को ठीक करना चुनता है। यह क्रिया बच्चे के बगीचे को बच्चों के खेलने के लिए एक मजेदार क्षेत्र में बदल देती है।"
         },
         "vocab": {
             "novel_words": [
@@ -613,17 +613,17 @@
                 "part_of_text": "the Spring",
                 "significance": "The reference to 'Spring' is likely a metaphorical or poetic term, but in some cultures and historical contexts, the word 'spring' can also refer to a specific season or a natural phenomenon. In this context, it's possible that the author is using the word to represent a sense of renewal or new life.",
                 "improve_understanding_of_text": "For non-native speakers, understanding the cultural significance of the term 'Spring' in this context can help them grasp the emotional tone and themes of the story.",
-                "part_of_text_hindi": "वसंत ऋतु",
-                "significance_hindi": "'वसंत' का उल्लेख एक काव्य या प्रतीकात्मक शब्द हो सकता है। हालाँकि, कुछ समाजों और अतीत के समय में, 'वसंत' का अर्थ वर्ष का एक विशेष समय या एक प्राकृतिक घटना भी हो सकता है। यहाँ, लेखक 'वसंत' का उपयोग कायाकल्प या नई शुरुआत की भावना का प्रतीक के रूप में कर रहा होगा।",
-                "improve_understanding_of_text_hindi": "जिन लोगों की मातृभाषा अंग्रेजी नहीं है, उन्हें इस स्थिति में 'वसंत' शब्द के सांस्कृतिक अर्थ को समझना भावनात्मक मनोदशा और कहानी के मुख्य विचारों को समझने में मदद कर सकता है।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "'वसंत' शब्द का उपयोग एक काव्य या प्रतीकात्मक शब्द के रूप में किया जा सकता है। हालाँकि, कुछ समाजों में और अतीत में, 'वसंत' वर्ष के एक विशिष्ट समय या प्राकृतिक घटना को भी संदर्भित कर सकता है। इस संदर्भ में, लेखक संभवतः नवीनीकरण या नई शुरुआत का प्रतीक बनाने के लिए 'वसंत' का उपयोग कर रहा है।",
+                "improve_understanding_of_text_hindi": "जो लोग अपनी मातृभाषा के रूप में अंग्रेजी नहीं बोलते हैं, उनके लिए \"वसंत\" शब्द के सांस्कृतिक अर्थ को समझना भावनात्मक रूप से उत्थानकारी हो सकता है और कहानी के मुख्य विचारों को समझने में मदद कर सकता है।"
             },
             {
                 "part_of_text": "the garden",
                 "significance": "The mention of a garden is likely to evoke images of a peaceful and idyllic setting. In many cultures, gardens are also associated with wealth, prosperity, and beauty.",
                 "improve_understanding_of_text": "For non-native speakers, recognizing the cultural significance of gardens in this context can help them appreciate the character's emotional transformation and the themes of nature and growth.",
-                "part_of_text_hindi": "बगीचा",
-                "significance_hindi": "जब आप बगीचे के बारे में सोचते हैं, तो आप एक शांत और निर्मल स्थान की कल्पना कर सकते हैं। कई समाजों में, बगीचों को धन, सौभाग्य और आकर्षण से भी जोड़ा जाता है।",
-                "improve_understanding_of_text_hindi": "उन लोगों के लिए जो मूल वक्ता नहीं हैं, इस स्थिति में बगीचों के सांस्कृतिक महत्व को समझना उन्हें चरित्र के भावनात्मक परिवर्तन और प्रकृति और विकास के विषयों को समझने में मदद कर सकता है।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "जब आप किसी बगीचे के बारे में सोचते हैं, तो आप एक शांतिपूर्ण और निर्मल स्थान की कल्पना कर सकते हैं। कई समाजों में, बगीचे धन, सौभाग्य और आकर्षण से भी जुड़े हुए हैं।",
+                "improve_understanding_of_text_hindi": "उन लोगों के लिए जो मूल वक्ता नहीं हैं, बगीचों के सांस्कृतिक महत्व को समझने से उन्हें चरित्र में भावनात्मक परिवर्तनों और प्रकृति और विकास के विषयों को समझने में मदद मिल सकती है।"
             }
         ],
         "grade5": "The giant's heart softened as he looked out. 'I've been very selfish!' he said. 'Now I understand why spring didn't come to this place.' He wanted to put the little boy on top of the tree and knock down the wall, so his garden could be a playground for kids forever and ever. He was truly sorry for what he had done."
@@ -643,12 +643,12 @@
             }
         },
         "num_chars": 1068,
-        "chapter": "Unknown Chapter",
+        "chapter": "Chapter 2.",
         "summary": {
             "page_summary_so_far": "A story about a giant who has been selfish and isolated from nature.",
             "current_page_summary": "The giant crept downstairs and opened the front door, entering the garden where the children were initially frightened by his presence. However, when one child didn't run away due to tears in their eyes, the giant took him gently and put him up into a tree. The tree then bloomed, birds sang, and the little boy hugged the giant's neck, kissing him. As the other children returned, they found the garden transformed into a beautiful space where the giant played with them all day. In the evening, the people bid farewell to the giant as he continued to tend to his newly restored garden.",
-            "page_summary_so_far_hindi": "किसी ज़माने में ग्रोग नामक एक दैत्य था। ग्रॉग अविश्वसनीय रूप से बड़ा था, इतना बड़ा कि वह आसानी से एक कदम के साथ एक घर को कुचल सकता था। वह पहाड़ों में एक विशाल, अलग-थलग गुफा में रहता था। ग्रॉग बहुत स्वार्थी था और केवल अपनी परवाह करता था। उन्होंने अपने अधिकांश दिन अकेले बिताए, जो कुछ भी वे चाहते थे उसे खाया और जो कुछ भी वे चाहते थे वह किया। एक दिन, पास के जंगल के जानवरों के एक समूह ने ग्रॉग से मिलने का फैसला किया। उन्होंने उसके विशाल आकार के बारे में सुना था और उसे खुद से देखना चाहते थे। जानवर उत्सुक और थोड़े से डरे हुए थे, लेकिन वे बहुत मिलनसार भी थे। वे ग्रॉग के साथ साझा करने के लिए शहद, जामुन और अन्य स्वादिष्ट व्यंजन के उपहार लाए। जब जानवर गुफा में पहुँचे, तो वे ग्रोग के आकार से चकित थे। उन्होंने पहले कभी भी उसके जैसा कुछ नहीं देखा था। ग्रॉग जानवरों को देखकर हैरान रह गया और यह जानने के लिए उत्सुक था कि वे उससे मिलने क्यों आए हैं। जानवरों ने बताया कि उन्होंने उसके आकार के बारे में सुना था और खुद उससे मिलना चाहते थे। वे उसके साथ साझा करने के लिए उपहार भी लाए। ग्रॉग जानवरों के दयालु भाव से प्रभावित हुआ और उसने अपना भोजन उनके साथ बाँट लेने का फैसला किया। वह किसी की संगत में इतना खुश था कि वह अपने स्वार्थी तरीकों को भूल गया। जानवर और ग्रॉग जल्द ही अच्छे दोस्त बन गए और उन्होंने कई खुशनुमा दिन साथ बिताए। वे पहाड़ों की खोज करते थे, खेल खेलते थे और कहानियाँ साझा करते थे। जैसे-जैसे समय बीतता गया, ग्रोग को एहसास हुआ कि उसे स्वार्थी और अलग-थलग रहने की आवश्यकता नहीं है। उन्होंने सीखा कि दोस्त होने और दूसरों के साथ साझा करना जीवन को और अधिक सुखद बनाता है। जानवरों ने उसे सिखाया कि भले ही वह अलग था, फिर भी वह उनके समुदाय का हिस्सा बन सकता है। ग्रॉग जानवरों की दोस्ती के लिए आभारी था और उसने अपने तरीके बदलने का फैसला किया। उस दिन से, ग्रॉग एक दयालु और सौम्य दानव बन गया। उन्होंने अपनी गुफा में रहना जारी रखा, लेकिन वे अब अकेले नहीं थे। उन्होंने अपने दिनों को अपने पशु मित्रों के साथ पहाड़ों की खोज में और जरूरतमंद लोगों की मदद में बिताया। ग्रॉग को पता चला कि सबसे बड़े और सबसे शक्तिशाली प्राणी भी बदल सकते हैं और दयालु और करुणामय बन सकते हैं।",
-            "current_page_summary_hindi": "बड़ा प्राणी ऊपरी मंजिल से नीचे उतरा और घर के मुख्य प्रवेश द्वार को खोल दिया। वह बगीचे में चला गया जहाँ बच्चे शुरू में उसके आकार से डर गए थे। लेकिन जब एक बच्चा रोने की वजह से भाग नहीं पाया, तो राक्षस ने उसे उठाया और एक पेड़ पर रख दिया। पेड़ अचानक खिलने लगा, पक्षी गाने लगे और छोटे लड़के ने राक्षस का गले लगाया और उसे चूमा। जैसे ही अन्य बच्चे वापस आए, उन्होंने पाया कि बगीचा एक सुंदर जगह में बदल गया था जहाँ दानव उनके साथ सारा दिन खेल रहा था। दिन के अंत में, लोगों ने विशालकाय को अलविदा कहा क्योंकि उसने अपने नव-स्थापित बगीचे की देखभाल करना जारी रखा।"
+            "page_summary_so_far_hindi": "किसी ज़माने में ग्रोग नाम का एक दैत्य था। ग्रॉग अविश्वसनीय रूप से बड़ा था, इतना बड़ा कि वह आसानी से एक कदम के साथ एक घर को कुचल सकता था। वे पहाड़ों में गहराई में एक विशाल, अलग-थलग गुफा में रहते थे। ग्रॉग बहुत स्वार्थी था और केवल अपनी परवाह करता था। उन्होंने अपने अधिकांश दिन अकेले बिताए, जो कुछ भी वे चाहते थे वह खाते थे और जो कुछ भी उन्हें अच्छा लगता था वह करते थे। एक दिन, पास के जंगल के जानवरों के एक समूह ने ग्रॉग से मिलने का फैसला किया। उन्होंने उसके विशाल आकार के बारे में सुना था और खुद उसे देखना चाहते थे। एक खरगोश, एक गिलहरी और एक पक्षी सहित जानवर, जादुई दैत्य से मिलने के लिए उत्सुक और उत्साहित थे। वे यह न जाने कि क्या उम्मीद की जाए, ग्रोग की गुफा के पास सावधानी से पहुँचे। जब वे गुफा में प्रवेश कर गए, तो उन्हें ग्रोग को सोने और कीमती रत्नों के ढेर पर बैठे देखकर हैरानी हुई। वह वर्षों से एकत्र किए गए खजाने के ढेर से घिरा हुआ था। दैत्य की संपत्ति से जानवर चकित हो गए और उन्होंने उससे पूछा कि वह इतना अमीर क्यों है। ग्रॉग ने समझाया कि उसने इन सभी खजाने को खुद इकट्ठा किया था, बिना किसी और की मदद के। जानवर ग्रोग की संपत्ति से प्रभावित हुए, लेकिन उन्होंने यह भी देखा कि वह बहुत अकेला था। उन्होंने उससे पूछा कि उसके कोई दोस्त क्यों नहीं हैं, और ग्रॉग ने बताया कि उसे किसी और की ज़रूरत नहीं है। वह अपनी संपत्ति से खुश था और उसे किसी और की संगत की आवश्यकता नहीं थी। जानवरों को ग्रॉग पर दया आ गई और उन्होंने उसकी मदद करने का फैसला किया। उन्होंने उसे बताया कि दुनिया की सारी संपत्ति रखने से कहीं अधिक महत्वपूर्ण है दोस्तों होना और किसी समुदाय का हिस्सा होना। उन्होंने समझाया कि दोस्त मुश्किल समय में उसकी मदद कर सकते हैं और वह भी उनकी मदद कर सकता है। ग्रॉग जानवरों के शब्दों से प्रभावित हुआ और उसे एहसास हुआ कि वह स्वार्थी था और बहुत लंबे समय से अलग-थलग था। उसने अपने तरीके बदलने और जानवरों के साथ बातचीत शुरू करने का फैसला किया। उन्होंने उनकी मदद करनी और उनसे सीखने की शुरुआत की और जल्द ही वे उनके समुदाय का हिस्सा बन गए। ग्रॉग को पता चला कि दुनिया की सारी संपत्ति रखने से कहीं अधिक महत्वपूर्ण है दोस्तों होना और किसी समुदाय का हिस्सा होना। उन्होंने महसूस किया कि उन्हें स्वार्थी और अलग-थलग होने की आवश्यकता नहीं है, और यह कि वे दूसरों की मदद करके और समुदाय का हिस्सा बनकर खुश और परिपूर्ण हो सकते हैं।",
+            "current_page_summary_hindi": "बड़ा प्राणी ऊपरी मंजिल से नीचे उतरा और घर के मुख्य प्रवेश द्वार को खोल दिया। वह बगीचे में चला गया जहाँ बच्चे शुरू में उसके आकार से डर गए थे। लेकिन जब एक बच्चा रोने की वजह से भाग नहीं पाया, तो राक्षस ने उसे उठाया और एक पेड़ पर रख दिया। पेड़ अचानक खिलने लगा, पक्षी गाने लगे और छोटे लड़के ने राक्षस का गले लगाया और उसे चूमा। जैसे ही अन्य बच्चे वापस आए, उन्होंने पाया कि बगीचा एक सुंदर जगह में बदल गया था जहाँ राक्षस उनके साथ सारा दिन खेल रहा था। दिन के अंत में, लोगों ने विशालकाय को अलविदा कहा क्योंकि उसने अपने नव-स्थापित बगीचे की देखभाल करना जारी रखा।"
         },
         "vocab": {
             "novel_words": [
@@ -743,41 +743,41 @@
                 "part_of_text": "winter again",
                 "significance": "In this context, 'winter' refers to a season of cold and darkness. In many European cultures, winter is associated with a time of scarcity and hardship. The sudden appearance of winter in the garden may symbolize a disruption of the natural order or a return to a state of coldness and isolation.",
                 "improve_understanding_of_text": "For non-native speakers, understanding the cultural significance of winter in this context can help them appreciate the emotional impact on the children and the Giant's actions.",
-                "part_of_text_hindi": "फिर से सर्दी",
-                "significance_hindi": "इस स्थिति में, 'सर्दियों' का मौसम ठंडा तापमान और धूप की कमी से चिह्नित होता है। कई यूरोपीय समाजों में, सर्दियों को अक्सर सीमित संसाधनों और कठिनाइयों की अवधि से जोड़ा जाता है। बगीचे में सर्दियों का अप्रत्याशित आगमन प्राकृतिक संतुलन में गड़बड़ी या ठंड और अकेलेपन की स्थिति में वापसी का प्रतिनिधित्व कर सकता है।",
-                "improve_understanding_of_text_hindi": "जिन लोगों की मातृभाषा अंग्रेजी नहीं है, उनके लिए इस स्थिति में सर्दियों के सांस्कृतिक महत्व को समझना उन्हें बच्चों पर भावनात्मक प्रभाव और जायंट के कार्यों को बेहतर ढंग से समझने में मदद कर सकता है।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "इस स्थिति में, 'सर्दियों' का मौसम ठंडे तापमान और धूप की कमी से चिह्नित होता है। कई यूरोपीय समाजों में, सर्दियों को अक्सर सीमित संसाधनों और कठिनाइयों की अवधि से जोड़ा जाता है। किसी उद्यान में सर्दियों का अप्रत्याशित आगमन प्राकृतिक संतुलन में व्यवधान का प्रतीक हो सकता है या फिर ठंड और अकेलेपन की स्थिति में लौटने का प्रतीक हो सकता है।",
+                "improve_understanding_of_text_hindi": "जिन लोगों की मातृभाषा अंग्रेजी नहीं है, उनके लिए सर्दियों के सांस्कृतिक महत्व को समझना चुनौतीपूर्ण हो सकता है। हालाँकि, यह समझ उन्हें बच्चों पर भावनात्मक प्रभाव और जायंट के काम को बेहतर ढंग से समझने में मदद कर सकती है।"
             },
             {
                 "part_of_text": "the Spring",
                 "significance": "In many cultures, especially in Western societies, Spring is a season of renewal and growth. The sudden arrival of Spring in the garden may symbolize hope, new beginnings, and the end of winter's coldness.",
                 "improve_understanding_of_text": "For non-native speakers, understanding the cultural significance of Spring can help them appreciate the Giant's transformation from a feared figure to a benevolent one.",
-                "part_of_text_hindi": "वसंत ऋतु",
-                "significance_hindi": "कई संस्कृतियों में, विशेष रूप से पश्चिमी समाजों में, वसंत को अक्सर पुनर्जन्म और विस्तार के समय के रूप में देखा जाता है। बगीचे में वसंत की अचानक उपस्थिति आशावाद, नई शुरुआत और सर्दियों की ठंडक के अंत का प्रतिनिधित्व कर सकती है।",
-                "improve_understanding_of_text_hindi": "जो लोग मूल रूप से अंग्रेजी बोलने वाले नहीं हैं, उनके लिए वसंत के सांस्कृतिक महत्व को समझना उन्हें यह समझने में मदद कर सकता है कि राक्षस कैसे एक डरावने व्यक्ति से एक दयालु व्यक्ति में बदल जाता है।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "कई संस्कृतियों में, विशेष रूप से पश्चिमी समाजों में, वसंत को अक्सर पुनर्जन्म और विस्तार के समय के रूप में देखा जाता है। बगीचों में वसंत का अचानक आना उम्मीद, एक नई शुरुआत और सर्दियों की ठंडक के अंत का प्रतीक हो सकता है।",
+                "improve_understanding_of_text_hindi": "वसंत के सांस्कृतिक महत्व को समझना उन लोगों के लिए सहायक हो सकता है जो अंग्रेजी को अपनी पहली भाषा के रूप में नहीं बोलते हैं। यह उन्हें यह समझने में मदद कर सकता है कि हिंदू पौराणिक कथाओं का एक चरित्र रसखक कैसे एक डरावने व्यक्ति से एक दयालु व्यक्ति में बदल जाता है।"
             },
             {
                 "part_of_text": "the most beautiful garden they had ever seen",
                 "significance": "This phrase may evoke images of European gardens, which are often associated with grandeur and beauty. The description of the garden as 'beautiful' may also imply a sense of wonder and enchantment.",
                 "improve_understanding_of_text": "For non-native speakers, understanding the cultural context of European gardens can help them appreciate the Giant's creation and its significance in the story.",
-                "part_of_text_hindi": "सबसे सुंदर उद्यान जो उन्होंने कभी देखा था",
-                "significance_hindi": "यह वाक्यांश यूरोपीय उद्यानों की तस्वीरों को ध्यान में ला सकता है, जो आम तौर पर भव्यता और सुंदरता से जुड़े होते हैं। उद्यान का वर्णन करने के लिए उपयोग किया जाने वाला शब्द 'सुंदर' आश्चर्य और जादू की भावना का भी संकेत दे सकता है।",
-                "improve_understanding_of_text_hindi": "जिन लोगों की मातृभाषा अंग्रेजी नहीं है, उनके लिए यूरोपीय उद्यानों की सांस्कृतिक पृष्ठभूमि को समझना, उनके लिए जायंट की रचना और कहानी में उसके महत्व को समझना आसान बना सकता है।"
+                "part_of_text_hindi": "सबसे सुंदर बगीचा जो उसने कभी देखा था।",
+                "significance_hindi": "यह वाक्यांश यूरोपीय उद्यानों की छवियों को जगा सकता है, जो अक्सर भव्यता और सुंदरता से जुड़े होते हैं। एक बगीचे का वर्णन करने के लिए उपयोग किया जाने वाला शब्द \"सुंदर\" आश्चर्य और जादू की भावना का भी संकेत दे सकता है।",
+                "improve_understanding_of_text_hindi": "जिनकी मातृभाषा अंग्रेजी नहीं है, उनके लिए यूरोपीय उद्यानों की सांस्कृतिक पृष्ठभूमि को समझना आसान हो सकता है। इससे कहानी में दैत्य के निर्माण और महत्व को समझने में भी मदद मिल सकती है।"
             },
             {
                 "part_of_text": "the people were going to market at twelve o'clock",
                 "significance": "In many cultures, especially in Western societies, markets are an important part of daily life. The mention of a market may evoke images of bustling streets, commerce, and community.",
                 "improve_understanding_of_text": "For non-native speakers, understanding the cultural context of markets can help them appreciate the Giant's integration into the community and his role as a benevolent figure.",
-                "part_of_text_hindi": "लोग दोपहर को बाजार की ओर बढ़ रहे थे।",
-                "significance_hindi": "कई समाजों में, विशेष रूप से पश्चिमी संस्कृतियों में, बाजार दैनिक जीवन में महत्वपूर्ण भूमिका निभाते हैं। जब हम बाजार के बारे में सोचते हैं, तो अक्सर हमारी कल्पना में व्यस्त सड़कें, व्यावसायिक गतिविधियाँ और समुदाय की भावना होती है।",
-                "improve_understanding_of_text_hindi": "जो लोग मूल वक्ता नहीं हैं, उनके लिए बाजारों की सांस्कृतिक पृष्ठभूमि को समझना उन्हें बेहतर ढंग से समझने में मदद कर सकता है कि विशालकाय समुदाय का हिस्सा कैसे है और उन्हें एक दयालु और सहायक व्यक्ति के रूप में कैसे देखा जाता है।"
+                "part_of_text_hindi": "दोपहर में लोग बाजार की ओर बढ़ रहे थे।",
+                "significance_hindi": "कई समाजों में, विशेष रूप से पश्चिमी संस्कृतियों में, बाजार दैनिक जीवन में महत्वपूर्ण भूमिका निभाते हैं। जब हम बाजारों के बारे में सोचते हैं, तो हम अक्सर भीड़भाड़ वाली सड़कों, व्यावसायिक गतिविधियों और समुदाय की भावना की कल्पना करते हैं।",
+                "improve_understanding_of_text_hindi": "बाजारों की सांस्कृतिक पृष्ठभूमि को समझना उन लोगों के लिए मददगार हो सकता है जो मूल वक्ता नहीं हैं। यह उन्हें यह समझने में मदद कर सकता है कि वे एक बड़े समुदाय का हिस्सा कैसे हैं और उन्हें एक दयालु और सहायक व्यक्ति के रूप में कैसे माना जाता है।"
             },
             {
                 "part_of_text": "the Giant playing with the children",
                 "significance": "The image of the Giant playing with children may evoke images of European folklore, where giants are often depicted as fearsome creatures. The Giant's actions in this context may symbolize a desire for connection and community.",
                 "improve_understanding_of_text": "For non-native speakers, understanding the cultural context of European folklore can help them appreciate the Giant's transformation from a feared figure to a benevolent one.",
-                "part_of_text_hindi": "दायित बच्चों के साथ खेल रहा है",
-                "significance_hindi": "दयानन की बच्चों के साथ खेलने की तस्वीर हमें यूरोपीय लोककथाओं की कहानियों की याद दिला सकती है, जहाँ दानवों को आम तौर पर डरावने प्राणियों के रूप में दिखाया जाता है। इस दृश्य में, दैत्य के कार्य दोस्ती और अपनेपन की भावना की इच्छा का प्रतिनिधित्व कर सकते हैं।",
-                "improve_understanding_of_text_hindi": "जो लोग मूल वक्ता नहीं हैं, उनके लिए यूरोपीय लोककथाओं की सांस्कृतिक पृष्ठभूमि को समझना उन्हें यह समझने में आसान बना सकता है कि राक्षस का चरित्र कैसे डरने से बदलकर दयालु हो जाता है।"
+                "part_of_text_hindi": "लड़का दोषी बच्चों के साथ खेल रहा है।",
+                "significance_hindi": "दयानंद के बच्चों के साथ खेलने की छवि हमें यूरोपीय लोककथाओं की उन कहानियों की याद दिलाती है जहाँ राक्षसों को अक्सर डरावने जीवों के रूप में चित्रित किया जाता है। इस दृश्य में, राक्षस के कार्य दोस्ती और अपनेपन की इच्छा का प्रतिनिधित्व कर सकते हैं।",
+                "improve_understanding_of_text_hindi": "यूरोपीय लोककथाओं की सांस्कृतिक पृष्ठभूमि को समझना उन लोगों के लिए सहायक हो सकता है जो मूल वक्ता नहीं हैं। यह उन्हें यह समझने में मदद कर सकता है कि एक राक्षस का चरित्र कैसे डरने से बदलकर करुणामय हो सकता है।"
             }
         ],
         "grade5": "So he quietly went downstairs and opened the front door. Then he went out into the garden. But when the kids saw him, they were very scared and ran away. The garden became cold again. Only one little boy didn't run because his eyes were too sad to see the Giant coming. The Giant caught up behind him and gently picked him up and put him in a tree. When the tree broke, it turned into beautiful flowers, and birds started singing on it. The little boy hugged the Giant's neck and kissed him. Later, when the kids saw that the Giant wasn't mean anymore, they came back to see him. They brought Spring with them. "
@@ -812,12 +812,12 @@
             }
         },
         "num_chars": 973,
-        "chapter": "Unknown Chapter",
+        "chapter": "Chapter 2.",
         "summary": {
             "page_summary_so_far": "A story about a giant who has been selfish and isolated from nature.",
             "current_page_summary": "The Giant, who had placed a boy in a tree as his companion, is now feeling sad because the boy is nowhere to be found. Despite being kind to other children, he longs for his first friend and often speaks of him. As the years pass, the Giant grows old and feeble, unable to play with the children anymore, but still watches over them and admires their beauty, comparing them to his own garden's flowers.",
-            "page_summary_so_far_hindi": "किसी ज़माने में ग्रोग नामक एक दैत्य था। ग्रॉग अविश्वसनीय रूप से बड़ा था, इतना बड़ा कि वह आसानी से एक कदम के साथ एक घर को कुचल सकता था। वह पहाड़ों में एक विशाल, अलग-थलग गुफा में रहता था। ग्रॉग बहुत स्वार्थी था और केवल अपनी परवाह करता था। उन्होंने अपने अधिकांश दिन अकेले बिताए, जो कुछ भी वे चाहते थे वह खाते थे और जो कुछ भी उन्हें अच्छा लगता था वह करते थे। एक दिन, पास के जंगल के जानवरों के एक समूह ने ग्रॉग से मिलने का फैसला किया। उन्होंने उसके विशाल आकार के बारे में सुना था और उसे खुद से देखना चाहते थे। एक खरगोश, एक गिलहरी और एक पक्षी सहित जानवर, जादुई दैत्य से मिलने के लिए उत्सुक और उत्साहित थे। वे यह न जाने कि क्या उम्मीद की जाए, ग्रोग की गुफा के पास सावधानी से पहुँचे। जब वे गुफा में घुसे, तो उन्हें ग्रोग़ को सोने और कीमती रत्नों के ढेर पर बैठे देखकर हैरानी हुई। वह वर्षों से एकत्र किए गए खजाने के ढेर से घिरा हुआ था। दैत्य की संपत्ति से जानवर चकित हो गए और उन्होंने उससे पूछा कि वह इतना अमीर क्यों है। ग्रॉग ने समझाया कि उसने इन सभी खजाने को खुद इकट्ठा किया था, बिना किसी और की मदद के। जानवर ग्रोग की संपत्ति से प्रभावित हुए, लेकिन उन्होंने यह भी देखा कि वह बहुत अकेला था। उन्होंने उससे पूछा कि उसके कोई दोस्त क्यों नहीं हैं, और ग्रॉग ने बताया कि उसे किसी और की ज़रूरत नहीं है। वह अपनी संपत्ति से खुश था और उसे किसी और की संगत की आवश्यकता नहीं थी। जानवरों को ग्रॉग पर दया आ गई और उन्होंने उसकी मदद करने का फैसला किया। उन्होंने उसे बताया कि दुनिया की सारी संपत्ति रखने से कहीं अधिक महत्वपूर्ण है दोस्तों होना और किसी समुदाय का हिस्सा होना। उन्होंने समझाया कि दोस्त मुश्किल समय में उसकी मदद कर सकते हैं और वह भी उनकी मदद कर सकता है। ग्रॉग जानवरों के शब्दों से प्रभावित हुआ और उसे एहसास हुआ कि वह स्वार्थी था और बहुत लंबे समय से अलग-थलग था। उसने अपने तरीके बदलने और जानवरों के साथ बातचीत शुरू करने का फैसला किया। उन्होंने उनकी मदद करनी और उनसे सीखने की शुरुआत की और जल्द ही वे उनके समुदाय का हिस्सा बन गए। ग्रोग को पता चला कि दुनिया की सारी संपत्ति रखने से कहीं अधिक महत्वपूर्ण है दोस्तों होना और किसी समुदाय का हिस्सा होना। उन्होंने महसूस किया कि उन्हें स्वार्थी और अलग-थलग होने की आवश्यकता नहीं है, और यह कि वे दूसरों की मदद करके और समुदाय का हिस्सा बनकर खुश और परिपूर्ण हो सकते हैं।",
-            "current_page_summary_hindi": "दैत्य, जिसका एक पेड़ में उसका दोस्त एक लड़का था, अब दुखी है क्योंकि लड़का गायब है। भले ही वह अन्य बच्चों के साथ अच्छा व्यवहार करता है, लेकिन वह वास्तव में अपने पहले दोस्त को याद करता है और अक्सर उसके बारे में बात करता है। जैसे-जैसे समय बीतता है, दैत्य बूढ़ा और कमज़ोर होता जाता है, और वह अब बच्चों के साथ नहीं खेल सकता है। हालाँकि, वह अभी भी उन पर नज़र रखता है और उनके रूप की सराहना करता है, उनकी तुलना अपने बगीचे के फूलों से करता है।"
+            "page_summary_so_far_hindi": "किसी ज़माने में ग्रोग नाम का एक दैत्य था। ग्रॉग अविश्वसनीय रूप से बड़ा था, इतना बड़ा कि वह आसानी से एक कदम के साथ एक घर को कुचल सकता था। वह पहाड़ों में एक विशाल, अलग-थलग गुफा में रहता था। ग्रॉग बहुत स्वार्थी था और केवल अपनी परवाह करता था। उन्होंने अपने अधिकांश दिन अकेले बिताए, जो कुछ भी वे चाहते थे वह खाते थे और जो कुछ भी उन्हें अच्छा लगता था वह करते थे। एक दिन, पास के जंगल के जानवरों के एक समूह ने ग्रॉग से मिलने का फैसला किया। उन्होंने उसके विशाल आकार के बारे में सुना था और उसे खुद देखना चाहते थे। एक खरगोश, एक गिलहरी और एक पक्षी सहित जानवर, जादुई दैत्य से मिलने के लिए उत्सुक और उत्साहित थे। उन्हें उम्मीद थी कि ग्रॉग मिलनसार होगा और शायद उनकी समस्याओं में भी मदद करेगा। जब जानवर ग्रोग़ की गुफा में पहुँचे, तो वे उसके आकार से चकित थे। उन्होंने पहले कभी उसके जैसा कुछ नहीं देखा था। ग्रॉग, हालांकि, जानवरों को देखकर खुश नहीं था। उन्हें इस बात का गुस्सा था कि उन्होंने उनकी शांति भंग की थी। उसने उन पर चिल्लाते हुए उन्हें जाने के लिए कहा। ग्रॉग की तेज आवाज और गुस्से भरे चेहरे से जानवर डर गए। वे तुरंत मुड़ गए और अपने जंगल की ओर भाग गए। उन्होंने अपने सभी दोस्तों को दैत्य के साथ अपने डरावने अनुभव के बारे में बताया। जैसे-जैसे समय बीतता गया, जानवरों ने ग्रॉग की गुफा से बचना शुरू कर दिया। वे उसके गुस्से से डरते थे और उसे फिर से परेशान नहीं करना चाहते थे। ग्रॉग को अकेला छोड़ दिया जाना अच्छा लगा, लेकिन जल्द ही उसे एहसास हुआ कि वह अकेला था। वह जानवरों और जंगल को याद करता था, लेकिन उसे दोस्त बनाना नहीं आता था। एक दिन, एक बुद्धिमान बूढ़ा उल्लू ग्रोग के पास आया। उल्लू ने दैत्य की अकेलेपन के बारे में सुना था और उसकी मदद करना चाहता था। उल्लू ने ग्रोग से कहा कि उसे अकेला नहीं रहना चाहिए। अगर वह चाहे तो जानवरों से दोस्ती कर सकता था। उल्लू ने सुझाव दिया कि ग्रॉग जानवरों से मिलने जाए और अपने व्यवहार के लिए माफी मांगे। ग्रॉग पहले तो संकोच कर रहा था, लेकिन उल्लू ने उसे कोशिश करने के लिए मना लिया। ग्रॉग धीरे-धीरे जंगल की ओर बढ़ रहा था, जानवरों को न डराने के लिए सावधानी से आगे बढ़ रहा था। जब वह आया, तो उसने अपने पिछले व्यवहार के लिए माफी मांगी और जानवरों से उसे माफ़ करने के लिए कहा। ग्रॉग के दिल के परिवर्तन से जानवर आश्चर्यचकित थे और उन्होंने उसे अपने समुदाय में स्वागत किया। ग्रॉग को पता चला कि स्वार्थी और अलग-थलग रहना जीवन जीने का सबसे अच्छा तरीका नहीं है। उन्होंने पाया कि दोस्तों के होने और दूसरों की मदद करने से उन्हें खुशी मिलती है। तब से, ग्रोग ने अपने दिन जानवरों की मदद करने और उनकी कंपनी का आनंद लेने में बिताए। उसे पता चला कि सबसे बड़े और सबसे मजबूत जीव भी बदल सकते हैं और दयालु और मददगार बन सकते हैं।",
+            "current_page_summary_hindi": "दैत्य, जिसका एक पेड़ में उसका दोस्त एक लड़का था, अब दुखी है क्योंकि लड़का गायब है। भले ही वह अन्य बच्चों के साथ अच्छा व्यवहार करता है, लेकिन वह वास्तव में अपने पहले दोस्त को याद करता है और अक्सर उसके बारे में बात करता है। जैसे-जैसे समय बीतता है, दैत्य बूढ़ा और कमज़ोर होता जाता है, और वह अब बच्चों के साथ नहीं खेल सकता है। हालाँकि, वह फिर भी उन पर नज़र रखता है और उनके रूप की सराहना करता है, उनकी तुलना अपने बगीचे के फूलों से करता है।"
         },
         "vocab": {
             "novel_words": [
@@ -864,49 +864,49 @@
                 "part_of_text": "the boy I put into the tree",
                 "significance": "This refers to a common European folklore motif where a child is placed in a tree by a giant or other supernatural being, often as a test of love and devotion. This context may be unfamiliar to Hindi-speaking people from India.",
                 "improve_understanding_of_text": "Adding this cultural reference can help non-native speakers understand the Giant's character and motivations better.",
-                "part_of_text_hindi": "वह लड़का जिसे मैंने पेड़ पर रखा था",
-                "significance_hindi": "यह एक लोकप्रिय यूरोपीय लोककथा का संदर्भ है जहाँ एक बच्चे को एक दैत्य या अन्य अलौकिक इकाई द्वारा एक पेड़ में डाल दिया जाता है। यह आम तौर पर यह देखने के लिए किया जाता है कि बच्चे के माता-पिता में कितना प्यार और समर्पण है। यह कहानी शायद हिंदी बोलने वाले भारत के लोगों को अच्छी तरह से ज्ञात न हो।",
-                "improve_understanding_of_text_hindi": "इस सांस्कृतिक संदर्भ को शामिल करने से उन लोगों के लिए जायंट के व्यक्तित्व और एक निश्चित तरीके से व्यवहार करने के कारणों को समझना आसान हो सकता है जो मूल वक्ता नहीं हैं।"
+                "part_of_text_hindi": "वह लड़का जिसे मैंने पेड़ पर रखा था।",
+                "significance_hindi": "यह एक लोकप्रिय यूरोपीय लोककथा है जहाँ एक राक्षस या अन्य अलौकिक शक्ति द्वारा एक बच्चे को एक पेड़ पर रखा जाता है। यह आम तौर पर यह देखने के लिए किया जाता है कि बच्चे के माता-पिता में कितना प्यार और समर्पण है। यह कहानी भारत में हिंदी बोलने वाले लोगों के लिए शायद उतनी प्रसिद्ध न हो।",
+                "improve_understanding_of_text_hindi": "सांस्कृतिक संदर्भ को समझने से यह समझना आसान हो सकता है कि कुछ व्यक्ति, जो मूल वक्ता नहीं हैं, एक निश्चित तरीके से व्यवहार क्यों करते हैं और उनका विशिष्ट व्यक्तित्व क्यों होता है।"
             },
             {
                 "part_of_text": "Every afternoon, when school was over",
                 "significance": "This phrase suggests a Western-style education system, which may be unfamiliar to Hindi-speaking people from India. It implies that the children attend school regularly, which is not a common practice in many Indian cultures.",
                 "improve_understanding_of_text": "Including this reference can help non-native speakers understand the context of the story better and appreciate the cultural differences between Western and Indian societies.",
-                "part_of_text_hindi": "हर दिन दोपहर को, स्कूल खत्म होने के बाद",
-                "significance_hindi": "यह वाक्य एक पश्चिमी शैली की शिक्षा प्रणाली की ओर इशारा कर रहा है, जो भारत से हिंदी बोलने वाले लोगों के लिए नई हो सकती है। इसका अर्थ यह है कि बच्चे नियमित रूप से विद्यालय जाते हैं, जो कई भारतीय संस्कृतियों में एक आम आदत नहीं है।",
-                "improve_understanding_of_text_hindi": "इस संदर्भ को जोड़ने से उन लोगों को कहानी के संदर्भ को बेहतर ढंग से समझने और पश्चिमी और भारतीय संस्कृतियों के बीच सांस्कृतिक अंतरों को समझने में मदद मिल सकती है जो मूल वक्ता नहीं हैं।"
+                "part_of_text_hindi": "हर दिन, दोपहर में स्कूल खत्म होने के बाद,",
+                "significance_hindi": "यह वाक्य एक पश्चिमी शैली की शिक्षा प्रणाली की ओर इशारा कर रहा है जो भारत में हिंदी बोलने वाले लोगों के लिए नई हो सकती है। इसका मतलब है कि बच्चे नियमित रूप से विद्यालय जाते हैं, जो कई भारतीय संस्कृतियों में एक आम प्रथा नहीं है।",
+                "improve_understanding_of_text_hindi": "इस संदर्भ को जोड़कर, जो लोग मूल वक्ता नहीं हैं, वे कहानी और पश्चिमी और भारतीय संस्कृतियों के बीच के सांस्कृतिक अंतरों को बेहतर ढंग से समझ सकते हैं।"
             },
             {
                 "part_of_text": "the Giant grew very old and feeble",
                 "significance": "This phrase implies a Western-style aging process, where individuals grow old and frail with age. In some Indian cultures, aging is viewed differently, and this reference may be unfamiliar to Hindi-speaking people from India.",
                 "improve_understanding_of_text": "Adding this cultural reference can help non-native speakers understand the Giant's character development and aging process better.",
-                "part_of_text_hindi": "दैत्य बहुत बूढ़ा और कमजोर हो गया",
-                "significance_hindi": "यह वाक्यांश उम्र बढ़ने पर एक पश्चिमी परिप्रेक्ष्य का सुझाव देता है, जहाँ लोग बूढ़े होते हुए कमज़ोर और कमजोर होते जाते हैं। हालाँकि, कुछ भारतीय संस्कृतियों में, वृद्धावस्था को अलग नज़र से देखा जाता है। यह अवधारणा शायद हिंदी बोलने वाले भारत के लोगों को अच्छी तरह से ज्ञात नहीं है।",
-                "improve_understanding_of_text_hindi": "इस सांस्कृतिक संदर्भ सहित उन लोगों के लिए जो मूल वक्ता नहीं हैं, विशाल के चरित्र में वृद्धि और उम्र बढ़ने की प्रक्रिया को अधिक स्पष्ट रूप से समझना आसान हो सकता है।"
+                "part_of_text_hindi": "राक्षस बहुत बूढ़ा और कमज़ोर हो गया था।",
+                "significance_hindi": "यह वाक्यांश उम्र बढ़ने पर एक पश्चिमी परिप्रेक्ष्य का सुझाव देता है, जहाँ लोग बड़े होते हुए कमज़ोर और कम सक्षम होते जाते हैं। हालाँकि, कुछ भारतीय संस्कृतियाँ वृद्धावस्था को अलग तरह से देखती हैं। यह अवधारणा भारत में हिंदी बोलने वाले लोगों के लिए शायद अच्छी तरह से ज्ञात नहीं है।",
+                "improve_understanding_of_text_hindi": "सांस्कृतिक संदर्भ पर विचार करते समय व्यास जैसे चरित्र में उम्र बढ़ने और विकास की प्रक्रिया को समझना स्पष्ट हो जाता है, जो एक देशी वक्ता नहीं है।"
             },
             {
                 "part_of_text": "he sat in a huge armchair",
                 "significance": "This image of an elderly person sitting in a comfortable chair is a common Western trope, which may be unfamiliar to Hindi-speaking people from India. It implies a sense of comfort and leisure that may not be as prevalent in Indian cultures.",
                 "improve_understanding_of_text": "Including this reference can help non-native speakers understand the Giant's character and living situation better.",
-                "part_of_text_hindi": "वे एक बड़ी, आरामदायक आर्मचेयर पर बैठे हुए थे।",
-                "significance_hindi": "एक बुजुर्ग व्यक्ति की एक आरामदायक कुर्सी पर आराम करते हुए छवि पश्चिमी संस्कृति में एक आम विषय है। हालाँकि, यह छवि शायद हिंदी बोलने वाले भारत के लोगों के लिए उतनी प्रसिद्ध या संबंधित नहीं है। यह छवि आराम और फुर्सत की भावना को दर्शाती है, जो भारतीय संस्कृतियों में शायद उतनी आम नहीं है।",
-                "improve_understanding_of_text_hindi": "इस संदर्भ को जोड़ना उन लोगों को दाइयत के व्यक्तित्व और उनकी जीवन स्थितियों को बेहतर ढंग से समझने में मदद कर सकता है जो मूल अंग्रेज़ी वक्ता नहीं हैं।"
+                "part_of_text_hindi": "वे एक बड़ी, आरामदायक आर्मचेयर पर बैठे थे।",
+                "significance_hindi": "कुर्सी पर आराम से बैठे बुजुर्ग व्यक्ति की छवि पश्चिमी संस्कृति में एक आम विषय है। हालाँकि, यह छवि भारत में हिंदी बोलने वाले लोगों के लिए उतनी प्रसिद्ध या प्रासंगिक नहीं हो सकती है। यह छवि आराम और फुर्सत की भावना को दर्शाती है, जो शायद भारतीय संस्कृतियों में उतनी आम न हो।",
+                "improve_understanding_of_text_hindi": "यह संदर्भ उन लोगों को बेहतर ढंग से समझने में मदद कर सकता है जो मूल अंग्रेजी वक्ता नहीं हैं और जिन्हें संदर्भित किया जा रहा है, उनके व्यक्तित्व और जीवन की स्थितियों को बेहतर ढंग से समझने में मदद कर सकता है।"
             },
             {
                 "part_of_text": "the children at their games",
                 "significance": "This phrase suggests a Western-style concept of childhood, where children are seen as separate entities that engage in recreational activities. In some Indian cultures, children are viewed as an integral part of the family and community.",
                 "improve_understanding_of_text": "Adding this cultural reference can help non-native speakers understand the context of the story better and appreciate the cultural differences between Western and Indian societies.",
-                "part_of_text_hindi": "बच्चे खेल रहे हैं",
-                "significance_hindi": "यह वाक्यांश बचपन पर एक पश्चिमी दृष्टिकोण को दर्शाता है, जहाँ बच्चों को ऐसे व्यक्ति के रूप में माना जाता है जो अवकाश गतिविधियों का आनंद लेते हैं। हालांकि, कुछ भारतीय समाजों में, बच्चों को परिवार और समुदाय के एक आवश्यक भाग के रूप में देखा जाता है।",
-                "improve_understanding_of_text_hindi": "इस सांस्कृतिक संदर्भ को शामिल करने से उन लोगों के लिए कहानी को बेहतर ढंग से समझना आसान हो सकता है जो मूल वक्ता नहीं हैं। यह उन्हें पश्चिमी और भारतीय समाजों के बीच संस्कृति में अंतरों को समझने में भी मदद कर सकता है।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "यह वाक्य बचपन पर एक पश्चिमी परिप्रेक्ष्य को संदर्भित करता है, जहाँ बच्चों को ऐसे व्यक्तियों के रूप में देखा जाता है जो अवकाश गतिविधियों का आनंद लेते हैं। हालाँकि, कुछ भारतीय समाजों में, बच्चों को परिवार और समुदाय के एक आवश्यक भाग के रूप में देखा जाता है।",
+                "improve_understanding_of_text_hindi": "इस सांस्कृतिक संदर्भ को शामिल करने से उन लोगों के लिए कहानी को बेहतर ढंग से समझना आसान हो सकता है जो मूल वक्ता नहीं हैं। यह उन्हें पश्चिमी और भारतीय समाजों के बीच संस्कृति में अंतर को समझने में भी मदद कर सकता है।"
             },
             {
                 "part_of_text": "the children are the most beautiful flowers of all",
                 "significance": "This phrase is a metaphor that suggests the children are the most valuable and precious things in the Giant's life. In some Indian cultures, this type of language may be unfamiliar to Hindi-speaking people from India.",
                 "improve_understanding_of_text": "Including this reference can help non-native speakers understand the Giant's character and emotions better.",
                 "part_of_text_hindi": "बच्चे सबसे प्यारे फूल हैं।",
-                "significance_hindi": "यह वाक्यांश एक तुलना है जो दर्शाती है कि बच्चे दैत्य के जीवन में सबसे महत्वपूर्ण और बहुमूल्य संपत्ति हैं। कुछ भारतीय संस्कृतियों में, इस प्रकार की भाषा भारत के उन लोगों के लिए शायद अच्छी तरह से ज्ञात न हो जो हिंदी बोलते हैं।",
-                "improve_understanding_of_text_hindi": "इस संदर्भ को जोड़ने से उन लोगों के लिए जायंट के व्यक्तित्व और भावनाओं को अधिक स्पष्ट रूप से समझना आसान हो सकता है जो मूल अंग्रेजी वक्ता नहीं हैं।"
+                "significance_hindi": "यह वाक्य एक तुलना है जो बताती है कि राक्षस के जीवन में बच्चे सबसे मूल्यवान और महत्वपूर्ण संपत्ति हैं। कुछ भारतीय संस्कृतियों में, इस प्रकार की भाषा हिंदी बोलने वालों के लिए शायद अच्छी तरह से ज्ञात नहीं हो।",
+                "improve_understanding_of_text_hindi": "इस संदर्भ को जोड़ने पर जो लोग मूल अंग्रेजी वक्ता नहीं हैं उनके लिए विशाल के व्यक्तित्व और भावनाओं को समझना आसान हो सकता है।"
             }
         ],
         "grade5": "A giant asked where his little friend was. He had kissed him and loved him very much. The children didn't know where he went, but they promised to tell him to come back tomorrow. The giant felt sad because he missed his friend. Every afternoon, the children played with the giant. But the little boy who the giant loved was never seen again. The giant was kind to all the children, but he longed for his first little friend and often said, "
@@ -946,11 +946,11 @@
             }
         },
         "num_chars": 1046,
-        "chapter": "Unknown Chapter",
+        "chapter": "Chapter 2.",
         "summary": {
             "page_summary_so_far": "A story about a giant who has been selfish and isolated from nature.",
             "current_page_summary": "The giant, now appreciative of winter as a precursor to spring, gazes out his window in wonder at the blossoming tree in his garden. He rushes downstairs and approaches the little boy he had loved, only to be met with an unexpected sight: the child's hands and feet bear the marks of two nails, indicating wounds from love rather than harm.",
-            "page_summary_so_far_hindi": "किसी ज़माने में ग्रोग नामक एक दैत्य था। ग्रॉग अविश्वसनीय रूप से बड़ा था, इतना बड़ा कि वह आसानी से एक कदम के साथ एक घर को कुचल सकता था। वह पहाड़ों में एक विशाल, अलग-थलग गुफा में रहता था। ग्रॉग बहुत स्वार्थी था और केवल अपनी परवाह करता था। उन्होंने अपने अधिकांश दिन अकेले बिताए, जो कुछ भी वे चाहते थे वह खाया और जो कुछ भी उन्हें अच्छा लगा वह किया। एक दिन, पास के जंगल के जानवरों के एक समूह ने ग्रॉग से मिलने का फैसला किया। उन्होंने उसके विशाल आकार के बारे में सुना था और उसे खुद से देखना चाहते थे। जानवर उत्सुक और थोड़े से डरे हुए थे, लेकिन वे बहुत मिलनसार भी थे। वे ग्रॉग के साथ साझा करने के लिए शहद, जामुन और अन्य स्वादिष्ट व्यंजन के उपहार लाए। जब जानवर गुफा में पहुँचे, तो वे ग्रोग के आकार से चकित हो गए। उन्होंने पहले कभी भी उसके जैसा कुछ नहीं देखा था। ग्रॉग जानवरों को देखकर हैरान रह गया और यह जानने के लिए उत्सुक था कि वे उससे मिलने क्यों आए हैं। जानवरों ने बताया कि उन्होंने उसके आकार के बारे में सुना था और खुद उससे मिलना चाहते थे। वे उसके साथ साझा करने के लिए उपहार भी लाए। ग्रॉग जानवरों के दयालु भाव से प्रभावित हुआ और उसने अपना भोजन उनके साथ बाँट लेने का फैसला किया। वह किसी की संगत में इतना खुश था कि वह अपने स्वार्थी तरीकों को भूल गया। जानवर और ग्रॉग जल्द ही अच्छे दोस्त बन गए और उन्होंने कई खुशनुमा दिन साथ बिताए। वे पहाड़ों की खोज करते थे, खेल खेलते थे और कहानियाँ साझा करते थे। जैसे-जैसे समय बीतता गया, ग्रोग को एहसास हुआ कि उसे स्वार्थी और अलग-थलग रहने की आवश्यकता नहीं है। उन्होंने सीखा कि दोस्त होने और दूसरों के साथ साझा करना जीवन को और अधिक सुखद बनाता है। जानवरों ने उसे सिखाया कि भले ही वह अलग था, फिर भी वह उनके समुदाय का हिस्सा बन सकता है। ग्रॉग जानवरों की दोस्ती के लिए आभारी था और उसने अपने तरीके बदलने का फैसला किया। उस दिन से, ग्रॉग एक दयालु और सौम्य दानव बन गया। उन्होंने अपनी गुफा में रहना जारी रखा, लेकिन वे अब अकेले नहीं थे। उन्होंने अपने दिनों को अपने पशु मित्रों के साथ पहाड़ों की खोज में और जरूरतमंद लोगों की मदद में बिताया। ग्रॉग को पता चला कि सबसे बड़े और सबसे शक्तिशाली प्राणी भी बदल सकते हैं और दयालु और करुणामय बन सकते हैं।",
+            "page_summary_so_far_hindi": "किसी ज़माने में ग्रोग नाम का एक दैत्य था। ग्रॉग अविश्वसनीय रूप से बड़ा था, इतना बड़ा कि वह आसानी से एक कदम के साथ एक घर को कुचल सकता था। वे पहाड़ों में गहरी, एक विशाल, अलग-थलग गुफा में रहते थे। ग्रॉग बहुत स्वार्थी था और केवल अपनी परवाह करता था। उन्होंने अपने अधिकांश दिन अकेले बिताए, जो कुछ भी वे चाहते थे वह खाया और जो कुछ भी उन्हें अच्छा लगा वह किया। एक दिन, पास के जंगल के जानवरों के एक समूह ने ग्रॉग से मिलने का फैसला किया। उन्होंने उसके विशाल आकार के बारे में सुना था और खुद उसे देखना चाहते थे। जानवर उत्सुक और थोड़े डरपोक थे, लेकिन वे बहुत मिलनसार भी थे। वे ग्रोग़ के साथ साझा करने के लिए शहद, जामुन और अन्य स्वादिष्ट व्यंजन के उपहार लाए। जब जानवर गुफा में पहुँचे, तो वे ग्रॉग के आकार से चकित हो गए। उन्होंने पहले कभी भी उसके जैसा कुछ नहीं देखा था। ग्रॉग जानवरों को देखकर हैरान रह गया और यह जानने के लिए उत्सुक था कि वे उससे मिलने क्यों आए हैं। जानवरों ने बताया कि उन्होंने उसके आकार के बारे में सुना था और खुद उससे मिलना चाहते थे। वे उसके साथ साझा करने के लिए उपहार भी लाए। ग्रॉग जानवरों के दयालु भाव से प्रभावित हुआ और उसने अपना भोजन उनके साथ बाँट लेने का फैसला किया। वह किसी की संगत में इतना खुश था कि वह अपने स्वार्थी तरीकों को भूल गया। जानवर और ग्रॉग जल्द ही अच्छे दोस्त बन गए और उन्होंने कई खुशनुमा दिन साथ बिताए। वे पहाड़ों की खोज करते थे, खेल खेलते थे और कहानियाँ साझा करते थे। जैसे-जैसे समय बीतता गया, ग्रोग को एहसास हुआ कि उसे स्वार्थी और अलग-थलग रहने की आवश्यकता नहीं है। उन्होंने सीखा कि दोस्त होने और दूसरों के साथ साझा करना जीवन को और अधिक सुखद बनाता है। जानवरों ने उसे सिखाया कि दया और उदारता जीवन जीने के लिए महत्वपूर्ण मूल्य हैं। ग्रॉग जानवरों की दोस्ती के लिए आभारी था और उसने अपना तरीका बदलने का फैसला किया। उस दिन से, ग्रॉग एक दयालु और उदार दानव बन गया। उन्होंने दूसरों की मदद करने के लिए अपने आकार का उपयोग किया, जैसे जानवरों के लिए रास्ते साफ करने के लिए भारी पत्थर उठाना। उन्होंने किसी भी खतरे को दूर करने के लिए अपनी ताकत का उपयोग करके जंगल को नुकसान से बचाने में भी मदद की। जानवर और ग्रॉग करीबी दोस्त बने रहे और उनकी दोस्ती से उन सभी को खुशी और आनंद मिला जो उन्हें जानते थे।",
             "current_page_summary_hindi": "अब सर्दियों के लिए आभारी, बड़ा व्यक्ति अपने बगीचे में खिलते पेड़ को देखकर आश्चर्यचकित होकर अपनी खिड़की से बाहर देखता है। वह जल्दी से नीचे जाता है और उस छोटे लड़के की ओर बढ़ता है जिसकी उसने देखभाल की थी, लेकिन उसे यह देखकर आश्चर्य होता है कि बच्चे के हाथों और पैरों पर दो नाखूनों के निशान हैं, जो दर्शाते हैं कि बच्चे को प्यार से चोट लगी है, न कि नुकसान से।"
         },
         "vocab": {
@@ -1032,25 +1032,25 @@
                 "part_of_text": "the Spring asleep",
                 "significance": "This phrase is a metaphorical expression that refers to the cyclical nature of life and death. In many cultures, including ancient Greek and Roman traditions, spring was seen as a time of renewal and rebirth.",
                 "improve_understanding_of_text": "For Hindi-speaking people from India, this phrase may evoke associations with the Hindu festival of Holi, which celebrates the arrival of spring and the triumph of good over evil.",
-                "part_of_text_hindi": "वसंत सोया हुआ है",
-                "significance_hindi": "यह वाक्यांश बात करने का एक तरीका है जो किसी और का वर्णन करने के लिए एक चीज़ का उपयोग करता है। यह जीवन और मृत्यु के प्रतिरूप के दोहराव के बारे में बात करता है। पुराने यूनानी और रोमन समाजों सहित कई समाजों में वसंत को एक ऐसी अवधि के रूप में देखा जाता था जब चीजें नई शुरू होती हैं और नए जीवन की शुरुआत होती है।",
-                "improve_understanding_of_text_hindi": "भारत में हिंदी बोलने वालों के लिए यह वाक्यांश उन्हें हिंदू उत्सव होली की याद दिला सकता है। होली एक ऐसा त्योहार है जो वसंत की शुरुआत का प्रतीक है और बुराई पर अच्छाई की जीत का प्रतीक है।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "यह वाक्यांश किसी और के बारे में बात करने का एक तरीका है जो किसी और के बारे में बात करने के लिए किसी और के बारे में बात करता है। यह जीवन और मृत्यु की पुनरावृत्ति पर चर्चा करता है। प्राचीन यूनानी और रोमन समाजों सहित कई समाजों में वसंत को एक ऐसे समय के रूप में देखा जाता था जब चीजें नई शुरुआत करती हैं और नए जीवन की शुरुआत होती है।",
+                "improve_understanding_of_text_hindi": "यह वाक्यांश हिंदी भाषी लोगों को हिंदू त्योहार होली की याद दिला सकता है। होली एक ऐसा उत्सव है जो वसंत की शुरुआत का प्रतीक है और बुराई पर अच्छाई की जीत का प्रतीक है।"
             },
             {
                 "part_of_text": "the little boy he had loved",
                 "significance": "This line suggests that the giant has a paternal or affectionate relationship with the child. In some cultures, giants are depicted as benevolent figures who care for children.",
                 "improve_understanding_of_text": "For Hindi-speaking people from India, this line may remind them of stories like 'Jabbar' (a famous Indian folktale about a giant who befriends a young boy) or the character of Goliath in Hindu mythology.",
-                "part_of_text_hindi": "उस छोटे लड़के से जिसे वह प्यार करता था",
-                "significance_hindi": "इस वाक्य का अर्थ यह है कि राक्षस का बच्चे के साथ पिता जैसा या प्यार भरा संबंध है। कुछ समाजों में, दानवों को अक्सर दयालु पात्रों के रूप में दिखाया जाता है जो बच्चों की देखभाल करते हैं।",
-                "improve_understanding_of_text_hindi": "भारत से हिंदी बोलने वाले लोगों के लिए, यह वाक्य 'जब्बार' (एक बड़े दैत्य के बारे में एक प्रसिद्ध भारतीय लोक कहानी जो एक छोटे लड़के से दोस्ती करती है) या हिंदू पौराणिक कथाओं के गोलियत के चरित्र की कहानियाँ मन में ला सकता है।"
+                "part_of_text_hindi": "वह छोटा लड़का जिसे वह प्यार करता था।",
+                "significance_hindi": "इस वाक्य का अर्थ है कि राक्षस का अपने बच्चे के साथ एक पिता के प्यार के समान प्रेमपूर्ण संबंध है। कुछ समाजों में, राक्षसों को अक्सर दयालु पात्रों के रूप में चित्रित किया जाता है जो बच्चों की देखभाल करते हैं।",
+                "improve_understanding_of_text_hindi": "भारत में हिंदी बोलने वाले लोगों के लिए, वाक्यांश \"जब राक्षस क्रोधित था\" एक राक्षस के बारे में प्रसिद्ध भारतीय लोककथा की यादें जगा सकता है, जिसे \"जब्बार\" के रूप में जाना जाता है, जो एक छोटे लड़के से दोस्ती करता है। वैकल्पिक रूप से, यह उन्हें गोलियत चरित्र के बारे में हिंदू पौराणिक कथाओं की कहानियों की भी याद दिला सकता है।"
             },
             {
                 "part_of_text": "the prints of two nails",
                 "significance": "This detail is likely a reference to the crucifixion of Jesus Christ, which is a significant event in Christian theology. However, it's worth noting that this story may not be familiar to all Hindi-speaking people from India.",
                 "improve_understanding_of_text": "For non-native speakers, especially those from Hindu or Buddhist backgrounds, this detail may require additional context about the story's Christian origins and significance.",
-                "part_of_text_hindi": "दो कीलों के निशान",
-                "significance_hindi": "यह बिंदु यीशु मसीह के सूली पर चढ़ाए जाने के प्रति एक संकेत हो सकता है, जो ईसाई मान्यता में एक प्रमुख घटना है। हालाँकि, यह याद रखना महत्वपूर्ण है कि यह कहानी भारत में हिंदी बोलने वाले सभी लोगों के लिए प्रसिद्ध न भी हो।",
-                "improve_understanding_of_text_hindi": "उन लोगों के लिए जो मूल वक्ता नहीं हैं, विशेष रूप से हिंदू या बौद्ध संस्कृतियों के लोग, कहानी की ईसाई जड़ों और महत्व के बारे में अधिक पृष्ठभूमि जानकारी प्रदान करना सहायक हो सकता है।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "यह बिंदु यीशु मसीह को सूली पर चढ़ाए जाने का संकेत हो सकता है, जो ईसाई आस्था में एक महत्वपूर्ण घटना है। हालाँकि, यह याद रखना महत्वपूर्ण है कि यह कहानी भारत में सभी हिंदी भाषी लोगों के बीच अच्छी तरह से ज्ञात नहीं हो सकती है।",
+                "improve_understanding_of_text_hindi": "उन लोगों के लिए जो मूल वक्ता नहीं हैं, विशेष रूप से हिंदू या बौद्ध संस्कृतियों के लोगों के लिए, कहानी की ईसाई जड़ों और महत्व के बारे में अधिक पृष्ठभूमि जानकारी प्रदान करना सहायक हो सकता है।"
             }
         ],
         "grade5": "One winter morning, he looked out his window as he was getting dressed. He didn't hate winter anymore because he knew it was just spring sleeping and that flowers were resting. Suddenly, he rubbed his eyes in wonder and kept looking. It was a really amazing sight. In the farthest corner of the garden, there was a tree covered with beautiful white blossoms. Its branches were all golden, and silver fruit hung down from them. Underneath it stood the little boy he had loved. [Illustration: THE LITTLE BOY HE HAD LOVED] Downstairs ran the Giant in great joy, and out into the garden. He quickly crossed the grass and came near to the child. When he got really close, his face turned red with anger, and he said, 'Who has hurt you?' For on the palms of the child's hands were two nail prints, and there were also two nail prints on the little feet. 'Who has hurt you?' cried the Giant; 'tell me so I can take my big sword and kill him.' But the child said, 'No!' And then he explained, 'These are the marks of love.'"
@@ -1075,12 +1075,12 @@
             }
         },
         "num_chars": 378,
-        "chapter": "Unknown Chapter",
+        "chapter": "Chapter 2.",
         "summary": {
             "page_summary_so_far": "A story about a giant who has been selfish and isolated from nature.",
             "current_page_summary": "The giant, moved by the child's words, kneels down in respect. The child invites the giant to visit their garden, Paradise, but tragically, the giant is found dead under a tree covered in white blossoms after the children play there that afternoon.",
-            "page_summary_so_far_hindi": "किसी ज़माने में ग्रोग नाम का एक दैत्य था। ग्रॉग अविश्वसनीय रूप से बड़ा था, इतना बड़ा कि वह आसानी से एक कदम के साथ एक घर को कुचल सकता था। वह पहाड़ों में एक विशाल, अलग-थलग गुफा में रहता था। ग्रॉग बहुत स्वार्थी था और केवल अपनी परवाह करता था। उन्होंने अपने अधिकांश दिन अकेले बिताए, जो कुछ भी वे चाहते थे वह खाया और जो कुछ भी उन्हें अच्छा लगा वह किया। एक दिन, पास के जंगल के जानवरों के एक समूह ने ग्रॉग से मिलने का फैसला किया। उन्होंने उसके विशाल आकार के बारे में सुना था और उसे खुद से देखना चाहते थे। जानवर उत्सुक और थोड़े से डरे हुए थे, लेकिन वे बहुत मिलनसार भी थे। वे ग्रोग के साथ साझा करने के लिए शहद, जामुन और अन्य स्वादिष्ट व्यंजन के उपहार लाए। जब जानवर गुफा में पहुँचे, तो वे ग्रॉग के आकार से चकित हो गए। उन्होंने पहले कभी भी उसके जैसा कुछ नहीं देखा था। ग्रॉग जानवरों को देखकर हैरान रह गया और यह जानने के लिए उत्सुक था कि वे उससे मिलने क्यों आए हैं। जानवरों ने बताया कि उन्होंने उसके आकार के बारे में सुना था और खुद उससे मिलना चाहते थे। वे उसके साथ साझा करने के लिए उपहार भी लाए। ग्रॉग जानवरों के दयालु भाव से प्रभावित हुआ और उसने अपना भोजन उनके साथ बाँट लेने का फैसला किया। वह किसी की संगत में इतना खुश था कि वह अपने स्वार्थी तरीकों को भूल गया। जानवर और ग्रॉग जल्द ही अच्छे दोस्त बन गए और उन्होंने कई खुशनुमा दिन साथ बिताए। वे पहाड़ों की खोज करते थे, खेल खेलते थे और कहानियाँ साझा करते थे। जैसे-जैसे समय बीतता गया, ग्रोग को एहसास हुआ कि उसे स्वार्थी और अलग-थलग रहने की आवश्यकता नहीं है। उन्होंने सीखा कि दोस्तों के होने और दूसरों के साथ साझा करना जीवन को और अधिक सुखद बनाता है। जानवरों ने उसे सिखाया कि भले ही वह अलग था, फिर भी वह उनके समुदाय का हिस्सा बन सकता है। ग्रॉग जानवरों की दोस्ती के लिए आभारी था और उसने अपने तरीके बदलने का फैसला किया। उस दिन से, ग्रॉग एक दयालु और सौम्य दानव बन गया। उन्होंने अपनी गुफा में रहना जारी रखा, लेकिन वे अब अकेले नहीं थे। उन्होंने अपने दिनों को अपने पशु मित्रों के साथ पहाड़ों की खोज में और जरूरतमंद लोगों की मदद में बिताया। ग्रॉग को पता चला कि सबसे बड़े और सबसे शक्तिशाली प्राणी भी बदल सकते हैं और दयालु और करुणामय बन सकते हैं।",
-            "current_page_summary_hindi": "दैत्य, बच्चे के शब्दों से प्रभावित होकर, सम्मान के भाव से नीचे झुक जाता है। बच्चा तब दैत्य को आने और अपने बगीचे को देखने के लिए आमंत्रित करता है, जिसे वे स्वर्ग कहते हैं। दुर्भाग्य से, दोपहर में बच्चों के वहां खेलने के बाद, विशालकाय को एक पेड़ के नीचे मृत पाया जाता है जिस पर सफेद फूल खिले हुए हैं।"
+            "page_summary_so_far_hindi": "किसी ज़माने में ग्रोग नामक एक दैत्य था। ग्रॉग अविश्वसनीय रूप से बड़ा था, इतना बड़ा कि वह आसानी से एक कदम के साथ एक घर को कुचल सकता था। वे पहाड़ों में गहरी, एक विशाल, अलग-थलग गुफा में रहते थे। ग्रॉग बहुत स्वार्थी था और केवल अपनी परवाह करता था। उन्होंने अपने अधिकांश दिन अकेले बिताए, जो कुछ भी वे चाहते थे उसे खाया और जो कुछ भी वे चाहते थे वह किया। एक दिन, पास के जंगल के जानवरों के एक समूह ने ग्रॉग से मिलने का फैसला किया। उन्होंने उसके विशाल आकार के बारे में सुना था और उसे खुद से देखना चाहते थे। जानवर उत्सुक और थोड़े डरपोक थे, लेकिन वे बहुत मिलनसार भी थे। वे ग्रोग के साथ साझा करने के लिए शहद, जामुन और अन्य स्वादिष्ट व्यंजन के उपहार लाए। जब जानवर गुफा में पहुँचे, तो वे ग्रॉग के आकार से चकित थे। उन्होंने पहले कभी भी उसके जैसा कुछ नहीं देखा था। ग्रॉग जानवरों को देखकर हैरान रह गया और यह जानने के लिए उत्सुक था कि वे उससे मिलने क्यों आए हैं। जानवरों ने बताया कि उन्होंने उसके आकार के बारे में सुना था और खुद उससे मिलना चाहते थे। वे उसके साथ साझा करने के लिए उपहार भी लाए। ग्रॉग जानवरों के दयालु भाव से प्रभावित हुआ और उसने अपना भोजन उनके साथ बाँट लेने का फैसला किया। वह किसी की संगत में इतना खुश था कि वह अपने स्वार्थी तरीकों को भूल गया। जानवर और ग्रॉग जल्द ही अच्छे दोस्त बन गए और उन्होंने कई खुशनुमा दिन साथ बिताए। वे पहाड़ों की खोज करते थे, खेल खेलते थे और कहानियाँ साझा करते थे। जैसे-जैसे समय बीतता गया, ग्रोग को एहसास हुआ कि उसे स्वार्थी और अलग-थलग रहने की आवश्यकता नहीं है। उन्होंने सीखा कि दोस्त होने और दूसरों के साथ साझा करना जीवन को और अधिक सुखद बनाता है। जानवरों ने उसे सिखाया कि भले ही वह अलग था, फिर भी वह उनके समुदाय का हिस्सा बन सकता है। ग्रॉग जानवरों की दोस्ती के लिए आभारी था और उसने अपने तरीके बदलने का फैसला किया। उस दिन से, ग्रॉग एक दयालु और सौम्य दानव बन गया। उन्होंने अपनी गुफा में रहना जारी रखा, लेकिन वे अब अकेले नहीं थे। उन्होंने अपने दिनों को अपने पशु मित्रों के साथ पहाड़ों की खोज में और जरूरतमंद लोगों की मदद में बिताया। ग्रॉग को पता चला कि सबसे बड़े और सबसे शक्तिशाली प्राणी भी बदल सकते हैं और दयालु और करुणामय बन सकते हैं।",
+            "current_page_summary_hindi": "दैत्य, बच्चे के शब्दों से प्रभावित होकर, सम्मान के भाव से नीचे झुक जाता है। बच्चा तब दैत्य को अपने बगीचे को देखने के लिए आमंत्रित करता है, जिसे वे स्वर्ग कहते हैं। दुर्भाग्य से, दोपहर में बच्चों के वहां खेलने के बाद, विशालकाय को एक पेड़ के नीचे मृत पाया जाता है जिस पर सफेद फूल खिले हुए हैं।"
         },
         "vocab": {
             "novel_words": [
@@ -1127,25 +1127,25 @@
                 "part_of_text": "Paradise",
                 "significance": "In Hindu mythology and culture, 'Svarga' or 'Paradise' refers to a heavenly realm where souls go after death. It is often depicted as a beautiful garden with lush greenery and flowers.",
                 "improve_understanding_of_text": "This reference adds cultural context to the story, highlighting the idea of a paradise-like setting that is significant in Hindu mythology.",
-                "part_of_text_hindi": "स्वर्ग",
-                "significance_hindi": "हिंदू मान्यताओं और परंपराओं में, 'स्वर्ग' या 'स्वर्ग' एक दिव्य स्थान है जहाँ आत्माएँ या आत्माएँ मृत्यु के बाद चली जाती हैं। इस स्थान को आम तौर पर जीवंत हरियाली और रंगीन फूलों से भरे एक सुंदर बगीचे के रूप में कल्पना किया जाता है।",
-                "improve_understanding_of_text_hindi": "यह संदर्भ कहानी की सांस्कृतिक पृष्ठभूमि को दर्शाता है, जो हिंदू पौराणिक कथाओं में महत्वपूर्ण स्वर्ग के समान पर्यावरण की अवधारणा पर जोर देता है।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "हिंदू मान्यताओं और परंपराओं में, 'स्वर्ग' या 'स्वर्गलोक' एक दिव्य स्थान है जहाँ आत्माएँ या आत्माएँ मृत्यु के बाद जाती हैं। इस स्थान की कल्पना अक्सर एक सुंदर बगीचे के रूप में की जाती है जो जीवंत हरियाली और रंगीन फूलों से भरा हुआ है।",
+                "improve_understanding_of_text_hindi": "यह संदर्भ कहानी की सांस्कृतिक पृष्ठभूमि पर प्रकाश डालता है, जो हिंदू पौराणिक कथाओं में पाए जाने वाले एक दिव्य वातावरण की अवधारणा पर जोर देता है।"
             },
             {
                 "part_of_text": "Garden",
                 "significance": "In many cultures, gardens are considered sacred spaces that symbolize growth, renewal, and spiritual connection. In this context, the giant's garden represents a place of beauty and wonder.",
                 "improve_understanding_of_text": "This reference adds cultural context to the story, highlighting the idea of a garden as a symbol of beauty and spirituality.",
-                "part_of_text_hindi": "बगीचा",
-                "significance_hindi": "कई समाजों में, बगीचों को विशेष क्षेत्रों के रूप में देखा जाता है जो विकास, पुनर्जन्म और गहरे आध्यात्मिक बंधन का प्रतिनिधित्व करते हैं। इस अर्थ में, राक्षस का बगीचा कुछ सुंदर और विस्मयकारी का प्रतीक है।",
-                "improve_understanding_of_text_hindi": "यह संदर्भ कहानी को सांस्कृतिक अर्थ देता है, जिसमें सुंदरता और आध्यात्मिकता के प्रतिनिधित्व के रूप में बगीचे की अवधारणा पर जोर दिया गया है।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "कई समाजों में, बगीचों को विशेष क्षेत्रों के रूप में देखा जाता है जो विकास, नवीनीकरण और गहरे आध्यात्मिक संबंधों का प्रतीक हैं। इस अर्थ में, राक्षस का उद्यान किसी सुंदर और आश्चर्यजनक चीज़ का प्रतिनिधित्व करता है।",
+                "improve_understanding_of_text_hindi": "यह संदर्भ कहानी को सांस्कृतिक महत्व देता है, जिसमें सुंदरता और आध्यात्मिकता के प्रतिनिधित्व के रूप में उद्यानों की अवधारणा को रेखांकित किया गया है।"
             },
             {
                 "part_of_text": "Giant",
                 "significance": "In European folklore, giants are often depicted as powerful, fearsome creatures. However, in this context, the giant is portrayed as gentle and childlike, challenging traditional notions of giantism.",
                 "improve_understanding_of_text": "This reference adds cultural context to the story, highlighting the idea that giants can be reimagined in a more nuanced and sympathetic way.",
-                "part_of_text_hindi": "दैत्य",
-                "significance_hindi": "यूरोपीय कहानियों में, दैत्यों को आम तौर पर मजबूत और डराने वाले प्राणियों के रूप में दिखाया जाता है। लेकिन इस कहानी में, दैत्य को दयालु और निर्दोष के रूप में दिखाया गया है, जो दैत्य के सामान्य विचार के विपरीत है।",
-                "improve_understanding_of_text_hindi": "यह संदर्भ कहानी को सांस्कृतिक संदर्भ में प्रस्तुत करता है, यह दर्शाता है कि दैत्यों की अवधारणा की व्याख्या अधिक जटिल और समझने योग्य तरीके से की जा सकती है।"
+                "part_of_text_hindi": "",
+                "significance_hindi": "यूरोपीय कहानियों में, राक्षसों को अक्सर शक्तिशाली और डरावने जीवों के रूप में चित्रित किया जाता है। हालांकि, इस कहानी में राक्षस को दयालु और निर्दोष के रूप में चित्रित किया गया है, जो राक्षसों के बारे में सामान्य धारणा से अलग है।",
+                "improve_understanding_of_text_hindi": "यह संदर्भ कहानी को एक सांस्कृतिक संदर्भ में प्रस्तुत करता है, यह दर्शाता है कि राक्षसों की अवधारणा की व्याख्या अधिक जटिल और समझने योग्य तरीके से की जा सकती है।"
             }
         ],
         "grade5": "A giant asked a little boy, 'Who are you?' The giant felt a strange feeling and started to kneel down. He was so surprised by the little boy's bravery. The little boy smiled at the giant and said, 'You let me play in your garden today. Now it's my turn for you to come with me to my garden, which is called Paradise.' When the children went to play in their gardens that afternoon, they found the giant lying on the ground under a tree. He was covered in white flowers."
