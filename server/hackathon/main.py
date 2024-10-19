@@ -221,17 +221,21 @@ def pre_process():
         for filename in files:
 
             book = read_json_file(output)
-            previous_summary = ""
 
+            previous_summary = ""
             tqdm_book = tqdm(book)
             for page_no in tqdm_book:
                 tqdm_book.set_description("pageNo :" + page_no)
+
                 page = book[page_no]
-                summarize_by_page(
+
+                summaries = summarize_by_page(
                     page_no=page_no, previous_summary=previous_summary, page=page
                 )
+                previous_summary = summaries["previous_summary"]
+
                 fetch_vocab_by_page(page_no=page_no, page=page)
-                if int(page_no) % 10 == 0:
+                if int(page_no) % 5 == 0:
                     write_json_file(output, book)
 
         write_json_file(output, book)
@@ -262,12 +266,16 @@ def summarize_by_page(page_no, previous_summary, page):
 
     try:
         result = invoke_simple_chain(prompt, input_data=input_data)
-        previous_summary = (
-            result.strip().replace("\n", "").replace("{", "").replace("}", "")
-        )
         json_object = json.loads(result)
+
+        if page_no == "1":
+            previous_summary = json_object["current_page_summary"]
+        else:
+            previous_summary = json_object["page_summary_so_far"]
+
         page["summary"] = json_object
 
+        return {"summary": page["summary"], "previous_summary": previous_summary}
     except Exception as ex:
         print("error " + str(ex))
 
@@ -301,17 +309,6 @@ def cleanse_text_of_unwanted_characters(page):
         .replace("\u201c", "“")
         .replace("\u201d", "”")
     )
-
-    if "summary" in page:
-        page["summary"] = (
-            page["summary"]
-            .replace("\u2019", "'")
-            .replace("\u2018", "'")
-            .replace("\u2013", "-")
-            .replace("\u00a9", "©")
-            .replace("\u201c", "“")
-            .replace("\u201d", "”")
-        )
 
     for para in page["paragraphs"]:
         if para in page["paragraphs"]:
