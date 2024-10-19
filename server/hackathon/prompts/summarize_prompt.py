@@ -25,6 +25,9 @@ SUMMARIZE_FIRST_PAGE_PROMPT = """
 
         INSTRUCTIONS: Summarize the first page of the book in less than 100 words. Do not miss the key details, events and characters.
 
+        FORMAT INSTRUCTIONS: Make a JSON object with the following format:        
+        {format_instructions}
+
         FIRST PAGE 1:\"""
         {content}
         \""" 
@@ -42,6 +45,9 @@ SUMMARIZE_OTHER_PAGE_PROMPT = """
         {previous_summary}
         \""" 
         
+        FORMAT INSTRUCTIONS: Make a JSON object with the following format:
+        {format_instructions}
+
         CURRENT PAGE: \"""
         {content}
         \""" 
@@ -56,10 +62,8 @@ SUMMARIZE_FIRST_PAGE_PROMPT_GRADE_10 = """
 
         INSTRUCTIONS: Summarize the first page of the book in no more than 300 words.
 
-        FORMAT INSTRUCTIONS: 
-        { "page_summary_so_far" :"..."
-          "current_page_summary": "..."
-        }
+        FORMAT INSTRUCTIONS: Make a JSON object with the following format:
+        {format_instructions}
 
         FIRST PAGE 1:\"""
         {first_page}
@@ -78,13 +82,15 @@ SUMMARIZE_OTHER_PAGE_PROMPT_GRADE_10 = """
         {previous_page_summary}
         \""" 
         
-        FORMAT INSTRUCTIONS: 
-       { "page_summary_so_far" :"..."
-         "current_page_summary": "..."
-        }
+        FORMAT INSTRUCTIONS: Make a JSON object with the following format:
+        {format_instructions}
 
         CURRENT PAGE: \"""
         {current_page}
         \""" 
 
         """
+
+SUMMARY_FORMAT = """{ "page_summary_so_far" :"..."
+          "current_page_summary": "..."
+        }"""
