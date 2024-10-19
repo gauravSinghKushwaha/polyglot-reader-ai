@@ -11,28 +11,6 @@ export const QuesAndAns: React.FC = () => {
     const [activeQues, setActiveQues] = useState<any>({});
     const { selectionText, setSelectionText, defaultLanguage, currentPage, bookInfo } = usePolyglotReader();
 
-    const handleSelectionChange = () => {
-        const selection = window.getSelection();
-        if (selection) {
-            const selectedText = selection.toString();
-            if (selectedText) {
-                setSelectionText(selectedText);
-            } else {
-                setSelectionText('');
-            }
-        }
-    };
-
-    useEffect(() => {
-        // Listen for the selectionchange event
-        document.addEventListener('selectionchange', handleSelectionChange);
-
-        // Cleanup the event listener on component unmount
-        return () => {
-            document.removeEventListener('selectionchange', handleSelectionChange);
-        };
-    }, []);
-
     useEffect(() => {
         setTimeout(() => {
             if (chatAreaRef.current) {
@@ -62,9 +40,15 @@ export const QuesAndAns: React.FC = () => {
         return translation;
     };
 
-
     const setAnswer = (id: string, text: string, query: string) => {
         apiService.askQuery(text, query, (chunk) => {
+            chatList[id] = { ...chatList[id], ans: extractText(chunk) };
+            setChatList({ ...chatList });
+        });
+    }
+
+    const setSelectionInfo = (id: string, text: string, content: string) => {
+        apiService.getSelectionInfo(text, content, defaultLanguage, (chunk) => {
             chatList[id] = { ...chatList[id], ans: extractText(chunk) };
             setChatList({ ...chatList });
         });
@@ -78,7 +62,11 @@ export const QuesAndAns: React.FC = () => {
         setSelectionText('');
         setQues('');
         const text = bookInfo?.pages[currentPage].content || "";
-        setAnswer(id, text, query);
+        if(action === "ask_question") {
+            setAnswer(id, text, query);
+        } else {
+            setSelectionInfo(id, selectionText || "", text);
+        }
     }
 
     const isWord = selectionText?.split(" ")?.length == 1;
@@ -108,10 +96,11 @@ export const QuesAndAns: React.FC = () => {
                     !!selectionText?.length && (
                         <div className="selected-text">
                             <div className="text">{selectionText}</div>
-                            {/* <div className="controls">
-                                <button onClick={() => setMessage('translate', selectionText)}>Translate</button>
-                                <button onClick={() => setMessage(isWord ? 'vocab' : 'build_summary', selectionText)}>{isWord ? 'Vocab' : 'Comprehension'}</button>
-                            </div> */}
+                            <div className="controls">
+                                <button onClick={() => setMessage('get_info', selectionText)}>Explain</button>
+                                {/* <button onClick={() => setMessage('translate', selectionText)}>Translate</button> */}
+                                {/* <button onClick={() => setMessage(isWord ? 'vocab' : 'build_summary', selectionText)}>{isWord ? 'Vocab' : 'Comprehension'}</button> */}
+                            </div>
                         </div>
                     )
                 }

@@ -45,6 +45,10 @@ class ApiService {
   async askQuery(text: string, query: string, callback: (chunk: string) => void): Promise<any> {
     return await baseService.streamPost("/ask", { text, query }, callback);
   }
+
+  async getSelectionInfo(text: string, content: string, target_language: string, callback: (chunk: string) => void): Promise<any> {
+    return await baseService.streamPost("/selected_text", { text, content, target_language }, callback);
+  }
 }
 
 // Export a single instance of ApiService

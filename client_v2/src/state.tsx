@@ -14,6 +14,8 @@ interface PolyglotReaderContextType {
     setBookInfo: React.Dispatch<React.SetStateAction<IBookInfo | undefined>>;
     selectionText: string | undefined; 
     setSelectionText: React.Dispatch<React.SetStateAction<string | undefined>>;
+    selectedTab: any; 
+    setSelectedTab: React.Dispatch<React.SetStateAction<any>>;
 }
 
 const PolyglotReaderContext = createContext<PolyglotReaderContextType | undefined>(undefined);
@@ -25,6 +27,7 @@ export const PolyglotReaderProvider: React.FC<{ children: ReactNode }> = ({ chil
     const [currentPage, setCurrentPage] = useState(0);
     const [bookInfo, setBookInfo] = useState<IBookInfo>();
     const [selectionText, setSelectionText] = useState<string>();
+    const [selectedTab, setSelectedTab] = useState<any>();
 
     useEffect(() => {
         apiService.getBookList().then((response) => setBookList(response));
@@ -39,11 +42,13 @@ export const PolyglotReaderProvider: React.FC<{ children: ReactNode }> = ({ chil
                 currentPage,
                 bookInfo,
                 selectionText,
+                selectedTab,
                 setCurrentBook,
                 setDefaultLanguage,
                 setCurrentPage,
                 setBookInfo,
-                setSelectionText
+                setSelectionText,
+                setSelectedTab
             }}
         >
             {children}
