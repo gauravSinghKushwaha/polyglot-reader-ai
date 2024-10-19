@@ -119,6 +119,7 @@ def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
 
     return pages
 
+
 def translate_page_wise(pages, file_path):
     print("Translating page wise.....")
     translated_pages = pages
@@ -130,7 +131,9 @@ def translate_page_wise(pages, file_path):
             translated_paragraphs = {}
             for paragraph_number in tqdm(paragraphs):
                 paragraph = paragraphs[paragraph_number]
-                output = translate_text_with_sarvam("en-IN", "hi-IN", paragraph['content'])
+                output = translate_text_with_sarvam(
+                    "en-IN", "hi-IN", paragraph["content"]
+                )
                 # output = translate_text_with_llama("English", "Spanish", paragraph['content'])
                 translated_paragraphs[paragraph_number] = output
 
@@ -145,12 +148,13 @@ def translate_page_wise(pages, file_path):
 
     return translated_pages
 
+
 @retry(
-        exceptions=(Exception),
-        delay=1,
-        backoff=2,
-        max_delay=4,
-        tries=1,
+    exceptions=(Exception),
+    delay=1,
+    backoff=2,
+    max_delay=4,
+    tries=1,
 )
 def translate_text_with_sarvam(
     source_language, target_language, text, speaker_gender="Male", mode="formal"
@@ -195,6 +199,7 @@ def translate_text_with_llama(source_language, target_language, text):
     result = invoke_simple_chain(prompt, input_data={"content": text})
     return result
 
+
 def pre_process():
     input_folder = get_absolute_path("server/hackathon/books")
     output_folder = get_absolute_path("server/hackathon/output")
@@ -207,7 +212,6 @@ def pre_process():
 
         book_structure = extract_chapters_and_paragraphs(input_folder + "/" + filename)
         pages = paginate_book(book_structure)
-
 
         output = output_folder + "/" + filename.replace("txt", "json")
         write_json_file(output_folder + "/" + filename.replace("txt", "json"), pages)
@@ -321,7 +325,6 @@ def cleanse_text_of_unwanted_characters(page):
                 .replace("\u201c", "“")
                 .replace("\u201d", "”")
             )
-
 
 
 pre_process()
