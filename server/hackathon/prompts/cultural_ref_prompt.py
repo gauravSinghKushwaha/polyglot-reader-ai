@@ -17,7 +17,7 @@ FORMAT INSTRUCTIONS: Make a JSON object with the following format:
 
 CURRENT PAGE: 
 \"""
-{current_page}
+{content}
 \"""
 
 """

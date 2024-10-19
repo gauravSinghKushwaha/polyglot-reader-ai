@@ -1,15 +1,16 @@
 import os
-from typing import Optional
 
 import uvicorn
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from sse_starlette import EventSourceResponse
 
+from hackathon.models.server.selected_text_dto import SelectedTextDto
 from hackathon.services.query_responder_service import QueryResponderService
-from hackathon.models.server.query_request_dto import AnswerQueryDto
+from hackathon.models.server.query_request_dto import QueryResponderDto
 from hackathon.models.server.translate_request_dto import TranslateTextDto
 from hackathon.services.language_translation_service import LanguageTranslationService
+from hackathon.services.selected_text_service import SelectedTextService
 from hackathon.utils.response_builder import ResponseBuilder
 from hackathon.utils.file_reader import read_json_file
 
@@ -20,6 +21,7 @@ SUPPORTED_LANGUAGES = ["English", "German", "French", "Italian", "Portuguese", "
 app = FastAPI()
 translation_service = LanguageTranslationService()
 query_service = QueryResponderService()
+selected_text_service = SelectedTextService()
 
 app.add_middleware(
     CORSMiddleware,
@@ -32,15 +34,11 @@ def get_absolute_path(relative_path):
     return os.path.abspath(relative_path)
 
 @app.get("/book")
-async def book(book_id: str, language: Optional[str] = None):
+async def book(book_id: str):
     if not book_id:
         raise HTTPException(status_code=400, detail="Book ID required")
     try:
-        if language is not None:
-            book_file_json = "/" + book_id + "-" + language + ".json"
-        else:
-            book_file_json = "/" + book_id + ".json"
-
+        book_file_json = "/" + book_id + ".json"
         result = read_json_file(get_absolute_path("hackathon/output") + book_file_json)
         return ResponseBuilder.build_response(result)
     except Exception as ex:
@@ -62,6 +60,32 @@ def translate_text_stream(req: TranslateTextDto):
             yield "data: AI could not respond to your request.\n\n"
 
     return EventSourceResponse(event_generator(), media_type="text/event-stream")
+
+@app.post("/ask")
+def ask_question_stream(req: QueryResponderDto):
+    if not req.text or not req.query:
+        raise HTTPException(status_code=400, detail="Text and query are required")
+
+    def event_generator():
+        try:
+            # Call the function that generates your answer, yielding results as they are produced
+            for answer_chunk in query_service.respond_to_query_stream(req.text, req.query):
+                yield answer_chunk.answer # SSE format
+        except Exception as ex:
+            print("Exception: ", ex)
+            yield "data: AI could not respond to your request.\n\n"
+
+    return EventSourceResponse(event_generator(), media_type="text/event-stream")
+
+@app.post("/selected_text")
+def selected_text(req: SelectedTextDto):
+    if not req.text or not req.content or not req.target_language:
+        raise HTTPException(status_code=400, detail="Text, content and language are required")
+    try:
+        return selected_text_service.generate_meta_data(req.text, req.content, req.target_language)
+    except Exception as ex:
+        print("Exception: ", ex)
+        return "data: AI could not respond to your request.\n\n"
 
 
 # @app.post("/summary")
@@ -93,28 +117,6 @@ def translate_text_stream(req: TranslateTextDto):
 #             yield "data: AI could not respond to your request.\n\n"
 #
 #     return EventSourceResponse(event_generator(), media_type="text/event-stream")
-
-@app.post("/ask")
-def ask_question_stream(req: AnswerQueryDto):
-    if not req.text or not req.query:
-        raise HTTPException(status_code=400, detail="Text and query are required")
-
-    def event_generator():
-        try:
-            # Call the function that generates your answer, yielding results as they are produced
-            for answer_chunk in query_service.respond_to_query_stream(req.text, req.query):
-                yield answer_chunk.answer # SSE format
-        except Exception as ex:
-            print("Exception: ", ex)
-            yield "data: AI could not respond to your request.\n\n"
-
-    return EventSourceResponse(event_generator(), media_type="text/event-stream")
-
-# def prepare_sse_output(result) -> str:
-#     json_output = result.model_dump(mode='json')
-#     stringified_json = json.dumps(json_output)  # SSE format
-#     print(stringified_json)
-#     return stringified_json
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
