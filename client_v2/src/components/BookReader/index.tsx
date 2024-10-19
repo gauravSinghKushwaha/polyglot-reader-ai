@@ -39,9 +39,9 @@ export const BookReader = ({ onBack }: any) => {
         if(selectedTab?.label) {
             switch(selectedTab.label) {
                 case 'Summary':
-                    return bookInfo?.pages?.[currentPage]?.cultural_ref?.map((item) => item.part_of_text.toLowerCase()) || [];
+                    return bookInfo?.pages?.[currentPage]?.cultural_ref?.map((item) => item.part_of_text) || [];
                 case 'Vocabulary':
-                    return bookInfo?.pages?.[currentPage]?.vocab?.map((item) => item.word.toLowerCase()) || [];
+                    return bookInfo?.pages?.[currentPage]?.vocab?.map((item) => item.word) || [];
             }
         }
 
@@ -150,13 +150,13 @@ export const BookReader = ({ onBack }: any) => {
     };
 
     return (
-        <Box className="book-reader">
+        <Box className={`book-reader ${selectedTab?.label}`}>
             <Box className="header">
                 <Button onClick={onBack}>Go back to Library</Button>
-                <Box>
+                {/* <Box> */}
                     <h3>{currentBook.name}</h3>
-                    <sub><i>- by {currentBook.author}</i></sub>
-                </Box>
+                    {/* <sub><i>- by {currentBook.author}</i></sub> */}
+                {/* </Box> */}
                 <select value={defaultLanguage} onChange={(e) => {
                     setDefaultLanguage(e.currentTarget.value);
                 }}>
@@ -167,15 +167,15 @@ export const BookReader = ({ onBack }: any) => {
             <Box className="body">
                 <Box className="book-content">
                     <Box className="chapter-name">
-                        <b>{bookInfo.pages[currentPage].chapter}</b>
-                        (<small><i><a onClick={() => speak()}>Read page</a></i></small>)
+                        {bookInfo.pages[currentPage].chapter}
+                        {/* (<small><i><a onClick={() => speak()}>Read page</a></i></small>) */}
                     </Box>
                     
                     <Box className="para-list">
                         {bookInfo.pages[currentPage].paragraphs.map((item, paraIndex) => {
                             let content = item.content.replaceAll("\n", " ");
                             searchWords.forEach((item) => {
-                                content = content.toLowerCase().split(item).join(`<span class="highlight">${item}</span>`);
+                                content = content.split(item).join(`<span class="highlight">${item}</span>`);
                             });
                             return (
                                 <Box key={paraIndex} className="para">

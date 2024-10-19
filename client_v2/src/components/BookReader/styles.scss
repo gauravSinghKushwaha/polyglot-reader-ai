@@ -43,8 +43,9 @@
             text-align: center;
         }
 
-        h3 {
+        & > h3 {
             margin: 0;
+            font-size: 18px;
         }
     }
 
@@ -61,7 +62,12 @@
         .chapter-name {
             margin-top: 16px;
             text-align: center;
-            text-decoration: underline;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.25px;
+            color: rgb(14, 16, 26);
+            font-feature-settings: "ss01", "cv05", "cv07", "cv08";
+            font-weight: 700;
         }
 
         .para-list {
@@ -73,6 +79,7 @@
             height: inherit;
             padding: 16px 48px;
             box-sizing: border-box;
+            padding-bottom: 65px;
         }
 
         .para {
@@ -81,7 +88,6 @@
 
             span {
                 user-select: text;
-                cursor: pointer;
                 font-size: 18px;
                 line-height: 32px;
                 letter-spacing: 0.25px;
@@ -91,7 +97,7 @@
                 font-feature-settings: "ss01", "cv05", "cv07", "cv08";
 
                 &.highlight {
-                    border-bottom: 2px solid rgb(140, 41, 233);
+                    border-bottom: 2px solid #FFB619;
                 }
 
                 &::selection {
@@ -149,4 +155,10 @@
             cursor: pointer;
         }
     }
+
+    &.Vocabulary {
+        .highlight.highlight.highlight {
+            border-bottom: 2px solid #027e6f;
+        }       
+    } 
 }

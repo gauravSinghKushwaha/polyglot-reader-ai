@@ -20,7 +20,7 @@ export const QuesAndAns: React.FC = () => {
                 });
             }
         }, 200)
-    }, [chatList]);
+    }, [chatList, selectionText]);
 
     const extractText = (data: any) => {
         let translation: string = ""; // Object to store the latest version of each word
@@ -77,7 +77,7 @@ export const QuesAndAns: React.FC = () => {
                 {
                     Object.values(chatList).map((item: any) => (
                         <>
-                            <div className="selected-text">
+                            <div className="selected-text right">
                                 <div className="text">{item.query}</div>
                                 {/* <div className="controls">
                                     <button>{item.action}</button>
@@ -94,7 +94,7 @@ export const QuesAndAns: React.FC = () => {
                 }
                 {
                     !!selectionText?.length && (
-                        <div className="selected-text">
+                        <div className="selected-text right">
                             <div className="text">{selectionText}</div>
                             <div className="controls">
                                 <button onClick={() => setMessage('get_info', selectionText)}>Explain</button>
