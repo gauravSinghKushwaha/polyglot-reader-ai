@@ -23,7 +23,7 @@ export const BookReader = ({ onBack }: any) => {
 
     useEffect(() => {
         if (currentBook?.isbn) {
-            apiService.getBookInfo("pg766").then((res) => {
+            apiService.getBookInfo("pg"+currentBook.isbn).then((res) => {
                 setBookInfo(res);
             });
         }

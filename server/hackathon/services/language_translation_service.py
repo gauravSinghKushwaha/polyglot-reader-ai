@@ -1,9 +1,9 @@
 from langchain_core.output_parsers import PydanticOutputParser
 import ast
 
-from app.utils.ai_helper import create_prompt_template, invoke_prompt, stream_answer
-from app.models.ai.translation import TranslationModel
-from app.prompts.translate_prompt import TRANSLATE_PROMPT
+from hackathon.utils.ai_helper import create_prompt_template, invoke_prompt, stream_answer
+from hackathon.models.ai.translation import TranslationModel
+from hackathon.prompts.translate_prompt import TRANSLATE_PROMPT
 
 class LanguageTranslationService:
 

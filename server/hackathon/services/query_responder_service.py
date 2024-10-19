@@ -1,8 +1,8 @@
 from langchain_core.output_parsers import PydanticOutputParser
 
-from app.models.ai.query_responser import QueryResponderModel
-from app.prompts.query_responser_prompt import QUERY_RESPONDER_PROMPT
-from app.utils.ai_helper import create_prompt_template, invoke_prompt, stream_answer
+from hackathon.models.ai.query_responser import QueryResponderModel
+from hackathon.prompts.query_responser_prompt import QUERY_RESPONDER_PROMPT
+from hackathon.utils.ai_helper import create_prompt_template, invoke_prompt, stream_answer
 
 
 class QueryResponderService:
