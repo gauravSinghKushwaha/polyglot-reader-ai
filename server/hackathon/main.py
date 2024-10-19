@@ -233,7 +233,8 @@ def pre_process():
                 summaries = summarize_by_page(
                     page_no=page_no, previous_summary=previous_summary, page=page
                 )
-                previous_summary = summaries["previous_summary"]
+                if "previous_summary" in summaries:
+                    previous_summary = summaries["previous_summary"]
 
                 fetch_vocab_by_page(page=page)
 
