@@ -1,4 +1,5 @@
 import os
+import os.path
 import re
 from time import sleep
 from retry import retry
@@ -270,7 +271,7 @@ def translate_text_with_sarvam(
     url = "https://api.sarvam.ai/translate"
     headers = {
         "Content-Type": "application/json",
-        "api-subscription-key": "570d57a1-a198-4db6-9193-dfa7cb875ccc",
+        "api-subscription-key": "ae86d0e7-7c49-4896-84fb-2c63ce35f2c9",
     }
 
     payload = {
@@ -287,7 +288,7 @@ def translate_text_with_sarvam(
 
     if response.status_code == 429:
         print("429 error received, waiting for 1 minute")
-        sleep(10)
+        sleep(60)
         response = requests.post(url, headers=headers, data=json.dumps(payload))
 
     if response.status_code == 200:
@@ -329,12 +330,13 @@ def pre_process():
         for page_no in tqdm_book:
             tqdm_book.set_description("pageNo :" + page_no)
             page = book[page_no]
+            cleanse_text_of_unwanted_characters(page=page)
 
             if "summary" not in page:
                 summaries = summarize_by_page(
                     page_no=page_no, previous_summary=previous_summary, page=page
                 )
-                if "previous_summary" in summaries:
+                if summaries and "previous_summary" in summaries:
                     previous_summary = summaries["previous_summary"]
 
             if "vocab" not in page:
@@ -354,13 +356,10 @@ def pre_process():
 
             translate_cultural_ref(page=page)
 
-            if int(page_no) % 10 == 0:
+            if int(page_no) % 5 == 0:
                 write_json_file(output, book)
 
         write_json_file(output, book)
-
-
-import os.path
 
 
 def extract_pages_paragraphs_from_txt_file(input_folder, output_folder, filename):
@@ -372,7 +371,6 @@ def extract_pages_paragraphs_from_txt_file(input_folder, output_folder, filename
 
 
 def summarize_by_page(page_no, previous_summary, page):
-    cleanse_text_of_unwanted_characters(page=page)
     page_content = page["content"]
     input_data = {"content": page_content}
     if page_no == "1":
