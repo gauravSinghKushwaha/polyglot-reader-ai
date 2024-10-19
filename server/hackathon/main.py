@@ -10,69 +10,9 @@ from utils.ai_helper import invoke_simple_chain
 from utils.file_writer import write_json_file
 from tqdm import tqdm
 
-
 def read_book(file_path: str) -> str:
     with open(file_path, "r", encoding="utf-8") as file:
         return file.read()
-
-
-def extract_main_content(content: str) -> Dict:
-    prompt = PromptTemplate(
-        input_variables=["content"],
-        template="""
-        Given the following book content, please extract the following information:
-        1. Book name
-        2. Author
-        3. Total number of pages
-        4. Start page of the main content (excluding preface, table of contents, etc.)
-        5. End page of the main content (excluding appendices, index, etc.)
-        6. The main content of the book (excluding front matter and back matter)
-
-        Book content:
-        {content}
-
-        Provide the information in the following JSON format:
-        {{
-            "name": "Book name",
-            "author": "Author name",
-            "num_pages": total number of pages,
-            "book_start_page": start page number,
-            "book_end_page": end page number,
-            "main_content": "The extracted main content of the book"
-        }}
-        """,
-    )
-
-    result = invoke_simple_chain(prompt=prompt, input_data={"content": content})
-
-    # Parse the JSON result
-    try:
-        info = json.loads(result)
-        print(result)
-        print(info)
-    except Exception as ex:
-        print("Error parsing LLM output. Using default values.")
-        info = {
-            "name": "",
-            "author": "",
-            "num_pages": len(content.split("\n")) // 30, 
-            "book_start_page": 1,
-            "book_end_page": len(content.split("\n")) // 30,
-            "main_content": content,
-        }
-
-    return info
-
-
-def process_paragraphs(content: str) -> List[Dict]:
-    paragraphs = content.split("\n\n")
-    processed_paragraphs = []
-
-    for idx, para in enumerate(paragraphs):
-        processed_paragraphs.append({"content": para, "num_characters": len(para)})
-
-    return processed_paragraphs
-
 
 def identify_chapters(paragraphs: List[Dict]) -> List[Dict]:
     chapter_prompt = PromptTemplate(
@@ -106,48 +46,6 @@ def identify_chapters(paragraphs: List[Dict]) -> List[Dict]:
 
     return paragraphs
 
-
-def process_book(file_path: str) -> Dict:
-    content = read_book(file_path)
-    book_info = extract_main_content(content)
-
-    paragraphs = process_paragraphs(book_info["main_content"])
-    paragraphs_with_chapters = identify_chapters(paragraphs)
-
-    return {
-        "isbn": "",  # You might want to add ISBN extraction logic
-        "name": book_info["name"],
-        "author": book_info["author"],
-        "num_pages": book_info["num_pages"],
-        "book_start_page": book_info["book_start_page"],
-        "book_end_page": book_info["book_end_page"],
-        "content": book_info["main_content"],
-        "paragraphs": {str(i): para for i, para in enumerate(paragraphs_with_chapters)},
-    }
-
-
-def main():
-    input_folder = "/Users/gauravsinghkushwaha/Documents/code/splashlearn/polyglot-reader-ai/server/hackathon/books"
-    output_folder = "/Users/gauravsinghkushwaha/Documents/code/splashlearn/polyglot-reader-ai/server/hackathon/output"
-
-    if not os.path.exists(output_folder):
-        os.makedirs(output_folder)
-
-    files = tqdm(os.listdir(input_folder))
-    for filename in files:
-        files.set_description(filename)
-        if filename.endswith(".txt"):
-            file_path = os.path.join(input_folder, filename)
-            book_data = process_book(file_path)
-
-            output_file = os.path.join(output_folder, f"{filename[:-4]}.json")
-            with open(output_file, "w", encoding="utf-8") as f:
-                json.dump(book_data, f, ensure_ascii=False, indent=2)
-
-            print(f"Processed {filename} and saved to {output_file}")
-
-
-
 def extract_chapters_and_paragraphs(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
@@ -180,39 +78,6 @@ def extract_chapters_and_paragraphs(file_path):
 
         json.dumps(result, indent=4)
     return result
-
-def group_paragraphs_by_chapter(book_json):
-    grouped_paragraphs = {}
-
-    for paragraph_entry in book_json['paragraphs']:
-        for index, paragraph_details in paragraph_entry.items():
-            chapter = paragraph_details['chapter']
-            paragraph_index = int(index)
-
-            if chapter not in grouped_paragraphs:
-                grouped_paragraphs[chapter] = []
-
-            grouped_paragraphs[chapter].append(paragraph_index)
-
-    return grouped_paragraphs
-
-def get_content_by_chapter_json(book_json):
-    content_by_chapter = {}
-
-    for paragraph_entry in book_json['paragraphs']:
-        for _, paragraph_details in paragraph_entry.items():
-            chapter = paragraph_details['chapter']
-            paragraph_content = paragraph_details['content']
-
-            # Ensure a new list is created for each chapter
-            if chapter not in content_by_chapter:
-                content_by_chapter[chapter] = []
-
-            # Append each paragraph separately to preserve distinction
-            content_by_chapter[chapter].append(paragraph_content)
-
-    return content_by_chapter
-
 
 def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
     pages = {}
@@ -248,7 +113,6 @@ def paginate_book(book_json, word_limit=1200, next_paragraph_padding=80):
 
     return pages
 
-
 def pre_process():
     input_folder = "/Users/sarthakbaweja/projects/polyglot-reader-ai/server/hackathon/books"
     output_folder = "/Users/sarthakbaweja/projects/polyglot-reader-ai/server/hackathon/output"
@@ -266,18 +130,6 @@ def pre_process():
 
         # translate_page_wise(pages)
         # summarize_page_wise(pages)
-
-pre_process()
-
-
-
-
-
-
-
-
-
-
 
 def translate_page_wise(pages):
     print("Translating chapter wise")
@@ -317,11 +169,10 @@ def translate_text_with_llama(source_language, target_language, text):
     prompt = PromptTemplate(
         input_variables=["content"],
         template="""
-            
+
         """,
     )
-    result = invoke_simple_chain(prompt, input_data={ "content": text})
+    result = invoke_simple_chain(prompt, input_data={"content": text})
     return result
 
-# if __name__ == "__main__":
-    #main()
+pre_process()
