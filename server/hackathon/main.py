@@ -6,7 +6,7 @@ from langchain.prompts import PromptTemplate
 import requests
 import json
 
-from hackathon.prompts.cultural_ref_prompt import CULTURAL_CONTEXT_PROMPT
+from prompts.cultural_ref_prompt import CULTURAL_CONTEXT_PROMPT
 from utils.file_reader import read_json_file
 
 from utils.ai_helper import invoke_simple_chain
