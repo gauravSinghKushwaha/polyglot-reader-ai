@@ -492,7 +492,61 @@
             }
         },
         "num_chars": 1087,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "The story begins with Mr. Dursley sitting in his office, concentrating on drills while oblivious to the owls flying by outside. He has a normal morning, yelling at people and making phone calls, until he encounters a group of people in cloaks who make him uneasy.",
+            "current_page_summary": "Mr. Dursley continues his day, feeling good until lunchtime when he walks across the road to buy a bun from the bakery. On his way back, he catches snippets of conversation between the group of people in cloaks, which makes him even more uncomfortable and angry."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "swoop ing",
+                    "meaning": "to fly or move quickly downwards",
+                    "synonym": "dive",
+                    "usage": "The birds swooped down to catch the fish.",
+                    "meaning_in_context": "Mr. Dursley didn't see the owls swooping past in broad daylight."
+                },
+                {
+                    "word": "open- mouthed",
+                    "meaning": "completely surprised or amazed",
+                    "synonym": "stunned",
+                    "usage": "The crowd was open-mouthed as they watched the incredible feat.",
+                    "meaning_in_context": "They pointed and gazed open-mouthed as owl after owl sped overhead."
+                },
+                {
+                    "word": "collecting tin",
+                    "meaning": "a container used to collect money or donations",
+                    "synonym": "canister",
+                    "usage": "The charity organization had a collecting tin at the entrance.",
+                    "meaning_in_context": "He couldn't see a single collecting tin among the people in cloaks."
+                },
+                {
+                    "word": "whispering excitedly",
+                    "meaning": "speaking in a low, urgent voice with great enthusiasm",
+                    "synonym": "talking quietly and enthusiastically",
+                    "usage": "The children were whispering excitedly as they waited for the surprise party.",
+                    "meaning_in_context": "This bunch were whispering excitedly, too, and he couldn't see a single collecting tin."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "people down in the street did; they pointed and gazed open-mouthed as owl after owl sped overhead.",
+                "significance": "The mention of owls flying during broad daylight is a reference to European folklore, where owls are often associated with witchcraft and magic. This context might be unfamiliar to Hindi-speaking people from India, who may not have a similar cultural association with owls.",
+                "improve_understanding_of_text": "This detail adds a layer of depth to the story, hinting at a possible magical or supernatural element in the narrative."
+            },
+            {
+                "part_of_text": "He'd forgotten all about the people in cloaks until he passed a group of them next to the baker's.",
+                "significance": "The mention of people in cloaks is a reference to traditional European attire, often associated with wizards, witches, or other supernatural beings. In Indian culture, cloaks are not typically worn as part of everyday attire.",
+                "improve_understanding_of_text": "This detail helps to establish the fantastical elements of the story and sets the tone for the magical world that Harry Potter will inhabit."
+            },
+            {
+                "part_of_text": "He didn't know why, but they made him uneasy. This bunch were whispering excitedly, too, and he couldn't see a single collecting tin.",
+                "significance": "The mention of people in cloaks whispering excitedly suggests that they may be discussing something important or sinister. In Indian culture, whispers are often associated with gossip or rumors, but in this context, it implies something more ominous.",
+                "improve_understanding_of_text": "This detail creates tension and foreboding, hinting at the darker aspects of the story to come."
+            }
+        ],
+        "grade5": "Mr. Dursley sat with his back to the window in his office on the ninth floor. If he hadn't, he might have had trouble focusing on his work that morning. He didn't see any owls flying by in broad daylight, but people outside saw them and were amazed. Most of them had never seen an owl before, even at night. Mr. Dursley had a normal day without seeing any owls. He yelled at five different people, made important phone calls, and shouted some more. He was happy until lunchtime, when he decided to walk across the road to buy a bun from the bakery. On his way back, he saw a group of people in cloaks next to the baker's shop. They were whispering excitedly and didn't have any collecting tins. It made Mr. Dursley feel uneasy. He didn't know why, but they bothered him. When he passed them again, clutching a doughnut in a bag, he heard some of what they were saying."
     },
     "7": {
         "content": "\"The Potters, that's right, that's what I heard yes, their son, Harry\"\nMr. Dursley stopped dead. Fear flooded him. He looked back at the\nwhisperers as if he wanted to say something to them, but thought better\nof it.\nHe dashed back across the road, hurried up to his office, snapped at his\nsecretary not to disturb him, seized his telephone, and had almost\nfinished dialing his home number when he changed his mind. He put the\nreceiver back down and stroked his mustache, thinking... no, he was\nbeing stupid. Potter wasn't such an unusual name. He was sure there were\nlots of people called Potter who had a son called Harry. Come to think\nof it, he wasn't even sure his nephew was called Harry. He'd never even\nseen the boy. It might have been Harvey. Or Harold. There was no point\nin worrying Mrs. Dursley; she always got so upset at any mention of her\nsister. He didn't blame her -- if he'd had a sister like that... but all\nthe same, those people in cloaks...\n",
@@ -511,7 +565,66 @@
             }
         },
         "num_chars": 959,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "Mr. Dursley sits in his office, concentrating on drills while oblivious to the owls flying by outside. He has a normal morning until he encounters a group of people in cloaks who make him uneasy.",
+            "current_page_summary": "Mr. Dursley's unease escalates when he hears someone mention 'The Potters' and their son, Harry. He becomes fearful and hastily retreats to his office, trying to rationalize the situation by thinking that the name 'Potter' is common and that he may have misremembered his nephew's name. However, the encounter with the mysterious individuals in cloaks leaves him unsettled and preoccupied."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "whisperers",
+                    "meaning": "people who are talking quietly and secretly about something",
+                    "synonym": "conspirators",
+                    "usage": "The whisperers in the dark alley were discussing their plans to rob the bank.",
+                    "meaning_in_context": "In this context, 'whisperers' refers to the mysterious people in cloaks that Mr. Dursley is worried about."
+                },
+                {
+                    "word": "snapped",
+                    "meaning": "to speak or shout suddenly and sharply",
+                    "synonym": "snarled",
+                    "usage": "She snapped at her brother for teasing her.",
+                    "meaning_in_context": "In this context, 'snapped' means Mr. Dursley's tone was sharp and short when he told his secretary not to disturb him."
+                },
+                {
+                    "word": "stroked",
+                    "meaning": "to move your hand gently over something, often in a soothing way",
+                    "synonym": "petted",
+                    "usage": "He stroked the cat's fur to calm it down.",
+                    "meaning_in_context": "In this context, 'stroked' means Mr. Dursley was thinking and trying to calm himself down."
+                },
+                {
+                    "word": "conspirators",
+                    "meaning": "people who are secretly plotting or planning something",
+                    "synonym": "whisperers",
+                    "usage": "The police were investigating a group of conspirators who were suspected of stealing millions.",
+                    "meaning_in_context": "In this context, 'conspirators' refers to the mysterious people in cloaks that Mr. Dursley is worried about."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "The Potters",
+                "significance": "The mention of 'Potters' is likely a reference to the wizarding family, the Potters, who are central to the story. This name may be unfamiliar to Hindi-speaking people from India, as it is not a common surname in Indian culture.",
+                "improve_understanding_of_text": "This name helps establish the context of the story and introduces the main characters. Understanding this reference can help non-native speakers better grasp the plot and characters."
+            },
+            {
+                "part_of_text": "Harry",
+                "significance": "The name 'Harry' is a common English given name, but it may not be familiar to Hindi-speaking people from India. This name is significant in the context of the story as it refers to Harry Potter, the main protagonist.",
+                "improve_understanding_of_text": "This name helps establish the identity of the main character and provides context for the reader. Understanding this reference can help non-native speakers better understand the plot and characters."
+            },
+            {
+                "part_of_text": "Dursley",
+                "significance": "The surname 'Dursley' is an English surname that may not be familiar to Hindi-speaking people from India. This name is significant in the context of the story as it refers to the main antagonist, Mr. Dursley.",
+                "improve_understanding_of_text": "This name helps establish the identity of the main antagonist and provides context for the reader. Understanding this reference can help non-native speakers better understand the plot and characters."
+            },
+            {
+                "part_of_text": "cloaks",
+                "significance": "The mention of 'cloaks' is likely a reference to the wizarding world, where wizards wear cloaks as part of their attire. This concept may be unfamiliar to Hindi-speaking people from India, who may not have a similar cultural or historical context.",
+                "improve_understanding_of_text": "This reference helps establish the fantastical elements of the story and provides context for the reader. Understanding this reference can help non-native speakers better grasp the world-building and plot."
+            }
+        ],
+        "grade5": "Mr. Dursley stopped dead with fear. He looked back at the people whispering to him and wanted to say something, but didn't. He quickly ran across the road, went into his office, told his secretary not to bother him, picked up the phone, and was about to call his home number when he changed his mind. He put the receiver down and thought for a moment. Maybe Harry Potter wasn't such an unusual name after all. It's possible that lots of people have a son named Harry. In fact, he wasn't even sure if his nephew was called Harry. He had never seen the boy before. Maybe it was Harvey or Harold instead. There was no point in worrying about Mrs. Dursley; she gets upset whenever someone mentions her sister. Mr. Dursley didn't blame her - if he had a sister like that, he would be worried too! But still, those people in black robes were mysterious and scary."
     },
     "8": {
         "content": "He found it a lot harder to concentrate on drills that afternoon and\nwhen he left the building at five o'clock, he was still so worried that\nhe walked straight into someone just outside the door.\n\"Sorry,\" he grunted, as the tiny old man stumbled and almost fell. It\nwas a few seconds before Mr. Dursley realized that the man was wearing a\nviolet cloak. He didn't seem at all upset at being almost knocked to the\nground. On the contrary, his face split into a wide smile and he said in\na squeaky voice that made passersby stare, \"Don't be sorry, my dear sir,\nfor nothing could upset me today! Rejoice, for You-Know-Who has gone at\nlast! Even Muggles like yourself should be celebrating, this happy,\nhappy day!\"\nAnd the old man hugged Mr. Dursley around the middle and walked off.\nMr. Dursley stood rooted to the spot. He had been hugged by a complete\nstranger. He also thought he had been called a Muggle, whatever that\nwas. He was rattled. He hurried to his car and set off for home, hoping\nhe was imagining things, which he had never hoped before, because he\ndidn't approve of imagination.\n",
@@ -534,7 +647,52 @@
             }
         },
         "num_chars": 1087,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "Mr. Dursley sits in his office, concentrating on drills while oblivious to the owls flying by outside. He has a normal morning until he encounters a group of people in cloaks who make him uneasy.",
+            "current_page_summary": "Mr. Dursley's concentration is disrupted after leaving the building at five o'clock due to his lingering worry. He walks into someone, causing them to stumble and almost fall. The person, wearing a violet cloak, surprises Mr. Dursley with an upbeat reaction, declaring that 'You-Know-Who has gone at last!' and hugs him in celebration. Mr. Dursley is left feeling rattled and confused, unsure what just happened."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "Muggles",
+                    "meaning": "Non-magical people, especially in the context of the Harry Potter series.",
+                    "synonym": "Muggles",
+                    "usage": "He also thought he had been called a Muggle, whatever that was.",
+                    "meaning_in_context": "Mr. Dursley was unfamiliar with the term 'Muggles' and didn't know what it meant."
+                },
+                {
+                    "word": "You-Know-Who",
+                    "meaning": "A figure of great importance in the Harry Potter series, often referred to as Lord Voldemort.",
+                    "synonym": "He Who Must Not Be Named",
+                    "usage": "Rejoice, for You-Know-Who has gone at last!",
+                    "meaning_in_context": "The old man's excitement and joy were due to the departure of a significant figure in the wizarding world."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "You-Know-Who",
+                "significance": "A reference to Lord Voldemort, the main antagonist in J.K. Rowling's Harry Potter series. He is a dark wizard who seeks to dominate the wizarding world.",
+                "improve_understanding_of_text": "For non-native speakers, understanding the significance of You-Know-Who can help them grasp the context of the story and its themes of good vs. evil."
+            },
+            {
+                "part_of_text": "Muggles",
+                "significance": "A term used in the Harry Potter series to refer to non-magical people, often used in a derogatory manner by wizards. It is also a reference to Muggles as a cultural phenomenon in the wizarding world.",
+                "improve_understanding_of_text": "For Hindi-speaking readers, understanding the concept of Muggles can help them appreciate the cultural nuances and satire present in the series."
+            },
+            {
+                "part_of_text": "violet cloak",
+                "significance": "A distinctive color associated with the wizarding world and its magical creatures. The violet cloak is also a symbol of the old man's connection to the wizarding community.",
+                "improve_understanding_of_text": "For non-native speakers, recognizing the significance of the violet cloak can help them better understand the character's identity and role in the story."
+            },
+            {
+                "part_of_text": "Rejoice",
+                "significance": "A phrase that reflects the old man's enthusiasm and joy at the news of You-Know-Who's defeat. It is also a cultural reference to the idea of rejoicing at good news.",
+                "improve_understanding_of_text": "For Hindi-speaking readers, understanding the significance of Rejoice can help them appreciate the character's emotional state and the cultural context in which it is expressed."
+            }
+        ],
+        "grade5": "He found it hard to focus on drills that afternoon. When he left the building at 5 o'clock, he was still worried and walked into someone outside the door."
     },
     "9": {
         "content": "As he pulled into the driveway of number four, the first thing he saw --\nand it didn't improve his mood -- was the tabby cat he'd spotted that\nmorning. It was now sitting on his garden wall. He was sure it was the\nsame one; it had the same markings around its eyes.\n\"Shoo!\" said Mr. Dursley loudly. The cat didn't move. It just gave him a\nstern look. Was this normal cat behavior? Mr. Dursley wondered. Trying\nto pull himself together, he let himself into the house. He was still\ndetermined not to mention anything to his wife.\nMrs. Dursley had had a nice, normal day. She told him over dinner all\nabout Mrs. Next Door's problems with her daughter and how Dudley had\nlearned a new word (\"Won't!\"). Mr. Dursley tried to act normally. When\nDudley had been put to bed, he went into the living room in time to\ncatch the last report on the evening news:\n",
@@ -553,7 +711,47 @@
             }
         },
         "num_chars": 846,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "Mr. Dursley sits in his office, concentrating on drills while oblivious to the owls flying by outside. He has a normal morning until he encounters a group of people in cloaks who make him uneasy.",
+            "current_page_summary": "As Mr. Dursley pulls into his driveway, he's greeted by an unsettling sight: a tabby cat sitting on his garden wall, which he had spotted earlier that morning. The cat doesn't budge when Mr. Dursley shooes it away, giving him a stern look. Despite the unusual behavior, Mr. Dursley tries to maintain his composure and avoids mentioning anything to his wife, Mrs. Dursley, who has had a normal day discussing her neighbor's problems with her daughter. The evening news report catches Mr. Dursley's attention, but its content is not specified."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "tabby",
+                    "meaning": "a type of cat with a distinctive coat pattern characterized by small, rounded spots or stripes",
+                    "synonym": "spotted cat",
+                    "usage": "The tabby cat was sitting on the garden wall, its eyes gleaming in the fading light.",
+                    "meaning_in_context": "In this context, 'tabby' refers to a specific type of cat with distinctive markings"
+                },
+                {
+                    "word": "Won't!",
+                    "meaning": "an expression used to convey refusal or insistence",
+                    "synonym": "No way!",
+                    "usage": "Dudley had learned the word 'Won't!' from his sister, and he was determined to use it correctly.",
+                    "meaning_in_context": "In this context, 'Won't!' is a novel word used by Dudley to express his refusal or insistence"
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "number four",
+                "significance": "This is a reference to a specific house number, which might be unfamiliar to Hindi-speaking people from India. In many Indian cities, house numbers are not standardized and may vary depending on the region or community.",
+                "improve_understanding_of_text": "To better understand the context of this page, it would be helpful for non-native speakers to know that house numbers in Western countries, like the UK, are often assigned sequentially (e.g., 1, 2, 3, etc.)"
+            },
+            {
+                "part_of_text": "Mrs. Next Door",
+                "significance": "This is a reference to a specific person or character, which might be unfamiliar to Hindi-speaking people from India. The name 'Next Door' also implies a neighborly relationship, which may not be as common in Indian cultures.",
+                "improve_understanding_of_text": "To better understand the context of this page, it would be helpful for non-native speakers to know that the character of Mrs. Next Door is an important part of the story and her interactions with the Dursley family will likely influence the plot"
+            },
+            {
+                "part_of_text": "Won't!",
+                "significance": "This is a reference to a specific word or phrase, which might be unfamiliar to Hindi-speaking people from India. The use of this word also implies that Dudley has learned something new and important.",
+                "improve_understanding_of_text": "To better understand the context of this page, it would be helpful for non-native speakers to know that 'Won't!' is a common phrase used in English to express refusal or disagreement"
+            }
+        ],
+        "grade5": "When he pulled into his driveway at number four, Mr. Dursley saw something that made him feel worse. The tabby cat he had seen earlier was sitting on his garden wall. It looked exactly like the one he had seen that morning. 'Shoo!' Mr. Dursley shouted loudly. But the cat didn't move. Instead, it gave him a stern look. Was this normal for a cat? Mr. Dursley wondered. He tried to calm down and went inside the house. He wasn't going to tell his wife about the strange cat. Mrs. Dursley had had a nice day. She told her husband all about Mrs. Next Door's problems with her daughter and how their son Dudley learned a new word ('Won't!'). Mr. Dursley tried to act normal. When Dudley went to bed, he went into the living room just in time to hear the last part of the evening news report."
     },
     "10": {
         "content": "\"And finally, bird-watchers everywhere have reported that the nation's\nowls have been behaving very unusually today. Although owls normally\nhunt at night and are hardly ever seen in daylight, there have been\nhundreds of sightings of these birds flying in every direction since\nsunrise. Experts are unable to explain why the owls have suddenly\nchanged their sleeping pattern.\" The newscaster allowed himself a grin.\n\"Most mysterious. And now, over to Jim McGuffin with the weather. Going\nto be any more showers of owls tonight, Jim?\"\n\"Well, Ted,\" said the weatherman, \"I don't know about that, but it's not\nonly the owls that have been acting oddly today. Viewers as far apart as\nKent, Yorkshire, and Dundee have been phoning in to tell me that instead\nof the rain I promised yesterday, they've had a downpour of shooting\nstars! Perhaps people have been celebrating Bonfire Night early -- it's\nnot until next week, folks! But I can promise a wet night tonight.\"\n",
@@ -568,7 +766,49 @@
             }
         },
         "num_chars": 959,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "Mr. Dursley sits in his office, concentrating on drills while oblivious to the owls flying by outside. He has a normal morning until he encounters a group of people in cloaks who make him uneasy.",
+            "current_page_summary": "Experts are unable to explain why the owls have suddenly changed their sleeping pattern. Meanwhile, viewers across the UK have reported seeing shooting stars instead of rain, with some speculating that it might be related to Bonfire Night celebrations."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "bird-watchers",
+                    "meaning": "people who enjoy watching birds",
+                    "synonym": "ornithologists",
+                    "usage": "The bird-watchers at the park were thrilled to spot a rare species.",
+                    "meaning_in_context": "In this context, 'bird-watchers' refers to people who are interested in observing and studying birds."
+                },
+                {
+                    "word": "Bonfire Night",
+                    "meaning": "a traditional British celebration on November 5th where fireworks and bonfires are lit to commemorate the failed Gunpowder Plot of 1605.",
+                    "synonym": "Guy Fawkes Night",
+                    "usage": "The town's Bonfire Night celebrations were cancelled due to bad weather.",
+                    "meaning_in_context": "In this context, 'Bonfire Night' is a specific event that is being referenced as a possible explanation for the unusual weather."
+                },
+                {
+                    "word": "shooting stars",
+                    "meaning": "meteors or falling stars that are visible in the sky",
+                    "synonym": "meteor showers",
+                    "usage": "The shooting stars were a breathtaking sight to behold.",
+                    "meaning_in_context": "In this context, 'shooting stars' refers to the unusual weather phenomenon being discussed."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "Kent, Yorkshire, and Dundee",
+                "significance": "These are locations in the United Kingdom. Kent is a county in southeastern England, Yorkshire is a region in northern England, and Dundee is a city in Scotland.",
+                "improve_understanding_of_text": "Adding this context can help non-native speakers understand that the owls' unusual behavior is not limited to India or other parts of Asia, but also affects regions in Europe."
+            },
+            {
+                "part_of_text": "Bonfire Night",
+                "significance": "Bonfire Night is a traditional celebration in the United Kingdom, typically held on November 5th, to commemorate the failed Gunpowder Plot of 1605. It's a significant cultural event in British history.",
+                "improve_understanding_of_text": "Including this context can help non-native speakers understand the possible reason behind the unusual weather patterns and why people might be celebrating early."
+            }
+        ],
+        "grade5": "Bird-watchers all around the country have seen owls behaving strangely today. Normally, owls hunt at night and are rarely seen during the day. However, since sunrise, there have been many sightings of these birds flying in different directions. Experts can't figure out why the owls changed their sleep patterns so suddenly."
     },
     "11": {
         "content": "Mr. Dursley sat frozen in his armchair. Shooting stars all over Britain?\nOwls flying by daylight? Mysterious people in cloaks all over the place?\nAnd a whisper, a whisper about the Potters...\nMrs. Dursley came into the living room carrying two cups of tea. It was\nno good. He'd have to say something to her. He cleared his throat\nnervously. \"Er -- Petunia, dear -- you haven't heard from your sister\nlately, have you?\"\nAs he had expected, Mrs. Dursley looked shocked and angry. After all,\nthey normally pretended she didn't have a sister.\n\"No,\" she said sharply. \"Why?\"\n\"Funny stuff on the news,\" Mr. Dursley mumbled. \"Owls... shooting\nstars... and there were a lot of funny-looking people in town today...\"\n\"So?\" snapped Mrs. Dursley.\n\"Well, I just thought... maybe... it was something to do with... you\nknow... her crowd.\"\nMrs. Dursley sipped her tea through pursed lips. Mr. Dursley wondered\nwhether he dared tell her he'd heard the name \"Potter.\" He decided he\ndidn't dare. Instead he said, as casually as he could, \"Their son --\nhe'd be about Dudley's age now, wouldn't he?\"\n\"I suppose so,\" said Mrs. Dursley stiffly.\n",
@@ -611,7 +851,69 @@
             }
         },
         "num_chars": 1114,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "Mr. Dursley sits in his office, concentrating on drills while oblivious to the owls flying by outside. He has a normal morning until he encounters a group of people in cloaks who make him uneasy.",
+            "current_page_summary": "Mr. Dursley is now sitting in his armchair, visibly unsettled by the unusual events happening around him. His wife, Mrs. Dursley, enters the room and they engage in a tense conversation about her sister's absence. Mr. Dursley tries to downplay the significance of the strange occurrences, but Mrs. Dursley is clearly agitated. The conversation hints at a long-standing family secret related to the 'Potter' family, which Mr. Dursley is hesitant to discuss further."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "Potters",
+                    "meaning": "referring to the Harry Potter family",
+                    "synonym": "Harry Potter family",
+                    "usage": "In this context, Mr. Dursley is trying to casually mention the name 'Potter' without directly saying it.",
+                    "meaning_in_context": "The mention of 'Potters' implies that Mrs. Dursley knows about Harry's true identity as a wizard."
+                },
+                {
+                    "word": "crowd",
+                    "meaning": "a group of people with similar interests or affiliations",
+                    "synonym": "group, clique",
+                    "usage": "Mr. Dursley is trying to hint that the strange occurrences might be related to Harry's 'crowd' without directly mentioning it.",
+                    "meaning_in_context": "The mention of 'her crowd' suggests that Mrs. Dursley knows about Harry's social circle and is implying that something unusual is happening."
+                },
+                {
+                    "word": "funny-looking",
+                    "meaning": "unusual or strange in appearance",
+                    "synonym": "odd, peculiar",
+                    "usage": "Mr. Dursley describes the people he saw as 'funny-looking' to downplay their significance.",
+                    "meaning_in_context": "The description of people as 'funny-looking' implies that they are unusual and might be connected to Harry's presence."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "Shooting stars all over Britain?",
+                "significance": "This phrase is likely a reference to the British folklore of shooting stars, which are often associated with good luck and magic. In British culture, it's not uncommon for people to make wishes upon seeing shooting stars.",
+                "improve_understanding_of_text": "For non-native speakers, this phrase might be unfamiliar or seem like an unusual way to describe a natural phenomenon. Understanding the cultural significance of shooting stars in Britain can help readers better grasp the tone and atmosphere of the story."
+            },
+            {
+                "part_of_text": "Owls flying by daylight?",
+                "significance": "In British folklore, owls are often associated with wisdom, magic, and mystery. The fact that owls are flying during the day in this context suggests a sense of unease or foreboding.",
+                "improve_understanding_of_text": "For non-native speakers, this phrase might be unfamiliar or seem like an unusual way to describe a natural phenomenon. Understanding the cultural significance of owls in British folklore can help readers better grasp the tone and atmosphere of the story."
+            },
+            {
+                "part_of_text": "Mysterious people in cloaks all over the place?",
+                "significance": "In British culture, people dressed in cloaks are often associated with wizards, witches, or other magical figures. The fact that mysterious people are lurking around suggests a sense of unease or danger.",
+                "improve_understanding_of_text": "For non-native speakers, this phrase might be unfamiliar or seem like an unusual way to describe a situation. Understanding the cultural significance of cloaks in British folklore can help readers better grasp the tone and atmosphere of the story."
+            },
+            {
+                "part_of_text": "The Potters...",
+                "significance": "This surname is likely a reference to the wizarding world created by J.K. Rowling, which is set in Britain. The mention of 'Potters' suggests that the story may be connected to this fictional universe.",
+                "improve_understanding_of_text": "For non-native speakers who are not familiar with the Harry Potter series, this phrase might seem like a random reference. Understanding the significance of the surname 'Potter' in the context of the story can help readers better grasp the plot and themes."
+            },
+            {
+                "part_of_text": "Petunia, dear -- you haven't heard from your sister lately, have you?",
+                "significance": "This line suggests that Mrs. Dursley has a sister who is not well-known or acknowledged by her family. This might be a reference to Lily Potter, the mother of Harry Potter.",
+                "improve_understanding_of_text": "For non-native speakers, this phrase might seem like an unusual way to introduce a character's family dynamics. Understanding the significance of Mrs. Dursley's sister in the context of the story can help readers better grasp the plot and themes."
+            },
+            {
+                "part_of_text": "Their son -- he'd be about Dudley's age now, wouldn't he?",
+                "significance": "This line suggests that Mr. Dursley is aware of the existence of Harry Potter, who is likely to be around the same age as his own son Dudley. This might be a reference to the fact that Harry Potter is an orphan living with the Dursleys.",
+                "improve_understanding_of_text": "For non-native speakers, this phrase might seem like an unusual way to introduce a character's family dynamics. Understanding the significance of Mr. Dursley's knowledge of Harry Potter in the context of the story can help readers better grasp the plot and themes."
+            }
+        ],
+        "grade5": "Mr. Dursley sat in his armchair, looking very surprised. He had heard that shooting stars were happening all over Britain, owls flying during the day, and people wearing strange clothes everywhere. There was even a rumor about the Potters... Mrs. Dursley came into the living room with two cups of tea. Mr. Dursley knew he had to say something to her. He cleared his throat and said, 'Petunia, dear, have you heard from your sister lately?'"
     },
     "12": {
         "content": "\"What's his name again? Howard, isn't it?\"\n\"Harry. Nasty, common name, if you ask me.\"\n\"Oh, yes,\" said Mr. Dursley, his heart sinking horribly. \"Yes, I quite\nagree.\"\nHe didn't say another word on the subject as they went upstairs to bed.\nWhile Mrs. Dursley was in the bathroom, Mr. Dursley crept to the bedroom\nwindow and peered down into the front garden. The cat was still there.\nIt was staring down Privet Drive as though it were waiting for\nsomething.\nWas he imagining things? Could all this have anything to do with the\nPotters? If it did... if it got out that they were related to a pair of\n-- well, he didn't think he could bear it.\n",
@@ -638,7 +940,56 @@
             }
         },
         "num_chars": 635,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "Mr. Dursley sits in his office, concentrating on drills while oblivious to the owls flying by outside. He has a normal morning until he encounters a group of people in cloaks who make him uneasy.",
+            "current_page_summary": "Mr. Dursley is visited by some mysterious individuals who make him uncomfortable, leading to an awkward conversation about his nephew Harry's name. Mr. Dursley becomes increasingly anxious as they discuss the Potters, hinting at a possible connection between them and Harry."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "Nasty",
+                    "meaning": "unpleasant or disagreeable",
+                    "synonym": "repulsive",
+                    "usage": "The name Harry is a nasty, common name if you ask me.",
+                    "meaning_in_context": "Mr. Dursley finds the name Harry to be unpleasant"
+                },
+                {
+                    "word": "Horribly",
+                    "meaning": "in a very bad or frightening way",
+                    "synonym": "terribly",
+                    "usage": "His heart sinking horribly, Mr. Dursley felt a sense of dread.",
+                    "meaning_in_context": "Mr. Dursley's emotional state is one of extreme fear"
+                },
+                {
+                    "word": "Privet",
+                    "meaning": "a surname or a place name (e.g., Privet Drive)",
+                    "synonym": "none",
+                    "usage": "The cat was staring down Privet Drive as though it were waiting for something.",
+                    "meaning_in_context": "The cat is watching the front garden, specifically Privet Drive"
+                },
+                {
+                    "word": "Related",
+                    "meaning": "connected by blood or marriage",
+                    "synonym": "connected",
+                    "usage": "If it did... if it got out that they were related to a pair of wizards.",
+                    "meaning_in_context": "Mr. Dursley is worried about the connection between his family and the Potters"
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "The Potters",
+                "significance": "The mention of 'Potters' is likely a reference to the Potter family, which is significant in the context of the story. The author may be hinting at the idea that Harry Potter's parents were killed by Lord Voldemort, and Mr. Dursley's reluctance to accept this fact is rooted in his own prejudices.",
+                "improve_understanding_of_text": "For non-native speakers, understanding the significance of 'Potters' can help them grasp the central plot of the story and Mr. Dursley's character motivations."
+            },
+            {
+                "part_of_text": "Privet Drive",
+                "significance": "Privet Drive is a significant location in the story as it represents the Dursleys' home and the place where Harry Potter lives with his cruel relatives. The fact that the cat is staring at this location suggests that something important or ominous is happening.",
+                "improve_understanding_of_text": "For non-native speakers, understanding the significance of Privet Drive can help them visualize the setting and understand the character's emotions and motivations."
+            }
+        ],
+        "grade5": "Mr. Dursley was talking about Harry Potter. He said Harry's name sounded mean and common. Mr. Dursley agreed with him. They went to bed without saying anything else about it. While Mrs. Dursley was in the bathroom, Mr. Dursley looked out of the window at the front garden. The cat was still there, looking down at Privet Drive. It seemed like the cat was waiting for something. Was Mr. Dursley imagining things? Could this have anything to do with Harry Potter's family?"
     },
     "13": {
         "content": "The Dursleys got into bed. Mrs. Dursley fell asleep quickly but Mr.\nDursley lay awake, turning it all over in his mind. His last, comforting\nthought before he fell asleep was that even if the Potters were\ninvolved, there was no reason for them to come near him and Mrs.\nDursley. The Potters knew very well what he and Petunia thought about\nthem and their kind.... He couldn't see how he and Petunia could get\nmixed up in anything that might be going on -- he yawned and turned over\n-- it couldn't affect them....\nHow very wrong he was.\nMr. Dursley might have been drifting into an uneasy sleep, but the cat\non the wall outside was showing no sign of sleepiness. It was sitting as\nstill as a statue, its eyes fixed unblinkingly on the far corner of\nPrivet Drive. It didn't so much as quiver when a car door slammed on the\nnext street, nor when two owls swooped overhead. In fact, it was nearly\nmidnight before the cat moved at all.\nA man appeared on the corner the cat had been watching, appeared so\nsuddenly and silently you'd have thought he'd just popped out of the\nground. The cat's tail twitched and its eyes narrowed.\n",
@@ -661,7 +1012,115 @@
             }
         },
         "num_chars": 1119,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "Mr. Dursley sits in his office, concentrating on drills while oblivious to the owls flying by outside. He has a normal morning until he encounters a group of people in cloaks who make him uneasy.",
+            "current_page_summary": "The story takes a turn as Mr. Dursley drifts off to sleep, but is unexpectedly watched by a cat perched on the wall outside his house. The cat remains still and alert, its eyes fixed on a mysterious figure appearing at the corner of Privet Drive. The sudden appearance of the man sends a twitch through the cat's tail and narrows its eyes in suspicion."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "Dursleys",
+                    "meaning": "The surname of the main antagonist family in the story.",
+                    "synonym": "family",
+                    "usage": "The Dursleys got into bed. (Here, 'Dursleys' is used as a proper noun to refer to the specific family.)",
+                    "meaning_in_context": "The Dursleys are the main antagonists of the story."
+                },
+                {
+                    "word": "Petunia",
+                    "meaning": "A female given name that means 'little rose'.",
+                    "synonym": "name",
+                    "usage": "His last, comforting thought before he fell asleep was that even if the Potters were involved, there was no reason for them to come near him and Mrs. Dursley. The Potters knew very well what he and Petunia thought about them and their kind.... (Here, 'Petunia' is used as a name to refer to one of the characters.)",
+                    "meaning_in_context": "Petunia is a character in the story who shares similar views with Mr. Dursley."
+                },
+                {
+                    "word": "Privet",
+                    "meaning": "A surname or a place name that refers to a privet tree.",
+                    "synonym": "name",
+                    "usage": "It was sitting as still as a statue, its eyes fixed unblinkingly on the far corner of Privet Drive. (Here, 'Privet' is used as a place name.)",
+                    "meaning_in_context": "Privet Drive is the street where the story takes place."
+                },
+                {
+                    "word": "swooped",
+                    "meaning": "To fly or move quickly through the air.",
+                    "synonym": "flew",
+                    "usage": "nor when two owls swooped overhead. (Here, 'swooped' is used to describe the movement of the owls.)",
+                    "meaning_in_context": "The owls are flying quickly and moving through the air."
+                },
+                {
+                    "word": "unblinkingly",
+                    "meaning": "Without blinking or showing any sign of relaxation.",
+                    "synonym": "steadily",
+                    "usage": "Its eyes fixed unblinkingly on the far corner of Privet Drive. (Here, 'unblinkingly' is used to describe the cat's focus.)",
+                    "meaning_in_context": "The cat is watching something with complete attention and focus."
+                },
+                {
+                    "word": "statue",
+                    "meaning": "A sculpture or a figure carved from stone or metal.",
+                    "synonym": "figure",
+                    "usage": "It was sitting as still as a statue, its eyes fixed unblinkingly on the far corner of Privet Drive. (Here, 'statue' is used to describe the cat's pose.)",
+                    "meaning_in_context": "The cat is sitting in a frozen and static position."
+                },
+                {
+                    "word": "silently",
+                    "meaning": "Without making any sound.",
+                    "synonym": "quietly",
+                    "usage": "A man appeared on the corner the cat had been watching, appeared so suddenly and silently you'd have thought he'd just popped out of the ground. (Here, 'silently' is used to describe the man's approach.)",
+                    "meaning_in_context": "The man appears without making any noise or disturbance."
+                },
+                {
+                    "word": "popped",
+                    "meaning": "To suddenly appear or come into existence.",
+                    "synonym": "appeared",
+                    "usage": "A man appeared on the corner the cat had been watching, appeared so suddenly and silently you'd have thought he'd just popped out of the ground. (Here, 'popped' is used to describe the sudden appearance of the man.)",
+                    "meaning_in_context": "The man appears suddenly and unexpectedly."
+                },
+                {
+                    "word": "ground",
+                    "meaning": "The surface of the earth.",
+                    "synonym": "earth",
+                    "usage": "A man appeared on the corner the cat had been watching, appeared so suddenly and silently you'd have thought he'd just popped out of the ground. (Here, 'ground' is used to describe the origin of the man's sudden appearance.)",
+                    "meaning_in_context": "The man appears as if he has come from nowhere."
+                },
+                {
+                    "word": "twitched",
+                    "meaning": "To move slightly or jerkly.",
+                    "synonym": "moved",
+                    "usage": "The cat's tail twitched and its eyes narrowed. (Here, 'twitched' is used to describe the cat's reaction.)",
+                    "meaning_in_context": "The cat shows signs of agitation or unease."
+                },
+                {
+                    "word": "narrowed",
+                    "meaning": "To make something narrower or more constricted.",
+                    "synonym": "constricted",
+                    "usage": "Its eyes narrowed. (Here, 'narrowed' is used to describe the cat's reaction.)",
+                    "meaning_in_context": "The cat shows signs of aggression or hostility."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "The Potters knew very well what he and Petunia thought about them and their kind",
+                "significance": "The mention of 'Potters' is likely a reference to the Potter family from the Harry Potter series, which is a popular cultural phenomenon in India. The significance of this context lies in its potential to confuse or mislead non-native speakers who are not familiar with the series.",
+                "improve_understanding_of_text": "For non-native speakers, it would be helpful to provide additional context about the Potter family and their significance in the Harry Potter series."
+            },
+            {
+                "part_of_text": "Privet Drive",
+                "significance": "Privet Drive is a fictional street name that appears in the Harry Potter series. It is likely a reference to a real-life location, possibly inspired by a British or American street name. The significance of this context lies in its potential to confuse non-native speakers who are not familiar with the series.",
+                "improve_understanding_of_text": "For non-native speakers, it would be helpful to provide additional context about the inspiration behind Privet Drive and its significance in the Harry Potter series."
+            },
+            {
+                "part_of_text": "the next street",
+                "significance": "The mention of 'the next street' is a common idiomatic expression in English that refers to an adjacent or nearby location. However, for non-native speakers, it may not be immediately clear what this phrase means without additional context.",
+                "improve_understanding_of_text": "For non-native speakers, it would be helpful to provide additional context about the idiomatic expression 'the next street' and its usage in everyday language."
+            },
+            {
+                "part_of_text": "two owls swooped overhead",
+                "significance": "The mention of owls is a common trope in fantasy fiction, particularly in British literature. However, for non-native speakers who are not familiar with this cultural reference, it may be confusing or unclear what the author means by 'owls swooping overhead'.",
+                "improve_understanding_of_text": "For non-native speakers, it would be helpful to provide additional context about the significance of owls in fantasy fiction and their usage in the Harry Potter series."
+            }
+        ],
+        "grade5": "The Dursleys went to bed. Mrs. Dursley fell asleep fast, but Mr. Dursley couldn't sleep. He was thinking about everything. His last thought before he fell asleep was that the Potters wouldn't come near him and his wife, Petunia. The Potters knew what he and Petunia didn't like about them. Mr. Dursley thought it was impossible for him and Petunia to get involved in anything that might happen. He yawned and turned over - it couldn't affect them, he thought. But he was wrong."
     },
     "14": {
         "content": "Nothing like this man had ever been seen on Privet Drive. He was tall,\nthin, and very old, judging by the silver of his hair and beard, which\nwere both long enough to tuck into his belt. He was wearing long robes,\na purple cloak that swept the ground, and high-heeled, buckled boots.\nHis blue eyes were light, bright, and sparkling behind half-moon\nspectacles and his nose was very long and crooked, as though it had been\nbroken at least twice. This man's name was Albus Dumbledore.\nAlbus Dumbledore didn't seem to realize that he had just arrived in a\nstreet where everything from his name to his boots was unwelcome. He was\nbusy rummaging in his cloak, looking for something. But he did seem to\nrealize he was being watched, because he looked up suddenly at the cat,\nwhich was still staring at him from the other end of the street. For\nsome reason, the sight of the cat seemed to amuse him. He chuckled and\nmuttered, \"I should have known.\"\n",
@@ -676,7 +1135,66 @@
             }
         },
         "num_chars": 940,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "Mr. Dursley sits in his office, concentrating on drills while oblivious to the owls flying by outside. He has a normal morning until he encounters a group of people in cloaks who make him uneasy.",
+            "current_page_summary": "Albus Dumbledore, an old man with silver hair and beard, arrives at Privet Drive in long robes, purple cloak, and high-heeled boots. Despite being out of place, he seems to sense being watched and chuckles upon seeing a cat staring at him from across the street."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "Privet",
+                    "meaning": "a surname or a place name that is not commonly used in American English",
+                    "synonym": "none",
+                    "usage": "Example: 'The family moved to Privet Drive, where they lived for many years.'",
+                    "meaning_in_context": "This is the address of the main character's home in the Harry Potter series."
+                },
+                {
+                    "word": "half-moon",
+                    "meaning": "a type of spectacles with a curved lens that resembles a half-moon shape",
+                    "synonym": "none",
+                    "usage": "Example: 'She put on her half-moon spectacles and began reading the book.'",
+                    "meaning_in_context": "This is the type of glasses worn by Albus Dumbledore in the story."
+                },
+                {
+                    "word": "buckled",
+                    "meaning": "having a strap or buckle, often used to secure something",
+                    "synonym": "fastened",
+                    "usage": "Example: 'The boots were buckled up tight to keep them from coming undone.'",
+                    "meaning_in_context": "This describes the type of boots worn by Albus Dumbledore."
+                },
+                {
+                    "word": "crooked",
+                    "meaning": "not straight or even",
+                    "synonym": "uneven",
+                    "usage": "Example: 'The tree branch was crooked and needed to be trimmed.'",
+                    "meaning_in_context": "This describes the shape of Albus Dumbledore's nose."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "Privet Drive",
+                "significance": "This is a reference to the address of Harry Potter's Muggle (non-magical) relatives, the Dursleys. Privet Drive is significant because it represents the ordinary, non-magical world that Harry is forced to live in while his true identity as a wizard remains hidden.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, understanding the concept of Muggle and the idea of living in a non-magical world can help contextualize Harry's experiences and struggles."
+            },
+            {
+                "part_of_text": "Half-moon spectacles",
+                "significance": "Half-moon spectacles are an old-fashioned type of glasses that were popular in Europe, particularly among intellectuals and academics. This reference adds to the character's eccentricity and old-world charm.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, understanding the cultural significance of half-moon spectacles can help appreciate Dumbledore's unique appearance and personality."
+            },
+            {
+                "part_of_text": "Purple cloak",
+                "significance": "In European folklore and mythology, purple is often associated with royalty, power, and magic. The use of a purple cloak by Dumbledore may indicate his status as a powerful wizard or his connection to the magical world.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, understanding the cultural significance of purple in European folklore can help contextualize Dumbledore's character and motivations."
+            },
+            {
+                "part_of_text": "High-heeled, buckled boots",
+                "significance": "In medieval Europe, high-heeled boots were a symbol of wealth and status. The use of such boots by Dumbledore may indicate his wealth, power, or magical abilities.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, understanding the cultural significance of high-heeled boots in medieval Europe can help appreciate Dumbledore's character and social status."
+            }
+        ],
+        "grade5": "There was no one like this man on Privet Drive. He was very tall and thin, with long silver hair and beard that reached down to his belt. He wore long robes, a purple cloak that touched the ground, and high-heeled boots with buckles. His blue eyes sparkled behind half-moon glasses, and his nose was crooked like it had been broken before. This man's name was Albus Dumbledore. Dumbledore didn't notice that he looked out of place on the street because everything about him seemed strange. He was searching for something in his cloak, but then he saw the cat watching him from across the street. The sight of the cat made him laugh and say, 'I should have known.'"
     },
     "15": {
         "content": "He found what he was looking for in his inside pocket. It seemed to be a\nsilver cigarette lighter. He flicked it open, held it up in the air, and\nclicked it. The nearest street lamp went out with a little pop. He\nclicked it again -- the next lamp flickered into darkness. Twelve times\nhe clicked the Put-Outer, until the only lights left on the whole street\nwere two tiny pinpricks in the distance, which were the eyes of the cat\nwatching him. If anyone looked out of their window now, even beady-eyed\nMrs. Dursley, they wouldn't be able to see anything that was happening\ndown on the pavement. Dumbledore slipped the Put-Outer back inside his\ncloak and set off down the street toward number four, where he sat down\non the wall next to the cat. He didn't look at it, but after a moment he\nspoke to it.\n\"Fancy seeing you here, Professor McGonagall.\"\n",
@@ -691,7 +1209,64 @@
             }
         },
         "num_chars": 847,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "Mr. Dursley sits in his office, concentrating on drills while oblivious to the owls flying by outside. He has a normal morning until he encounters a group of people in cloaks who make him uneasy.",
+            "current_page_summary": "Mr. Dursley finds a silver cigarette lighter, Put-Outer, in his pocket and uses it to extinguish street lamps one by one, plunging the street into darkness. Dumbledore, disguised as a pedestrian, appears at number four and sits down next to a cat, addressing it as Professor McGonagall."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "Put-Outer",
+                    "meaning": "a device that can be used to extinguish or dim lights",
+                    "synonym": "light dimmer",
+                    "usage": "The Put-Outer was a clever device that allowed him to control the streetlights.",
+                    "meaning_in_context": "In this context, the Put-Outer is a magical device used by Dumbledore to extinguish the streetlights"
+                },
+                {
+                    "word": "cloak",
+                    "meaning": "a long piece of fabric worn around the neck or on the body for warmth or concealment",
+                    "synonym": "cape",
+                    "usage": "He slipped his cloak over his shoulders and set off into the night.",
+                    "meaning_in_context": "In this context, Dumbledore's cloak is a magical garment that allows him to move undetected"
+                },
+                {
+                    "word": "beady-eyed",
+                    "meaning": "having large, round eyes that are often associated with being suspicious or untrustworthy",
+                    "synonym": "suspicious-looking",
+                    "usage": "Mrs. Dursley was known for her beady-eyed stare.",
+                    "meaning_in_context": "In this context, Mrs. Dursley's beady-eyed appearance is used to convey her suspicion and distrust"
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "Put-Outer",
+                "significance": "A 'Put-Outer' is a colloquialism used in the wizarding world to refer to a silver cigarette lighter, which is also known as a 'Finger Lighter'. This term might be unfamiliar to Hindi-speaking people from India, who may not be familiar with the cultural context of smoking or the use of such objects in the wizarding world.",
+                "improve_understanding_of_text": "Adding this explanation can help non-native speakers understand the significance of the Put-Outer as a symbol of the wizarding world and its unique culture."
+            },
+            {
+                "part_of_text": "Dumbledore",
+                "significance": "Albus Dumbledore is a fictional character in the Harry Potter series, who is known for his wisdom, magical powers, and leadership. He is a significant figure in the wizarding world and may be unfamiliar to Hindi-speaking people from India.",
+                "improve_understanding_of_text": "Providing information about Dumbledore's character can help non-native speakers understand the context of the story and its relevance to the wizarding world."
+            },
+            {
+                "part_of_text": "McGonagall",
+                "significance": "Minerva McGonagall is a fictional character in the Harry Potter series, who is known for her magical powers, teaching position at Hogwarts, and leadership. She is a significant figure in the wizarding world and may be unfamiliar to Hindi-speaking people from India.",
+                "improve_understanding_of_text": "Providing information about McGonagall's character can help non-native speakers understand the context of the story and its relevance to the wizarding world."
+            },
+            {
+                "part_of_text": "Hogwarts",
+                "significance": "Hogwarts School of Witchcraft and Wizardry is a fictional school in the Harry Potter series, which is known for its magical education and training of young wizards. It may be unfamiliar to Hindi-speaking people from India, who may not be familiar with the cultural context of magic or wizarding schools.",
+                "improve_understanding_of_text": "Adding this explanation can help non-native speakers understand the significance of Hogwarts as a central location in the Harry Potter series and its relevance to the story."
+            },
+            {
+                "part_of_text": "Mrs. Dursley",
+                "significance": "Mrs. Dursley is a fictional character in the Harry Potter series, who is known for her Muggle (non-magical) background and her dislike of magic. She may be unfamiliar to Hindi-speaking people from India, who may not be familiar with the cultural context of non-magical characters or their relationships with magical ones.",
+                "improve_understanding_of_text": "Providing information about Mrs. Dursley's character can help non-native speakers understand the context of the story and its relevance to the wizarding world."
+            }
+        ],
+        "grade5": "He found something in his pocket that looked like a silver lighter. When he opened it and held it up, it clicked. The nearest street lamp went out with a little pop. He clicked it again - the next lamp flickered into darkness. He kept clicking until only two small lights were left on the whole street. Those were the eyes of a cat watching him from far away. If anyone looked out their window now, they wouldn't be able to see what was happening on the pavement. Dumbledore put the lighter back in his cloak and walked down the street towards number four. He sat down next to the cat on the wall. After a moment, he spoke to it."
     },
     "16": {
         "content": "He turned to smile at the tabby, but it had gone. Instead he was smiling\nat a rather severe-looking woman who was wearing square glasses exactly\nthe shape of the markings the cat had had around its eyes. She, too, was\nwearing a cloak, an emerald one. Her black hair was drawn into a tight\nbun. She looked distinctly ruffled.\n\"How did you know it was me?\" she asked.\n\"My dear Professor, I 've never seen a cat sit so stiffly.\"\n\"You'd be stiff if you'd been sitting on a brick wall all day,\" said\nProfessor McGonagall.\n\"All day? When you could have been celebrating? I must have passed a\ndozen feasts and parties on my way here.\"\nProfessor McGonagall sniffed angrily.\n",
@@ -722,7 +1297,66 @@
             }
         },
         "num_chars": 660,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "Mr. Dursley sits in his office, concentrating on drills while oblivious to the owls flying by outside. He has a normal morning until he encounters a group of people in cloaks who make him uneasy.",
+            "current_page_summary": "The scene shifts from Mr. Dursley's office to a meeting with Professor McGonagall, where she is surprised to see a cat sitting stiffly and recognizes the student as Harry Potter. The conversation reveals that the cat had been sitting on a brick wall all day, implying that it was waiting for something or someone. Professor McGonagall seems ruffled and annoyed by the situation, hinting at a deeper tension between them."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "tabby",
+                    "meaning": "a type of domestic cat with a distinctive coat pattern",
+                    "synonym": "domestic cat",
+                    "usage": "The tabby was sleeping on the windowsill.",
+                    "meaning_in_context": "In this context, 'tabby' refers to the cat that had markings around its eyes."
+                },
+                {
+                    "word": "square glasses",
+                    "meaning": "glasses with a rectangular or square shape",
+                    "synonym": "rectangular glasses",
+                    "usage": "She wore her square glasses perched on the end of her nose.",
+                    "meaning_in_context": "In this context, 'square glasses' refers to the glasses worn by Professor McGonagall."
+                },
+                {
+                    "word": "cloak",
+                    "meaning": "a long piece of fabric worn over the shoulders for warmth or as a symbol of status",
+                    "synonym": "cape",
+                    "usage": "He wore a cloak to keep warm on his journey.",
+                    "meaning_in_context": "In this context, 'cloak' refers to the emerald-colored garment worn by Professor McGonagall."
+                },
+                {
+                    "word": "feasts",
+                    "meaning": "large and elaborate meals",
+                    "synonym": "banquets",
+                    "usage": "The king hosted a feast in honor of his guests.",
+                    "meaning_in_context": "In this context, 'feasts' refers to the numerous celebrations Professor McGonagall had attended on her way to the meeting."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "square glasses exactly the shape of the markings the cat had had around its eyes",
+                "significance": "The description of the woman's glasses is a reference to the Hogwarts house system, where each house has its own distinct colors and symbols. The square glasses with markings similar to those on the cat's eyes might be a nod to the Gryffindor house, which values bravery and daring.",
+                "improve_understanding_of_text": "This detail helps non-native speakers understand that the story is set in a magical school (Hogwarts) and that the characters are likely students or professors with distinct personalities and affiliations."
+            },
+            {
+                "part_of_text": "Professor McGonagall",
+                "significance": "Professor McGonagall is a character from the Harry Potter series by J.K. Rowling, known for being a Transfiguration professor and a member of the Hogwarts staff. She is also an Animagus, able to transform into a cat.",
+                "improve_understanding_of_text": "This reference helps non-native speakers understand that the story is part of a larger narrative (the Harry Potter series) and that the characters are well-known figures in the wizarding world."
+            },
+            {
+                "part_of_text": "Gryffindor house",
+                "significance": "Gryffindor is one of the four houses at Hogwarts School of Witchcraft and Wizardry, known for valuing bravery, daring, and chivalry. The character's comment about the cat sitting stiffly might be a reference to Gryffindor's values.",
+                "improve_understanding_of_text": "This detail helps non-native speakers understand the social dynamics and values within the story's magical world."
+            },
+            {
+                "part_of_text": "feasts and parties",
+                "significance": "In the Harry Potter series, feasts and parties are common events at Hogwarts, often featuring elaborate food, music, and celebration. The character's mention of passing a dozen feasts might be a reference to these events.",
+                "improve_understanding_of_text": "This detail helps non-native speakers understand the social context and atmosphere within the story's magical world."
+            }
+        ],
+        "grade5": "A man turned to smile at the cat, but it was gone. Instead he was smiling at a woman who looked very serious. She had square glasses that matched the shape of the cat's eyes. She wore a green cloak and her black hair was tied up in a tight bun. She looked upset."
     },
     "17": {
         "content": "\"Oh yes, everyone's celebrating, all right,\" she said impatiently.\n\"You'd think they'd be a bit more careful, but no -- even the Muggles\nhave noticed something's going on. It was on their news.\" She jerked her\nhead back at the Dursleys' dark living-room window. \"I heard it. Flocks\nof owls... shooting stars.... Well, they're not completely stupid. They\nwere bound to notice something. Shooting stars down in Kent -- I'll bet\nthat was Dedalus Diggle. He never had much sense.\"\n\"You can't blame them,\" said Dumbledore gently. \"We've had precious\nlittle to celebrate for eleven years.\"\n\"I know that,\" said Professor McGonagall irritably. \"But that's no\nreason to lose our heads. People are being downright careless, out on\nthe streets in broad daylight, not even dressed in Muggle clothes,\nswapping rumors.\"\nShe threw a sharp, sideways glance at Dumbledore here, as though hoping\nhe was going to tell her something, but he didn't, so she went on. \"A\nfine thing it would be if, on the very day YouKnow-Who seems to have\ndisappeared at last, the Muggles found out about us all. I suppose he\nreally has gone, Dumbledore?\"\n",
@@ -745,7 +1379,69 @@
             }
         },
         "num_chars": 1113,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "Mr. Dursley sits in his office, concentrating on drills while oblivious to the owls flying by outside. He has a normal morning until he encounters a group of people in cloaks who make him uneasy.",
+            "current_page_summary": "Professor McGonagall expresses her concerns about the recent strange occurrences in Kent, including flocks of owls and shooting stars, which she believes are connected to the disappearance of YouKnow-Who. She criticizes the careless behavior of some wizards and witches on the streets, despite the fact that it's a day for celebration. Dumbledore remains calm and doesn't provide any information about the situation."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "Muggles",
+                    "meaning": "Non-magical people in the Harry Potter universe",
+                    "synonym": "Muggles are often used as a synonym for non-magical people, but there isn't a direct equivalent in American English. However, you could use 'non-magical people' or 'ordinary people'.",
+                    "usage": "Example: 'The Muggles were confused by the strange occurrences in the town.'",
+                    "meaning_in_context": "In this context, 'Muggles' refers to non-magical people who are unaware of the wizarding world."
+                },
+                {
+                    "word": "Dedalus Diggle",
+                    "meaning": "A character in the Harry Potter series known for his foolishness and lack of common sense.",
+                    "synonym": "There isn't a direct synonym for Dedalus Diggle, but you could use 'a foolish person' or 'someone who lacks common sense'.",
+                    "usage": "Example: 'Dedalus Diggle's plan was ridiculous.'",
+                    "meaning_in_context": "In this context, 'Dedalus Diggle' is mentioned as an example of someone who would notice something unusual."
+                },
+                {
+                    "word": "YouKnow-Who",
+                    "meaning": "A reference to Lord Voldemort in the Harry Potter series.",
+                    "synonym": "There isn't a direct synonym for YouKnow-Who, but you could use 'Lord Voldemort' or 'the Dark Lord'.",
+                    "usage": "Example: 'The wizarding community is waiting anxiously for news about YouKnow-Who's whereabouts.'",
+                    "meaning_in_context": "In this context, 'YouKnow-Who' refers to the main antagonist of the series."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "Muggles",
+                "significance": "In this context, 'Muggles' refers to non-magical people in the Harry Potter universe. They are often portrayed as being unaware of the magical world and its inhabitants.",
+                "improve_understanding_of_text": "For Hindi-speaking readers from India, understanding the concept of Muggles can help contextualize the story's magical elements and the wizarding world."
+            },
+            {
+                "part_of_text": "Kent",
+                "significance": "Kent is a county in southeastern England. In this context, it might be relevant to Hindi-speaking readers who are familiar with the geography of India or have knowledge of British culture.",
+                "improve_understanding_of_text": "Mentioning Kent can help readers connect the story's setting to real-world locations and understand the wizarding world's geographical scope."
+            },
+            {
+                "part_of_text": "Dedalus Diggle",
+                "significance": "Dedalus Diggle is a character in the Harry Potter series, known for his eccentric behavior and lack of common sense. His name might be unfamiliar to Hindi-speaking readers.",
+                "improve_understanding_of_text": "Introducing Dedalus Diggle can help readers understand the wizarding world's characters and their quirks, making the story more engaging and immersive."
+            },
+            {
+                "part_of_text": "YouKnow-Who",
+                "significance": "In this context, 'YouKnow-Who' refers to Lord Voldemort, the main antagonist of the Harry Potter series. Understanding this reference can help readers grasp the story's plot and themes.",
+                "improve_understanding_of_text": "Mentioning YouKnow-Who can create a sense of urgency and importance, drawing readers into the story's narrative."
+            },
+            {
+                "part_of_text": "Dursleys' dark living-room window",
+                "significance": "The Dursleys are a family in the Harry Potter series known for their mistreatment of Harry Potter. The description of their home might be unfamiliar to Hindi-speaking readers.",
+                "improve_understanding_of_text": "Providing more context about the Dursleys' home can help readers visualize the characters and settings, making the story more relatable."
+            },
+            {
+                "part_of_text": "Muggle clothes",
+                "significance": "In this context, 'Muggle clothes' refers to ordinary clothing worn by non-magical people. Mentioning it can highlight the contrast between the wizarding world and the Muggle world.",
+                "improve_understanding_of_text": "Introducing this concept can help readers understand the story's themes of cultural differences and the blending of magical and mundane worlds."
+            }
+        ],
+        "grade5": "Everyone was excited, but she wasn't happy about it. She thought they should be more careful, even though the Muggles noticed something strange happening. It happened on their news. She heard that owls and shooting stars were seen in Kent. She thinks it might have been Dedalus Diggle, who isn't very smart. You can't blame people for being excited because we haven't had anything to celebrate in a long time. But some people are being too careless and talking about things they shouldn't be. They're even wearing their Muggle clothes outside during the day! She looked at Dumbledore and hoped he would tell her something, but he didn't. So she kept talking. If the bad guy has really disappeared, it's not good that the Muggles found out about us. Maybe he really did leave for good."
     },
     "18": {
         "content": "\"It certainly seems so,\" said Dumbledore. \"We have much to be thankful\nfor. Would you care for a lemon drop?\"\n\"A what?\"\n\"A lemon drop. They're a kind of Muggle sweet I'm rather fond of\"\n\"No, thank you,\" said Professor McGonagall coldly, as though she didn't\nthink this was the moment for lemon drops. \"As I say, even if\nYou-Know-Who has gone -\"\n\"My dear Professor, surely a sensible person like yourself can call him\nby his name? All this 'You- Know-Who' nonsense -- for eleven years I\nhave been trying to persuade people to call him by his proper name:\nVoldemort.\" Professor McGonagall flinched, but Dumbledore, who was\nunsticking two lemon drops, seemed not to notice. \"It all gets so\nconfusing if we keep saying 'You-Know-Who.' I have never seen any reason\nto be frightened of saying Voldemort's name.\n\"I know you haven 't, said Professor McGonagall, sounding half\nexasperated, half admiring. \"But you're different. Everyone knows you're\nthe only one You-Know- oh, all right, Voldemort, was frightened of.\"\n\"You flatter me,\" said Dumbledore calmly. \"Voldemort had powers I will\nnever have.\"\n",
@@ -780,7 +1476,59 @@
             }
         },
         "num_chars": 1087,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "Mr. Dursley sits in his office, concentrating on drills while oblivious to the owls flying by outside. He has a normal morning until he encounters a group of people in cloaks who make him uneasy.",
+            "current_page_summary": "Dumbledore and Professor McGonagall discuss Voldemort's name, with Dumbledore advocating for its use, while McGonagall is more cautious due to her past experiences. Dumbledore believes his unique situation allows him to approach the topic differently, but acknowledges that others may be intimidated by the Dark Lord's powers."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "Muggle",
+                    "meaning": "A non-magical person in the Harry Potter universe.",
+                    "synonym": "Non-magical person",
+                    "usage": "The wizarding world is hidden from Muggles, who are unaware of its existence.",
+                    "meaning_in_context": "Dumbledore offers Professor McGonagall a lemon drop, which she declines, indicating her focus on the task at hand."
+                },
+                {
+                    "word": "You-Know-Who",
+                    "meaning": "A nickname for Lord Voldemort, used by some characters to refer to him without directly saying his name.",
+                    "synonym": "Lord Voldemort",
+                    "usage": "Professor McGonagall and others use 'You-Know-Who' instead of Voldemort's actual name, showing their reluctance to speak it aloud.",
+                    "meaning_in_context": "Dumbledore suggests using Voldemort's full name to avoid confusion and show respect."
+                },
+                {
+                    "word": "flatter",
+                    "meaning": "To give someone excessive praise or compliments in order to make them feel good about themselves.",
+                    "synonym": "Praise excessively",
+                    "usage": "Professor McGonagall says she flatters Dumbledore by acknowledging his bravery, which he humbly accepts.",
+                    "meaning_in_context": "Dumbledore's calm demeanor and willingness to acknowledge Voldemort's powers show that he is not intimidated."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "Muggle",
+                "significance": "In the context of the Harry Potter series, 'Muggle' refers to a non-magical person living in the Muggle world. This term is significant because it highlights the contrast between the magical and non-magical communities in the story.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, understanding the concept of 'Muggle' can help them grasp the idea that magic exists alongside the non-magical world in the Harry Potter universe."
+            },
+            {
+                "part_of_text": "You-Know-Who",
+                "significance": "This phrase is a euphemism used by characters to refer to Lord Voldemort, as it is considered impolite or cowardly to say his name directly. This context is important because it reveals the fear and intimidation surrounding Voldemort's character.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, recognizing this phrase can help them understand the cultural significance of names and titles in the story, as well as the power dynamics at play between characters."
+            },
+            {
+                "part_of_text": "Voldemort",
+                "significance": "This is the name of the main antagonist in the Harry Potter series. Understanding the historical context of Voldemort's character can provide insight into the themes of fear, power, and redemption in the story.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, learning about Voldemort's backstory and motivations can enrich their understanding of the narrative and its exploration of complex moral issues."
+            },
+            {
+                "part_of_text": "Scotland",
+                "significance": "Although not explicitly mentioned in this passage, Scotland is a significant cultural context for the Harry Potter series. The story is set in a fictional Scotland, which has its own unique history, culture, and mythology.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, recognizing the Scottish cultural context can help them appreciate the diversity of settings and influences that shape the narrative."
+            }
+        ],
+        "grade5": "Dumbledore said, 'It seems we have a lot to be thankful for.' He offered her a lemon drop. 'What's that?' she asked. 'A lemon drop,' he replied. 'They're a type of candy I like.' She declined, and Professor McGonagall said, 'Not now, thank you.' Dumbledore started talking about Voldemort again. 'Why do we keep calling him You-Know-Who?' he asked. 'I don't see why we should be scared to say his real name,' he said. Professor McGonagall looked at him with a mix of frustration and respect. 'You're different, sir,' she said. 'Everyone knows you're the only one who's afraid of him.' Dumbledore smiled and said, 'You're being kind, but I'm not afraid like others are. Voldemort had powers that I'll never have.'"
     },
     "19": {
         "content": "\"Only because you're too -- well -- noble to use them.\"\n\"It's lucky it's dark. I haven't blushed so much since Madam Pomfrey\ntold me she liked my new earmuffs.\"\nProfessor McGonagall shot a sharp look at Dumbledore and said, \"The owls\nare nothing next to the rumors that are flying around. You know what\neveryone's saying? About why he's disappeared? About what finally\nstopped him?\"\nIt seemed that Professor McGonagall had reached the point she was most\nanxious to discuss, the real reason she had been waiting on a cold, hard\nwall all day, for neither as a cat nor as a woman had she fixed\nDumbledore with such a piercing stare as she did now. It was plain that\nwhatever \"everyone\" was saying, she was not going to believe it until\nDumbledore told her it was true. Dumbledore, however, was choosing\nanother lemon drop and did not answer.\n\"What they're saying,\" she pressed on, \"is that last night Voldemort\nturned up in Godric's Hollow. He went to find the Potters. The rumor is\nthat Lily and James Potter are -- are -- that they're -- dead. \"\nDumbledore bowed his head. Professor McGonagall gasped.\n",
@@ -811,7 +1559,106 @@
             }
         },
         "num_chars": 1095,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "Mr. Dursley sits in his office, concentrating on drills while oblivious to the owls flying by outside. He has a normal morning until he encounters a group of people in cloaks who make him uneasy.",
+            "current_page_summary": "Professor McGonagall confronts Dumbledore about rumors surrounding his disappearance, specifically that Voldemort turned up in Godric's Hollow and is believed to have killed James and Lily Potter. Dumbledore remains silent, choosing not to confirm or deny the rumors."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "noble",
+                    "meaning": "having or showing a high moral character; dignified and generous",
+                    "synonym": "magnanimous, dignified, honorable",
+                    "usage": "She was a noble woman who had dedicated her life to helping others.",
+                    "meaning_in_context": "The speaker is saying that the person is too good-natured to use certain words"
+                },
+                {
+                    "word": "earmuffs",
+                    "meaning": "a covering for the ears, typically made of fabric or other material",
+                    "synonym": "ear coverings, earmuffs",
+                    "usage": "She wore earmuffs to keep her ears warm on the cold winter day.",
+                    "meaning_in_context": "Madam Pomfrey complimented the speaker's new earmuffs"
+                },
+                {
+                    "word": "piercing",
+                    "meaning": "having a sharp and intense point or edge; able to cut or penetrate deeply",
+                    "synonym": "keen, sharp, piercing",
+                    "usage": "The doctor's piercing gaze made her feel uncomfortable.",
+                    "meaning_in_context": "Professor McGonagall gave Dumbledore a piercing stare"
+                },
+                {
+                    "word": "disappeared",
+                    "meaning": "to vanish or become invisible; to cease to exist or be seen",
+                    "synonym": "vanished, gone, missing",
+                    "usage": "The child disappeared into the crowd.",
+                    "meaning_in_context": "Everyone is speculating about why Dumbledore has disappeared"
+                },
+                {
+                    "word": "rumors",
+                    "meaning": "unfounded or unverified information; gossip or speculation",
+                    "synonym": "gossip, rumors, hearsay",
+                    "usage": "There were rumors going around that the company was in financial trouble.",
+                    "meaning_in_context": "Professor McGonagall is discussing rumors about Dumbledore's disappearance"
+                },
+                {
+                    "word": "disappeared",
+                    "meaning": "to vanish or become invisible; to cease to exist or be seen",
+                    "synonym": "vanished, gone, missing",
+                    "usage": "The child disappeared into the crowd.",
+                    "meaning_in_context": "Everyone is speculating about why Dumbledore has disappeared"
+                },
+                {
+                    "word": "Godric's Hollow",
+                    "meaning": "a place in England where a famous wizard was born or lived; a village or town with a special connection to magic",
+                    "synonym": "hollow, village, town",
+                    "usage": "The tourists visited Godric's Hollow to see the graves of the Potters.",
+                    "meaning_in_context": "Voldemort went to find the Potters in Godric's Hollow"
+                },
+                {
+                    "word": "Potters",
+                    "meaning": "people who are descended from or related to a particular family; a surname",
+                    "synonym": "family, relatives, descendants",
+                    "usage": "The Potters were known for their excellent cooking.",
+                    "meaning_in_context": "Lily and James Potter are mentioned as being dead"
+                },
+                {
+                    "word": "lemon drop",
+                    "meaning": "a small, sweet treat; a type of candy",
+                    "synonym": "candy, sweets, dessert",
+                    "usage": "She ate a lemon drop to celebrate her birthday.",
+                    "meaning_in_context": "Dumbledore is choosing another lemon drop"
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "Godric's Hollow",
+                "significance": "Godric's Hollow is a location in the Harry Potter series, specifically in the county of Herefordshire, England. It is mentioned as the place where James and Lily Potter were killed by Lord Voldemort.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, mentioning Godric's Hollow might not be immediately familiar. Providing more context about its significance in the Harry Potter series or its location in England could help non-native speakers better understand the text."
+            },
+            {
+                "part_of_text": "Voldemort",
+                "significance": "Lord Voldemort is a central character in the Harry Potter series, known as 'He Who Must Not Be Named' in some cultures. He is a dark wizard who murdered James and Lily Potter, leading to their son Harry's quest for revenge.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, mentioning Voldemort might evoke associations with the Indian mythological figure Ravana or other dark characters from Hindu mythology. Providing more context about Voldemort's character and significance in the series could help non-native speakers better understand the text."
+            },
+            {
+                "part_of_text": "Madam Pomfrey",
+                "significance": "Madam Pomfrey is a character in the Harry Potter series, known as the Hogwarts nurse. She is mentioned here as someone who has made Professor McGonagall blush, indicating her friendly and approachable nature.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, mentioning Madam Pomfrey might not be immediately familiar. Providing more context about her character or her role in the series could help non-native speakers better understand the text."
+            },
+            {
+                "part_of_text": "McGonagall",
+                "significance": "Professor McGonagall is a Scottish witch and one of the main characters in the Harry Potter series. Her name might be unfamiliar to Hindi-speaking people from India, but her character is significant in the context of the story.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, mentioning McGonagall's name might not be immediately familiar. Providing more context about her character or her background could help non-native speakers better understand the text."
+            },
+            {
+                "part_of_text": "Dumbledore",
+                "significance": "Albus Dumbledore is a central character in the Harry Potter series, known for his wisdom and leadership. His name might be unfamiliar to Hindi-speaking people from India, but his character is significant in the context of the story.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, mentioning Dumbledore's name might not be immediately familiar. Providing more context about his character or his background could help non-native speakers better understand the text."
+            }
+        ],
+        "grade5": "Only because you're too kind to use them, right? It's good it's dark. I haven't blushed so much since Madam Pomfrey told me she liked my new earmuffs."
     },
     "20": {
         "content": "\"Lily and James... I can't believe it... I didn't want to believe it...\nOh, Albus...\"\nDumbledore reached out and patted her on the shoulder. \"I know... I\nknow...\" he said heavily.\nProfessor McGonagall's voice trembled as she went on. \"That's not all.\nThey're saying he tried to kill the Potter's son, Harry. But -- he\ncouldn't. He couldn't kill that little boy. No one knows why, or how,\nbut they're saying that when he couldn't kill Harry Potter, Voldemort's\npower somehow broke -- and that's why he's gone.\nDumbledore nodded glumly.\n\"It's -- it's true?\" faltered Professor McGonagall. \"After all he's\ndone... all the people he's killed... he couldn't kill a little boy?\nIt's just astounding... of all the things to stop him... but how in the\nname of heaven did Harry survive?\"\n\"We can only guess,\" said Dumbledore. \"We may never know.\"\n",
@@ -842,7 +1689,71 @@
             }
         },
         "num_chars": 832,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "Mr. Dursley sits in his office, concentrating on drills while oblivious to the owls flying by outside. He has a normal morning until he encounters a group of people in cloaks who make him uneasy.",
+            "current_page_summary": "Dumbledore reveals that Voldemort's power was broken when he tried to kill Harry Potter, and as a result, Voldemort himself disappeared. The news is met with shock and disbelief from the professors, particularly Professor McGonagall, who struggles to comprehend how someone capable of such evil could spare the life of an innocent child."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "glumly",
+                    "meaning": "in a sad or gloomy manner",
+                    "synonym": "sorrowfully",
+                    "usage": "Dumbledore nodded glumly.",
+                    "meaning_in_context": "Dumbledore's expression shows his sadness and disappointment"
+                },
+                {
+                    "word": "faltered",
+                    "meaning": "to lose one's voice or confidence, often due to fear or uncertainty",
+                    "synonym": "stammered",
+                    "usage": "It's -- it's true?",
+                    "meaning_in_context": "Professor McGonagall's words are laced with doubt and uncertainty"
+                },
+                {
+                    "word": "astounding",
+                    "meaning": "causing great surprise or shock",
+                    "synonym": "baffling",
+                    "usage": "It's just astounding... of all the things to stop him...",
+                    "meaning_in_context": "Professor McGonagall is shocked and amazed by Harry's survival"
+                },
+                {
+                    "word": "heaven",
+                    "meaning": "the sky or the heavens; a place of refuge or solace",
+                    "synonym": "sky",
+                    "usage": "but how in the name of heaven did Harry survive?",
+                    "meaning_in_context": "Professor McGonagall is using 'heaven' as an expression of frustration and desperation"
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "Potter's son, Harry",
+                "significance": "Reference to the main character in the story, which is a cultural context specific to the Harry Potter series. This reference may not be intuitive for Hindi-speaking people from India who are not familiar with the series.",
+                "improve_understanding_of_text": "For non-native speakers, understanding the significance of Harry Potter and its cultural impact on Western literature can enhance their comprehension of the story's themes and character motivations."
+            },
+            {
+                "part_of_text": "Voldemort",
+                "significance": "Reference to a fictional character in the Harry Potter series, who is a symbol of evil and darkness. This reference may not be familiar to Hindi-speaking people from India.",
+                "improve_understanding_of_text": "Understanding Voldemort's significance as a representation of evil can provide context for the story's themes of good vs. evil and the nature of power."
+            },
+            {
+                "part_of_text": "Albus Dumbledore",
+                "significance": "Reference to a fictional character in the Harry Potter series, who is a wise and powerful wizard. This reference may not be familiar to Hindi-speaking people from India.",
+                "improve_understanding_of_text": "Understanding Dumbledore's significance as a mentor and leader can provide insight into the story's themes of wisdom, power, and responsibility."
+            },
+            {
+                "part_of_text": "Professor McGonagall",
+                "significance": "Reference to a fictional character in the Harry Potter series, who is a wise and powerful witch. This reference may not be familiar to Hindi-speaking people from India.",
+                "improve_understanding_of_text": "Understanding McGonagall's significance as a mentor and leader can provide insight into the story's themes of wisdom, power, and responsibility."
+            },
+            {
+                "part_of_text": "Heaven",
+                "significance": "Reference to a concept in Western culture that is not directly relevant to Hinduism or Indian culture. This reference may be unfamiliar to Hindi-speaking people from India.",
+                "improve_understanding_of_text": "Understanding the cultural context of 'heaven' as a concept in Western religion can provide insight into the story's themes of morality and ethics."
+            }
+        ],
+        "grade5": "Lily and James were shocked when they heard the news. 'I don't believe it,' Lily said, her voice shaking. 'Oh, Albus...' Dumbledore put a hand on her shoulder. 'I know,' he said sadly. Professor McGonagall's voice was trembling as she continued. 'This is not all. They're saying that Harry Potter's son, Harry, tried to kill him.' But Dumbledore explained, 'He couldn't do it. He couldn't hurt little Harry. No one knows why or how, but they think that when he couldn't hurt Harry, Voldemort's power broke and he disappeared."
     },
     "21": {
         "content": "Professor McGonagall pulled out a lace handkerchief and dabbed at her\neyes beneath her spectacles. Dumbledore gave a great sniff as he took a\ngolden watch from his pocket and examined it. It was a very odd watch.\nIt had twelve hands but no numbers; instead, little planets were moving\naround the edge. It must have made sense to Dumbledore, though, because\nhe put it back in his pocket and said, \"Hagrid's late. I suppose it was\nhe who told you I'd be here, by the way?\"\n\"Yes,\" said Professor McGonagall. \"And I don't suppose you're going to\ntell me why you're here, of all places?\"\n\"I've come to bring Harry to his aunt and uncle. They're the only family\nhe has left now.\"\n\"You don't mean -- you can't mean the people who live here?\" cried\nProfessor McGonagall, jumping to her feet and pointing at number four.\n\"Dumbledore -- you can't. I've been watching them all day. You couldn't\nfind two people who are less like us. And they've got this son -- I saw\nhim kicking his mother all the way up the street, screaming for sweets.\nHarry Potter come and live here!\"\n",
@@ -865,7 +1776,102 @@
             }
         },
         "num_chars": 1058,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "Mr. Dursley sits in his office, concentrating on drills while oblivious to the owls flying by outside. He has a normal morning until he encounters a group of people in cloaks who make him uneasy.",
+            "current_page_summary": "Professor McGonagall and Dumbledore arrive at number four, where Harry Potter will be living with his aunt and uncle. Dumbledore explains that he's brought Harry to this place because it's the only family he has left. However, Professor McGonagall is shocked and concerned about the Dursleys, who she believes are unfit to care for a child like Harry. She expresses her disapproval of Dumbledore's decision, citing the Dursleys' cruel treatment of their own son."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "spectacles",
+                    "meaning": "a pair of glasses worn on the face to correct vision",
+                    "synonym": "glasses",
+                    "usage": "She put on her spectacles and began reading the book.",
+                    "meaning_in_context": "Professor McGonagall pulled out a lace handkerchief and dabbed at her eyes beneath her spectacles."
+                },
+                {
+                    "word": "dabbed",
+                    "meaning": "to apply a small amount of liquid or cream to something",
+                    "synonym": "applied",
+                    "usage": "She dabbed the cold compress on her forehead.",
+                    "meaning_in_context": "Professor McGonagall pulled out a lace handkerchief and dabbed at her eyes beneath her spectacles."
+                },
+                {
+                    "word": "sniff",
+                    "meaning": "to breathe in quickly and deeply, often to smell something",
+                    "synonym": "inhale",
+                    "usage": "He sniffed the air to see if he could detect any smoke.",
+                    "meaning_in_context": "Dumbledore gave a great sniff as he took a golden watch from his pocket and examined it."
+                },
+                {
+                    "word": "twelve",
+                    "meaning": "the number that comes after eleven and before thirteen",
+                    "synonym": "dozen",
+                    "usage": "There are twelve months in a year.",
+                    "meaning_in_context": "It had twelve hands but no numbers;"
+                },
+                {
+                    "word": "examination",
+                    "meaning": "a careful and detailed study of something",
+                    "synonym": "inspection",
+                    "usage": "The doctor performed an examination to check for any signs of illness.",
+                    "meaning_in_context": "It was a very odd watch. It had twelve hands but no numbers; instead, little planets were moving around the edge."
+                },
+                {
+                    "word": "planet",
+                    "meaning": "a large celestial body that orbits around a star",
+                    "synonym": "world",
+                    "usage": "The planet Mars is known for its red color.",
+                    "meaning_in_context": "It had twelve hands but no numbers; instead, little planets were moving around the edge."
+                },
+                {
+                    "word": "kicking",
+                    "meaning": "to move one's legs in a kicking motion",
+                    "synonym": "punching",
+                    "usage": "The child was kicking and screaming because she was upset.",
+                    "meaning_in_context": "And they've got this son -- I saw him kicking his mother all the way up the street, screaming for sweets."
+                },
+                {
+                    "word": "spectacles",
+                    "meaning": "a pair of glasses worn on the face to correct vision",
+                    "synonym": "glasses",
+                    "usage": "She put on her spectacles and began reading the book.",
+                    "meaning_in_context": "You don't mean -- you can't mean the people who live here? cried Professor McGonagall, jumping to her feet and pointing at number four."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "Hagrid's late. I suppose it was he who told you I'd be here, by the way?",
+                "significance": "The mention of Hagrid is significant because Hagrid is a character in the Harry Potter series, but his background and connection to the wizarding world are not well-known among non-native speakers. This detail might help readers understand that the story is set within a magical realm.",
+                "improve_understanding_of_text": "This sentence provides context about Dumbledore's arrival and Hagrid's role in the story, making it more relatable for Hindi-speaking readers who may be unfamiliar with the character."
+            },
+            {
+                "part_of_text": "I've come to bring Harry to his aunt and uncle. They're the only family he has left now.",
+                "significance": "The mention of 'Harry's aunt and uncle' refers to the Dursleys, a family from the wizarding world who are known for their mistreatment of Harry. This detail is important because it sets the stage for the story and provides context about Harry's difficult home life.",
+                "improve_understanding_of_text": "This sentence explains Dumbledore's purpose in bringing Harry to his relatives, making it clear that Harry has no other family connections within the magical world."
+            },
+            {
+                "part_of_text": "You don't mean -- you can't mean the people who live here?"
+            },
+            {
+                "part_of_text": "Dumbledore -- you can't. I've been watching them all day. You couldn't find two people who are less like us.",
+                "significance": "The mention of 'the people who live here' refers to the Muggle (non-magical) world, which is a significant cultural context in the Harry Potter series. This detail helps readers understand that the story takes place within a magical realm and that there are two distinct worlds coexisting.",
+                "improve_understanding_of_text": "This exchange between Dumbledore and McGonagall highlights the contrast between the magical and non-magical worlds, making it more relatable for Hindi-speaking readers who may be unfamiliar with this concept."
+            },
+            {
+                "part_of_text": "And they've got this son -- I saw him kicking his mother all the way up the street, screaming for sweets.",
+                "significance": "The mention of 'the people who live here' and their son's behavior is significant because it provides context about Harry's difficult home life with the Dursleys. This detail helps readers understand why Dumbledore believes Harry has no other family connections within the magical world.",
+                "improve_understanding_of_text": "This sentence explains why Dumbledore thinks Harry should be taken in by his relatives, making it clear that Harry's living situation is problematic and that he needs a more supportive environment."
+            },
+            {
+                "part_of_text": "Harry Potter come and live here!",
+                "significance": "The mention of 'Harry Potter' is significant because it refers to the main character of the story. This detail helps readers understand who the protagonist is and why Dumbledore has brought him to his relatives.",
+                "improve_understanding_of_text": "This sentence provides context about Harry's identity and purpose in the story, making it more relatable for Hindi-speaking readers who may be unfamiliar with the character."
+            }
+        ],
+        "grade5": "Professor McGonagall pulled out a lace handkerchief and wiped her eyes under her glasses. Dumbledore sniffed deeply as he took out a golden watch from his pocket and looked at it. It was very strange-looking, with twelve hands but no numbers - instead, little planets were moving around the edge. He must have understood what it meant, because he put it back in his pocket and said, 'Hagrid is late. I suppose he told you I'd be here, by the way.' "
     },
     "22": {
         "content": "\"It's the best place for him,\" said Dumbledore firmly. \"His aunt and\nuncle will be able to explain everything to him when he's older. I've\nwritten them a letter.\"\n\"A letter?\" repeated Professor McGonagall faintly, sitting back down on\nthe wall. \"Really, Dumbledore, you think you can explain all this in a\nletter? These people will never understand him! He'll be famous -- a\nlegend -- I wouldn't be surprised if today was known as Harry Potter day\nin the future -- there will be books written about Harry -- every child\nin our world will know his name!\"\n\"Exactly,\" said Dumbledore, looking very seriously over the top of his\nhalf-moon glasses. \"It would be enough to turn any boy's head. Famous\nbefore he can walk and talk! Famous for something he won't even\nremember! CarA you see how much better off he'll be, growing up away\nfrom all that until he's ready to take it?\"\n",
@@ -884,7 +1890,40 @@
             }
         },
         "num_chars": 869,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "Mr. Dursley sits in his office, concentrating on drills while oblivious to the owls flying by outside. He has a normal morning until he encounters a group of people in cloaks who make him uneasy.",
+            "current_page_summary": "Dumbledore firmly believes that Harry's best place is with his aunt and uncle, where they can explain everything to him when he's older. Dumbledore has written a letter to them, which Professor McGonagall finds skeptical. She thinks the truth about Harry will be too much for anyone to handle, and that it could make him famous before he even remembers it."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "CarA",
+                    "meaning": "Care or concern for someone's well-being",
+                    "synonym": "concern",
+                    "usage": "It would be enough to turn any boy's head. Famous before he can walk and talk! Famous for something he won't even remember! Care you see how much better off he'll be, growing up away from all that until he's ready to take it?",
+                    "meaning_in_context": "Dumbledore is expressing his concern for Harry's well-being by keeping him away from the fame and attention that would come with being a celebrity"
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "His aunt and uncle will be able to explain everything to him when he's older.",
+                "significance": "This refers to Harry Potter's Muggle relatives, the Dursleys, who are not aware of his true identity as a wizard. This context is important because it highlights the contrast between Harry's magical world and his mundane life with the Dursleys.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, this might be less intuitive since they may not be familiar with the concept of Muggles (non-magical people) or the idea of a wizarding world existing alongside their own. Understanding this context can help readers appreciate Harry's unique situation and the challenges he faces."
+            },
+            {
+                "part_of_text": "I wouldn't be surprised if today was known as Harry Potter day in the future -- there will be books written about Harry -- every child in our world will know his name!",
+                "significance": "This quote highlights the potential fame and recognition that Harry could achieve, which is a significant aspect of his story. It also implies that the wizarding world is global and interconnected, with Harry's actions having far-reaching consequences.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, this might be less familiar since they may not be aware of the global scope of the wizarding world or the potential for a single individual to become a cultural icon. Understanding this context can help readers appreciate the magnitude of Harry's impact and the themes of fame, recognition, and responsibility that are central to his story."
+            },
+            {
+                "part_of_text": "CarA you see how much better off he'll be, growing up away from all that until he's ready to take it?",
+                "significance": "This quote suggests that Harry will benefit from being raised in a more secluded environment, away from the pressures and expectations of fame. This context is important because it highlights the complexities of Harry's situation and the need for him to navigate his identity and responsibilities.",
+                "improve_understanding_of_text": "For Hindi-speaking people from India, this might be less intuitive since they may not be familiar with the concept of a 'secluded environment' or the idea that fame can be both a blessing and a curse. Understanding this context can help readers appreciate Harry's emotional journey and the challenges he faces in balancing his desire for normalcy with his destiny as a wizard."
+            }
+        ],
+        "grade5": "Dumbledore said firmly, 'This is the best place for him.' His aunt and uncle will teach him everything when he grows up. He has written a letter to them."
     },
     "23": {
         "content": "Professor McGonagall opened her mouth, changed her mind, swallowed, and\nthen said, \"Yes -- yes, you're right, of course. But how is the boy\ngetting here, Dumbledore?\" She eyed his cloak suddenly as though she\nthought he might be hiding Harry underneath it.\n\"Hagrid's bringing him.\"\n\"You think it -- wise -- to trust Hagrid with something as important as\nthis?\"\nI would trust Hagrid with my life,\" said Dumbledore.\n\"I'm not saying his heart isn't in the right place,\" said Professor\nMcGonagall grudgingly, \"but you can't pretend he's not careless. He does\ntend to -- what was that?\"\nA low rumbling sound had broken the silence around them. It grew\nsteadily louder as they looked up and down the street for some sign of a\nheadlight; it swelled to a roar as they both looked up at the sky -- and\na huge motorcycle fell out of the air and landed on the road in front of\nthem.\n",
@@ -915,7 +1954,66 @@
             }
         },
         "num_chars": 866,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "Mr. Dursley sits in his office, concentrating on drills while oblivious to the owls flying by outside. He has a normal morning until he encounters a group of people in cloaks who make him uneasy.",
+            "current_page_summary": "Professor McGonagall and Dumbledore discuss Harry's arrival at Hogwarts, with McGonagall expressing concerns about Hagrid's carelessness. The conversation is interrupted by the sudden appearance of a motorcycle falling from the sky, which lands on the road in front of them."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "rumbling",
+                    "meaning": "making a low, continuous sound, often indicating an approaching storm or strong emotions",
+                    "synonym": "growling",
+                    "usage": "The rumbling of the engine made it hard to hear what he was saying.",
+                    "meaning_in_context": "The low rumbling sound had broken the silence around them."
+                },
+                {
+                    "word": "swallowed",
+                    "meaning": "to eat or drink something quickly, often in order to avoid talking or doing something",
+                    "synonym": "gobbled",
+                    "usage": "She swallowed hard before answering the question.",
+                    "meaning_in_context": "Professor McGonagall opened her mouth, changed her mind, swallowed, and then said..."
+                },
+                {
+                    "word": "grudgingly",
+                    "meaning": "in a reluctant or unwilling manner",
+                    "synonym": "begrudgingly",
+                    "usage": "She spoke grudgingly about the new policy.",
+                    "meaning_in_context": "'but you can't pretend he's not careless. He does tend to -- what was that?' said Professor McGGall grudgingly,"
+                },
+                {
+                    "word": "tend",
+                    "meaning": "to have a tendency or inclination towards something",
+                    "synonym": "have a propensity for",
+                    "usage": "He tends to be late when he's running behind schedule.",
+                    "meaning_in_context": "'but you can't pretend he's not careless. He does tend to -- what was that?'"
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "Hagrid's bringing him.",
+                "significance": "This reference to Hagrid is significant because Hagrid is a character from the Harry Potter series, who is known for his loyalty and care towards Harry Potter. In the context of the story, it implies that Hagrid has been entrusted with Harry's safety and well-being.",
+                "improve_understanding_of_text": "For non-native speakers, understanding the significance of Hagrid's role in the story can enhance their comprehension of the plot and character relationships."
+            },
+            {
+                "part_of_text": "Dumbledore",
+                "significance": "Albus Dumbledore is a central character in the Harry Potter series, known for his wisdom, kindness, and leadership. His presence in this scene suggests that he has a significant role to play in the story.",
+                "improve_understanding_of_text": "Recognizing Dumbledore's importance can help non-native speakers better understand the context of the story and its themes."
+            },
+            {
+                "part_of_text": "McGonagall",
+                "significance": "Minerva McGonagall is a character in the Harry Potter series, known for her intelligence, authority, and sometimes strict demeanor. Her presence in this scene suggests that she has a complex relationship with Dumbledore and Hagrid.",
+                "improve_understanding_of_text": "Understanding McGonagall's character can provide insight into the dynamics of the story and its themes."
+            },
+            {
+                "part_of_text": "The motorcycle",
+                "significance": "The sudden appearance of a motorcycle in the story is likely meant to be a dramatic and unexpected event. It may also symbolize the arrival of something new and exciting, or even ominous.",
+                "improve_understanding_of_text": "Recognizing the significance of this event can help non-native speakers better understand the tone and themes of the story."
+            }
+        ],
+        "grade5": "Professor McGonagall opened her mouth, changed her mind, swallowed, and then said, 'Yes, I agree with you. But how did Harry get here, Dumbledore?' She looked at his cloak as if he might be hiding Harry underneath it."
     },
     "24": {
         "content": "If the motorcycle was huge, it was nothing to the man sitting astride\nit. He was almost twice as tall as a normal man and at least five times\nas wide. He looked simply too big to be allowed, and so wild - long\ntangles of bushy black hair and beard hid most of his face, he had hands\nthe size of trash can lids, and his feet in their leather boots were\nlike baby dolphins. In his vast, muscular arms he was holding a bundle\nof blankets.\n\"Hagrid,\" said Dumbledore, sounding relieved. \"At last. And where did\nyou get that motorcycle?\"\n\"Borrowed it, Professor Dumbledore, sit,\" said the giant, climbing\ncarefully off the motorcycle as he spoke. \"Young Sirius Black lent it to\nme. I've got him, sir.\"\n\"No problems, were there?\"\n\"No, sir -- house was almost destroyed, but I got him out all right\nbefore the Muggles started swarmin' around. He fell asleep as we was\nflyin' over Bristol.\"\nDumbledore and Professor McGonagall bent forward over the bundle of\nblankets. Inside, just visible, was a baby boy, fast asleep. Under a\ntuft of jet-black hair over his forehead they could see a curiously\nshaped cut, like a bolt of lightning.\n",
@@ -946,7 +2044,71 @@
             }
         },
         "num_chars": 1119,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "Mr. Dursley sits in his office, concentrating on drills while oblivious to the owls flying by outside. He has a normal morning until he encounters a group of people in cloaks who make him uneasy.",
+            "current_page_summary": "Hagrid arrives at Hogwarts on a borrowed motorcycle, accompanied by a mysterious bundle containing baby Harry Potter. Dumbledore and McGonagall examine the bundle, revealing a sleeping infant with an unusual lightning-shaped scar on his forehead."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "Muggles",
+                    "meaning": "Non-magical people, especially in the context of the Harry Potter series.",
+                    "synonym": "Mundanes",
+                    "usage": "The Muggles started swarmin' around.",
+                    "meaning_in_context": "In this context, 'Muggles' refers to non-magical people who are unaware of the wizarding world."
+                },
+                {
+                    "word": "Swarmin'",
+                    "meaning": "Swarming or rushing about in a chaotic manner.",
+                    "synonym": "Rushing",
+                    "usage": "The Muggles started swarmin' around.",
+                    "meaning_in_context": "Here, 'swarmin'' is used to convey the idea of chaos and disorder caused by the Muggles."
+                },
+                {
+                    "word": "Flyin'",
+                    "meaning": "Flying or moving through the air.",
+                    "synonym": "Flying",
+                    "usage": "He fell asleep as we was flyin' over Bristol.",
+                    "meaning_in_context": "In this context, 'flyin'' is used to describe the action of flying on a broomstick."
+                },
+                {
+                    "word": "Bolt of lightning",
+                    "meaning": "A sudden and powerful flash of electricity.",
+                    "synonym": "Lightning bolt",
+                    "usage": "Under a tuft of jet-black hair over his forehead they could see a curiously shaped cut, like a bolt of lightning.",
+                    "meaning_in_context": "Here, 'bolt of lightning' is used to describe the shape and appearance of the injury on the baby's forehead."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "Bristol",
+                "significance": "Bristol is a city in the southwest of England, known for its maritime history and cultural significance. In this context, it's mentioned as the location where Hagrid was flying over with Sirius Black when the baby boy fell asleep.",
+                "improve_understanding_of_text": "This mention of Bristol adds to the British setting of the story and provides a specific geographical reference that might be unfamiliar to Hindi-speaking readers from India."
+            },
+            {
+                "part_of_text": "Muggles",
+                "significance": "In this context, 'Muggles' refers to non-magical people in the Harry Potter universe. The term is used to describe the chaos and destruction caused by the wizarding world's presence in the non-magical community.",
+                "improve_understanding_of_text": "This mention of Muggles helps to clarify the magical world-building in the story, which might be unfamiliar to Hindi-speaking readers from India."
+            },
+            {
+                "part_of_text": "Sirius Black",
+                "significance": "Sirius Black is a significant character in the Harry Potter series, known for his role as a wizard and his connection to the main protagonist, Harry Potter. In this context, he's mentioned as lending Hagrid his motorcycle.",
+                "improve_understanding_of_text": "This mention of Sirius Black adds depth to the story and provides insight into the relationships between characters in the magical world."
+            },
+            {
+                "part_of_text": "Hagrid",
+                "significance": "Hagrid is a beloved character in the Harry Potter series, known for his size, kindness, and loyalty. In this context, he's mentioned as borrowing Dumbledore's motorcycle.",
+                "improve_understanding_of_text": "This mention of Hagrid helps to establish his character traits and provides insight into his interactions with other characters in the story."
+            },
+            {
+                "part_of_text": "Bristol",
+                "significance": "As mentioned earlier, Bristol is a city in southwest England. In this context, it's also significant because it's where Hagrid was flying over when the baby boy fell asleep.",
+                "improve_understanding_of_text": "This repeated mention of Bristol reinforces its importance as a geographical location and provides additional context for the story."
+            }
+        ],
+        "grade5": "If the motorcycle was really big, it didn't seem that impressive to the man sitting on it. He was almost twice as tall as a normal person and at least five times wider. He looked too big to be allowed, and his wild hair and beard made him look even more intimidating. His hands were huge, like trash can lids, and his feet in their boots looked like baby dolphins. The man had a big bundle of blankets in his massive arms."
     },
     "25": {
         "content": "\"Is that where -?\" whispered Professor McGonagall.\n\"Yes,\" said Dumbledore. \"He'll have that scar forever.\"\n\"Couldn't you do something about it, Dumbledore?\"\n\"Even if I could, I wouldn't. Scars can come in handy. I have one myself\nabove my left knee that is a perfect map of the London Underground. Well\n-- give him here, Hagrid -- we'd better get this over with.\"\nDumbledore took Harry in his arms and turned toward the Dursleys' house.\n\"Could I -- could I say good-bye to him, sir?\" asked Hagrid. He bent his\ngreat, shaggy head over Harry and gave him what must have been a very\nscratchy, whiskery kiss. Then, suddenly, Hagrid let out a howl like a\nwounded dog.\n\"Shhh!\" hissed Professor McGonagall, \"you'll wake the Muggles!\"\n\"S-s-sorry,\" sobbed Hagrid, taking out a large, spotted handkerchief and\nburying his face in it. \"But I c-c-can't stand it -- Lily an' James dead\n-- an' poor little Harry off ter live with Muggles -\"\n",
@@ -985,7 +2147,52 @@
             }
         },
         "num_chars": 919,
-        "chapter": "Unknown Chapter"
+        "chapter": "Unknown Chapter",
+        "summary": {
+            "page_summary_so_far": "Mr. Dursley sits in his office, concentrating on drills while oblivious to the owls flying by outside. He has a normal morning until he encounters a group of people in cloaks who make him uneasy.",
+            "current_page_summary": "Professor McGonagall and Dumbledore discuss Harry's scar, with Dumbledore explaining that scars can be useful. They approach the Dursleys' house, where Hagrid is overcome with emotion as he says goodbye to Harry. Hagrid's distress stems from his grief over Lily and James's deaths and Harry being forced to live with Muggles."
+        },
+        "vocab": {
+            "novel_words": [
+                {
+                    "word": "Muggles",
+                    "meaning": "Non-magical people, especially in the context of the Harry Potter series.",
+                    "synonym": "Mundanes",
+                    "usage": "In this sentence, Hagrid is trying to hold back his emotions and says 'But I c-c-can't stand it -- Lily an' James dead -- an' poor little Harry off ter live with Muggles -'.",
+                    "meaning_in_context": "Here, Hagrid is expressing his grief and frustration at having to leave Harry behind with non-magical people."
+                },
+                {
+                    "word": "Whiskery",
+                    "meaning": "Having a beard or whiskers.",
+                    "synonym": "Bearded",
+                    "usage": "In this sentence, Hagrid gives Harry a 'very scratchy, whiskery kiss'.",
+                    "meaning_in_context": "This emphasizes the rugged and unkempt nature of Hagrid's appearance."
+                }
+            ]
+        },
+        "cultural_ref": [
+            {
+                "part_of_text": "London Underground",
+                "significance": "The London Underground is a famous network of underground trains in London, England. It's a significant part of British culture and history.",
+                "improve_understanding_of_text": "For non-native speakers, mentioning the London Underground might be unfamiliar. Adding more context about its significance or relevance to the story could improve understanding."
+            },
+            {
+                "part_of_text": "Muggles",
+                "significance": "In the Harry Potter series, Muggles refer to non-magical people who live in the non-magical world. It's a term used by wizards and witches to describe their ordinary lives.",
+                "improve_understanding_of_text": "For Hindi-speaking readers, understanding the concept of Muggles is crucial to grasping the story's magical context. Providing more explanation or examples could enhance comprehension."
+            },
+            {
+                "part_of_text": "Dursleys' house",
+                "significance": "The Dursleys are Harry's cruel and neglectful Muggle relatives. Their house is significant because it represents the ordinary, non-magical world that Harry is forced to live in.",
+                "improve_understanding_of_text": "For readers unfamiliar with the series, knowing more about the Dursleys' character and their role in the story could improve understanding of the context."
+            },
+            {
+                "part_of_text": "Lily and James",
+                "significance": "Lily and James Potter were Harry's parents, who were killed by Lord Voldemort. Their memory is significant to Harry's backstory and motivation.",
+                "improve_understanding_of_text": "For non-native speakers, understanding the significance of Lily and James' death could provide context to Harry's emotions and actions in the story."
+            }
+        ],
+        "grade5": "One day, Professor McGonagall whispered to Dumbledore, 'Is that where he is?' Dumbledore replied, 'Yes, he'll always have that scar.' 'Can't you do something about it, Dumbledore?' someone asked. 'Even if I could, I wouldn't,' said Dumbledore. 'Scars can be helpful sometimes. I have one too - a map of the London Underground above my knee.' Dumbledore then took Harry in his arms and walked towards the Dursleys' house. Hagrid asked if he could say goodbye to Harry. As Hagrid bent down to kiss him, he let out a loud howl like a hurt dog. 'Shh!' Professor McGonagall whispered, 'Don't wake up the neighbors!' Hagrid apologized and covered his face with a big handkerchief. He was very sad because his friends Lily and James had died, and Harry had to live with Muggles now."
     },
     "26": {
         "content": "\"Yes, yes, it's all very sad, but get a grip on yourself, Hagrid, or\nwe'll be found,\" Professor McGonagall whispered, patting Hagrid gingerly\non the arm as Dumbledore stepped over the low garden wall and walked to\nthe front door. He laid Harry gently on the doorstep, took a letter out\nof his cloak, tucked it inside Harry's blankets, and then came back to\nthe other two. For a full minute the three of them stood and looked at\nthe little bundle; Hagrid's shoulders shook, Professor McGonagall\nblinked furiously, and the twinkling light that usually shone from\nDumbledore's eyes seemed to have gone out.\n\"Well,\" said Dumbledore finally, \"that's that. We've no business staying\nhere. We may as well go and join the celebrations.\"\n\"Yeah,\" said Hagrid in a very muffled voice, \"I'll be takin' Sirius his\nbike back. G'night, Professor McGonagall -- Professor Dumbledore, sir.\"\nWiping his streaming eyes on his jacket sleeve, Hagrid swung himself\nonto the motorcycle and kicked the engine into life; with a roar it rose\ninto the air and off into the night.\n",
