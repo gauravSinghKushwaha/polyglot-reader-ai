@@ -86,3 +86,4 @@ h2~=4.1.0
 httplib2~=0.22.0
 uritemplate~=4.1.1
 google-auth-httplib2~=0.2.0
+chromadb
