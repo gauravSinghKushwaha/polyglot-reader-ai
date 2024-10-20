@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './components/basic/styles.scss';
 import './App.scss';
@@ -8,6 +8,10 @@ import { Box } from './components/basic/Box';
 
 function App() {
   const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    speechSynthesis.cancel();
+  }, [])
 
   const showReaderPage = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % 2);

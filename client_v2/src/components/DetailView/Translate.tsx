@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import { Box } from "../basic/Box"
 import apiService from "../../api_service";
 import { usePolyglotReader } from "../../state";
+import { Button } from "../basic/Button";
+import { SpeakerIcon } from "../basic/Speaker";
 
 export const Translate = () => {
     const { bookInfo, currentPage, defaultLanguage } = usePolyglotReader();
@@ -23,6 +25,54 @@ export const Translate = () => {
         });
 
         return translation;
+    };
+
+    useEffect(() => {
+        return () => {
+            speechSynthesis.cancel();
+        }
+    }, [])
+
+    useEffect(() => {
+        if(speechSynthesis.speaking || speechSynthesis.pending) {
+            speechSynthesis.cancel();
+        }
+
+        return () => {
+            speechSynthesis.cancel();
+        }
+    }, [currentPage])
+
+    const speak = (index: number = 0) => {
+        const para = translation?.split("<br/>").filter(a => a?.length) || [];
+        const content = para?.[index];
+
+        if(!content?.length) {
+            return;
+        }
+
+        // Create a SpeechSynthesisUtterance
+        const utterance = new SpeechSynthesisUtterance(content);
+        utterance.rate = 0.9;
+
+        // Select a voice
+        const voices = speechSynthesis.getVoices();
+        const hindiVoice = voices.find(voice => voice.lang === 'hi-IN'); 
+
+        utterance.voice = hindiVoice || voices[0];
+
+        // Move to the next paragraph after the current one finishes
+        utterance.onend = () => {
+            if ((index + 1) < para.length) {
+                speak(index + 1);
+            } else {
+                speechSynthesis.cancel();
+                return;
+            }
+        };
+
+        // Speak the text
+        speechSynthesis.speak(utterance);
     };
 
 
@@ -48,6 +98,9 @@ export const Translate = () => {
     }, [currentPage, defaultLanguage])
 
     return (
-        <Box className="translate" dangerouslySetInnerHTML={{__html: translation || ""}}></Box>
+        <>
+            <Box className="translate" dangerouslySetInnerHTML={{__html: translation || ""}}></Box>
+            <Button className="read-to-me-button" onClick={() => speak()}>Read for me <SpeakerIcon /></Button>
+        </>
     )
 }

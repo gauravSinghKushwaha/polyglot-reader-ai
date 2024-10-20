@@ -1,12 +1,12 @@
 import { IBook } from "./interface";
 
 export const BOOK_LIST: IBook[] = [
-    // {
-    //     "isbn": "2000",
-    //     "name": "Don Quijote",
-    //     "author": "Cervantes Saavedra, Miguel de, 1547-1616",
-    //     "thumbnail": "https://www.gutenberg.org/cache/epub/2000/pg2000.cover.medium.jpg"
-    // },
+    {
+        "isbn": "2000",
+        "name": "Harry Potter",
+        "author": "J. K. Rowling",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrgS6MMIgrVnawNUqtgzzbF8eUolt3EYF2ig&s"
+    },
     {
         "isbn": "766",
         "name": "David Copperfield",
@@ -15,6 +15,12 @@ export const BOOK_LIST: IBook[] = [
     },
     {
         "isbn": "30120",
+        "name": "The Happy Prince, and Other Tales",
+        "author": "Wilde, Oscar, 1854-1900",
+        "thumbnail": "https://www.gutenberg.org/cache/epub/30120/pg30120.cover.medium.jpg" // Confirmed the association
+    },
+    {
+        "isbn": "30121",
         "name": "The Happy Prince, and Other Tales",
         "author": "Wilde, Oscar, 1854-1900",
         "thumbnail": "https://www.gutenberg.org/cache/epub/30120/pg30120.cover.medium.jpg" // Confirmed the association

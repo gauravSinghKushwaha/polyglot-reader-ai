@@ -133,6 +133,13 @@
     contain: layout style;
 }
 
+.read-to-me-button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 16px auto;
+}
+
 .ques-and-ans {
     width: 100%;
     display: flex;

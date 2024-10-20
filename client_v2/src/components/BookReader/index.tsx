@@ -13,14 +13,23 @@ const SUPPORTED_LANGUAGES = ['English', 'Hindi', 'Spanish', 'French'];
 export const BookReader = ({ onBack }: any) => {
     const { currentBook, defaultLanguage, setDefaultLanguage, setBookInfo, bookInfo, currentPage, setCurrentPage, selectedTab, selectionText } = usePolyglotReader();
     const [showDetailView, toggleDetailView] = useState(false);
-    const [currentPara, setCurrentPara] = useState(0);
-    const [highlightedIndex, setHighlightedIndex] = useState(-1); // To track the word being highlighted
+    const [highlightedWord, setHighlightedWord] = useState(""); // To track the word being highlighted
 
     useEffect(() => {
         return () => {
             speechSynthesis.cancel();
         }
-    }, [currentPara]);
+    }, [])
+
+    useEffect(() => {
+        if(speechSynthesis.speaking || speechSynthesis.pending) {
+            speechSynthesis.cancel();
+        }
+
+        return () => {
+            speechSynthesis.cancel();
+        }
+    }, [currentPage])
 
     useEffect(() => {
         if (currentBook?.isbn) {
@@ -53,65 +62,12 @@ export const BookReader = ({ onBack }: any) => {
         return null;
     }
 
-    const speak1 = (index: number = 0) => {
-        const para = bookInfo?.pages[currentPage]?.paragraphs;
-        const content = para?.[index]?.content;
-
-        if(!content?.length) {
-            return null;
-        }
-
-        const options = {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'API-Subscription-Key': 'ae86d0e7-7c49-4896-84fb-2c63ce35f2c9' },
-            body: JSON.stringify({ "inputs": [content], "target_language_code": "en-IN", "speaker": "amol", "pitch": 0, "pace": 1, "loudness": 1.5, "speech_sample_rate": 8000, "enable_preprocessing": true, "model": "bulbul:v1" })
-        };
-
-        fetch('https://api.sarvam.ai/text-to-speech', options)
-            .then(response => response.json())
-            .then(response => {
-                const binaryString = atob(response?.audios?.[0]);
-
-                // Convert binary string to Uint8Array
-                const len = binaryString.length;
-                const bytes = new Uint8Array(len);
-                for (let i = 0; i < len; i++) {
-                    bytes[i] = binaryString.charCodeAt(i);
-                }
-
-                // Create a Blob from the Uint8Array
-                const blob = new Blob([bytes], { type: "audio/wav" });
-                const url = URL.createObjectURL(blob);
-                // setAudioUrl(url);
-
-                 // Create audio element
-                 const audioElement = document.createElement('audio');
-                 audioElement.src = url;
-                 audioElement.controls = true; // Add controls to play/pause the audio
-                 audioElement.autoplay = true; // Automatically play audio
-
-                 // Clear previous audio and append new audio element
-                 audioElement.innerHTML = ''; // Clear previous audio elements
-                 audioElement.appendChild(audioElement);
-
-                //  audioElement.play();
-
-                 audioElement.addEventListener("ended", () => {
-                    setCurrentPara(pre => pre+1);
-                    setTimeout(() => {
-                        speak(currentPara + 1);
-                    }, 0)
-                 })
-            })
-            .catch(err => console.error(err));
-    };
 
     const speak = (index: number = 0) => {
         const para = bookInfo?.pages[currentPage]?.paragraphs;
         const content = para?.[index]?.content;
 
         if(!content?.length) {
-            speechSynthesis.cancel();
             return;
         }
 
@@ -128,15 +84,13 @@ export const BookReader = ({ onBack }: any) => {
         utterance.onboundary = (event) => {
             if (event.name === 'word') {
                 const spokenWordIndex = event.charIndex; // Get the character index of the spoken word
-                const wordsBefore = content.slice(0, spokenWordIndex).split(' ').length - 1;
-                setHighlightedIndex(wordsBefore); // Set the index of the highlighted word
+                // setHighlightedWord(content.slice(0, spokenWordIndex).split(' ')); // Set the index of the highlighted word
             }
         };
 
         // Move to the next paragraph after the current one finishes
         utterance.onend = () => {
             if ((index + 1) < para.length) {
-                setCurrentPara(index + 1); // Update paragraph index
                 setTimeout(() => {
                     speak(index + 1);
                 }, 1000)
@@ -169,7 +123,7 @@ export const BookReader = ({ onBack }: any) => {
                 <Box className="book-content">
                     <Box className="chapter-name">
                         {bookInfo.pages[currentPage].chapter}
-                        {/* <Button onClick={() => speak()}><SpeakerIcon /></Button> */}
+                        <Button onClick={() => speak()}><SpeakerIcon /></Button>
                         {/* (<small><i><a onClick={() => speak()}>Read page</a></i></small>) */}
                     </Box>
                     
@@ -211,7 +165,7 @@ export const BookReader = ({ onBack }: any) => {
                 </Box>
 
                 <Box className="detail-view" style={{ width: showDetailView ? "calc(100vw - 800px)" : 0 }}>
-                    {showDetailView && <Box onClick={() => toggleDetailView(false)} className="polyglot-reader-close">{">>"}</Box>}
+                    {showDetailView && <Box onClick={() => toggleDetailView(false)} className="polyglot-reader-close">{"X"}</Box>}
                     <DetailView />
                 </Box>
             </Box>
