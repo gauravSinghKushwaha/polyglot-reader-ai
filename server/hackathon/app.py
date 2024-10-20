@@ -69,7 +69,7 @@ def ask_question_stream(req: QueryResponderDto):
     def event_generator():
         try:
             # Call the function that generates your answer, yielding results as they are produced
-            for answer_chunk in query_service.respond_to_query_stream(req.text, req.query):
+            for answer_chunk in query_service.respond_to_query_stream(req.text, req.query, req.page_no, req.book_id):
                 yield answer_chunk.answer # SSE format
         except Exception as ex:
             print("Exception: ", ex)

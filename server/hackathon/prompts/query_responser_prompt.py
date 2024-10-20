@@ -8,8 +8,7 @@ QUERY_RESPONDER_PROMPT ="""
         
         Text :: {text} \n
         
-        Answer the query given below based on text given above. \n
-        Please include information about the country, people, traditions, and any relevant context from history or culture that could help answer the question better.
+        Answer the query given below based on text given above. Identify the language of the query. Strictly reply back in the same language as the query. If the query is in Hinglish (mixed code), answer back in Hinglish (mixed code). Similarly answer in English or Hindi accordingly \n
         
         Question :: {query} \n
         
