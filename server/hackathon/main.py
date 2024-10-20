@@ -497,6 +497,7 @@ def remove_unwanted_characters_from_str(str):
         .replace("\u201d", "”")
     )
 
+# one time script to populate vector db
 def populate_vector_store():
     output_folder = get_absolute_path("hackathon/output")
     files = os.listdir(output_folder)
@@ -504,5 +505,3 @@ def populate_vector_store():
         output = output_folder + "/" + filename
         book = read_json_file(output)
         add_pages_to_vector_store(book_id=filename.replace(".json", ""), pages=book)
-
-# results = query_db(query=query, page_no=page_no, book_id=book_number)
