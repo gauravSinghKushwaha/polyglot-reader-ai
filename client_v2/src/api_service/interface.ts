@@ -12,6 +12,7 @@ export type IVocabInfo = {
     synonym: string;
     usage: string;
     meaning_in_context: string;
+    meaning_in_context_hindi: string;
 }
 
 export type IBookParaInfo = {

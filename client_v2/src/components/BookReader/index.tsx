@@ -13,7 +13,8 @@ const SUPPORTED_LANGUAGES = ['English', 'Hindi', 'Spanish', 'French'];
 export const BookReader = ({ onBack }: any) => {
     const { currentBook, defaultLanguage, setDefaultLanguage, setBookInfo, bookInfo, currentPage, setCurrentPage, selectedTab, selectionText } = usePolyglotReader();
     const [showDetailView, toggleDetailView] = useState(false);
-    const [highlightedWord, setHighlightedWord] = useState(""); // To track the word being highlighted
+    const [currentPara, setCurrentPara] = useState(0);
+    const [highlightedIndex, setHighlightedIndex] = useState(-1); // To track the word being highlighted
 
     useEffect(() => {
         return () => {
@@ -67,6 +68,12 @@ export const BookReader = ({ onBack }: any) => {
         const para = bookInfo?.pages[currentPage]?.paragraphs;
         const content = para?.[index]?.content;
 
+        if(speechSynthesis.speaking || speechSynthesis.pending) {
+            setHighlightedIndex(-1);
+            speechSynthesis.cancel();
+            return;
+        }
+
         if(!content?.length) {
             return;
         }
@@ -84,13 +91,16 @@ export const BookReader = ({ onBack }: any) => {
         utterance.onboundary = (event) => {
             if (event.name === 'word') {
                 const spokenWordIndex = event.charIndex; // Get the character index of the spoken word
-                // setHighlightedWord(content.slice(0, spokenWordIndex).split(' ')); // Set the index of the highlighted word
+                const wordsBefore = content.slice(0, spokenWordIndex).split(' ').length - 1;
+                console.log(content.slice(0, spokenWordIndex).split(' '))
+                setHighlightedIndex(wordsBefore); // Set the index of the highlighted word
             }
         };
 
         // Move to the next paragraph after the current one finishes
         utterance.onend = () => {
             if ((index + 1) < para.length) {
+                setCurrentPara(index + 1); // Update paragraph index
                 setTimeout(() => {
                     speak(index + 1);
                 }, 1000)
@@ -137,8 +147,8 @@ export const BookReader = ({ onBack }: any) => {
                                 <Box key={paraIndex} className="para">
                                     <Box className="para-margin"></Box>
                                     {/* Highlight words dynamically */}
-                                    <span dangerouslySetInnerHTML={{__html: content}}></span>
-                                    {/* {item.content.replaceAll("\n", " ").split(' ').map((word, wordIndex) => {
+                                    {(highlightedIndex === -1) && <span dangerouslySetInnerHTML={{__html: content}}></span>}
+                                    {(highlightedIndex > -1) && item.content.replaceAll("\n", " ").split(' ').map((word, wordIndex) => {
                                         const cleanWord = word.replace(/[.,!?"']/g, "").trim().toLowerCase();
                                         return (
                                             <span
@@ -151,7 +161,7 @@ export const BookReader = ({ onBack }: any) => {
                                                 {word}{' '}
                                             </span>
                                         )
-                                    })} */}
+                                    })}
                                 </Box>
                             )
                         })}

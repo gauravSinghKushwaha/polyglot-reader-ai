@@ -10,7 +10,7 @@ export const PageSummary = () => {
             <Box className="recap"><i>{bookInfo?.pages?.[currentPage]?.summary_so_far}</i></Box><br />
             {isHindi && <Box className="recap"><i>"{bookInfo?.pages?.[currentPage]?.summary_so_far_hindi}"</i></Box>}
             <div>
-                <h3>Important Text</h3>
+                <h3>Important References</h3>
                 {bookInfo?.pages?.[currentPage]?.cultural_ref?.map((item, index) => (
                     <div key={index} className="text-card">
                         <h4><i>"{item.part_of_text}"</i> {isHindi && <i>({item.part_of_text_hindi})</i>}</h4>

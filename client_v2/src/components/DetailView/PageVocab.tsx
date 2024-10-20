@@ -2,7 +2,9 @@ import { usePolyglotReader } from "../../state"
 import { Box } from "../basic/Box"
 
 export const PageVocab = () => {
-    const { bookInfo, currentPage } = usePolyglotReader()
+    const { bookInfo, currentPage, defaultLanguage } = usePolyglotReader();
+
+    const isHindi = (defaultLanguage === "Hindi");
 
     return (
         <Box className="vocab">
@@ -11,7 +13,7 @@ export const PageVocab = () => {
                     <Box className="word"><h3 style={{textTransform: "capitalize"}}>{wordObj.word}</h3> <small>({wordObj["word_hindi"]})</small> - <i>{wordObj.meaning}</i></Box>
                     <p><strong>Synonym:</strong> {wordObj.synonym}</p>
                     <p><strong>Usage:</strong> "{wordObj.usage}"</p>
-                    <p><strong>Meaning in Context:</strong> {wordObj.meaning_in_context}</p>
+                    <p><strong>Meaning in Context:</strong> {wordObj.meaning_in_context} {isHindi && <>({wordObj.meaning_in_context_hindi})</>}</p>
                 </div>
             ))}
         </Box>

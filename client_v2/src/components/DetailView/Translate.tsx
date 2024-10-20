@@ -47,6 +47,11 @@ export const Translate = () => {
         const para = translation?.split("<br/>").filter(a => a?.length) || [];
         const content = para?.[index];
 
+        if(speechSynthesis.speaking || speechSynthesis.pending) {
+            speechSynthesis.cancel();
+            return;
+        }
+
         if(!content?.length) {
             return;
         }
