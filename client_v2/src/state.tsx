@@ -33,6 +33,11 @@ export const PolyglotReaderProvider: React.FC<{ children: ReactNode }> = ({ chil
         apiService.getBookList().then((response) => setBookList(response));
     }, []);
 
+    useEffect(() => {
+        setCurrentPage(0);
+        setSelectionText('');
+    }, [currentBook?.isbn])
+
     return (
         <PolyglotReaderContext.Provider
             value={{

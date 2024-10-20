@@ -11,7 +11,7 @@ export const BOOK_LIST: IBook[] = [
         "isbn": "766",
         "name": "David Copperfield",
         "author": "The Charles Dickens Edition",
-        "thumbnail": "https://www.gutenberg.org/cache/epub/766/pg766.cover.medium.jpg"
+        "thumbnail": "https://m.media-amazon.com/images/I/714UWLtJd4L._AC_UF1000,1000_QL80_.jpg"
     },
     {
         "isbn": "30120",
@@ -23,7 +23,7 @@ export const BOOK_LIST: IBook[] = [
         "isbn": "30121",
         "name": "The Happy Prince, and Other Tales",
         "author": "Wilde, Oscar, 1854-1900",
-        "thumbnail": "https://www.gutenberg.org/cache/epub/30120/pg30120.cover.medium.jpg" // Confirmed the association
+        "thumbnail": "https://www.gutenberg.org/cache/epub/2000/pg2000.cover.medium.jpg" // Confirmed the association
     }
 ];
 
