@@ -25,7 +25,9 @@ class QueryResponderService:
         result = query_db(page_no, book_id, query)
 
         final_text = ""
-        if result is None or result['data'] is None:
+        if result is None:
+            final_text = text
+        elif len(result['documents'][0]) == 0:
             final_text = text
         else:
             ids = result['ids'][0]

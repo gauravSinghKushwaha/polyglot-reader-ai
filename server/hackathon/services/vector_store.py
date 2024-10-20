@@ -41,9 +41,4 @@ def query_db(page_no, book_id, query):
         }
     )
 
-    ids = results['ids'][0]
-    docs = results['documents'][0]
-    print(ids)
-    print(docs)
-    print(results)
     return results
