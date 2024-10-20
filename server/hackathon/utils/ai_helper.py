@@ -21,7 +21,6 @@ def create_prompt_template(
 def get_llm():
 
     return OllamaLLM(
-        # base_url="https://pfai.splashmath.com",
         model="llama3.2",
         temperature=0,
         format="json",
