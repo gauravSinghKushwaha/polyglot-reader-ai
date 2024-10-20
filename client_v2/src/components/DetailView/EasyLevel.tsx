@@ -6,7 +6,7 @@ export const EasyLevel = () => {
 
     const isHindi = (defaultLanguage === "Hindi");
     const array = bookInfo?.pages?.[currentPage]?.grade5?.split(".")
-    const arrayHindi = bookInfo?.pages?.[currentPage]?.grade5?.split(".")
+    const arrayHindi = bookInfo?.pages?.[currentPage]?.grade5_hindi?.split(".")
 
     return (
         <Box className="easy-level">
