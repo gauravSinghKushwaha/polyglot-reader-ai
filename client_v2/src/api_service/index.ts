@@ -28,6 +28,7 @@ class ApiService {
           chapter: bookInfo.chapter,
           paragraphs,
           summary_so_far: `${bookInfo?.summary?.page_summary_so_far} ${bookInfo?.summary?.current_page_summary}`,
+          summary_so_far_hindi: `${bookInfo?.summary?.page_summary_so_far_hindi} ${bookInfo?.summary?.current_page_summary_hindi}`,
           vocab: bookInfo?.vocab?.novel_words,
           cultural_ref: bookInfo?.cultural_ref,
           content: bookInfo?.content,

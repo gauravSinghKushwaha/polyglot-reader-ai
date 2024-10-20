@@ -6,10 +6,10 @@
         position: fixed;
         bottom: 30px;
         right: 30px;
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
-        box-shadow: 0px 1px 4px 0.5px #00000048;
+        box-shadow: 0px 1px 4px 0.5px rgba(140, 41, 233, 0.367);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -68,6 +68,10 @@
             color: rgb(14, 16, 26);
             font-feature-settings: "ss01", "cv05", "cv07", "cv08";
             font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
         }
 
         .para-list {

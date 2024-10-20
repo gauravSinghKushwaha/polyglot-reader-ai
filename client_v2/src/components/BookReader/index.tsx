@@ -6,6 +6,7 @@ import './styles.scss';
 import apiService from "../../api_service";
 import { IBookInfo } from "../../api_service/interface";
 import { DetailView } from "../DetailView";
+import { SpeakerIcon } from "../basic/Speaker";
 
 const SUPPORTED_LANGUAGES = ['English', 'Hindi', 'Spanish', 'French'];
 
@@ -110,9 +111,8 @@ export const BookReader = ({ onBack }: any) => {
         const content = para?.[index]?.content;
 
         if(!content?.length) {
-            return;
-        } else {
             speechSynthesis.cancel();
+            return;
         }
 
         // Create a SpeechSynthesisUtterance
@@ -142,6 +142,7 @@ export const BookReader = ({ onBack }: any) => {
                 }, 1000)
             } else {
                 speechSynthesis.cancel();
+                return;
             }
         };
 
@@ -168,6 +169,7 @@ export const BookReader = ({ onBack }: any) => {
                 <Box className="book-content">
                     <Box className="chapter-name">
                         {bookInfo.pages[currentPage].chapter}
+                        {/* <Button onClick={() => speak()}><SpeakerIcon /></Button> */}
                         {/* (<small><i><a onClick={() => speak()}>Read page</a></i></small>) */}
                     </Box>
                     
@@ -214,7 +216,7 @@ export const BookReader = ({ onBack }: any) => {
                 </Box>
             </Box>
 
-            {!showDetailView && <Box onClick={() => toggleDetailView(true)} className="polyglot-reader-trigger">?</Box>}
+            {!showDetailView && <Box onClick={() => toggleDetailView(true)} className="polyglot-reader-trigger"><img width={30} height={30} src="/logo.jpg"/></Box>}
         </Box>
     );
 };
