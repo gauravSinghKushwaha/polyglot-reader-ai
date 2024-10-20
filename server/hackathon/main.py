@@ -260,6 +260,29 @@ def translate_cultural_ref(page):
             for k in hindi_dict:
                 cultural_ref[k] = hindi_dict[k]
 
+@retry(
+    exceptions=(Exception),
+    delay=1,
+    backoff=2,
+    max_delay=4,
+    tries=1,
+)
+def translate_grade5_summary(page):
+
+    if not "grade5" in page:
+        return
+    try:
+        key_hindi = "grade5" + "_hindi"
+        if key_hindi in page:
+            return
+        output = translate_text_with_sarvam(
+            "en-IN",
+            "hi-IN",
+            remove_unwanted_characters_from_str(page["grade5"]),
+        )
+        page[key_hindi] = remove_unwanted_characters_from_str(output)
+    except Exception as ex:
+        print(ex)
 
 @retry(
     exceptions=(Exception),
@@ -313,8 +336,8 @@ def translate_text_with_llama(source_language, target_language, text):
 
 
 def pre_process():
-    input_folder = get_absolute_path("server/hackathon/books")
-    output_folder = get_absolute_path("server/hackathon/output")
+    input_folder = get_absolute_path("hackathon/books")
+    output_folder = get_absolute_path("hackathon/output")
 
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
@@ -330,43 +353,47 @@ def pre_process():
 
         previous_summary = ""
         tqdm_book = tqdm(book)
-        for page_no in tqdm_book:
-            """TODO for POC only processing max 50 pages of book"""
-            if int(page_no) > FIRST_N_PAGES:
-                continue
-            tqdm_book.set_description("pageNo :" + page_no)
-            page = book[page_no]
-            cleanse_text_of_unwanted_characters(page=page)
 
-            if "summary" not in page:
-                summaries = summarize_by_page(
-                    page_no=page_no, previous_summary=previous_summary, page=page
-                )
-                if summaries and "previous_summary" in summaries:
-                    previous_summary = summaries["previous_summary"]
-
-            if "vocab" not in page:
-                fetch_vocab_by_page(page=page)
-
-            if "cultural_ref" not in page:
-                fetch_culture_ref_by_page(page_no=page_no, book=book)
-
-
-            if "grade5" not in page: 
-                convert_to_chosen_grade(page=page, grade=None)
-
-            translate_page_wise(page_no=page_no, book=book)
-
-            translate_word(page=page)
-
-            translate_summary(page=page)
-
-            translate_cultural_ref(page=page)
-
-            if int(page_no) % 5 == 0:
-                write_json_file(output, book)
+        process_individual_page(output, book, previous_summary, tqdm_book)
 
         write_json_file(output, book)
+
+
+def process_individual_page(output, book, previous_summary, tqdm_book):
+    for page_no in tqdm_book:
+        """TODO for POC only processing max 50 pages of book"""
+        if int(page_no) > FIRST_N_PAGES:
+            continue
+        tqdm_book.set_description("pageNo :" + page_no)
+        page = book[page_no]
+        cleanse_text_of_unwanted_characters(page=page)
+
+        if "summary" not in page:
+            summaries = summarize_by_page(
+                page_no=page_no, previous_summary=previous_summary, page=page
+            )
+            if summaries and "previous_summary" in summaries:
+                previous_summary = summaries["previous_summary"]
+            translate_summary(page=page)
+
+        if "vocab" not in page:
+            fetch_vocab_by_page(page=page)
+            translate_word(page=page)
+
+        if "cultural_ref" not in page:
+            fetch_culture_ref_by_page(page_no=page_no, book=book)
+            translate_cultural_ref(page=page)
+
+        if "grade5" not in page:
+            convert_to_chosen_grade(page=page, grade=None)
+            translate_grade5_summary(page=page)
+
+        translate_page_wise(page_no=page_no, book=book)
+
+        if int(page_no) % 5 == 0:
+            write_json_file(output, book)
+
+
 
 
 def extract_pages_paragraphs_from_txt_file(input_folder, output_folder, filename):
@@ -505,3 +532,5 @@ def populate_vector_store():
         output = output_folder + "/" + filename
         book = read_json_file(output)
         add_pages_to_vector_store(book_id=filename.replace(".json", ""), pages=book)
+
+pre_process()
