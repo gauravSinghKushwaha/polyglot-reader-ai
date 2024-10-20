@@ -16,7 +16,7 @@ brew install node@18
 brew link --overwrite node@18
 node -v
 
-* Go to client folder (cd /client)
+* Go to client folder (cd /client_v2)
 
 # Run the following command to install the required dependencies:
 npm install
