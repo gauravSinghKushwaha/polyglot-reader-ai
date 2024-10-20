@@ -243,8 +243,8 @@ def translate_cultural_ref(page):
         hindi_dict = {}
         for k in cultural_ref:
             key_hindi = k + "_hindi" if "_hindi" not in k else k
-            # if key_hindi in cultural_ref:
-            #     continue
+            if key_hindi in cultural_ref:
+                continue
             try:
                 output = translate_text_with_sarvam( 
                     "en-IN",
@@ -347,12 +347,8 @@ def pre_process():
             if "vocab" not in page:
                 fetch_vocab_by_page(page=page)
 
-            if "cultural_ref" not in page or 1==1:
-                if 'pg766' in filename:
-                    if int(page_no) > 27:
-                        fetch_culture_ref_by_page(page_no=page_no, book=book)
-                else:
-                    fetch_culture_ref_by_page(page_no=page_no, book=book)
+            if "cultural_ref" not in page:
+                fetch_culture_ref_by_page(page_no=page_no, book=book)
 
 
             if "grade5" not in page: 
