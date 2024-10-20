@@ -37,6 +37,7 @@ export type IBookPage = {
     cultural_ref: ICultureRef[];
     content: string;
     grade5: string;
+    grade5_hindi: string;
 }
 
 export type IBookInfo = {

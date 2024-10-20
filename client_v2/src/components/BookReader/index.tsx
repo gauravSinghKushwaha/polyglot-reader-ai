@@ -115,7 +115,7 @@ export const BookReader = ({ onBack }: any) => {
     };
 
     return (
-        <Box className={`book-reader ${selectedTab?.label}`}>
+        <Box key={currentBook?.isbn} className={`book-reader ${selectedTab?.label}`}>
             <Box className="header">
                 <Button onClick={onBack}>Go back to Library</Button>
                 {/* <Box> */}

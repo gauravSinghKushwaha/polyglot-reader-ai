@@ -32,7 +32,8 @@ class ApiService {
           vocab: bookInfo?.vocab?.novel_words,
           cultural_ref: bookInfo?.cultural_ref,
           content: bookInfo?.content,
-          grade5: bookInfo?.grade5
+          grade5: bookInfo?.grade5,
+          grade5_hindi: bookInfo?.grade5_hindi
         }
       })
     }
