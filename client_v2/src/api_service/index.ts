@@ -43,8 +43,8 @@ class ApiService {
     return await baseService.streamPost("/translate", { text, target_language }, callback);
   }
 
-  async askQuery(text: string, query: string, callback: (chunk: string) => void): Promise<any> {
-    return await baseService.streamPost("/ask", { text, query }, callback);
+  async askQuery(book_id: string, page_no: number, text: string, query: string, callback: (chunk: string) => void): Promise<any> {
+    return await baseService.streamPost("/ask", { book_id, page_no, text, query }, callback);
   }
 
   async getSelectionInfo(text: string, content: string, target_language: string, callback: (chunk: string) => void): Promise<any> {

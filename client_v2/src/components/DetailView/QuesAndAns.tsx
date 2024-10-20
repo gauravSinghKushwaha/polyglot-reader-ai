@@ -9,7 +9,7 @@ export const QuesAndAns: React.FC = () => {
     const [ques, setQues] = useState<string>('');
     const [chatList, setChatList] = useState<any>({});
     const [activeQues, setActiveQues] = useState<any>({});
-    const { selectionText, setSelectionText, defaultLanguage, currentPage, bookInfo } = usePolyglotReader();
+    const { selectionText, setSelectionText, defaultLanguage, currentPage, bookInfo, currentBook } = usePolyglotReader();
 
     useEffect(() => {
         setTimeout(() => {
@@ -41,10 +41,12 @@ export const QuesAndAns: React.FC = () => {
     };
 
     const setAnswer = (id: string, text: string, query: string) => {
-        apiService.askQuery(text, query, (chunk) => {
-            chatList[id] = { ...chatList[id], ans: extractText(chunk) };
-            setChatList({ ...chatList });
-        });
+        if (currentBook?.isbn) {
+            apiService.askQuery(currentBook.isbn, currentPage, text, query, (chunk) => {
+                chatList[id] = { ...chatList[id], ans: extractText(chunk) };
+                setChatList({ ...chatList });
+            });
+        }
     }
 
     const setSelectionInfo = (id: string, text: string, content: string) => {
@@ -62,7 +64,7 @@ export const QuesAndAns: React.FC = () => {
         setSelectionText('');
         setQues('');
         const text = bookInfo?.pages[currentPage].content || "";
-        if(action === "ask_question") {
+        if (action === "ask_question") {
             setAnswer(id, text, query);
         } else {
             setSelectionInfo(id, selectionText || "", text);
