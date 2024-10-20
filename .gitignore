@@ -8,3 +8,4 @@ __pycache__/
 
 client/node_modules
 client_v2/node_modules
+server/bookchromadb/chroma.sqlite3
